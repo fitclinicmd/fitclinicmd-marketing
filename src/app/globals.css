@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-sand text-ink antialiased font-sans;
+  }
+  /* WCAG 2.2 — visible, high-contrast focus on every interactive element */
+  :focus-visible {
+    @apply outline-none ring-2 ring-clinic ring-offset-2 ring-offset-sand rounded-sm;
+  }
+  h1, h2, h3 {
+    @apply font-display tracking-tight text-balance;
+  }
+  p { text-wrap: pretty; }
+}
+
+@layer utilities {
+  /* Soft editorial background wash — CSS only, no imagery */
+  .wash {
+    background-image:
+      radial-gradient(60rem 30rem at 12% -10%, rgba(14, 124, 134, 0.10), transparent 60%),
+      radial-gradient(45rem 26rem at 95% 0%, rgba(200, 150, 42, 0.10), transparent 60%);
+  }
+  .rule {
+    background-image: linear-gradient(90deg, rgba(14,124,134,.5), rgba(200,150,42,.45), transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
