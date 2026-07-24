@@ -10,7 +10,10 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
-  "overrides": { "postcss": "8.5.21" },
+  "overrides": {
+    "postcss": "8.5.21",
+    "sharp": "0.35.3"
+  },
   "dependencies": {
     "next": "15.5.21",
     "react": "19.0.0",
