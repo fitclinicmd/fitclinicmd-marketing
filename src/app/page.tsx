@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container, Section, Eyebrow, CTA, Card, Claim } from "@/components/ui";
+import GoalCards from "@/components/GoalCards";
 import { signupUrl } from "@/lib/site";
 
 const STEPS = [
@@ -104,43 +105,8 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Treatments */}
-      <Section className="border-t border-ink/10 bg-white">
-        <div className="mb-10 max-w-2xl">
-          <Eyebrow>Treatments</Eyebrow>
-          <h2 className="text-3xl sm:text-4xl">What we treat.</h2>
-          <p className="mt-3 text-ink-muted">
-            Treatment is prescribed only when a licensed provider determines it is clinically
-            appropriate for you.
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card className="flex flex-col">
-            <h3 className="text-2xl">Weight management</h3>
-            <div className="mt-3 flex-1 text-ink-muted">
-              <Claim id="glp1-what-it-is" />
-            </div>
-            <Link
-              href="/treatments/weight-management"
-              className="mt-5 text-sm font-semibold text-clinic hover:text-clinic-deep"
-            >
-              Learn about weight management →
-            </Link>
-          </Card>
-          <Card className="flex flex-col">
-            <h3 className="text-2xl">Hormone therapy</h3>
-            <div className="mt-3 flex-1 text-ink-muted">
-              <Claim id="hormone-what-it-is" />
-            </div>
-            <Link
-              href="/treatments/hormone-therapy"
-              className="mt-5 text-sm font-semibold text-clinic hover:text-clinic-deep"
-            >
-              Learn about hormone therapy →
-            </Link>
-          </Card>
-        </div>
-      </Section>
+      {/* Goal-first entry — patients choose the outcome they want, not a drug */}
+      <GoalCards />
 
       {/* Privacy stance — a genuine differentiator, and true of this build */}
       <Section>
