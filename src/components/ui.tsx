@@ -84,6 +84,36 @@ export function Card({
 }
 
 /**
+ * Self-hosted photograph. Licensed stock lives in /public/images (no hotlinks,
+ * per the network image rule). Wrap it in an aspect-ratio + overflow-hidden
+ * container — this fills and covers it. `priority` = eager-load for above-the-fold.
+ * Photos are lifestyle/experience only; they never depict our specific clinicians
+ * (provider photos remain real-only placeholders) and never imply a treatment result.
+ */
+export function Photo({
+  src,
+  alt,
+  priority = false,
+  className = "",
+}: {
+  src: string;
+  alt: string;
+  priority?: boolean;
+  className?: string;
+}) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- site deliberately avoids next/image (no sharp dep)
+    <img
+      src={src}
+      alt={alt}
+      loading={priority ? "eager" : "lazy"}
+      decoding="async"
+      className={`h-full w-full object-cover ${className}`}
+    />
+  );
+}
+
+/**
  * A regulated marketing claim. Renders counsel-approved text, or a clearly
  * marked placeholder — never invented copy. See src/lib/claims.ts.
  */
