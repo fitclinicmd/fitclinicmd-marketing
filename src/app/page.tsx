@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Container, Section, Eyebrow, CTA, Card, Claim } from "@/components/ui";
+import { Container, Section, Eyebrow, CTA, Card, Claim, Photo } from "@/components/ui";
 import GoalCards from "@/components/GoalCards";
 import { signupUrl } from "@/lib/site";
 
@@ -47,25 +47,34 @@ export default function Home() {
       {/* Hero */}
       <div className="wash">
         <Container className="py-20 sm:py-28">
-          <div className="max-w-3xl animate-rise">
-            <Eyebrow>Telehealth weight &amp; hormone care</Eyebrow>
-            <h1 className="text-4xl leading-[1.08] sm:text-6xl">
-              Real medicine,
-              <br />
-              <span className="text-clinic">without the waiting room.</span>
-            </h1>
-            <div className="mt-6 max-w-2xl text-lg text-ink-soft">
-              <Claim id="hero-promise" />
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="max-w-2xl animate-rise">
+              <Eyebrow>Telehealth weight &amp; hormone care</Eyebrow>
+              <h1 className="text-4xl leading-[1.08] sm:text-6xl">
+                Real medicine,
+                <br />
+                <span className="text-clinic">without the waiting room.</span>
+              </h1>
+              <div className="mt-6 max-w-2xl text-lg text-ink-soft">
+                <Claim id="hero-promise" />
+              </div>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <CTA href={signupUrl}>Get started</CTA>
+                <CTA href="/how-it-works" variant="secondary">
+                  See how it works
+                </CTA>
+              </div>
+              <p className="mt-5 text-sm text-ink-muted">
+                No insurance needed · Licensed providers · Prescription only if clinically appropriate
+              </p>
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <CTA href={signupUrl}>Get started</CTA>
-              <CTA href="/how-it-works" variant="secondary">
-                See how it works
-              </CTA>
+            <div className="animate-rise overflow-hidden rounded-xl2 border border-ink/10 shadow-[0_16px_50px_rgba(15,27,45,.12)] aspect-[4/3]">
+              <Photo
+                src="/images/hero-cycling.jpg"
+                alt="Two people cycling together along a coastal road on a bright day"
+                priority
+              />
             </div>
-            <p className="mt-5 text-sm text-ink-muted">
-              No insurance needed · Licensed providers · Prescription only if clinically appropriate
-            </p>
           </div>
         </Container>
       </div>
@@ -85,9 +94,21 @@ export default function Home() {
 
       {/* How it works */}
       <Section>
-        <div className="mb-12 max-w-2xl">
-          <Eyebrow>How it works</Eyebrow>
-          <h2 className="text-3xl sm:text-4xl">Four steps, start to delivery.</h2>
+        <div className="mb-12 grid items-center gap-10 lg:grid-cols-2">
+          <div className="max-w-xl">
+            <Eyebrow>How it works</Eyebrow>
+            <h2 className="text-3xl sm:text-4xl">Four steps, start to delivery.</h2>
+            <p className="mt-4 text-ink-muted">
+              From your first visit to medication at your door — handled online, from wherever you
+              are.
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-xl2 border border-ink/10 aspect-[16/10]">
+            <Photo
+              src="/images/telehealth-visit.jpg"
+              alt="A person connecting with their care team from home using a phone"
+            />
+          </div>
         </div>
         <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s) => (
@@ -107,6 +128,26 @@ export default function Home() {
 
       {/* Goal-first entry — patients choose the outcome they want, not a drug */}
       <GoalCards />
+
+      {/* Lifestyle band — aspirational, logistics copy only (no treatment claim) */}
+      <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="order-2 overflow-hidden rounded-xl2 border border-ink/10 aspect-[4/5] lg:order-1">
+            <Photo
+              src="/images/lifestyle-running.jpg"
+              alt="A person running along a ridge outdoors on a bright day"
+            />
+          </div>
+          <div className="order-1 lg:order-2">
+            <Eyebrow>Care that fits your life</Eyebrow>
+            <h2 className="text-3xl sm:text-4xl">Built around how you actually live.</h2>
+            <p className="mt-4 text-ink-muted">
+              Your visits, labs, and medication are handled online and delivered to your door — so
+              staying with your plan fits around work, travel, and everything else you have going on.
+            </p>
+          </div>
+        </div>
+      </Section>
 
       {/* Privacy stance — a genuine differentiator, and true of this build */}
       <Section>

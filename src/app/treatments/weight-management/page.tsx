@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Container, Section, Eyebrow, Card, Claim, CTA, EmergencyNotice } from "@/components/ui";
+import { Container, Section, Eyebrow, Card, Claim, CTA, EmergencyNotice, Photo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
@@ -33,6 +33,16 @@ export default function WeightManagement() {
           </div>
         </Container>
       </div>
+
+      <Container className="pt-10 sm:pt-12">
+        <div className="overflow-hidden rounded-xl2 border border-ink/10 aspect-[21/8]">
+          <Photo
+            src="/images/weight-active.jpg"
+            alt="Two people running together outdoors"
+            priority
+          />
+        </div>
+      </Container>
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
