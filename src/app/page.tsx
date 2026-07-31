@@ -68,7 +68,7 @@ export default function Home() {
                 No insurance needed · Licensed providers · Prescription only if clinically appropriate
               </p>
             </div>
-            <div className="animate-rise overflow-hidden rounded-xl2 border border-ink/10 shadow-[0_16px_50px_rgba(15,27,45,.12)] aspect-[4/3]">
+            <div className="animate-rise overflow-hidden rounded-xl2 border border-ink/10 shadow-[0_16px_50px_rgba(15,27,45,.12)] aspect-4/3">
               <Photo
                 src="/images/hero-cycling.jpg"
                 alt="Two people cycling together along a coastal road on a bright day"
@@ -103,7 +103,7 @@ export default function Home() {
               are.
             </p>
           </div>
-          <div className="overflow-hidden rounded-xl2 border border-ink/10 aspect-[16/10]">
+          <div className="overflow-hidden rounded-xl2 border border-ink/10 aspect-16/10">
             <Photo
               src="/images/telehealth-visit.jpg"
               alt="A person connecting with their care team from home using a phone"
@@ -132,7 +132,7 @@ export default function Home() {
       {/* Lifestyle band — aspirational, logistics copy only (no treatment claim) */}
       <Section>
         <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div className="order-2 overflow-hidden rounded-xl2 border border-ink/10 aspect-[4/5] lg:order-1">
+          <div className="order-2 overflow-hidden rounded-xl2 border border-ink/10 aspect-4/5 lg:order-1">
             <Photo
               src="/images/lifestyle-running.jpg"
               alt="A person running along a ridge outdoors on a bright day"

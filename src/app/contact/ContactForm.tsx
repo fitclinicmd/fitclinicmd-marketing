@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { submitContact, type ContactResult } from "./actions";
 
 const field =
-  "w-full rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink placeholder:text-ink-muted/60 focus:border-clinic focus:outline-none";
+  "w-full rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink placeholder:text-ink-muted/60 focus:border-clinic focus:outline-hidden";
 
 export default function ContactForm() {
   const [state, action, pending] = useActionState<ContactResult | undefined, FormData>(

@@ -1,9 +1,86 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  color-scheme: light;
+@theme {
+  --color-ink: #0f1b2d;
+  --color-ink-soft: #1e2f45;
+  --color-ink-muted: #5a6472;
+
+  --color-clinic: #0e7c86;
+  --color-clinic-deep: #0a5c64;
+  --color-clinic-light: #e6f2f3;
+
+  --color-accent: #c8962a;
+  --color-accent-light: #f6efdf;
+
+  --color-sand: #faf8f5;
+
+  --font-display: var(--font-display), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+
+  --container-content: 72rem;
+
+  --radius-xl2: 1.25rem;
+
+  --animate-rise: rise 0.6s ease-out both;
+
+  @keyframes rise {
+    0% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility wash {
+  /* Soft editorial background wash — CSS only, no imagery */
+  background-image:
+    radial-gradient(
+      60rem 30rem at 12% -10%,
+      rgba(14, 124, 134, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      45rem 26rem at 95% 0%,
+      rgba(200, 150, 42, 0.1),
+      transparent 60%
+    );
+}
+
+@utility rule {
+  background-image: linear-gradient(
+    90deg,
+    rgba(14, 124, 134, 0.5),
+    rgba(200, 150, 42, 0.45),
+    transparent
+  );
+}
+
+@layer utilities {
+  :root {
+    color-scheme: light;
+  }
 }
 
 @layer base {
@@ -16,24 +93,12 @@
   }
   /* WCAG 2.2 — visible, high-contrast focus on every interactive element */
   :focus-visible {
-    @apply outline-none ring-2 ring-clinic ring-offset-2 ring-offset-sand rounded-sm;
+    @apply outline-hidden ring-2 ring-clinic ring-offset-2 ring-offset-sand rounded-xs;
   }
   h1, h2, h3 {
     @apply font-display tracking-tight text-balance;
   }
   p { text-wrap: pretty; }
-}
-
-@layer utilities {
-  /* Soft editorial background wash — CSS only, no imagery */
-  .wash {
-    background-image:
-      radial-gradient(60rem 30rem at 12% -10%, rgba(14, 124, 134, 0.10), transparent 60%),
-      radial-gradient(45rem 26rem at 95% 0%, rgba(200, 150, 42, 0.10), transparent 60%);
-  }
-  .rule {
-    background-image: linear-gradient(90deg, rgba(14,124,134,.5), rgba(200,150,42,.45), transparent);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
