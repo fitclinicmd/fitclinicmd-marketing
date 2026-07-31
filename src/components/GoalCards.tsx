@@ -37,6 +37,17 @@ const GOALS: {
     ),
   },
   {
+    href: "/treatments/peptides",
+    goal: "Recover & perform",
+    body: "Provider-guided peptide therapies for recovery, performance support, and general wellness — prescribed only after an evaluation, when it's appropriate for you.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+        <path d="M3 17l6-6 4 4 7-7" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M17 8h4v4" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
     href: "/how-it-works",
     goal: "Not sure yet?",
     body: "Start with a visit. A licensed provider reviews your goals and helps you decide what's appropriate — a prescription is never guaranteed.",
@@ -61,7 +72,7 @@ export default function GoalCards() {
           you.
         </p>
       </div>
-      <ul className="grid gap-6 md:grid-cols-3">
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {GOALS.map((g) => (
           <li key={g.href}>
             <Link
