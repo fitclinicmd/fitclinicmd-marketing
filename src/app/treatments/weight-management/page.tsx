@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Container, Section, Eyebrow, Card, Claim, CTA, EmergencyNotice, Photo } from "@/components/ui";
+import { Container, Section, Eyebrow, Card, Claim, CTA, EmergencyNotice, Photo, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
@@ -130,6 +130,10 @@ export default function WeightManagement() {
           </aside>
         </div>
       </Section>
+
+      <Container className="pb-16 sm:pb-20">
+        <ImportantSafetyInfo />
+      </Container>
 
       <JsonLd
         data={breadcrumbSchema([
