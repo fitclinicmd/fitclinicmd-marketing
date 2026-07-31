@@ -18,7 +18,7 @@ export default function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-40 border-b border-ink/10 bg-sand/85 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-ink/10 bg-sand/85 backdrop-blur-sm">
       <Container className="flex h-16 items-center justify-between gap-6">
         <Link href="/" className="shrink-0 text-lg font-semibold tracking-tight">
           <span className="font-display text-ink">FitClinic</span>
@@ -44,7 +44,7 @@ export default function Header() {
         aria-label="Primary"
         className="border-t border-ink/10 lg:hidden"
       >
-        <Container className="overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <Container className="overflow-x-auto py-2 scrollbar-none [&::-webkit-scrollbar]:hidden">
           {navLinks}
         </Container>
       </nav>

@@ -122,7 +122,7 @@ export function Claim({ id, className = "" }: { id: string; className?: string }
 
   if (!claim) {
     return (
-      <span className="rounded bg-red-100 px-2 py-1 text-sm text-red-800">
+      <span className="rounded-sm bg-red-100 px-2 py-1 text-sm text-red-800">
         Unknown claim: {id}
       </span>
     );
@@ -138,7 +138,7 @@ export function Claim({ id, className = "" }: { id: string; className?: string }
       data-claim-pending={claim.id}
     >
       {/* Dark text on gold — white on #c8962a fails WCAG AA contrast. */}
-      <span className="mr-2 rounded bg-accent px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink">
+      <span className="mr-2 rounded-sm bg-accent px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink">
         Pending counsel
       </span>
       {claim.intent}
