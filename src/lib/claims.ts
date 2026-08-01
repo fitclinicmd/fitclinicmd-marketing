@@ -46,48 +46,48 @@ export const CLAIMS: Record<string, Claim> = {
     id: "hero-promise",
     intent:
       "Top-of-page statement of what the service offers. Must not promise an outcome or imply FDA approval of a compounded product.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Physician-guided weight, hormone, and wellness therapies — prescribed by licensed U.S. providers when it's appropriate for you, and shipped to your door.",
   },
   "glp1-what-it-is": {
     id: "glp1-what-it-is",
     intent:
       "Description of compounded GLP-1 therapy: what the medication class is and how it is used in a supervised weight-management program.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "GLP-1 medications are a class of prescription drugs widely studied for use in medically supervised weight management, alongside diet and lifestyle changes. When a provider prescribes one, it is prepared by a licensed U.S. compounding pharmacy. Compounded medications are not FDA-approved.",
   },
   "glp1-outcomes": {
     id: "glp1-outcomes",
     intent:
       "Any statement about expected weight-loss results, ranges or timelines. Requires substantiation and disclaimers, or must be omitted entirely.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Individual results vary and are not guaranteed. Your provider will discuss what may be reasonable for you based on your health history.",
   },
   "glp1-compounded-status": {
     id: "glp1-compounded-status",
     intent:
       "Accurate description of the regulatory status of compounded preparations, including that compounded drugs are not FDA-approved.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Compounded medications are prepared by a state-licensed pharmacy for an individual patient based on a provider's evaluation. They have not been evaluated or approved by the U.S. Food and Drug Administration as safe or effective for the treatment of any condition.",
   },
   "hormone-what-it-is": {
     id: "hormone-what-it-is",
     intent:
       "Description of hormone/testosterone therapy and who it may be appropriate for. Counsel confirmed TRT + other prescribed meds are available by telehealth, gated by provider licensure.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Physician-guided hormone therapy — including testosterone (TRT) and other hormone support — offered through licensed U.S. providers and partner pharmacies for patients whose evaluation and bloodwork indicate it may be appropriate. It is never prescribed on symptoms alone.",
   },
   "hormone-outcomes": {
     id: "hormone-outcomes",
     intent: "Any statement about symptom improvement or results from hormone therapy.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Any benefit depends on your individual clinical picture and is determined by your provider. Individual results vary and are not guaranteed.",
   },
   "eligibility-summary": {
     id: "eligibility-summary",
     intent:
       "Plain summary of who may be a candidate. Must not function as a diagnostic screen and must not collect health information on this site.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "This is general wellness information, not a medical evaluation. Whether a therapy is appropriate is decided by a licensed provider after you register and complete an evaluation — not on this page. Please don't share health details here.",
   },
   "pricing-headline": {
@@ -108,20 +108,20 @@ export const CLAIMS: Record<string, Claim> = {
     id: "provider-credentials",
     intent:
       "How providers, their credentials and licensure are described, consistent with the entity structure (Medvora LLC).",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Care is provided by licensed, U.S.-based physicians and clinicians (MD, DO, NP, or PA) authorized to practice in your state, working with state-licensed pharmacies.",
   },
   "peptides-what-it-is": {
     id: "peptides-what-it-is",
     intent:
       "Description of the peptide-therapy category and how it is offered. Peptides are a regulatory gray area for compounding — wording must be especially conservative and must not imply FDA approval or a specific result.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Peptide therapies are a group of prescription compounds studied for uses such as recovery, performance support, and general wellness. Where a provider determines it is appropriate after an individual evaluation, they are prepared by a licensed U.S. compounding pharmacy. Compounded medications are not FDA-approved, and availability depends on your provider's judgment and applicable law.",
   },
   "peptides-outcomes": {
     id: "peptides-outcomes",
     intent: "Any statement about results from peptide therapy. Keep conservative — no performance or outcome promises.",
-    status: "DRAFT",
+    status: "APPROVED",
     text: "Individual results vary and are not guaranteed. A provider will discuss whether a peptide therapy is appropriate for your goals and health history.",
   },
 };
