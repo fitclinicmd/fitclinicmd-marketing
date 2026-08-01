@@ -10,8 +10,16 @@ export const SITE = {
   email: "hello@fitclinicmd.com",
 } as const;
 
-export const signupUrl = `${SITE.appUrl}/signup`;
+// Is the patient app deployed and accepting signups? Until it is, the app host
+// (app.fitclinicmd.com) does not resolve, so pointing CTAs at it produces dead
+// links. Pre-launch we route "Get started" to the contact page as a
+// request-early-access action and hide "Sign in" (there are no patients yet).
+// Flip on by setting NEXT_PUBLIC_APP_LIVE=true once the app is deployed.
+export const APP_LIVE = process.env.NEXT_PUBLIC_APP_LIVE === "true";
+
+export const signupUrl = APP_LIVE ? `${SITE.appUrl}/signup` : "/contact";
 export const loginUrl = `${SITE.appUrl}/login`;
+export const showSignIn = APP_LIVE;
 
 export const NAV = [
   { href: "/how-it-works", label: "How it works" },
