@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, Claim, CTA, EmergencyNotice, Photo, ImportantSafetyInfo } from "@/components/ui";
+import PeptideMenu from "@/components/PeptideMenu";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
@@ -127,7 +128,9 @@ export default function Peptides() {
         </div>
       </Section>
 
-      <Container className="pb-16 sm:pb-20">
+      <PeptideMenu />
+
+      <Container className="pb-16 sm:pb-20 pt-16">
         <ImportantSafetyInfo />
       </Container>
 
