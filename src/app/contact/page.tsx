@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, EmergencyNotice } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { SITE, loginUrl } from "@/lib/site";
+import { SITE, loginUrl, showSignIn } from "@/lib/site";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -38,19 +38,21 @@ export default function Contact() {
           </div>
 
           <aside className="space-y-4">
-            <Card className="border-accent/40 bg-accent-light/40">
-              <h2 className="text-lg">Already a patient?</h2>
-              <p className="mt-2 text-sm text-ink-soft">
-                For anything about your care, treatment or medication, use secure messaging in your
-                patient portal — it&apos;s protected and goes to your care team.
-              </p>
-              <a
-                href={loginUrl}
-                className="mt-4 inline-block text-sm font-semibold text-clinic hover:text-clinic-deep"
-              >
-                Sign in to your portal →
-              </a>
-            </Card>
+            {showSignIn && (
+              <Card className="border-accent/40 bg-accent-light/40">
+                <h2 className="text-lg">Already a patient?</h2>
+                <p className="mt-2 text-sm text-ink-soft">
+                  For anything about your care, treatment or medication, use secure messaging in your
+                  patient portal — it&apos;s protected and goes to your care team.
+                </p>
+                <a
+                  href={loginUrl}
+                  className="mt-4 inline-block text-sm font-semibold text-clinic hover:text-clinic-deep"
+                >
+                  Sign in to your portal →
+                </a>
+              </Card>
+            )}
 
             <Card>
               <h2 className="text-lg">Email us directly</h2>

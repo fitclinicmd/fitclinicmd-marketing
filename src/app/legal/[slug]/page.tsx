@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container } from "@/components/ui";
 import { PUBLIC_LEGAL_DOCS, getPublicLegalDoc } from "@/lib/legal";
-import { SITE } from "@/lib/site";
+import { SITE, APP_LIVE } from "@/lib/site";
 
 export function generateStaticParams() {
   return PUBLIC_LEGAL_DOCS.map((d) => ({ slug: d.slug }));
@@ -72,10 +72,15 @@ export default async function LegalDoc({ params }: { params: Promise<{ slug: str
 
       <p className="mt-12 border-t border-ink/10 pt-6 text-sm text-ink-muted">
         When you create an account, the version of each document you agree to is recorded with the
-        date. You can always read the current version here or in your account at{" "}
-        <a href={SITE.appUrl} className="text-clinic underline underline-offset-4">
-          {SITE.appUrl.replace("https://", "")}
-        </a>
+        date. You can always read the current version here
+        {APP_LIVE ? (
+          <>
+            {" "}or in your account at{" "}
+            <a href={SITE.appUrl} className="text-clinic underline underline-offset-4">
+              {SITE.appUrl.replace("https://", "")}
+            </a>
+          </>
+        ) : null}
         .
       </p>
     </Container>

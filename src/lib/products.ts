@@ -38,9 +38,9 @@ export function formatUsd(n: number): string {
   return n.toLocaleString("en-US", { style: "currency", currency: "USD" });
 }
 
-// The menu is DRAFT until the descriptions and consumer pricing are approved.
-// Belt-and-braces with claims.ts: while DRAFT the page shows a review marker.
-export const PRODUCTS_STATUS: "DRAFT" | "APPROVED" = "DRAFT";
+// Menu descriptions and retail pricing approved by Michael 2026-08-01. (Site
+// indexing/patient signup remain separately gated — see claims.ts + the app.)
+export const PRODUCTS_STATUS: "DRAFT" | "APPROVED" = "APPROVED";
 
 export const INDIVIDUAL_PEPTIDES: Product[] = [
   { name: "BPC-157", category: "peptide", strength: "5 mL · 10 mg", blurb: "A peptide studied for tissue repair and recovery support.", providerPrice: 80.99 },

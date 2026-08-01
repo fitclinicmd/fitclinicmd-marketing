@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV, signupUrl, loginUrl } from "@/lib/site";
+import { NAV, signupUrl, loginUrl, showSignIn } from "@/lib/site";
 import { Container, CTA } from "./ui";
 
 // Zero-JS header. On large screens the nav sits inline; below that it moves to
@@ -30,9 +30,11 @@ export default function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-3">
-          <a href={loginUrl} className="hidden text-sm text-ink-muted hover:text-clinic sm:block">
-            Sign in
-          </a>
+          {showSignIn && (
+            <a href={loginUrl} className="hidden text-sm text-ink-muted hover:text-clinic sm:block">
+              Sign in
+            </a>
+          )}
           <CTA href={signupUrl} className="px-4 py-2">
             Get started
           </CTA>
