@@ -111,6 +111,19 @@ export const CLAIMS: Record<string, Claim> = {
     status: "DRAFT",
     text: "Care is provided by licensed, U.S.-based physicians and clinicians (MD, DO, NP, or PA) authorized to practice in your state, working with state-licensed pharmacies.",
   },
+  "peptides-what-it-is": {
+    id: "peptides-what-it-is",
+    intent:
+      "Description of the peptide-therapy category and how it is offered. Peptides are a regulatory gray area for compounding — wording must be especially conservative and must not imply FDA approval or a specific result.",
+    status: "DRAFT",
+    text: "Peptide therapies are a group of prescription compounds studied for uses such as recovery, performance support, and general wellness. Where a provider determines it is appropriate after an individual evaluation, they are prepared by a licensed U.S. compounding pharmacy. Compounded medications are not FDA-approved, and availability depends on your provider's judgment and applicable law.",
+  },
+  "peptides-outcomes": {
+    id: "peptides-outcomes",
+    intent: "Any statement about results from peptide therapy. Keep conservative — no performance or outcome promises.",
+    status: "DRAFT",
+    text: "Individual results vary and are not guaranteed. A provider will discuss whether a peptide therapy is appropriate for your goals and health history.",
+  },
 };
 
 export function getClaim(id: string): Claim | undefined {

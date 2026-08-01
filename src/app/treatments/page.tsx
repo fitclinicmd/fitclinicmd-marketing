@@ -23,6 +23,12 @@ const TREATMENTS = [
     claim: "hormone-what-it-is",
     points: ["Evaluation and bloodwork", "Ongoing monitoring", "Adjusted with your provider"],
   },
+  {
+    href: "/treatments/peptides",
+    title: "Peptide therapy",
+    claim: "peptides-what-it-is",
+    points: ["Provider evaluation first", "Compounded by a licensed pharmacy", "Availability varies by state"],
+  },
 ];
 
 export default function Treatments() {
@@ -40,7 +46,7 @@ export default function Treatments() {
       </div>
 
       <Section>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TREATMENTS.map((t) => (
             <Card key={t.href} className="flex flex-col">
               <h2 className="text-2xl">{t.title}</h2>
