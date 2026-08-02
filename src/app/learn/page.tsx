@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container, Section, Eyebrow, Card, CTA } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
+import { publishedArticles, plannedArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
   title: "Learn",
@@ -10,36 +11,9 @@ export const metadata: Metadata = {
     "Straightforward explanations of how telehealth care, compounded medication, labs and subscription billing actually work.",
 };
 
-// Educational articles are published here as they are written and reviewed.
-// Anything describing what a medication does or how well it works is a
-// regulated claim and must clear review before publication (see lib/claims.ts).
-const PLANNED = [
-  {
-    title: "What a telehealth visit actually involves",
-    summary:
-      "What your provider sees before the call, what you'll be asked, and what a good visit looks like.",
-  },
-  {
-    title: "Compounded medication, explained",
-    summary:
-      "What compounding is, how it differs from a commercially manufactured product, and what questions to ask your provider.",
-  },
-  {
-    title: "Why your labs matter",
-    summary:
-      "Which values providers look at, why some treatments require bloodwork first, and what follow-up testing is for.",
-  },
-  {
-    title: "Reading a subscription before you sign up",
-    summary:
-      "How recurring billing works, what to check before you agree, and how cancellation should work at any reputable clinic.",
-  },
-  {
-    title: "How to tell a real telehealth clinic from a pill mill",
-    summary:
-      "The questions worth asking: who examines you, who can say no, and what happens to your data.",
-  },
-];
+// Content is sourced from lib/articles.ts. Anything describing what a medication
+// does or how well it works is a regulated claim and must clear review before
+// publication (see lib/claims.ts); articles here stay general and non-promissory.
 
 export default function Learn() {
   return (
@@ -59,16 +33,36 @@ export default function Learn() {
 
       <Section>
         <div className="grid gap-6 md:grid-cols-2">
-          {PLANNED.map((a) => (
-            <Card key={a.title}>
-              <h2 className="text-xl">{a.title}</h2>
-              <p className="mt-2 text-ink-muted">{a.summary}</p>
-              <p className="mt-4 text-xs uppercase tracking-wide text-ink-muted">
-                Publishing before launch
-              </p>
-            </Card>
+          {publishedArticles().map((a) => (
+            <Link key={a.slug} href={`/learn/${a.slug}`} className="group block">
+              <Card className="h-full transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
+                <p className="text-xs uppercase tracking-wide text-clinic">{a.topic}</p>
+                <h2 className="mt-2 text-xl">{a.title}</h2>
+                <p className="mt-2 text-ink-muted">{a.summary}</p>
+                <p className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
+                  Read <span aria-hidden="true">→</span>
+                </p>
+              </Card>
+            </Link>
           ))}
         </div>
+
+        {plannedArticles().length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
+              More, in progress
+            </h2>
+            <div className="mt-4 grid gap-6 md:grid-cols-2">
+              {plannedArticles().map((a) => (
+                <Card key={a.slug} className="opacity-80">
+                  <h3 className="text-lg">{a.title}</h3>
+                  <p className="mt-2 text-sm text-ink-muted">{a.summary}</p>
+                  <p className="mt-4 text-xs uppercase tracking-wide text-ink-muted">Coming soon</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="mt-10 rounded-xl2 border border-ink/10 bg-white p-6">
           <h2 className="text-lg">Have a question we haven&apos;t covered?</h2>
