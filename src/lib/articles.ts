@@ -440,6 +440,37 @@ export const ARTICLES: Article[] = [
   },
 ];
 
+// MEDICAL REVIEW BYLINE — "Medically reviewed by …" is a factual claim that a
+// licensed clinician actually reviewed this content. It must be TRUE: a provider
+// on the clinical team must review the articles before this site is made public.
+// (The site is non-indexed pre-launch, so there is runway to complete that pass.)
+// Two shapes are supported: a named clinician (strongest for trust/SEO) or a
+// team attribution. Set to null to render no byline and assert no reviewer.
+export type MedicalReview =
+  | { kind: "team"; name: string }
+  | {
+      kind: "person";
+      name: string;
+      /** Post-nominal credentials, e.g. "MD", "DO", "NP", "PA-C". */
+      credentials: string;
+      /** Optional role/title, e.g. "Medical Director". */
+      title?: string;
+      /** ISO date the content was last medically reviewed. */
+      reviewedOn?: string;
+    };
+
+// Chosen by Michael 2026-08-01: team attribution (no individual named yet).
+export const MEDICAL_REVIEW: MedicalReview | null = {
+  kind: "team",
+  name: "the FitClinicMD clinical team",
+};
+
+export function reviewByline(r: MedicalReview): string {
+  return r.kind === "person"
+    ? `${r.name}, ${r.credentials}${r.title ? ` · ${r.title}` : ""}`
+    : r.name;
+}
+
 export function getArticle(slug: string): Article | undefined {
   return ARTICLES.find((a) => a.slug === slug);
 }
