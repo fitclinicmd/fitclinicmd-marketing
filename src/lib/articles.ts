@@ -252,6 +252,55 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    slug: "mitochondrial-peptides-explained",
+    title: "Mitochondrial peptides, explained",
+    summary:
+      "A much-discussed class of peptides tied to the cell's energy system. Here's what mitochondria do, what peptides like MOTS-c are, and an honest look at what the research does — and doesn't yet — show.",
+    topic: "The science",
+    updated: "2026-08-01",
+    readMinutes: 6,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "Mitochondrial peptides — MOTS-c in particular — get a lot of attention in wellness circles. They're genuinely interesting, but the conversation often runs ahead of the evidence. Here's a plain explanation of what they are and an honest account of what's actually known.",
+      },
+      { type: "h2", text: "Start with the mitochondria" },
+      {
+        type: "p",
+        text: "Mitochondria are the tiny power plants inside your cells. Their main job is producing ATP — the energy your cells spend on nearly everything, from repairing tissue to recovering after exercise to brain function. When mitochondria are working well, your cells have the energy to do their jobs. When energy production falters — with age, chronic stress, or poor metabolic health — a lot of processes slow down. That's the backdrop for why the cell's energy system gets so much interest.",
+      },
+      { type: "h2", text: "What \"mitochondrial-derived peptides\" are" },
+      {
+        type: "p",
+        text: "Here's the newer discovery: mitochondria don't only make energy — they also carry the code for a small class of signaling molecules called mitochondrial-derived peptides (MDPs). The most studied is MOTS-c, a short 16-amino-acid peptide first described in 2015. Rather than acting as a fuel, these peptides appear to act as signals involved in how the body manages energy and metabolic stress.",
+      },
+      { type: "h2", text: "What the research shows — and its limits" },
+      {
+        type: "p",
+        text: "In laboratory and animal studies, MOTS-c has been associated with improvements in how muscle mitochondria produce energy and with reductions in cellular oxidative stress; earlier animal work linked it to metabolic measures such as insulin sensitivity. A 2026 University of Copenhagen study pointed to specific cellular pathways — PGC-1α and AMPK, part of the cell's energy-sensing machinery — as part of how it may act.",
+      },
+      {
+        type: "callout",
+        text: "The honest part: much of this evidence is early and preclinical — largely animal models — and effects seen in mice do not automatically translate to people. Human research is limited and ongoing. Mitochondrial peptides are not FDA-approved, and no outcome is promised.",
+      },
+      { type: "h2", text: "Where NAD+ fits" },
+      {
+        type: "p",
+        text: "You'll often see NAD+ mentioned alongside mitochondrial peptides. NAD+ is a coenzyme central to how cells produce energy, and it's studied for cellular-energy and healthy-aging support. It isn't a mitochondrial-derived peptide, but it belongs to the same broader conversation about supporting the cell's energy system.",
+      },
+      { type: "h2", text: "The honest takeaway" },
+      {
+        type: "p",
+        text: "Mitochondrial peptides are an active area of research, not a finished story. If a provider considers one for you, that's a clinical judgment based on your goals and health — not a guaranteed result — and it works best alongside the fundamentals that support your own mitochondria: sleep, protein, and regular movement. We wrote separately about why responses vary so much from person to person.",
+      },
+      {
+        type: "callout",
+        text: "Compounded medications are not FDA-approved. Individual results vary and are not guaranteed. This article is general education, not medical advice, and does not create a provider-patient relationship. Whether any therapy is appropriate for you is decided by a licensed provider after an evaluation.",
+      },
+    ],
+  },
   // Planned (title/summary only — cards render as "in progress" until body is added and status flips to PUBLISHED).
   {
     slug: "what-a-telehealth-visit-involves",
