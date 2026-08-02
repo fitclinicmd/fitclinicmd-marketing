@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container, Section, Eyebrow, CTA } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { ARTICLES, getArticle, type Block } from "@/lib/articles";
+import { ARTICLES, getArticle, MEDICAL_REVIEW, reviewByline, type Block } from "@/lib/articles";
 import { SITE, signupUrl } from "@/lib/site";
 
 // Only PUBLISHED articles are real pages. Planned ones live as cards on /learn.
@@ -71,6 +71,20 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     dateModified: a.updated,
     author: { "@type": "Organization", name: SITE.name },
     publisher: { "@type": "Organization", name: SITE.name },
+    ...(MEDICAL_REVIEW && {
+      reviewedBy:
+        MEDICAL_REVIEW.kind === "person"
+          ? {
+              "@type": "Person",
+              name: MEDICAL_REVIEW.name,
+              ...(MEDICAL_REVIEW.title ? { jobTitle: MEDICAL_REVIEW.title } : {}),
+              ...(MEDICAL_REVIEW.credentials
+                ? { honorificSuffix: MEDICAL_REVIEW.credentials }
+                : {}),
+            }
+          : { "@type": "Organization", name: "FitClinicMD Clinical Team" },
+      lastReviewed: (MEDICAL_REVIEW.kind === "person" && MEDICAL_REVIEW.reviewedOn) || a.updated,
+    }),
     mainEntityOfPage: `${SITE.url}/learn/${a.slug}`,
     isAccessibleForFree: true,
   };
@@ -96,6 +110,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <p className="mt-4 text-sm text-ink-muted">
             {a.readMinutes} min read · Last updated {a.updated}
           </p>
+          {MEDICAL_REVIEW && (
+            <p className="mt-2 text-sm font-medium text-ink-soft">
+              Medically reviewed by {reviewByline(MEDICAL_REVIEW)}
+            </p>
+          )}
         </Container>
       </div>
 
