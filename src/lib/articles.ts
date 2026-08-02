@@ -301,26 +301,95 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
-  // Planned (title/summary only — cards render as "in progress" until body is added and status flips to PUBLISHED).
   {
     slug: "what-a-telehealth-visit-involves",
     title: "What a telehealth visit actually involves",
     summary:
-      "What your provider sees before the call, what you'll be asked, and what a good visit looks like.",
+      "What your provider sees before the call, what you'll be asked, what gets decided, and what a good visit looks like — start to finish.",
     topic: "How this works",
     updated: "2026-08-01",
-    readMinutes: 4,
-    status: "PLANNED",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "If you've never had a telehealth visit, the process can feel abstract — you're not sure what actually happens or how a provider can make a decision without seeing you in person. Here's the whole thing, start to finish, so there are no surprises.",
+      },
+      { type: "h2", text: "Before the visit: the intake" },
+      {
+        type: "p",
+        text: "It starts with an account and a medical intake — your history, current medications, and what you're hoping to address. Your provider reviews this before meeting you, so the visit isn't starting from a blank page. You'll also verify your identity when you register; providing accurate information matters, because the provider's assessment depends on it.",
+      },
+      { type: "h2", text: "The visit itself" },
+      {
+        type: "p",
+        text: "Depending on your state and your situation, your care may involve a live video visit with a licensed provider and secure messaging with your care team. A provider licensed in the state where you're located reviews your information and, where appropriate, meets with you by video before any treatment decision. There's no hands-on physical exam, so the provider relies on what you report and on any lab work — one reason accurate answers and, when needed, bloodwork matter.",
+      },
+      { type: "h2", text: "What the provider is actually deciding" },
+      {
+        type: "p",
+        text: "The core question is whether treatment is appropriate for you at all — and a prescription is never guaranteed. A provider may recommend labs first, suggest a different approach, decide telehealth isn't right for your situation and recommend an in-person visit, or decline to prescribe. That's the system working, not failing.",
+      },
+      { type: "h2", text: "If something is prescribed" },
+      {
+        type: "p",
+        text: "If a provider prescribes medication, it's prepared by a licensed pharmacy and shipped to you, and your provider stays involved for monitoring and any adjustments. Some treatments require follow-up labs or check-ins over time.",
+      },
+      { type: "h2", text: "What a good visit looks like" },
+      {
+        type: "ul",
+        items: [
+          "The provider is licensed in your state and evaluates you before prescribing.",
+          "Someone can say no — a clinic willing to decline when treatment isn't appropriate is a good sign.",
+          "You're not rushed, and your questions actually get answered.",
+          "It's clear what happens to your health information.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Telehealth is not for emergencies. If you have a medical emergency, call 911 or go to your nearest emergency department. This article is general education, not medical advice, and does not create a provider-patient relationship.",
+      },
+    ],
   },
   {
     slug: "why-your-labs-matter",
     title: "Why your labs matter",
     summary:
-      "Which values providers look at, why some treatments require bloodwork first, and what follow-up testing is for.",
+      "Why some treatments require bloodwork first, what providers generally look at, and what follow-up testing is really for.",
     topic: "How this works",
     updated: "2026-08-01",
-    readMinutes: 4,
-    status: "PLANNED",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "For some treatments — hormone therapy in particular — a provider will ask for bloodwork before prescribing, and again periodically afterward. It can feel like an extra hurdle. It isn't. Labs are one of the main things separating responsible care from a pill mill.",
+      },
+      { type: "h2", text: "Why bloodwork comes before treatment" },
+      {
+        type: "p",
+        text: "Bloodwork establishes a baseline and helps confirm whether a treatment is appropriate for you. Hormone therapy especially is not prescribed on symptoms alone — symptoms overlap across many conditions, and labs give the provider objective information to work from. They can also surface something that changes the plan, or a reason a particular therapy isn't a good idea for you. In short, labs protect you.",
+      },
+      { type: "h2", text: "What providers generally look at" },
+      {
+        type: "p",
+        text: "Which tests are ordered depends entirely on you and the therapy under consideration — that's a clinical decision, not something a website should prescribe. In general terms, a provider may look at baseline hormone levels, a blood count, and metabolic or safety markers relevant to the specific treatment. Your provider will explain which values matter in your case and why.",
+      },
+      { type: "h2", text: "What follow-up testing is for" },
+      {
+        type: "p",
+        text: "Testing doesn't stop once you start. Follow-up labs let your provider confirm the plan is working and remains safe, and adjust it if it isn't. This is also the honest answer to a common misconception: with hormones, \"more\" is not automatically better, and monitoring is how a provider keeps a plan in a sensible range.",
+      },
+      { type: "h2", text: "What this means for you" },
+      {
+        type: "p",
+        text: "If a clinic is willing to prescribe hormone therapy with no bloodwork at all, treat that as a warning sign rather than a convenience. Labs, and a provider who actually reviews them with you, are a feature of good care — not a formality.",
+      },
+      {
+        type: "callout",
+        text: "This article is general education, not medical advice. Which tests are appropriate, and what your results mean, are decided by a licensed provider based on your individual situation.",
+      },
+    ],
   },
   {
     slug: "reading-a-subscription-before-you-sign-up",
@@ -329,8 +398,45 @@ export const ARTICLES: Article[] = [
       "How recurring billing works, what to check before you agree, and how cancellation should work at any reputable clinic.",
     topic: "Before you start",
     updated: "2026-08-01",
-    readMinutes: 4,
-    status: "PLANNED",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "Most telehealth wellness care — including ours — is sold as a subscription. That's not a catch in itself; it's how ongoing treatment and refills are usually handled. But a subscription is a recurring commitment, and it's worth reading before you agree. Here's what to look for, at any clinic.",
+      },
+      { type: "h2", text: "How recurring billing works" },
+      {
+        type: "p",
+        text: "Before you're charged, a reputable clinic shows you the price, the billing interval, and the date of your first charge, and asks you to affirmatively agree to them. From there the subscription renews automatically: at the end of each interval, the card on file is charged the then-current price until you cancel. None of that should be buried — the disclosures and the agree step are required by law and should be plainly visible at checkout.",
+      },
+      { type: "h2", text: "What to check before you agree" },
+      {
+        type: "ul",
+        items: [
+          "The price and how often you'll be billed (monthly, quarterly).",
+          "What's actually included — the provider visit, the medication, shipping — and what costs extra.",
+          "When the first charge hits and when it renews.",
+          "How to cancel, and when cancellation takes effect.",
+          "The refund policy, including for medication that has already shipped.",
+          "Whether it's cash-pay — most of this care is not billed to insurance.",
+        ],
+      },
+      { type: "h2", text: "How cancellation should work" },
+      {
+        type: "p",
+        text: "You should be able to cancel at any time from your account, and cancelling should stop future charges, taking effect at the end of the interval you've already paid for. If a clinic makes cancellation hard to find, requires a phone call you can't get through on, or keeps charging after you cancel, that's a real red flag — the whole point of clear auto-renewal rules is to prevent exactly that.",
+      },
+      { type: "h2", text: "Cash-pay, and what it means" },
+      {
+        type: "p",
+        text: "Cash-pay means the clinic doesn't bill your health insurance — you pay directly. That can make pricing simpler and more transparent, but it also means the cost is yours to weigh, and it won't count toward an insurance deductible. Know the all-in number before you start.",
+      },
+      {
+        type: "callout",
+        text: "This describes how reputable subscription billing should work, including ours — always read the specific terms presented to you at checkout. This article is general information, not legal or financial advice.",
+      },
+    ],
   },
 ];
 
