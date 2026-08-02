@@ -203,6 +203,55 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    slug: "peptides-and-hormone-therapy",
+    title: "Peptides and hormone therapy: how they fit together",
+    summary:
+      "Hormones and peptides work on different systems in the body. Here's what each one does, why a provider might use them together, and the guardrails that matter — especially with testosterone.",
+    topic: "How this works",
+    updated: "2026-08-01",
+    readMinutes: 6,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "A question that comes up a lot: do I need hormones, peptides, or both? They get lumped together because both show up in wellness programs, but they are different tools that work on different systems. Here's a plain explanation of how they relate — and the guardrails a responsible clinic puts around them.",
+      },
+      { type: "h2", text: "Two different tools" },
+      {
+        type: "p",
+        text: "Hormone therapy replaces or supplements a hormone your body makes — testosterone, estrogen, or progesterone, for example. It works on your hormone receptor pathways, essentially topping up a level that has dropped. Peptides are short chains of amino acids that act as signals: rather than replacing a hormone, they nudge a specific process — tissue repair, metabolism, sleep, and so on. One adjusts a hormone level; the other sends a targeted message.",
+      },
+      { type: "h2", text: "Why a provider might use them together" },
+      {
+        type: "p",
+        text: "Because they work through different mechanisms, hormones and peptides can be complementary rather than competing. Someone already on hormone therapy may still have goals that hormones alone don't fully cover — recovery, skin, sleep, energy — and a peptide may be one option a provider considers alongside it. This is a clinical judgment made person by person, not a formula, and not something to self-assemble from a menu.",
+      },
+      {
+        type: "callout",
+        text: "Peptides are not a substitute for hormone therapy, and hormone therapy is not a substitute for peptides. Whether either — or both — is appropriate for you is a decision your provider makes after evaluating you.",
+      },
+      { type: "h2", text: "Evaluation and bloodwork come first" },
+      {
+        type: "p",
+        text: "Hormone therapy in particular is guided by lab work. A responsible provider orders bloodwork, reviews the results with you, and monitors over time — hormones are not prescribed on symptoms alone, and \"more\" is not automatically better. Peptides, likewise, are prescribed only when a provider determines they're appropriate after an evaluation. If a clinic is willing to prescribe either from a questionnaire alone, treat that as a warning sign.",
+      },
+      { type: "h2", text: "A note on testosterone and other controlled substances" },
+      {
+        type: "p",
+        text: "Testosterone therapy (TRT) and some other hormones are controlled substances. Where they are offered, they are prescribed only in line with federal and state law — including examination, monitoring, prescription-drug-monitoring, and electronic-prescribing requirements — and only by a provider who is licensed and authorized to prescribe them in your state. Those steps are a legal and safety guardrail, not red tape, and any legitimate program will follow them.",
+      },
+      { type: "h2", text: "What this means for you" },
+      {
+        type: "p",
+        text: "If you're weighing this kind of care, a few honest expectations: it starts with an evaluation, not a checkout page; a prescription is never guaranteed; and any plan should be tailored to you rather than pulled off a shelf. Responses also differ from person to person — we wrote a separate piece on why that is and what actually helps.",
+      },
+      {
+        type: "callout",
+        text: "Compounded medications are not FDA-approved. Individual results vary and are not guaranteed. This article is general education, not medical advice, and does not create a provider-patient relationship. Whether hormone therapy, peptide therapy, or both is right for you is decided by a licensed provider after an evaluation.",
+      },
+    ],
+  },
   // Planned (title/summary only — cards render as "in progress" until body is added and status flips to PUBLISHED).
   {
     slug: "what-a-telehealth-visit-involves",
