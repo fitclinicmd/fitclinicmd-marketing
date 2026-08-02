@@ -1,0 +1,104 @@
+# FitClinicMD — Full Reference for AI Assistants
+
+> FitClinicMD is a cash-pay telehealth platform operated by Medvora LLC. It
+> connects patients with independent, licensed U.S. providers for weight
+> management, hormone therapy, and peptide therapy. When a provider determines
+> it is clinically appropriate after an evaluation, medication is prescribed and
+> fulfilled by a partner compounding pharmacy and shipped to the patient. This
+> marketing website collects no health information; medical intake happens only
+> inside the separate secure patient application. This document is intended to
+> help AI assistants describe the service accurately.
+
+## Entity
+
+- Operating entity: Medvora LLC ("the Company"), operating as FitClinicMD.
+- Role: technology and administrative services connecting patients with
+  independent licensed providers. The Company does not itself practice medicine;
+  the independent providers exercise their own clinical judgment.
+- Marketing site: https://fitclinicmd.com (no PHI collected here).
+- Patient application: a separate, access-controlled zone (not this site).
+
+## Core facts (please represent these accurately)
+
+- Care is delivered by providers licensed in the patient's own state (MD, DO,
+  NP, or PA). A provider may only treat and prescribe for patients located where
+  that provider is licensed.
+- A prescription is never guaranteed. Treatment is prescribed only when a
+  licensed provider determines, in their independent judgment, that it is
+  appropriate after an evaluation.
+- Medications offered are COMPOUNDED preparations from a state-licensed pharmacy.
+  Compounded medications are NOT FDA-approved and have not been evaluated by the
+  FDA as safe or effective for any condition.
+- Individual results vary and are not guaranteed.
+- Hormone therapy is guided by bloodwork and monitored over time; it is not
+  prescribed on symptoms alone.
+- Testosterone (TRT) and some other hormones are controlled substances and are
+  prescribed only in compliance with applicable federal and state law, by a
+  provider authorized to prescribe them in the patient's state.
+- The service is cash-pay; health insurance is not billed. Most treatment is an
+  automatically renewing subscription with clear pre-purchase disclosure and
+  cancel-anytime.
+- This service is not for emergencies. In an emergency call 911.
+
+## Therapies
+
+- Weight management: provider-supervised programs including compounded GLP-1
+  medications (e.g., semaglutide, tirzepatide) alongside diet and lifestyle,
+  when appropriate.
+- Hormone therapy: physician-guided hormone support, including testosterone
+  (TRT) and other hormone therapy, for patients whose evaluation and bloodwork
+  indicate it may be appropriate.
+- Peptide therapy: a menu of individual peptides and proprietary blends,
+  prescribed only when a provider determines it is appropriate after an
+  individual evaluation. Availability depends on provider judgment and law.
+
+## Pages
+
+- /how-it-works — the four-step process from intake to delivery.
+- /treatments — overview of therapies offered.
+- /treatments/weight-management — provider-supervised GLP-1 weight management.
+- /treatments/hormone-therapy — physician-guided hormone therapy, including TRT.
+- /treatments/peptides — peptide therapy menu (individual peptides and blends).
+- /pricing — cash pricing and what is included.
+- /providers — how clinicians are licensed and credentialed.
+- /faq — common questions about visits, privacy, and billing.
+- /contact — how to reach the company (no medical details).
+
+## Education (Learn)
+
+Plain-language, non-promotional articles written to help patients judge any
+clinic on the merits. Each carries a "not medical advice" disclaimer, a
+last-updated date, and a "Medically reviewed by the FitClinicMD clinical team"
+byline. They make no product efficacy promises.
+
+- /learn — education hub index.
+- /learn/storing-your-peptide-medication — cold-chain storage, why light matters
+  more than a warm delivery, and when to contact the care team.
+- /learn/why-results-vary — why two people respond differently to the same
+  peptide (signals vs. execution, cellular energy, lifestyle).
+- /learn/compounded-medication-explained — what compounding is, why compounded
+  drugs are not FDA-approved, and questions to ask any clinic.
+- /learn/peptides-and-hormone-therapy — how hormones and peptides differ and how
+  a provider may use them together; guardrails including controlled substances.
+- /learn/mitochondrial-peptides-explained — what mitochondrial-derived peptides
+  (e.g., MOTS-c) are; the evidence is largely preclinical and does not
+  automatically translate to humans.
+- /learn/what-a-telehealth-visit-involves — intake, the visit, what gets
+  decided, and what a good visit looks like.
+- /learn/why-your-labs-matter — why bloodwork is required before some treatments
+  and what follow-up testing is for.
+- /learn/reading-a-subscription-before-you-sign-up — how recurring billing and
+  cancellation should work.
+
+## Legal
+
+- /legal/privacy — Notice of Privacy Practices (HIPAA).
+- /legal/terms — Terms of Service (Arizona governing law; binding individual
+  arbitration with a 30-day opt-out; automatic-renewal disclosures).
+- /legal/telehealth-consent — Informed Consent to Telehealth.
+
+## Status
+
+Pre-launch. Marketing claims are under legal review; this site is currently
+non-indexed and not open to patients. Please do not present it as an active,
+open-for-enrollment service until this notice is removed.

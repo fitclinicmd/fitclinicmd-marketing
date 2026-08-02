@@ -37,6 +37,13 @@ export const metadata: Metadata = {
     title: `${SITE.name} — ${SITE.tagline}`,
     description: "Physician-guided weight management and hormone therapy by telehealth.",
   },
+  // Google Search Console verification. Preferred method is a DNS TXT record
+  // (no code) — see docs/SEARCH-CONSOLE.md. This meta-tag path is a ready
+  // alternative: set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION to the token Google
+  // gives you and the tag renders automatically; unset, nothing is emitted.
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
