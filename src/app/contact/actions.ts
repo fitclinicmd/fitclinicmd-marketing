@@ -1,8 +1,17 @@
 "use server";
 
 import { SITE } from "@/lib/site";
+import { sendEmail } from "@/lib/email";
 
 export type ContactResult = { ok: boolean; message: string };
+
+// Escape user text before it goes into an HTML email body.
+function escapeHtml(s: string): string {
+  return s.replace(
+    /[&<>"']/g,
+    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c] as string,
+  );
+}
 
 // General-inquiry contact only.
 //
@@ -36,8 +45,30 @@ export async function submitContact(
     };
   }
 
-  // TODO: deliver via the transactional email provider once configured.
-  // Keep the payload PHI-free: name, email and the free-text message only.
+  // Deliver via Paubox. Payload is PHI-free by design: name, email, and the
+  // free-text message only (the form warns against including medical details).
+  // Reply-to is the submitter so a reply goes straight back to them.
+  const result = await sendEmail({
+    to: inbox,
+    replyTo: email,
+    subject: `New ${SITE.name} contact from ${name}`,
+    text: `Name: ${name}\nEmail: ${email}\n\n${message}\n`,
+    html:
+      `<p><strong>Name:</strong> ${escapeHtml(name)}<br>` +
+      `<strong>Email:</strong> ${escapeHtml(email)}</p>` +
+      `<p style="white-space:pre-wrap">${escapeHtml(message)}</p>`,
+  });
+
+  // Never claim success without a real send. If Paubox isn't configured, or the
+  // send fails, tell the user to email directly rather than silently dropping it.
+  if (!result.ok) {
+    if (result.error) console.error("[contact] Paubox send failed:", result.error);
+    return {
+      ok: false,
+      message: `Sorry — we couldn't send that just now. Please email us directly at ${SITE.email}.`,
+    };
+  }
+
   return {
     ok: true,
     message: "Thanks — we've got your message and will reply by email.",
