@@ -2,7 +2,7 @@
 
 export const SITE = {
   name: "FitClinicMD",
-  tagline: "Physician-guided weight and hormone care, delivered.",
+  tagline: "Physician-guided peptide and weight-management care, delivered.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://fitclinicmd.com",
   // The PHI application — a separate zone, separate host. CTAs hand off here
   // and never carry health context in the URL.
@@ -24,7 +24,6 @@ export const showSignIn = APP_LIVE;
 export const NAV = [
   { href: "/how-it-works", label: "How it works" },
   { href: "/treatments", label: "Treatments" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/providers", label: "Our providers" },
   { href: "/faq", label: "FAQ" },
 ] as const;
@@ -36,8 +35,6 @@ export const FOOTER_NAV = [
       { href: "/how-it-works", label: "How it works" },
       { href: "/treatments/peptides", label: "Peptide therapy" },
       { href: "/treatments/weight-management", label: "Weight management" },
-      { href: "/treatments/hormone-therapy", label: "Hormone therapy" },
-      { href: "/pricing", label: "Pricing" },
     ],
   },
   {

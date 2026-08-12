@@ -13,11 +13,11 @@ export function organizationSchema() {
     name: SITE.name,
     url: SITE.url,
     description:
-      "Telehealth clinic offering physician-guided weight management and hormone therapy, with medication fulfilled by a partner compounding pharmacy.",
+      "Telehealth clinic offering physician-guided peptide therapy and weight management (GLP-1), with medication fulfilled by a partner compounding pharmacy.",
     medicalSpecialty: ["Endocrine", "PrimaryCare"],
     availableService: [
+      { "@type": "MedicalTherapy", name: "Peptide therapy" },
       { "@type": "MedicalTherapy", name: "Weight management program" },
-      { "@type": "MedicalTherapy", name: "Hormone therapy" },
     ],
   };
 }

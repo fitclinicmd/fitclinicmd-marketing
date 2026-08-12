@@ -115,11 +115,6 @@ export default function Peptides() {
                   Get started
                 </CTA>
               </div>
-              <p className="mt-3 text-center text-xs text-ink-muted">
-                <Link href="/pricing" className="hover:text-clinic">
-                  See pricing
-                </Link>
-              </p>
             </Card>
             <Card>
               <EmergencyNotice className="text-ink-muted" />

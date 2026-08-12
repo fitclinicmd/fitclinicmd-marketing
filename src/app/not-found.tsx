@@ -22,8 +22,8 @@ export default function NotFound() {
           how it works
         </Link>{" "}
         or{" "}
-        <Link href="/pricing" className="text-clinic underline underline-offset-4">
-          pricing
+        <Link href="/treatments/peptides" className="text-clinic underline underline-offset-4">
+          peptide therapy
         </Link>
         ?
       </p>

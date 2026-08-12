@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: `%s — ${SITE.name}`,
   },
   description:
-    "Physician-guided weight management and hormone therapy by telehealth. Licensed providers, transparent cash pricing, medication delivered.",
+    "Physician-guided peptide therapy and weight management (GLP-1) by telehealth. Licensed providers, medication delivered.",
   // Never index while any marketing claim is unapproved (see lib/claims.ts).
   robots: siteIsIndexable()
     ? { index: true, follow: true }
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     url: SITE.url,
     title: `${SITE.name} — ${SITE.tagline}`,
-    description: "Physician-guided weight management and hormone therapy by telehealth.",
+    description: "Physician-guided peptide therapy and weight management (GLP-1) by telehealth.",
   },
   // Google Search Console verification. Preferred method is a DNS TXT record
   // (no code) — see docs/SEARCH-CONSOLE.md. This meta-tag path is a ready

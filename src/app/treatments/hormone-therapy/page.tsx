@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Hormone therapy",
   description:
     "Provider-supervised hormone therapy with evaluation, bloodwork and ongoing monitoring. Prescribed only when clinically appropriate.",
+  // Deferred offering: page kept for a later launch phase but not promoted or
+  // indexed while the program (testosterone + other hormones) is not yet live.
+  robots: { index: false, follow: true },
 };
 
 export default function HormoneTherapy() {
@@ -114,11 +117,6 @@ export default function HormoneTherapy() {
                   Get started
                 </CTA>
               </div>
-              <p className="mt-3 text-center text-xs text-ink-muted">
-                <Link href="/pricing" className="hover:text-clinic">
-                  See pricing
-                </Link>
-              </p>
             </Card>
             <Card>
               <EmergencyNotice className="text-ink-muted" />

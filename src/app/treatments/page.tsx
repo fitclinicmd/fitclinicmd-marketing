@@ -7,7 +7,7 @@ import { signupUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Treatments",
   description:
-    "Physician-guided peptide therapy, plus weight management and hormone therapy — prescribed only when a licensed provider determines it is clinically appropriate.",
+    "Physician-guided peptide therapy and weight management (GLP-1) — prescribed only when a licensed provider determines it is clinically appropriate.",
 };
 
 const TREATMENTS = [
@@ -22,12 +22,6 @@ const TREATMENTS = [
     title: "Weight management",
     claim: "glp1-what-it-is",
     points: ["Provider-supervised program", "Labs where clinically indicated", "Delivered to your door"],
-  },
-  {
-    href: "/treatments/hormone-therapy",
-    title: "Hormone therapy",
-    claim: "hormone-what-it-is",
-    points: ["Evaluation and bloodwork", "Ongoing monitoring", "Adjusted with your provider"],
   },
 ];
 
@@ -46,7 +40,7 @@ export default function Treatments() {
       </div>
 
       <Section>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2">
           {TREATMENTS.map((t) => (
             <Card key={t.href} className="flex flex-col">
               <h2 className="text-2xl">{t.title}</h2>
