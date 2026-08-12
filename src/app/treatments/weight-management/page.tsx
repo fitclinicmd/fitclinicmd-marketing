@@ -109,8 +109,8 @@ export default function WeightManagement() {
                   <dd className="font-medium">Partner compounding pharmacy, shipped</dd>
                 </div>
                 <div>
-                  <dt className="text-ink-muted">Insurance</dt>
-                  <dd className="font-medium">Not billed — cash pricing</dd>
+                  <dt className="text-ink-muted">Availability</dt>
+                  <dd className="font-medium">Varies by therapy and state</dd>
                 </div>
               </dl>
               <div className="mt-6">
@@ -118,11 +118,6 @@ export default function WeightManagement() {
                   Get started
                 </CTA>
               </div>
-              <p className="mt-3 text-center text-xs text-ink-muted">
-                <Link href="/pricing" className="hover:text-clinic">
-                  See pricing
-                </Link>
-              </p>
             </Card>
             <Card>
               <EmergencyNotice className="text-ink-muted" />

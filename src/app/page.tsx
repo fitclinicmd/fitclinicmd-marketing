@@ -32,8 +32,8 @@ const PILLARS = [
     body: "Every visit is with a provider licensed where you live. Our system will not let a provider treat you otherwise.",
   },
   {
-    title: "Cash pricing, no insurance",
-    body: "One transparent price. No claims, no surprise billing, no deductible to meet first.",
+    title: "Focused on peptides & GLP-1",
+    body: "Provider-guided peptide therapy and GLP-1 weight management — prescribed only when it's appropriate for you, never one-size-fits-all.",
   },
   {
     title: "Care that continues",
@@ -186,8 +186,8 @@ export default function Home() {
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <CTA href={signupUrl}>Get started</CTA>
-            <CTA href="/pricing" variant="secondary">
-              See pricing
+            <CTA href="/treatments/peptides" variant="secondary">
+              Explore peptide therapy
             </CTA>
           </div>
         </div>

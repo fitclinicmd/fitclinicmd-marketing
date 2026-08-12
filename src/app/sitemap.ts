@@ -9,8 +9,6 @@ const ROUTES = [
   { path: "/treatments", priority: 0.9 },
   { path: "/treatments/peptides", priority: 0.9 },
   { path: "/treatments/weight-management", priority: 0.9 },
-  { path: "/treatments/hormone-therapy", priority: 0.9 },
-  { path: "/pricing", priority: 0.8 },
   { path: "/learn", priority: 0.7 },
   { path: "/providers", priority: 0.7 },
   { path: "/faq", priority: 0.7 },

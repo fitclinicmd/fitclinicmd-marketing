@@ -4,9 +4,9 @@ import { Section, Eyebrow } from "./ui";
 // Goal-first entry: patients pick the outcome they're after, not a drug.
 // Copy here is intentionally NAVIGATIONAL and process-descriptive — the
 // regulated efficacy claims live on the treatment detail pages, behind the
-// counsel-gated <Claim> component. Peptide therapy leads the launch menu;
-// weight management and hormone therapy follow. Nothing is implied that isn't
-// offered.
+// counsel-gated <Claim> component. The launch menu is peptide therapy and
+// GLP-1 weight management; hormone therapy is deferred and not shown here.
+// Nothing is implied that isn't offered.
 const GOALS: {
   href: string;
   goal: string;
@@ -37,17 +37,6 @@ const GOALS: {
     ),
   },
   {
-    href: "/treatments/hormone-therapy",
-    goal: "Balance your hormones",
-    body: "Hormone therapy, guided by bloodwork and monitored by your provider over time — never prescribed on symptoms alone.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
-        <path d="M12 3v6M12 15v6M5 12h14" strokeLinecap="round" />
-        <circle cx="12" cy="12" r="3" />
-      </svg>
-    ),
-  },
-  {
     href: "/how-it-works",
     goal: "Not sure yet?",
     body: "Start with a visit. A licensed provider reviews your goals and helps you decide what's appropriate — a prescription is never guaranteed.",
@@ -72,7 +61,7 @@ export default function GoalCards() {
           you.
         </p>
       </div>
-      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {GOALS.map((g) => (
           <li key={g.href}>
             <Link
