@@ -4,9 +4,9 @@ import { Section, Eyebrow } from "./ui";
 // Goal-first entry: patients pick the outcome they're after, not a drug.
 // Copy here is intentionally NAVIGATIONAL and process-descriptive — the
 // regulated efficacy claims live on the treatment detail pages, behind the
-// counsel-gated <Claim> component. Only goals that map to the actual launch
-// menu (weight management + hormone therapy) are shown; nothing is implied
-// that isn't offered.
+// counsel-gated <Claim> component. Peptide therapy leads the launch menu;
+// weight management and hormone therapy follow. Nothing is implied that isn't
+// offered.
 const GOALS: {
   href: string;
   goal: string;
@@ -14,6 +14,17 @@ const GOALS: {
   icon: React.ReactNode;
   subtle?: boolean;
 }[] = [
+  {
+    href: "/treatments/peptides",
+    goal: "Recover & perform",
+    body: "Provider-guided peptide therapies for recovery, performance support, and general wellness — prescribed only after an evaluation, when it's appropriate for you.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+        <path d="M3 17l6-6 4 4 7-7" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M17 8h4v4" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
   {
     href: "/treatments/weight-management",
     goal: "Lose weight",
@@ -33,17 +44,6 @@ const GOALS: {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
         <path d="M12 3v6M12 15v6M5 12h14" strokeLinecap="round" />
         <circle cx="12" cy="12" r="3" />
-      </svg>
-    ),
-  },
-  {
-    href: "/treatments/peptides",
-    goal: "Recover & perform",
-    body: "Provider-guided peptide therapies for recovery, performance support, and general wellness — prescribed only after an evaluation, when it's appropriate for you.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
-        <path d="M3 17l6-6 4 4 7-7" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M17 8h4v4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },

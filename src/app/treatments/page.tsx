@@ -7,10 +7,16 @@ import { signupUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Treatments",
   description:
-    "Physician-guided weight management and hormone therapy, prescribed only when a licensed provider determines it is clinically appropriate.",
+    "Physician-guided peptide therapy, plus weight management and hormone therapy — prescribed only when a licensed provider determines it is clinically appropriate.",
 };
 
 const TREATMENTS = [
+  {
+    href: "/treatments/peptides",
+    title: "Peptide therapy",
+    claim: "peptides-what-it-is",
+    points: ["Provider evaluation first", "Compounded by a licensed pharmacy", "Availability varies by state"],
+  },
   {
     href: "/treatments/weight-management",
     title: "Weight management",
@@ -22,12 +28,6 @@ const TREATMENTS = [
     title: "Hormone therapy",
     claim: "hormone-what-it-is",
     points: ["Evaluation and bloodwork", "Ongoing monitoring", "Adjusted with your provider"],
-  },
-  {
-    href: "/treatments/peptides",
-    title: "Peptide therapy",
-    claim: "peptides-what-it-is",
-    points: ["Provider evaluation first", "Compounded by a licensed pharmacy", "Availability varies by state"],
   },
 ];
 

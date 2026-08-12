@@ -34,6 +34,7 @@ export const FOOTER_NAV = [
     heading: "Care",
     links: [
       { href: "/how-it-works", label: "How it works" },
+      { href: "/treatments/peptides", label: "Peptide therapy" },
       { href: "/treatments/weight-management", label: "Weight management" },
       { href: "/treatments/hormone-therapy", label: "Hormone therapy" },
       { href: "/pricing", label: "Pricing" },
