@@ -19,17 +19,17 @@ const PATHWAYS: Pathway[] = [
       {
         name: "Inferno",
         peptides: "AOD-9604 · CJC-1295 · Ipamorelin · MOTS-c",
-        description: "Stimulant-free fat metabolism and sustained energy — lipolysis, GH pulse, and mitochondrial output.",
+        description: "A stimulant-free approach to body composition — supporting fat metabolism, steady energy, and cellular output.",
       },
       {
         name: "Atlas",
         peptides: "CJC-1295 · Ipamorelin · Tesamorelin · IGF-1 LR3",
-        description: "A maximal hypertrophy protocol — multi-tier GHRH/GHRP axis plus direct muscle-fiber growth.",
+        description: "Built for serious muscle and strength — layered growth-hormone-axis support alongside direct anabolic signaling.",
       },
       {
         name: "Apex",
         peptides: "Tesamorelin · CJC-1295 · Ipamorelin · BPC-157",
-        description: "Foundational strength, recovery, and hormonal optimization — a layered GH axis plus tissue repair.",
+        description: "A foundation for strength and recovery — growth-hormone-axis support paired with tissue-repair peptides.",
       },
     ],
   },
@@ -41,17 +41,17 @@ const PATHWAYS: Pathway[] = [
       {
         name: "Fountain of Youth",
         peptides: "GHK-Cu · BPC-157 · TB-500 · Epitalon",
-        description: "Multi-tier cellular renewal — skin, connective tissue, circulation, and circadian/telomere support.",
+        description: "Whole-body renewal — aimed at skin, connective tissue, and the systems tied to healthy aging.",
       },
       {
         name: "Samson & Delilah",
         peptides: "GHK-Cu · CJC-1295 · Ipamorelin · TB-500",
-        description: "Follicular and scalp regeneration — reactivates dormant follicles and rebuilds vascular and structural integrity.",
+        description: "Focused on hair and scalp — supporting follicle health and the surrounding tissue and circulation.",
       },
       {
         name: "Hyperion",
         peptides: "Ipamorelin · Tesamorelin",
-        description: "A GH-optimization maintenance blend — recomposition and recovery without four-peptide complexity.",
+        description: "A streamlined growth-hormone-support blend for recomposition and recovery, without a complex stack.",
       },
     ],
   },
@@ -63,17 +63,17 @@ const PATHWAYS: Pathway[] = [
       {
         name: "Love & Happiness",
         peptides: "Oxytocin · PT-141",
-        description: "Bonding and central arousal support — emotional closeness paired with responsiveness.",
+        description: "Support for connection and intimacy — pairing emotional closeness with physical responsiveness.",
       },
       {
         name: "Empress",
         peptides: "MOTS-c · BPC-157 · GHK-Cu · Kisspeptin-10",
-        description: "Female midlife support — mitochondrial energy, gut and inflammation, collagen, and HPG-axis rhythm.",
+        description: "Designed with women's midlife vitality in mind — energy, whole-body balance, and hormonal rhythm.",
       },
       {
         name: "Hypnøs",
         peptides: "DSIP · CJC-1295 · Ipamorelin · Selank",
-        description: "A precision sleep-architecture protocol — delta-wave depth plus a nocturnal GH pulse.",
+        description: "Built around deeper, more restorative sleep and overnight recovery.",
       },
     ],
   },
