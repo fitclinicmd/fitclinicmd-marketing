@@ -19,17 +19,17 @@ const PATHWAYS: Pathway[] = [
       {
         name: "Inferno",
         peptides: "AOD-9604 · CJC-1295 · Ipamorelin · MOTS-c",
-        description: "The body-composition stack for lean-out, energy, and metabolic drive.",
+        description: "Stimulant-free fat metabolism and sustained energy — lipolysis, GH pulse, and mitochondrial output.",
       },
       {
         name: "Atlas",
         peptides: "CJC-1295 · Ipamorelin · Tesamorelin · IGF-1 LR3",
-        description: "GH-axis support for muscle, strength, and training adaptation.",
+        description: "A maximal hypertrophy protocol — multi-tier GHRH/GHRP axis plus direct muscle-fiber growth.",
       },
       {
         name: "Apex",
         peptides: "Tesamorelin · CJC-1295 · Ipamorelin · BPC-157",
-        description: "Strength built on real recovery and tissue repair.",
+        description: "Foundational strength, recovery, and hormonal optimization — a layered GH axis plus tissue repair.",
       },
     ],
   },
@@ -41,17 +41,17 @@ const PATHWAYS: Pathway[] = [
       {
         name: "Fountain of Youth",
         peptides: "GHK-Cu · BPC-157 · TB-500 · Epitalon",
-        description: "Flagship repair: collagen, recovery, and cellular aging.",
+        description: "Multi-tier cellular renewal — skin, connective tissue, circulation, and circadian/telomere support.",
       },
       {
         name: "Samson & Delilah",
         peptides: "GHK-Cu · CJC-1295 · Ipamorelin · TB-500",
-        description: "Hair and scalp restoration with whole-body repair.",
+        description: "Follicular and scalp regeneration — reactivates dormant follicles and rebuilds vascular and structural integrity.",
       },
       {
         name: "Hyperion",
         peptides: "Ipamorelin · Tesamorelin",
-        description: "GH optimization for healthy aging and body composition.",
+        description: "A GH-optimization maintenance blend — recomposition and recovery without four-peptide complexity.",
       },
     ],
   },
@@ -63,17 +63,17 @@ const PATHWAYS: Pathway[] = [
       {
         name: "Love & Happiness",
         peptides: "Oxytocin · PT-141",
-        description: "Connection, confidence, and intimacy.",
+        description: "Bonding and central arousal support — emotional closeness paired with responsiveness.",
       },
       {
         name: "Empress",
         peptides: "MOTS-c · BPC-157 · GHK-Cu · Kisspeptin-10",
-        description: "Female vitality, hormonal balance, and renewal.",
+        description: "Female midlife support — mitochondrial energy, gut and inflammation, collagen, and HPG-axis rhythm.",
       },
       {
-        name: "Hypnos",
+        name: "Hypnøs",
         peptides: "DSIP · CJC-1295 · Ipamorelin · Selank",
-        description: "Deep sleep and overnight recovery.",
+        description: "A precision sleep-architecture protocol — delta-wave depth plus a nocturnal GH pulse.",
       },
     ],
   },
