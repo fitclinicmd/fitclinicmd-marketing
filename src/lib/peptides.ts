@@ -933,27 +933,232 @@ export const PEPTIDES: Peptide[] = [
     ],
   },
 
-  // PLANNED — reviewed source material on file (site-content/peptide-pages);
-  // full page content transcribed in per the template before each is PUBLISHED.
-  ...(
-    [
-      ["aod9604", "AOD9604", "Modified growth hormone fragment", "Metabolic"],
-      ["glutathione", "Glutathione", "Antioxidant tripeptide", "Repair & longevity"],
-      ["5-amino-1mq", "5-Amino-1MQ", "NNMT inhibitor", "Metabolic"],
-    ] as const
-  ).map(
-    ([slug, name, drugClass, category]): Peptide => ({
-      slug,
-      name,
-      drugClass,
-      tier: "limited",
-      chipSub: "Reviewed source material on file. Full education page in preparation.",
-      category,
-      status: "PLANNED",
-      updated: "2026-08-24",
-      summary: "Full, sourced education page in preparation, written to the same honest template.",
-    }),
-  ),
+  {
+    slug: "aod9604",
+    name: "AOD-9604",
+    drugClass: "Growth hormone fragment (176-191)",
+    tier: "human",
+    chipSub:
+      "Tested and failed. The pivotal 24-week trial (536 people) found no significant weight-loss difference from placebo, and development was terminated in 2007.",
+    category: "Metabolic & fat loss",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "A nineteen-year-old failure, not an exciting new fat-loss peptide. Reasonably well tolerated, reasonably well studied — and the studies did not find the effect it is sold for.",
+    standfirst:
+      "The idea was elegant: isolate just the fat-burning tail of growth hormone. It was taken all the way through human testing — and in the pivotal trial it did not work. Development was discontinued in 2007.",
+    whatItIs: [
+      "AOD-9604 is a laboratory-made piece of human growth hormone — FDA describes it as ‘a synthetic fragment of human growth hormone (15 amino acids: 177-191) with an additional tyrosine at the N-terminal end.’ The 1990s idea was to isolate just the fat-burning tail without the blood-sugar and tissue-growth effects of the whole hormone.",
+      "That hypothesis was tested in humans. In the pivotal trial it did not work, and the sponsor discontinued development in 2007. Everything sold today under this name — or as ‘HGH Fragment 176-191’ — has no approval anywhere, made outside any regulated supply chain, marketed for a purpose the drug itself failed to achieve.",
+    ],
+    uses: [
+      { use: "Fat loss and weight loss", tier: "human", meaning: "Tested and failed — the pivotal 24-week randomized trial enrolled 536 people and, in FDA’s words, found ‘not a significant difference in the primary endpoint of weight loss between placebo and AOD-9604,’ after which the sponsor terminated development in 2007." },
+      { use: "Targeted fat loss without GH’s side effects", tier: "animal", meaning: "The selectivity claim is real preclinical pharmacology from obese-mouse studies — but it is a claim about what the drug does NOT do, and it stops mattering once the drug also failed to produce the fat loss it was supposed to deliver." },
+      { use: "Joint repair, cartilage regeneration, osteoarthritis", tier: "animal", meaning: "No human study for any joint condition; the supporting evidence is a 2015 injection study in a rabbit model, and FDA flagged a possible negative bone-health signal in rats running the opposite direction." },
+      { use: "Osteoporosis and bone health", tier: "animal", meaning: "One of the two nominated indications, yet FDA’s review found dose-dependent osteocalcin changes in 6-month rat studies that ‘might represent negative effects on bone health’ — the animal data point toward harm, not benefit." },
+      { use: "Injury recovery, tendon healing, performance", tier: "theoretical", meaning: "No human or animal study supports these; they migrated onto AOD-9604 from the recovery-peptide marketing vocabulary. It is prohibited in sport at all times." },
+      { use: "Anti-aging, longevity, metabolic optimization", tier: "theoretical", meaning: "No trial has tested AOD-9604 against any aging or healthspan endpoint in any species." },
+      { use: "Oral ‘fat burner’ capsules and topical creams", tier: "theoretical", meaning: "Oral is the route where it was actually tested and failed; for topical, FDA identified no human exposure data — so the cream is untested and the capsule is disproven." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "The tail end of growth hormone was identified in mouse work as the part associated with breaking down fat. AOD-9604 is a synthetic copy of that tail. In obese mice it reduced body fat without the blood-sugar problems of whole growth hormone, and without raising IGF-1. A clever idea — but in people, across six studies, the weight effects were tiny and inconsistent, the best result came from the lowest dose (a pattern usually indicating noise), and the definitive 24-week trial found no difference from placebo.",
+          "Mechanism is a hypothesis about why something might work. A trial is a finding about whether it does. Here the trial was run and the answer was no.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Approximately 947 subjects across six company-sponsored studies — every one dosed orally or intravenously. There is no human exposure data at all for the subcutaneous injection or topical cream clinics dispense; FDA states this explicitly.",
+          "The pivotal OPTIONS study (536 enrolled) found, in FDA’s words, ‘not a significant difference in the primary endpoint of weight loss between placebo and AOD-9604.’ Development was terminated in 2007. An independent review lists it in a table of drugs that failed Phase 2. The OPTIONS results appear never to have been published in a peer-reviewed journal — so the negative result is far less discoverable than the original mechanism papers.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "AOD-9604 is an exciting new fat-loss peptide.", reality: "It is a nineteen-year-old failure. The pivotal 24-week trial found no significant weight-loss difference from placebo and development was terminated in 2007. The claim comes from vendors, for whom a compound that was tested and abandoned is commercially indistinguishable from one that is merely early." },
+      { claim: "AOD-9604 has FDA GRAS status, so it’s been recognized as safe.", reality: "A search of FDA’s GRAS inventory located no GRAS notice for AOD-9604. Even if one existed, GRAS is a food-additive concept about ingestion — it says nothing about an injected drug and is not an FDA approval. FDA’s actual position is that it ‘lacks sufficient information to know whether the drug would cause harm.’" },
+      { claim: "It burns fat without the side effects of growth hormone.", reality: "The ‘without the side effects’ part comes from mouse studies. The ‘burns fat’ part failed in humans. A drug that reliably does not do the bad thing and also does not do the good thing is not selective — it is inactive." },
+      { claim: "AOD-9604 is the same thing as HGH Fragment 176-191.", reality: "Sold interchangeably but not described identically — FDA characterises AOD-9604 as hGH 177–191 with an additional tyrosine (16 amino acids), while ‘HGH Fragment 176-191’ is catalogued separately. Which one is in a given vial is not knowable without a certificate of analysis." },
+    ],
+    notFor: [
+      "Anyone wanting a reliable safety profile — FDA’s own words: it ‘lacks sufficient information to know whether the drug would cause harm when administered to humans,’ and it ‘identified serious adverse events that may be associated with AOD-9604, though causality is not clear.’",
+      "Anyone offered it as a subcutaneous injection or topical cream — FDA found no human exposure data for either route; all human testing was oral or intravenous.",
+      "Anyone with liver disease or abnormal liver tests — 9-month monkey studies showed periportal liver vacuolation at higher doses, which FDA noted can signal drug-induced liver injury.",
+      "Anyone with osteoporosis, osteopenia or a fracture history — FDA found dose-dependent osteocalcin changes in 6-month rat studies, a signal of possible negative effects on bone health.",
+      "Anyone who cannot confirm the source — FDA found available certificates of analysis lacked the impurity, aggregate and microbial testing needed to characterise the material.",
+    ],
+    dopingLine:
+      "Competitive athletes: prohibited at all times — WADA issued a compound-specific statement that AOD-9604 ‘has not been approved for therapeutic use by any government health authority in the world’ and is captured by section S0. Detection assays have been published since 2015. There is no TUE pathway.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are trying to achieve, and what the human trial evidence for this compound actually shows — set out plainly.",
+      "Your history: liver disease or abnormal liver tests, osteoporosis, osteopenia or fracture history, and any immune or allergic history.",
+      "Which route is proposed, and the fact that human testing was oral and intravenous rather than injected or topical.",
+      "Where the material comes from and the certificate of analysis for your lot.",
+      "What we measure, on what timeline, and the point at which we stop.",
+    ],
+    whereThisStands: [
+      "Never approved, and the largest trial failed. Tested in several hundred people, no significant weight loss versus placebo, development stopped.",
+      "The safety record is actually the reassuring part — pooled data suggests it does not raise IGF-1 or disturb blood sugar the way growth hormone does. What does not hold up is the claim that it produces meaningful fat loss. Reasonably well tolerated, reasonably well studied, and the studies did not find the effect it is sold for.",
+    ],
+    clinicalDetail: [
+      "AOD-9604 is Tyr-hGH(177–191): the 15-residue C-terminal domain of human somatotropin with an N-terminal tyrosine, a 16-amino-acid peptide. Preclinical rationale rests on 1990s rodent work; no validated human receptor target has been established and the mechanism in humans remains, in FDA’s assessment, unsupported by effectiveness data.",
+      "Never approved anywhere — not a drug awaiting its moment, but one that was properly tested, failed, and was abandoned in 2007. Not on the 503A Bulks List. Formally nominated (dockets FDA-2015-N-3534 and FDA-2018-N-2973) for weight loss, osteoporosis and osteoarthritis. FDA’s FAERS/CAERS searches found no reports but cautioned this ‘does not imply that the substance is safe.’",
+    ],
+  },
+  {
+    slug: "glutathione",
+    name: "Glutathione",
+    drugClass: "Endogenous tripeptide antioxidant",
+    tier: "limited",
+    chipSub:
+      "FDA reviewed it against 24 proposed uses in 2022 and did not find adequate evidence for any of them. The largest, best-controlled trials were negative.",
+    category: "Mitochondrial & cellular energy",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "Real, central biochemistry inside your cells — and a delivery problem outside them. Well tolerated is not the same as effective; both need to be true.",
+    standfirst:
+      "Glutathione is your body’s main internal antioxidant, made by every cell. It is marketed for almost everything by IV drip — but swallowed glutathione is barely absorbed and infused glutathione is cleared quickly, and FDA reviewed it against 24 uses in 2022 without finding adequate evidence for any.",
+    whatItIs: [
+      "Glutathione is a tiny protein of three amino acids that every cell manufactures for itself — the body’s main internal antioxidant and its principal tool for neutralising reactive by-products, including in the liver.",
+      "Because levels drop in illness and with age, it has been marketed for skin lightening, detoxification, immunity, hangovers, Parkinson’s and chemotherapy side effects. Swallowed glutathione is barely absorbed, which is the argument used for IV drips, injections and nebulizers instead.",
+    ],
+    uses: [
+      { use: "Skin lightening / brightening (the most-marketed IV use)", tier: "limited", meaning: "One placebo-controlled IV trial in 50 people found 37.5% lightening versus 18.7% on placebo, fading after treatment; FDA reviewers called the efficacy data ‘minimal and contradictory,’ and the Philippines and Thailand have acted against IV glutathione for this use." },
+      { use: "‘Detox’ / liver support / hangover drips", tier: "theoretical", meaning: "No controlled trial supports it; the liver makes its own glutathione and an infusion is cleared from the blood quickly." },
+      { use: "Acetaminophen (Tylenol) overdose", tier: "theoretical", meaning: "There is an approved antidote that works by restoring glutathione — IV N-acetylcysteine — but IV glutathione itself is not approved and not the standard of care." },
+      { use: "Reducing chemotherapy side effects / neuropathy", tier: "limited", meaning: "The largest placebo-controlled trial (185 patients) showed no benefit in any subgroup, and ASCO guidance says agents including glutathione should not be offered to prevent chemotherapy-induced neuropathy." },
+      { use: "Parkinson’s disease", tier: "limited", meaning: "A 21-patient randomized trial showed no significant difference, and the largest (a 45-patient phase IIb of intranasal glutathione) found neither treatment superior to placebo." },
+      { use: "General antioxidant / oxidative stress", tier: "limited", meaning: "A 40-person oral trial versus placebo showed no significant change in any measure of oxidative stress." },
+      { use: "Cystic fibrosis, asthma, COPD (nebulized)", tier: "limited", meaning: "A Cochrane review found no evidence to recommend nebulized glutathione, and inhaled use caused serious bronchoconstriction in trials." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "Glutathione works like a rechargeable sponge for reactive molecules — handing off a sulphur-bearing hydrogen to neutralise damaging by-products, with enzymes recharging it. It also helps the liver tag toxins for removal. All real biochemistry that happens inside your cells. The problem for the injected version is that glutathione put into your bloodstream is cleared quickly and does not straightforwardly reach the inside of cells — FDA specifically noted the rapid elimination.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Scattered and small across roughly two dozen proposed uses, with the largest, best-controlled trials negative: chemotherapy side effects (N=185, no benefit); Parkinson’s (no difference); oxidative stress (N=40 oral, no change). Most intravenous studies enrolled fewer than 50 people.",
+          "There is no adequately powered trial demonstrating clinical benefit from IV glutathione for any condition, and FDA identified none in its 2022 review.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "Oral glutathione doesn’t absorb, so IV is the way to get it into your cells.", reality: "Only the first half holds up. FDA notes oral glutathione is minimally absorbed — but also that IV glutathione is rapidly eliminated. Getting it into the bloodstream is not the same as getting it into cells, and no trial has shown IV dosing raises intracellular glutathione in a way that changes an outcome." },
+      { claim: "It’s the master antioxidant, so it detoxes your body.", reality: "Glutathione genuinely is central to your cells’ antioxidant chemistry. ‘Detox’ as a service is a marketing frame, not a clinical endpoint. FDA reviewed 24 proposed uses and found the evidence insufficient for all of them." },
+      { claim: "Glutathione IV is the treatment for Tylenol overdose, so it must be powerful.", reality: "The approved antidote is IV N-acetylcysteine, which supplies cysteine so your liver can rebuild its own glutathione. IV glutathione is not the approved treatment for acetaminophen toxicity." },
+      { claim: "An FDA advisory panel voted for it, so it’s been cleared.", reality: "The June 2022 panel voted 8–5–1 to add glutathione to the compounding bulks list — over FDA’s own recommendation against it. Four years on, FDA has not adopted that vote and glutathione is not on the list. A compounding-list vote is not a finding of effectiveness." },
+    ],
+    notFor: [
+      "Anyone with asthma or reactive airways considering nebulized glutathione — trials recorded severe wheezing, breathlessness, facial palsy and coughing up blood, with high dropout rates.",
+      "Anyone with a history of anaphylaxis or severe drug allergy — FDA has two recorded anaphylaxis cases after IV glutathione, one recurring on re-exposure.",
+      "Anyone with liver disease or abnormal liver tests — FDA recorded hepatotoxicity (AST 26×, ALT 22× the upper limit at 1,200 mg weekly), resolving after stopping.",
+      "Anyone who cannot confirm the source and endotoxin testing — a 2019 FDA alert and a January 2026 warning letter both involved contaminated or mislabelled compounded product.",
+      "Anyone seeking it for skin lightening — regulators in the Philippines and Thailand have warned against or banned IV glutathione for whitening, citing Stevens-Johnson syndrome, toxic epidermal necrolysis and anaphylaxis.",
+      "Anyone on chemotherapy — one study found reduced neurotoxicity but also lowered blood levels of the chemotherapy drug itself; involve your oncologist before any antioxidant infusion.",
+    ],
+    dopingLine:
+      "Competitive athletes: glutathione itself is not named on the WADA list, but USADA’s rule is volume-based — IV infusions over 100 mL in a 12-hour period are prohibited regardless of contents. A typical drip in 250–500 mL of saline breaks the rule; a small-volume push under 100 mL would not. Confirm on Global DRO.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are trying to achieve, and whether the route proposed can plausibly deliver it — oral is poorly absorbed and IV is cleared quickly.",
+      "Your history: asthma or reactive airways, anaphylaxis or severe drug allergy, liver disease, pregnancy, and any chemotherapy under way.",
+      "Your liver enzymes before and during treatment.",
+      "Where the product comes from and its endotoxin and sterility testing — contamination has been the recurring problem with compounded glutathione.",
+      "What we do if you have an infusion reaction, what we measure, and the point at which we stop.",
+    ],
+    whereThisStands: [
+      "Not approved for the uses it is marketed for. Injectable and IV glutathione is widely offered for skin brightening, detox and wellness — none an FDA-approved use — and regulators in several countries have warned about injectable skin-lightening products specifically.",
+      "Well tolerated is not the same as effective. Both need to be true.",
+    ],
+    clinicalDetail: [
+      "Reduced glutathione (GSH) is the dominant intracellular thiol redox buffer and a cofactor for glutathione peroxidases and S-transferases. FDA characterises the substance itself as well characterised and stable, but the unresolved issue is delivery: oral is minimally absorbed and IV is rapidly eliminated, so neither route has been shown to raise intracellular GSH in a way that produces clinical benefit.",
+      "Never FDA-approved for any indication, by any route — there is no glutathione drug product in the US; injectable/nebulized/IV forms are compounded only, oral is a supplement. It sits in ‘Category 1 — Under Evaluation’ on both 503A and 503B lists (interim enforcement discretion, expressly not approval and not a safety finding), and is not on the 503A Bulks List or the Category 2 safety-risk list. Its advisory hearing was 8 June 2022, where FDA’s scientists recommended against it and the committee voted 8–5–1 to add it anyway.",
+    ],
+  },
+  {
+    slug: "5-amino-1mq",
+    name: "5-Amino-1MQ",
+    drugClass: "Small-molecule NNMT inhibitor — not a peptide",
+    tier: "animal",
+    chipSub:
+      "There is no human study of any kind — zero. The entire evidence base is a single 11-day proof-of-concept experiment in obese mice. Anyone taking it is the study.",
+    category: "Metabolic & fat loss",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "Not actually a peptide — a small synthetic molecule sold on peptide menus. Everything claimed rests on rodent research; no human has ever been studied.",
+    standfirst:
+      "A correction that matters: 5-Amino-1MQ is not a peptide. It is a small synthetic chemical sold on peptide menus because that is the market it is sold into. There is no human study — zero. The entire evidence base for the fat-loss claim is one 11-day experiment in obese mice.",
+    whatItIs: [
+      "5-Amino-1MQ is a small synthetic chemical — a quinolinium molecule, usually supplied as an iodide salt — that gets sold on peptide menus and described in peptide vocabulary because that is the market it is sold into. It contains no amino acids and no peptide bonds.",
+      "It was designed in 2017 as a tool to block NNMT, an enzyme unusually active in the fat tissue of obese animals. When obese mice were injected for eleven days, they lost about 5% of body weight without eating less. That is the whole story — there is no human study. Nobody has published what this compound does in a person, at any dose, by any route.",
+    ],
+    uses: [
+      { use: "Fat loss and weight loss", tier: "animal", meaning: "The single supporting study injected obese mice for eleven days and saw ~5.1% weight loss with ~35% reduction in one fat pad and no change in food intake — a rodent proof-of-concept never repeated in a human." },
+      { use: "Raising NAD+ / cellular energy", tier: "animal", meaning: "The proposed mechanism, not a measured human outcome — no study has ever measured NAD+ levels in a person given 5-Amino-1MQ." },
+      { use: "Building or preserving muscle", tier: "animal", meaning: "Explored in animal models; no human has been studied and no muscle outcome has ever been measured in a person taking it." },
+      { use: "Improving insulin sensitivity / metabolic syndrome", tier: "animal", meaning: "Supportive findings come from mouse studies including knockdown models, with no human metabolic data of any kind." },
+      { use: "Anti-aging and longevity", tier: "theoretical", meaning: "No study in any species has tested it against a lifespan or healthspan endpoint; the framing is extrapolated from the general NAD+/aging association." },
+      { use: "Oral capsules as an effective delivery route", tier: "theoretical", meaning: "Every efficacy result comes from injection in mice; no oral absorption or exposure data in humans exists — so the most commonly sold form is the least supported." },
+      { use: "Cancer prevention or treatment", tier: "theoretical", meaning: "NNMT is a legitimate oncology research target — which cuts both ways: no human cancer trial exists, and the consequences of chronically inhibiting a methylation-cycle enzyme in a person are entirely unmeasured." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "An enzyme called NNMT tags nicotinamide (a form of vitamin B3 used to build NAD+) for disposal. In obese animals, fat tissue makes far too much NNMT. 5-Amino-1MQ blocks it — in theory leaving more nicotinamide available and letting fat cells burn energy again.",
+          "But NNMT is not only in fat tissue — it is abundant in the liver and throughout the body, sitting at the junction of NAD+ production and methylation (how cells switch genes on and off). Blocking it long-term does not do one clean thing; it shifts a hub. What that shift does in a living human over months has never been measured.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Zero. Not ‘limited’ — zero. A PubMed search for the exact term returns no results; the full chemical name returns three records, all preclinical (mice or cell lines). No registered human trial could be located: no phase 1 safety study, no pharmacokinetics, no dose-finding, no case series, no post-market surveillance.",
+          "For scale: semaglutide has more than 50,000 randomized trial participants; even AOD-9604 (a failure) has ~947 human subjects. 5-Amino-1MQ has none. Anyone taking it is not taking an under-studied drug — they are the study. Every page claiming ‘human clinical trials’ traces to a vendor or an AI-generated directory and must not be repeated.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "5-Amino-1MQ is a peptide.", reality: "It is not. It is a small synthetic molecule (5-amino-1-methylquinolinium) with no amino acids and no peptide bonds. The error is propagated across the market that sells it and matters because the compound is being reasoned about and consented for under the wrong pharmacological class." },
+      { claim: "Human clinical trials show 5-Amino-1MQ produces fat loss.", reality: "There are no human clinical trials. PubMed returns zero for the term and three (all animal/cell) for its chemical name. Every page asserting human results traces back to a company selling the compound — marketing documents, not evidence." },
+      { claim: "It’s a NAD+ booster, like NMN or NR.", reality: "Different mechanism entirely. NMN and NR are precursors — you supply raw material. 5-Amino-1MQ blocks an enzyme that disposes of a precursor, and also affects the methylation cycle. Conflating them imports the (already contested) safety familiarity of NAD+ precursors onto a compound with no human data at all." },
+      { claim: "The mouse studies showed dramatic fat loss.", reality: "They showed ~5.1% body-weight loss over eleven days, in mice deliberately made obese, given injections at ~34 mg/kg/day. The authors called it a ‘sub-chronic proof-of-concept.’ The ~35% figure refers to one specific fat depot in mice, not a person’s body fat." },
+    ],
+    notFor: [
+      "Everyone, for a straightforward safety read: there is no published human safety study of any kind — no phase 1, no case series, no pharmacokinetics, no adverse-event surveillance. Any clinic that gives you a specific safety profile is telling you something the literature does not contain.",
+      "Anyone expecting a known safe dose or route — there is no human dose-finding study; the only dosing that ever produced a documented effect was injection at ~34 mg/kg/day in mice for eleven days.",
+      "Anyone pregnant, who might become pregnant, or breastfeeding — no reproductive or developmental data in any relevant species.",
+      "Anyone with a current or previous cancer — NNMT is an active cancer research target elevated in several tumour types; the effect of blocking it systemically in a person with cancer is genuinely unknown and could run either direction.",
+      "Anyone with liver disease or abnormal liver tests — NNMT is highly expressed in the liver, and there is no human hepatic safety data.",
+      "Anyone on prescription medication, or with a methylation/homocysteine condition or on methyl-donor therapy — the compound acts directly on the nicotinamide methylation step, with no human drug-interaction data whatsoever.",
+    ],
+    dopingLine:
+      "Competitive athletes: treat as prohibited. WADA has not issued a compound-specific ruling, and it is not named on the list — but S0 captures any substance with no approval from any health authority, which describes this one. Assume prohibited status, do not use it, and verify at GlobalDRO.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are trying to achieve, and which evaluated options should be considered alongside or instead.",
+      "Your history: cancer, liver disease or abnormal liver tests, pregnancy or plans to conceive, and every prescription medication you take.",
+      "The route question — the animal work used injection, the product sold is a capsule — and what that means for expectations.",
+      "Who manufactures the material, what salt form it is, and the certificate of analysis for identity, purity and potency.",
+      "What we measure, on what timeline, and the point at which we stop.",
+    ],
+    whereThisStands: [
+      "Never approved, and not actually a peptide — a small synthetic molecule despite being sold alongside peptides.",
+      "The evidence is animal and cell work. No published human trial has measured whether it changes body composition in people. Everything claimed rests on rodent research.",
+    ],
+    clinicalDetail: [
+      "5-Amino-1MQ is a membrane-permeable, methylquinolinium-scaffold small-molecule inhibitor of NNMT (EC 2.1.1.1). The therapeutic hypothesis is that NNMT overexpression in white adipose tissue in obesity depletes the nicotinamide salvage pool for NAD+ biosynthesis and consumes S-adenosylmethionine, and that inhibition restores adipocyte NAD+ and SAM and de-represses energy expenditure. No validated human receptor engagement or exposure data exists.",
+      "Not FDA-approved for anything, and further from any regulatory pathway than almost any compound in this category — never approved, never withdrawn, never submitted. On no FDA bulks list (503A or 503B), not on the Category 2 safety-risk list, and not even nominated for compounding. Not among the seven peptides addressed at the July 2026 PCAC.",
+    ],
+  },
 ];
 
 export function publishedPeptides() {
