@@ -65,6 +65,29 @@ export default function PeptideLibrary() {
       </div>
 
       <Section>
+        <div className="mb-14 grid gap-6 sm:grid-cols-2">
+          <Link href="/peptides/fda-status" className="group block">
+            <Card className="h-full border-clinic/20 bg-clinic/[0.03] transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
+              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Start here</p>
+              <h3 className="mt-2 text-xl">Peptides and the FDA — where things actually stand</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                What the July 2026 advisory vote did and did not do — and why “an FDA panel recommended it” and
+                “the FDA approved it” are not the same thing.
+              </p>
+            </Card>
+          </Link>
+          <Link href="/peptides/glp-1" className="group block">
+            <Card className="h-full border-clinic/20 bg-clinic/[0.03] transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
+              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Metabolic</p>
+              <h3 className="mt-2 text-xl">GLP-1 therapy</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                Semaglutide, tirzepatide and retatrutide — and the difference between an FDA-approved brand and a
+                compounded preparation.
+              </p>
+            </Card>
+          </Link>
+        </div>
+
         {categories.map((cat) => (
           <div key={cat} className="mb-14 last:mb-0">
             <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink-muted">{cat}</h2>
