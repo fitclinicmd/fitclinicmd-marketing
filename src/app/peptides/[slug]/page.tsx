@@ -172,10 +172,10 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
             </section>
           )}
 
-          {/* 9 · What to ask your provider */}
+          {/* 9 · What to ask your provider / consultation covers */}
           {p.questions && (
             <section className="mt-12">
-              <h2 className="text-2xl">What to ask your provider</h2>
+              <h2 className="text-2xl">{p.questionsHeading ?? "What to ask your provider"}</h2>
               <ul className="mt-4 space-y-2 pl-5">
                 {p.questions.map((q, i) => (
                   <li key={i} className="list-disc text-ink-soft marker:text-clinic">
@@ -185,6 +185,41 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
               </ul>
             </section>
           )}
+
+          {/* Where this stands — short summary */}
+          {p.whereThisStands && (
+            <section className="mt-12">
+              <div className="rounded-xl2 border border-clinic/20 bg-clinic/[0.04] p-6">
+                <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Where this stands</p>
+                {p.whereThisStands.map((para, i) => (
+                  <p key={i} className="mt-3 leading-relaxed text-ink-soft">
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Who makes this — shared 503A pharmacy standard (identical on every page) */}
+          <section className="mt-12">
+            <div className="rounded-xl2 border border-ink/10 bg-ink/[0.02] p-6">
+              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">
+                Who makes this, and under what rules
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                Everything we dispense is prepared by a licensed <strong>503A compounding pharmacy</strong> —
+                not bought from a supplier and repackaged, and not sourced from an online seller. That
+                designation carries specific, enforceable obligations: a prescription in your name after an
+                evaluation; a state licence subject to board inspection; ingredients traceable to a named
+                source and lot via a certificate of analysis from an FDA-registered facility; sterile
+                preparation to USP standards; and a lot number and beyond-use date on every preparation.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+                A compounded preparation is not an FDA-approved medicine — but it is the difference between a
+                licensed pharmacy working to a standard and an unregulated website.
+              </p>
+            </div>
+          </section>
 
           {/* 10 · Clinical detail — referring-provider level */}
           {p.clinicalDetail && (
