@@ -419,13 +419,231 @@ export const PEPTIDES: Peptide[] = [
     ],
   },
 
+  {
+    slug: "mots-c",
+    name: "MOTS-c",
+    drugClass: "Mitochondrial-derived peptide",
+    tier: "animal",
+    chipSub:
+      "Promising cell and mouse biology, with essentially no human data on what happens when the peptide is actually given to a person. The first controlled human trial only began in 2026.",
+    category: "Mitochondrial & cellular energy",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "One of the newest compounds in the library. The interesting biology is almost entirely mouse and cell work; the ‘exercise in a shot’ story is usually told backwards.",
+    standfirst:
+      "MOTS-c is one of the newest peptides here, and the honest state of the evidence reflects that: promising cell and animal biology, with almost no human data yet on what happens when it’s actually given to a person.",
+    whatItIs: [
+      "MOTS-c is a small, lab-made chain of 16 amino acids with an unusual origin: its blueprint comes from your mitochondrial DNA rather than the DNA in your cell’s nucleus. It appears to be one of a recently discovered family of signals mitochondria use to communicate with the rest of the body.",
+      "It was first identified in 2015 and is sold today as an injection, marketed for metabolic health, weight management, exercise performance and longevity.",
+    ],
+    uses: [
+      { use: "Metabolic health and insulin sensitivity", tier: "animal", meaning: "Mouse studies show real improvements through an AMPK-driven mechanism. In humans, only correlational blood-level data exists; the first controlled human trial of the injected peptide only began enrolling in 2026." },
+      { use: "Weight management and fat metabolism", tier: "animal", meaning: "Supported by mouse studies. No completed human efficacy trial of the native peptide exists." },
+      { use: "Exercise performance (‘exercise mimetic’)", tier: "animal", meaning: "The signature finding — doubled treadmill endurance — is a mouse result. The only human data shows exercise raises your own MOTS-c levels, not that injecting it improves performance." },
+      { use: "Longevity and healthy aging", tier: "animal", meaning: "Based on aging-mouse studies. Human data is limited to correlational levels that vary with age and muscle mass, not a tested aging outcome." },
+      { use: "General mitochondrial support", tier: "theoretical", meaning: "A plausible extension of MOTS-c’s role as a mitochondrial signal, but not a validated outcome tested in any human trial." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "The leading idea is that MOTS-c activates AMPK, a master fuel-sensing switch that also turns on with exercise and calorie restriction, driving increased fat burning and glucose uptake in mouse studies. A 2021 finding showed mice given MOTS-c ran roughly twice as long on a treadmill — but the same study’s human data showed a bout of exercise raises a person’s own MOTS-c, which is evidence that exercise triggers MOTS-c, not that injecting it reproduces exercise.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "There are two very different kinds of MOTS-c research, and marketing blurs them together. One measures people’s own natural MOTS-c blood levels and correlates them with health markers — useful, but it doesn’t involve giving anyone the peptide.",
+          "Actually administering MOTS-c to a person and measuring what happens is essentially unstudied. FDA’s review states it has not identified any human exposure data for MOTS-c administered by any route. The first real trial of native MOTS-c only began enrolling in early 2026.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "It’s exercise in a shot, proven in humans.", reality: "The dramatic finding is a mouse result. The human evidence points the other way: exercising raises your own MOTS-c — it doesn’t show that injecting MOTS-c gives you the benefits of exercise." },
+      { claim: "Because my body makes it naturally, injecting more must be safe.", reality: "The opposite is closer to true: regulators have specifically noted no human exposure data exists for administered MOTS-c at any dose, by any route." },
+      { claim: "There’s a lot of research on this, so it’s well established.", reality: "Most of that research is mouse and cell-culture work, plus human studies that only measure existing blood levels. Very little involves giving a person the peptide." },
+      { claim: "A recent FDA advisory vote means this is basically approved now.", reality: "That vote was non-binding, passed narrowly (7–5, two abstentions), over FDA staff’s own objection, and only concerned whether pharmacies may legally compound with it — not whether it works or is safe." },
+    ],
+    notFor: [
+      "Anyone expecting an established human safety profile — none exists yet at any dose.",
+      "Anyone pregnant, breastfeeding, or trying to conceive.",
+      "Anyone with active cancer, a cancer history, or an undiagnosed mass — its mechanism touches cell-growth and stress-signalling pathways not fully characterised in humans.",
+      "Anyone taking metformin or other medications that work through the same AMPK pathway, given an unstudied potential interaction.",
+      "Anyone sourcing it from an unverified online seller rather than a licensed compounding pharmacy.",
+    ],
+    dopingLine:
+      "Competitive athletes: prohibited at all times, in and out of competition, explicitly named by WADA (category S4). There is no realistic exemption pathway, since exemptions require an approved therapeutic use and MOTS-c has none.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are trying to achieve, and that this is genuinely early-stage human evidence — an honest starting point for the conversation.",
+      "Your history: any cancer diagnosis or unscreened finding, and current medications including metformin.",
+      "Where the material comes from, and the certificate of analysis for your lot.",
+      "What we measure, on what schedule, and the point at which we would stop.",
+      "What proven, better-evidenced options exist for the same goal.",
+    ],
+    whereThisStands: [
+      "One of the newest compounds in the library, and the human evidence reflects that honestly. The interesting biology is almost entirely mouse and cell-culture work; a controlled human trial of the actual peptide only began in 2026.",
+      "The exercise-mimetic story is often told backwards. The real human finding is that exercise raises your own MOTS-c, not that the peptide replicates what exercise does.",
+    ],
+    clinicalDetail: [
+      "MOTS-c (MRWQEMGYIFYPRKLR) is a 16-amino-acid mitochondrial-derived peptide encoded within the 12S rRNA region of the mitochondrial genome, discovered in 2015 (Lee et al., Cell Metabolism). Proposed mechanisms include AMPK activation and an AMPK-independent nuclear-translocation pathway under metabolic stress.",
+      "FDA’s compounding-safety review states no human exposure data exists for MOTS-c administered by any route. A structurally distinct analog, CB4211, underwent a Phase 1a/1b trial (~88 subjects) before its developer dissolved. The first controlled trial of native MOTS-c (NCT07505745, Phase 2a, ~120 adults) began enrolling February 2026 with an estimated 2028 completion.",
+      "Not FDA-approved; not on the 503A Bulks List. Reviewed at the July 2026 PCAC for obesity and osteoporosis; FDA staff recommended against inclusion and the committee voted 7–5 (two abstentions) to recommend inclusion anyway — the narrowest margin of the peptides reviewed. Non-binding and not adopted. Prohibited under WADA category S4.",
+    ],
+  },
+  {
+    slug: "nad",
+    name: "NAD+",
+    drugClass: "Cellular energy coenzyme",
+    tier: "limited",
+    chipSub:
+      "Human trials of the injected/IV form are few and small — well under 200 people across every indication combined — and the largest dataset is uncontrolled.",
+    category: "Mitochondrial & cellular energy",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "The biology is real and well established; the case for injecting it is much less so. And it’s genuinely uncomfortable medicine if rushed.",
+    standfirst:
+      "NAD+ is a coenzyme every cell needs. The biology is well established — but the case for infusing or injecting it is much thinner, and this is genuinely uncomfortable medicine if given too fast.",
+    whatItIs: [
+      "NAD+ (nicotinamide adenine dinucleotide) is a coenzyme every cell needs to turn food into usable energy and to power DNA-repair systems. Levels naturally decline with age, which is the basis for interest in restoring them.",
+      "It is sold two very different ways. Oral precursor supplements (NR, NMN) are over-the-counter dietary supplements. What’s offered by injection or IV infusion at a wellness clinic — the form discussed here — is a compounded drug product held to a more scrutinised standard.",
+    ],
+    uses: [
+      { use: "Energy, fatigue and general vitality", tier: "limited", meaning: "The mechanistic rationale is solid biology, but few controlled human trials of the IV form measure fatigue or energy directly as an outcome." },
+      { use: "Cognitive function, mental clarity, brain fog", tier: "limited", meaning: "One small peer-reviewed human trial exists for cognition — a meaningful result on a genuinely limited evidence base, not a well-replicated finding." },
+      { use: "Support during addiction or substance withdrawal", tier: "limited", meaning: "The most-cited human data for injected NAD+, but from an uncontrolled, unblinded chart review combining NAD+ with other treatments — not a randomized trial isolating NAD+." },
+      { use: "Anti-aging and longevity", tier: "theoretical", meaning: "No controlled human trial of IV NAD+ has tested aging or longevity. A 2026 study also questioned the premise that NAD+ reliably declines with age the way marketing assumes." },
+      { use: "Exercise performance and recovery", tier: "theoretical", meaning: "Plausible given NAD+’s role in energy metabolism, but no dedicated human performance trial of the injected form was identified." },
+      { use: "Hangover or general detox support", tier: "none", meaning: "No controlled human trial supports this specific marketing claim." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "Inside your cells NAD+ is essential fuel for mitochondrial energy production and for enzymes that repair DNA. What’s less certain is what happens when it’s infused rather than made by your own cells: NAD+ is a relatively large, charged molecule that isn’t expected to cross into cells easily, and a recent controlled study found IV NAD+ didn’t reliably raise blood NAD+ the way an equivalent dose of a smaller precursor did.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Human trials of injected or IV NAD+ specifically are limited — a handful of qualifying studies spanning several decades, totaling well under 200 people across every indication combined. The single largest body of human data is an uncontrolled, unblinded chart review of NAD+ used alongside other treatments for addiction withdrawal.",
+          "The commonly repeated premise that everyone’s NAD+ meaningfully declines with age was itself called into question by a 2026 study, and no controlled human trial has tested whether IV NAD+ slows aging in any measurable way.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "IV NAD+ is proven to slow aging.", reality: "No controlled human trial has tested this. A 2026 study also complicates the basic premise that NAD+ reliably declines with age the way it’s marketed." },
+      { claim: "It’s basically a vitamin, so it’s totally safe at any dose or speed.", reality: "Fast infusion is specifically associated with real, uncomfortable effects — chest tightness, cramping and flushing — which is why slow infusion protocols exist." },
+      { claim: "The strong oral-supplement research applies here too.", reality: "Oral precursors (NR, NMN) are a separate research base from injected or IV NAD+ itself; the evidence quality and quantity are not interchangeable." },
+      { claim: "Getting it by IV means it definitely reaches your cells better.", reality: "A controlled comparison found IV NAD+ didn’t reliably raise blood NAD+ the way an equivalent IV dose of a smaller precursor did — the infusion route doesn’t automatically solve absorption." },
+    ],
+    notFor: [
+      "Anyone expecting a fast infusion — rapid administration is linked to chest tightness, cramping, flushing and shortness of breath; slow infusion over several hours meaningfully reduces this.",
+      "Anyone with a cardiac or chest-pain history who hasn’t discussed infusion-related chest tightness with their provider beforehand.",
+      "Anyone pregnant or breastfeeding — no dedicated safety data exists for the injected or IV form.",
+      "Anyone expecting a guaranteed anti-aging or longevity effect — no controlled human trial supports this claim for the injected form.",
+      "Anyone sourcing it from an unlicensed provider — FDA has taken direct enforcement action against a seller after a contamination-related adverse event.",
+    ],
+    dopingLine:
+      "Competitive athletes: not named on the WADA Prohibited List or flagged by USADA in the sources reviewed for this page. (A compounded product could still contain other prohibited ingredients — check the specific preparation.)",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are hoping to achieve, and what the injected form has and has not actually been shown to do.",
+      "Your cardiac history and any prior reaction to infusions.",
+      "What a typical session feels like, and why we infuse slowly.",
+      "Where the material comes from, and the certificate of analysis for your lot.",
+      "What we measure, on what schedule, and the point at which we would stop.",
+    ],
+    whereThisStands: [
+      "The biology behind NAD+ is real and well established; the case for injecting it is much less so. Human trials of the injected form are few, small, and — for the addiction-support use with the most data — uncontrolled and unblinded.",
+      "This is genuinely uncomfortable medicine if rushed. FDA’s own review and independent studies both describe real, common infusion-related symptoms that slow administration is designed to avoid — worth knowing before your first session.",
+    ],
+    clinicalDetail: [
+      "NAD+ is a dinucleotide coenzyme central to redox reactions in energy metabolism and a required substrate for sirtuin and PARP enzymes involved in DNA repair.",
+      "FDA evaluated NAD+ for both 503A and 503B compounding and did not add it in either review, citing stability concerns and lack of toxicology data; it currently sits in FDA’s 503B ‘Category 1 — Under Evaluation.’ A January 2026 warning letter to a compounder cited NAD+ as ineligible for 503B and documented three patients who developed hypotension, shaking and body aches after an infusion found to contain high bacterial endotoxin, following a Class I recall.",
+      "The human interventional literature is roughly five qualifying studies across all indications (1961–2019, ~140 people combined); the largest single dataset is uncontrolled addiction/withdrawal support. A 2026 randomized comparison found IV NAD+ did not reliably raise blood NAD+ the way IV nicotinamide riboside did.",
+    ],
+  },
+  {
+    slug: "epitalon",
+    name: "Epitalon",
+    drugClass: "Synthetic four-amino-acid pineal peptide",
+    tier: "animal",
+    chipSub:
+      "Only two human studies of Epitalon itself exist, neither replicated. FDA states it found no clinical studies assessing the safety of Epitalon in humans; zero exist for the injection route clinics dispense.",
+    category: "Longevity, sleep & circadian",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "The famous ‘lifespan’ studies used a different substance. It was reviewed for insomnia; it is sold for ageing. Those are not the same claim.",
+    standfirst:
+      "Epitalon is sold as an anti-ageing injection on a telomere-lengthening claim. The famous human ‘lifespan’ results used a different substance entirely — and no human study has ever measured telomere length or lifespan on Epitalon itself.",
+    whatItIs: [
+      "Epitalon is a lab-made peptide of just four amino acids, designed in Russia to imitate a natural extract of the pineal gland — the small brain gland that helps run your sleep-wake cycle. It is sold as an anti-aging injection on the claim that it lengthens telomeres, the protective caps on your chromosomes.",
+      "It has never been approved as a medicine anywhere in the world.",
+    ],
+    uses: [
+      { use: "Cellular longevity / lifespan / telomere maintenance", tier: "animal", meaning: "The human longevity and mortality results were obtained with Epithalamin, a bovine pineal extract — not with Epitalon. No human study has measured telomere length or lifespan on Epitalon itself." },
+      { use: "Insomnia and sleep quality", tier: "limited", meaning: "The indication the July 2026 panel voted on. FDA found exactly one relevant human study — 75 people, 20 days, sublingual — which did not measure sleep outcomes at all." },
+      { use: "Normalising circadian rhythm / melatonin", tier: "limited", meaning: "One study of 75 women reported a 1.6-fold increase in melatonin synthesis versus placebo over 20 days of sublingual dosing; never independently replicated." },
+      { use: "Antioxidant and neuroprotective effects", tier: "animal", meaning: "Rodent and cell-culture data only." },
+      { use: "Cancer suppression / tumour prevention", tier: "animal", meaning: "Mouse and rat studies reported reduced tumour incidence; FDA’s reviewers reached the opposite concern for humans and called for genotoxicity and carcinogenicity studies." },
+      { use: "Retinitis pigmentosa (degenerative eye disease)", tier: "limited", meaning: "The largest human study — 162 patients, injections around the eye — reported visual improvement, but had no control group and has never been replicated." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "In laboratory dishes, Epitalon switches on telomerase, an enzyme that rebuilds the caps at the ends of chromosomes, letting cultured cells divide more times than usual. Nobody has shown this happens inside a living human. And the same mechanism is why regulators worry about cancer — cancer cells are precisely cells that have escaped the limit on how many times they can divide.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Extremely limited. A 2025 review identified only two human clinical studies of Epitalon itself: 162 patients with retinitis pigmentosa (parabulbar injection, no control arm), and 75 women (sublingual, 20 days, measuring melatonin). Neither has been independently replicated.",
+          "FDA’s July 2026 review reached the same place: for the nominated insomnia indication it identified only that n=75 sublingual study, which ‘did not evaluate sleep outcomes.’ FDA was blunt on safety: ‘there are no clinical data to support the safety of epitalon… when used in humans.’ Zero human studies exist for the subcutaneous injection route clinics dispense.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "Epitalon has been shown in human trials to extend lifespan and reduce mortality in elderly people.", reality: "The single most consequential error in Epitalon marketing. Those long-term human mortality studies used Epithalamin, a bovine pineal gland extract — not Epitalon, the synthetic tetrapeptide. No human lifespan or mortality study of Epitalon itself exists." },
+      { claim: "Epitalon lengthens your telomeres.", reality: "Telomere lengthening has been shown in cultured human fibroblasts in a dish. No human in vivo telomere lengthening has ever been documented; the 2025 review’s own conclusion is that ‘its mechanism of action remains unclear.’" },
+      { claim: "Studies suggest Epitalon suppresses cancer, so telomerase activation is not a concern.", reality: "That reassurance comes from mouse and rat studies. FDA’s toxicologists reviewing the same mechanism reached the opposite conclusion for humans and called for genotoxicity and carcinogenicity testing. The honest statement is: nobody knows, and the regulator’s concern runs the other way." },
+      { claim: "The FDA panel recommended Epitalon, so it is on its way to approval.", reality: "The panel recommended it for a compounding list, for insomnia, over the objection of FDA’s own scientists, by a narrow margin. A bulks-list recommendation is not drug approval, is not binding, and requires rulemaking." },
+    ],
+    notFor: [
+      "Anyone with a current or past cancer, or a strong family history — FDA’s reviewers warned specifically that chronically switching on telomerase could push cells past the limit that keeps them from becoming cancerous.",
+      "Anyone who wants human safety data before injecting something — FDA states plainly it identified no clinical studies assessing the safety of Epitalon in humans. There is no established safe dose.",
+      "Anyone considering subcutaneous injection specifically — FDA flagged a particular immunogenicity risk for that route, and no human has been studied on it.",
+      "Anyone with insomnia who would use this instead of an evaluated treatment — FDA noted there are multiple FDA-approved products with established efficacy for insomnia.",
+      "Pregnant or breastfeeding women and anyone under 18 — no data whatsoever.",
+    ],
+    dopingLine:
+      "Competitive athletes: prohibited at all times under WADA section S0 (non-approved substances) — Epitalon has no approval from any governmental health authority anywhere, so there is no ambiguity.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are actually trying to change — sleep, circadian rhythm, or a broader interest in longevity — and whether something else should be addressed first.",
+      "Your personal and family cancer history, since the proposed mechanism is telomerase activation, and how we screen and monitor for that.",
+      "Your history and current medications, including anything affecting sleep or hormone rhythm.",
+      "Where the raw material comes from and against what standard it is tested — there is no pharmacopeial monograph for this compound.",
+      "What we measure, on what schedule, and the point at which we stop.",
+    ],
+    whereThisStands: [
+      "Never approved. Recommended in July 2026 for insomnia — not for the anti-ageing claims it is actually marketed for.",
+      "The longevity claims rest on very thin evidence, mostly older and difficult to verify. It was reviewed for insomnia. It is sold for ageing. Those are not the same claim.",
+    ],
+    clinicalDetail: [
+      "AEDG tetrapeptide reported in vitro to activate telomerase and maintain telomere length in human fetal fibroblasts, and in animals to modulate clock-gene expression and restore melatonin rhythm. FDA framed the same mechanism as the principal hazard: chronic exposure ‘by virtue of upregulating telomerase… could result in carcinogenicity.’ No human in vivo telomerase activation has been documented.",
+      "Never FDA-approved for any indication, and not approved in Canada, Australia, the UK or across the EU; not recognised in major foreign pharmacopeias. Previously in Category 2 of FDA’s interim compounding policy; that nomination was withdrawn, re-nominated, and reviewed at the July 2026 PCAC — for insomnia, not anti-aging (FDA declined to evaluate the anti-aging uses for lack of information). FDA scientists recommended against listing; the committee voted narrowly (reported 7–5) to recommend inclusion. Advisory only. Named in a 2020 FDA warning letter as a bulk substance not eligible for 503A exemptions.",
+    ],
+  },
+
   // PLANNED — reviewed source material on file (site-content/peptide-pages);
   // full page content transcribed in per the template before each is PUBLISHED.
   ...(
     [
-      ["mots-c", "MOTS-c", "Mitochondrial-derived peptide", "Metabolic"],
-      ["nad", "NAD+", "Coenzyme", "Repair & longevity"],
-      ["epitalon", "Epitalon", "Pineal tetrapeptide", "Repair & longevity"],
       ["kisspeptin", "Kisspeptin", "Reproductive signalling peptide", "Hormonal"],
       ["kpv", "KPV", "Anti-inflammatory tripeptide", "Immune & inflammation"],
       ["igf1-lr3", "IGF-1 LR3", "Insulin-like growth factor analogue", "Growth hormone pathway"],
