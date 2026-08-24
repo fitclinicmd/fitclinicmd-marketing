@@ -35,6 +35,27 @@ export const TIER_TONE: Record<Tier, string> = {
 export type UseRow = { use: string; tier: Tier; meaning: string };
 export type Misunderstanding = { claim: string; reality: string };
 
+/**
+ * Structured contraindications. This is the SHARED exclusions dataset:
+ *  - the education page renders `absolute` items as a red "do not use" block;
+ *  - the app intake screener (fitclinicmd-com) matches a client's pre-call
+ *    application answers against `screen` keys and HARD-LOCKS the prescription
+ *    for any absolute match, so the exclusion is enforced by the platform and
+ *    not left to the provider's memory.
+ * Keep `screen` keys stable and shared across peptides (one key = one intake
+ * question), so a single application answer can gate every relevant peptide.
+ */
+export type ExclusionSeverity = "absolute" | "caution";
+export type Exclusion = {
+  /** Short label shown to patients, e.g. "Pregnancy, breastfeeding, or trying to conceive". */
+  condition: string;
+  severity: ExclusionSeverity;
+  /** One line on why it rules the patient out. */
+  note?: string;
+  /** Stable machine key the intake screener matches against, e.g. "pregnancy". */
+  screen?: string;
+};
+
 export type Peptide = {
   slug: string;
   name: string;
@@ -55,6 +76,9 @@ export type Peptide = {
   uses?: UseRow[];
   evidence?: { heading: string; paras: string[]; callout?: string }[];
   misunderstandings?: Misunderstanding[];
+  /** Hard/soft contraindications (structured). `absolute` items render in red and,
+   *  in the app, lock the prescription. Softer cautions live in `notFor`. */
+  exclusions?: Exclusion[];
   notFor?: string[];
   dopingLine?: string;
   /** "What to ask your provider" (default) or "What your consultation covers". */
@@ -166,11 +190,29 @@ export const PEPTIDES: Peptide[] = [
       },
       { claim: "It is approved somewhere in Europe or Asia.", reality: "It is not approved anywhere." },
     ],
+    exclusions: [
+      {
+        condition: "Active or previous cancer, or an unscreened suspicious finding",
+        severity: "absolute",
+        note: "Raising growth hormone and IGF-1 carries a theoretical risk of promoting existing disease.",
+        screen: "cancer_history",
+      },
+      {
+        condition: "Pregnancy, breastfeeding, or trying to conceive",
+        severity: "absolute",
+        note: "No safety data support use, and none of the studies enrolled these patients.",
+        screen: "pregnancy",
+      },
+      {
+        condition: "Competitive drug-tested athletes",
+        severity: "absolute",
+        note: "Named explicitly and prohibited at all times under the World Anti-Doping Code.",
+        screen: "tested_athlete",
+      },
+    ],
     notFor: [
       "Anyone with known heart disease or significant cardiac risk factors. The FDA has documented raised heart rate and vasodilatory reactions in the published studies.",
-      "Anyone with active or previous cancer, or an unscreened suspicious finding. Raising growth hormone and IGF-1 carries a theoretical risk of promoting existing disease.",
       "Anyone with diabetes, prediabetes or unstable blood sugar. Raising growth hormone pushes blood sugar in the wrong direction.",
-      "Pregnancy, breastfeeding, or anyone trying to conceive.",
       "Anyone prone to fluid retention, or with existing carpal tunnel symptoms. Both are recognised effects of raising growth hormone.",
       "Anyone unwilling to be monitored. There is no approved labelling for this, which means there is no official monitoring schedule.",
     ],

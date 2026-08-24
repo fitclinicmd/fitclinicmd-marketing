@@ -154,16 +154,48 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
           )}
 
           {/* 8 · Who it is not for */}
-          {p.notFor && (
+          {(p.exclusions?.length || p.notFor || p.dopingLine) && (
             <section className="mt-12">
               <h2 className="text-2xl">Who it is not for</h2>
-              <ul className="mt-4 space-y-2 pl-5">
-                {p.notFor.map((it, i) => (
-                  <li key={i} className="list-disc text-ink-soft marker:text-clinic">
-                    {it}
-                  </li>
-                ))}
-              </ul>
+
+              {/* Absolute exclusions — enforced at intake, not left to memory. */}
+              {p.exclusions?.some((e) => e.severity === "absolute") && (
+                <div className="mt-4 rounded-xl2 border border-red-200 bg-red-50 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-red-800">
+                    Do not use if any of these apply
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {p.exclusions
+                      .filter((e) => e.severity === "absolute")
+                      .map((e, i) => (
+                        <li key={i} className="flex gap-2 text-sm leading-relaxed text-red-900">
+                          <span aria-hidden className="mt-0.5 select-none font-bold">✕</span>
+                          <span>
+                            <strong>{e.condition}.</strong>
+                            {e.note ? <span className="font-normal text-red-800/90"> {e.note}</span> : null}
+                          </span>
+                        </li>
+                      ))}
+                  </ul>
+                  <p className="mt-4 border-t border-red-200 pt-3 text-xs leading-relaxed text-red-800/80">
+                    We screen for these on your application before your consultation. Where an exclusion
+                    applies, the platform locks the prescription out — it is not left to the provider to
+                    remember.
+                  </p>
+                </div>
+              )}
+
+              {/* Softer cautions — discuss first. */}
+              {p.notFor && (
+                <ul className="mt-4 space-y-2 pl-5">
+                  {p.notFor.map((it, i) => (
+                    <li key={i} className="list-disc text-ink-soft marker:text-clinic">
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
               {p.dopingLine && (
                 <p className="mt-5 rounded-lg border border-red-200 bg-red-50 p-4 text-sm font-medium text-red-800">
                   {p.dopingLine}
