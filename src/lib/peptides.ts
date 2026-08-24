@@ -640,14 +640,303 @@ export const PEPTIDES: Peptide[] = [
     ],
   },
 
+  {
+    slug: "kisspeptin",
+    name: "Kisspeptin",
+    drugClass: "Reproductive signalling peptide (kisspeptin-10)",
+    tier: "limited",
+    chipSub:
+      "Real hospital research exists — but it used kisspeptin-54 by IV drip. The form clinics dispense is kisspeptin-10 by injection, which has no published repeated-dosing trial for any marketed use.",
+    category: "Sexual & reproductive health",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "Genuinely important biology, studied by serious researchers — but in a different molecule and route than what clinics sell. And it is explicitly named on the WADA list.",
+    standfirst:
+      "Kisspeptin sits at the very top of the reproductive hormone chain, and it has been studied in real clinical trials. The catch: those trials used kisspeptin-54 by IV drip in a hospital. Clinics sell kisspeptin-10 by injection — a different, much shorter-acting molecule.",
+    whatItIs: [
+      "Kisspeptin is a natural signalling peptide made in the hypothalamus that tells the brain to release GnRH, which drives LH and FSH, which tell the testes or ovaries to make testosterone or oestrogen. It has been studied at Imperial College London for fertility and low sexual desire.",
+      "But those trials used kisspeptin-54, given by intravenous drip in a hospital. The form sold by peptide clinics is kisspeptin-10 — a different, much shorter-acting molecule — given as an injection under the skin.",
+    ],
+    uses: [
+      { use: "Testosterone support / ‘natural TRT alternative’", tier: "limited", meaning: "Kisspeptin does stimulate the axis that makes testosterone, but the human studies measured short-term hormone responses to single doses — not sustained levels, symptoms or safety over time — and none used the kisspeptin-10 form clinics dispense." },
+      { use: "Fertility support and ovulation triggering in IVF", tier: "human", meaning: "The strongest evidence for kisspeptin — three Phase 2 trials in 175 women showed high oocyte maturation and near-elimination of severe ovarian hyperstimulation — but all used kisspeptin-54 under specialist IVF supervision, not kisspeptin-10 from a wellness clinic." },
+      { use: "Low sexual desire (HSDD)", tier: "limited", meaning: "Two small randomized crossover trials — 32 men and 32 women — showed changes in brain activity after a single 75-minute IV infusion; the investigators themselves call this proof-of-concept requiring larger studies." },
+      { use: "Restoring reproductive function (amenorrhoea, PCOS)", tier: "human", meaning: "Active academic research areas, still investigational — no approved product exists for any of them." },
+      { use: "Libido enhancement in people without a diagnosis", tier: "theoretical", meaning: "The trials enrolled people with a diagnosed disorder; nothing supports use in people without one." },
+      { use: "Anti-aging / general hormone optimisation", tier: "theoretical", meaning: "No human evidence of any kind for these framings." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "Kisspeptin is the switch upstream of the switch. It acts on the brain to release the hormone that releases the hormones that drive your testes or ovaries — which is why it interests fertility doctors, and why it raises testosterone or oestrogen indirectly rather than replacing it.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Real but modest, and almost entirely in the wrong molecule and route for what is sold. The Imperial College programme ran the first-in-human studies (men 2005, women 2007). Published evidence: for HSDD, two crossover trials (32 men, 32 women) each given a single IV infusion of kisspeptin-54; for IVF, three Phase 2 trials totalling 175 women given subcutaneous kisspeptin-54.",
+          "Total human exposure across the entire published literature is in the low hundreds, overwhelmingly single doses, overwhelmingly kisspeptin-54. There is no published trial of repeated or chronic kisspeptin-10 dosing in humans for any marketed use.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "Kisspeptin has been proven in clinical trials to boost sexual desire.", reality: "Two crossover trials of 32 people each received a single IV infusion of kisspeptin-54 in a research unit, with brain imaging as the outcome. The investigators call it ‘proof-of-concept.’ It is not a demonstration that a subcutaneous kisspeptin-10 injection improves anyone’s sex life over time." },
+      { claim: "Kisspeptin-10 and kisspeptin-54 are basically the same thing.", reality: "They are not interchangeable. Their half-lives differ roughly ten-fold — ~3 minutes for KP10 versus ~28 minutes for KP54. Nearly all the encouraging human research used KP54. FDA’s Category 2 safety listing is specifically for kisspeptin-10." },
+      { claim: "It’s a natural, safer alternative to TRT.", reality: "No trial has compared it to TRT, none has measured sustained testosterone or symptom outcomes, and FDA states it lacks the information to know whether kisspeptin-10 would cause harm. ‘Safer’ is not a claim anyone is in a position to make." },
+      { claim: "It’s fine for athletes because it’s just a natural hormone.", reality: "It is specifically named on the WADA Prohibited List, section S2.2.1, prohibited at all times in males." },
+    ],
+    notFor: [
+      "Athletes and anyone in tested sport must not use this — kisspeptin is explicitly named on the WADA Prohibited List.",
+      "Anyone with a hormone-sensitive cancer — prostate, breast, ovarian, endometrial — should not take something whose purpose is to drive the sex-hormone axis upward.",
+      "Anyone on a GnRH agonist or antagonist for prostate cancer, endometriosis, fibroids or precocious puberty, since kisspeptin works directly against that therapy.",
+      "Anyone trying to conceive or on fertility treatment who is not under the care of a fertility specialist — kisspeptin can trigger ovulation, and using it outside a monitored cycle is unpredictable.",
+      "Anyone with a hormone or pituitary disorder, since kisspeptin acts at the top of the axis and can disturb it in ways that are not well characterised.",
+    ],
+    dopingLine:
+      "Competitive athletes: explicitly prohibited. The 2026 WADA Prohibited List names ‘Kisspeptin and its agonist analogues’ under S2.2.1, prohibited at all times in males — one of the few peptides here named by name rather than caught by the S0 catch-all.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are actually treating — libido, fertility, or hormone signalling — and what the evaluated options for that are.",
+      "Whether you compete in tested sport. Kisspeptin is named on the WADA Prohibited List, and that ends the conversation.",
+      "Your history: hormone-sensitive cancer, pituitary or hormone disorders, GnRH therapy, and any fertility treatment already under way.",
+      "The difference between the form used in the published hospital trials and the form available to you, and what that means for expectations.",
+      "What labs we check before and during, and the result that would make us stop.",
+    ],
+    whereThisStands: [
+      "Never approved anywhere. The human research is real but early, mostly in controlled research settings.",
+      "Being studied by serious researchers is not the same as being established as a treatment.",
+    ],
+    clinicalDetail: [
+      "KISS1R (GPR54) agonist acting on hypothalamic GnRH neurons to stimulate pulsatile GnRH release. Kisspeptin-54 and kisspeptin-10 differ materially in PK — terminal half-life ~28 minutes for KP54 versus ~3 minutes for KP10. In fMRI studies of HSDD, kisspeptin-54 modulated activity in sexual-processing brain structures.",
+      "Never FDA-approved for any indication, anywhere. Kisspeptin-10 is currently on FDA’s active Category 2 list — bulk substances used in 503A compounding that may present significant safety risks — added 29 September 2023 and still listed as of the 22 April 2026 update, with FDA stating it ‘lacks sufficient information to know whether the drug would cause harm when administered to humans.’ Not among the seven peptides reviewed at the July 2026 PCAC; its Category 2 listing remains active.",
+    ],
+  },
+  {
+    slug: "kpv",
+    name: "KPV",
+    drugClass: "Tripeptide fragment of alpha-MSH",
+    tier: "animal",
+    chipSub:
+      "No study has ever been published in which a human being received KPV, by any route. The entire evidence base is cell-culture and mouse work.",
+    category: "Inflammation & immune defense",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "Promising anti-inflammatory biology in mice and dishes — and zero human data. FDA searched and found no record of any person ever receiving it.",
+    standfirst:
+      "In laboratory dishes and in mice, KPV calms inflammatory signalling in the gut and skin. But no study has ever been published in which a human being received it — FDA searched and found none.",
+    whatItIs: [
+      "KPV is a three-amino-acid fragment of a natural hormone called alpha-MSH, which your body uses partly to control inflammation. In laboratory dishes and in mice, this small fragment calms inflammatory signalling in the gut and in skin.",
+      "It is sold as capsules, injections and creams for gut inflammation, skin conditions and general anti-inflammatory use.",
+    ],
+    uses: [
+      { use: "Inflammatory bowel disease, colitis, ‘leaky gut’", tier: "animal", meaning: "Mouse colitis studies — often using engineered nanoparticle delivery — are the entire evidence base; no person with IBD has been studied on KPV in a published trial." },
+      { use: "Wound healing and inflammatory skin conditions (the use FDA reviewed)", tier: "animal", meaning: "The nominated indication for a 0.1% topical cream — and FDA concluded there is a lack of evidence to evaluate whether it works." },
+      { use: "Eczema, psoriasis, acne, rosacea (topical)", tier: "animal", meaning: "Extrapolated from general anti-inflammatory activity in animal and cell models; no controlled human skin trial exists." },
+      { use: "Antimicrobial and antifungal activity", tier: "animal", meaning: "Reported in laboratory cultures and animal models only, with no human infection trial." },
+      { use: "Mast cell activation, histamine intolerance, allergy", tier: "theoretical", meaning: "A mechanistic guess with no animal or human study addressing these conditions specifically." },
+      { use: "Pairing with BPC-157 for ‘gut repair’", tier: "theoretical", meaning: "No study has ever examined the combination in any species, let alone in people." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "Alpha-MSH is a natural off-switch for inflammation. KPV is the tail end of that hormone — the part thought to carry the anti-inflammatory signal without the parts that control skin pigment. In mouse colitis and cell culture it dampens the master inflammatory switch NF-κB and reduces inflammatory cytokines.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Zero. Not few — none. FDA searched both the nomination package and the published literature in 2026 and reported no information of any kind on KPV administered to humans by any route, and no record of human use of compounded KPV products. There is also no repeat-dose toxicology, and FDA stated it had no information with which to assess immunogenicity or aggregation. The entire literature is in-vitro and rodent.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "The FDA approved KPV in July 2026.", reality: "An advisory committee voted 8–6 to recommend adding it to the list of ingredients compounding pharmacies may use — for wound healing, as a topical cream. FDA’s own scientists recommended against it, the vote is non-binding, and the rulemaking that would give it effect has not happened." },
+      { claim: "KPV gives you alpha-MSH’s anti-inflammatory benefit without the hormonal effects.", reality: "A reasonable hypothesis from animal and cell work that has never been checked in a human. FDA additionally considers KPV itself ‘not well-characterized,’ with inconsistent naming across suppliers." },
+      { claim: "Oral KPV heals the gut lining.", reality: "The gut work is mouse colitis, much of it using engineered nanoparticle carriers precisely because plain oral peptides are broken down by stomach acid and enzymes into amino acids before they can act." },
+      { claim: "It’s been used safely by clinics for years.", reality: "FDA looked for exactly this and found nothing — the extent of use in compounding is ‘unknown,’ and no human exposure data exists in the literature. Unrecorded use is not a safety record." },
+    ],
+    notFor: [
+      "Nobody can tell you the safety profile of this compound, because no human has been studied — so any claim that KPV is ‘well tolerated’ is unsupported by data.",
+      "Anyone pregnant, breastfeeding or trying to conceive — there is no reproductive or developmental toxicity data at all.",
+      "Anyone with a history of severe allergic reaction or anaphylaxis, if an injectable is proposed — FDA said explicitly it had no information to assess KPV’s immunogenicity.",
+      "Anyone with an active cancer diagnosis — this compound acts on melanocortin and immune signalling, never studied in a person with cancer.",
+      "Anyone with an autoimmune or immune-mediated condition — modulating an already dysregulated immune system without data is a gamble.",
+      "Anyone who would delay or replace a proven treatment for IBD or a skin condition with this — that is the concrete harm risk here.",
+    ],
+    dopingLine:
+      "Competitive athletes: not named on the WADA list, but S0 prohibits any substance with no approval from any regulator anywhere — which describes KPV. A tested athlete should treat KPV as prohibited and not use it without a written ruling. Route (a topical) is not a loophole.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What is actually driving the inflammation, and whether a proven treatment for it should be in place first.",
+      "Your history and current medications, particularly any autoimmune condition, cancer history, or severe allergy.",
+      "Which form fits the target — capsule, injection or cream — and what is known about each.",
+      "Who compounds it, whether it is free base or acetate, and what identity, purity, endotoxin and sterility testing was done on your batch.",
+      "What it costs, over what period, what we measure, and the plan if nothing changes.",
+    ],
+    whereThisStands: [
+      "Never approved. Recommended by an advisory panel in July 2026 for wound healing and inflammatory conditions — advisory, not approval.",
+      "The evidence is animal and laboratory work. The July vote does not change what is known about whether it works in people.",
+    ],
+    clinicalDetail: [
+      "Lys-Pro-Val, the α-MSH(11–13) fragment. Proposed mechanisms include NF-κB inhibition and, in intestinal epithelium, uptake via the PepT1 transporter upregulated in inflamed colonic tissue. All derived from in-vitro and rodent models; FDA characterises the identity itself as inadequately established.",
+      "Never approved anywhere, for any indication, by any route. Not on the 503A Bulks List. Previously nominated and placed in Category 2; the nomination was withdrawn, and KPV now sits in FDA’s ‘nominated but withdrawn’ table: ‘FDA has not identified any human exposure data on drug products containing KPV… FDA lacks important information regarding any safety issues.’ Re-nominated and reviewed at the July 2026 PCAC — the nominated product was a 0.1% cream/gel, topical. FDA proposed against including it, finding it ‘not well-characterized’ with efficacy and safety information absent.",
+    ],
+  },
+  {
+    slug: "igf1-lr3",
+    name: "IGF-1 LR3",
+    drugClass: "Engineered long-acting IGF-1 analogue",
+    tier: "animal",
+    chipSub:
+      "There is no published human study of IGF-1 LR3 at any dose, by any route, for any purpose. It was designed as a lab reagent, not a medicine — and it is among the more potent things in the catalogue.",
+    category: "Growth hormone pathway",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "An engineered chimera built to bypass the body’s controls on IGF-1. Among the most potent things in the catalogue and among the least studied — both facts matter.",
+    standfirst:
+      "IGF-1 LR3 is not a peptide your body makes. It is a laboratory-engineered version of IGF-1, modified to bypass the binding proteins that normally hold IGF-1 in check. It was designed as a cell-culture reagent, not a medicine, and has never been through a published human study.",
+    whatItIs: [
+      "IGF-1 LR3 is a laboratory-engineered version of IGF-1 — the growth factor your liver makes when growth hormone tells it to — modified so it lasts longer and acts more freely: one amino acid swapped and a 13-amino-acid tail bolted on, stripping away most of its ability to be captured by the binding proteins that regulate IGF-1.",
+      "It was designed as a research and cell-culture reagent, not a medicine, and it has never been through a published human study.",
+    ],
+    uses: [
+      { use: "Muscle growth and hypertrophy", tier: "animal", meaning: "IGF-1 receptor signalling drives muscle protein synthesis in lab and animal models, but no human study of IGF-1 LR3 has ever measured muscle." },
+      { use: "Fat loss", tier: "theoretical", meaning: "No human or convincing animal evidence that IGF-1 LR3 reduces body fat." },
+      { use: "Faster healing of tendons, muscles and injuries", tier: "theoretical", meaning: "Extrapolated from growth-factor biology; never tested in people with IGF-1 LR3." },
+      { use: "‘Site-specific’ growth where injected", tier: "theoretical", meaning: "No evidence for this, and it works against the molecule’s own design — the modifications exist precisely so it escapes local binding and circulates." },
+      { use: "Anti-ageing and longevity", tier: "theoretical", meaning: "Not only untested, but pointing the wrong way: reduced IGF-1 signalling, not increased, is associated with extended lifespan in animal longevity models." },
+      { use: "Improved insulin sensitivity or glucose control", tier: "animal", meaning: "The animal data show it suppresses insulin secretion rather than improving control — insulin fell 66% during a glucose challenge in fetal sheep." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "Normal IGF-1 circulates mostly bound to carrier proteins that release it slowly and in the right places. IGF-1 LR3 was built to dodge those carriers, so more of it is free to reach the IGF-1 receptor, and it stays active longer. Hitting that receptor tells cells to grow, make protein and resist dying — the intended anabolic effect, and also, unavoidably, the same instruction any cancer cell present would receive.",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Zero. There is no published human study of IGF-1 LR3 at any dose, by any route, for any purpose — a June 2026 review grades it Tier D, ‘no peer-reviewed human studies,’ and no registered human trial exists. The published literature is animal work in fetal sheep.",
+          "The only human safety evidence anywhere near this molecule is for a different molecule — mecasermin (INCRELEX), recombinant human IGF-1, approved in 2005 for a small orphan paediatric population. That should be read as a floor on the risks, not a ceiling: LR3 was engineered to be more potent and less restrained.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "It’s just IGF-1, and IGF-1 is something your body makes naturally.", reality: "It is not the IGF-1 your body makes. It is an engineered chimera with one amino acid swapped and a 13-residue tail added, built specifically to escape the binding proteins the body uses to regulate IGF-1. The whole point of the modification is to bypass a control system." },
+      { claim: "It causes localised muscle growth where you inject it.", reality: "There is no human evidence for site-specific growth, and the molecule’s defining modification reduces local retention. This claim circulates in bodybuilding forums, not the literature." },
+      { claim: "It’s approved — Increlex is IGF-1 and it’s FDA-approved.", reality: "INCRELEX is mecasermin, recombinant human IGF-1, approved for growth failure in a specific paediatric population. It is a different molecule for a different population. IGF-1 LR3 has no approval anywhere." },
+      { claim: "It’s safer than growth hormone because it skips the pituitary.", reality: "Skipping the pituitary also means skipping the feedback loops that limit the signal. The two most serious concerns — hypoglycaemia and proliferation of existing cancer — live downstream at the IGF-1 receptor, which is exactly where this molecule acts." },
+    ],
+    notFor: [
+      "Anyone with an active cancer, a history of cancer, or an undiagnosed lump — the approved recombinant IGF-1 product is contraindicated in malignancy, and IGF-1 receptor signalling is a direct proliferation signal.",
+      "Anyone who cannot reliably monitor and treat low blood sugar — with the approved IGF-1 product, 42% of subjects had at least one hypoglycaemia episode, some severe with seizures or loss of consciousness.",
+      "Anyone taking insulin or glucose-lowering medication, or who drinks alcohol, skips meals or trains fasted — all compound the hypoglycaemia risk.",
+      "Any child or adolescent, or anyone with closed growth plates being told this will make them taller.",
+      "Anyone pregnant, trying to conceive, or breastfeeding — there is no reproductive safety data.",
+      "Anyone at all who wants to know what a safe dose is — nobody knows, because no human has been studied.",
+    ],
+    dopingLine:
+      "Competitive athletes: prohibited at all times. The 2026 WADA list, section S2.3, prohibits ‘IGF-1… and its analogues’ — IGF-1 LR3 is squarely an IGF-1 analogue. Treat it as a sanctionable substance.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "What you are trying to achieve, and whether this is the right tool for it given how aggressive the compound is.",
+      "Cancer screening and family history, since IGF-1 is a growth factor and this form escapes the body’s normal restraint on it.",
+      "Your ability to recognise and treat low blood sugar, and any insulin or glucose-lowering medication, alcohol use or fasted training.",
+      "Exactly what you would be given — IGF-1 LR3, DES(1-3) IGF-1 or recombinant IGF-1 are different molecules — and the certificate of analysis for your lot.",
+      "What we measure, on what schedule, and the point at which we stop.",
+    ],
+    whereThisStands: [
+      "Never approved, and not a peptide most clinics will prescribe. The evidence is animal and laboratory work; what is known about the risks — low blood sugar, organ enlargement, accelerating existing cancer — comes from the biology of IGF-1 itself rather than studies of this compound in people.",
+      "This is among the more potent things in the catalogue and among the least studied. Both facts matter.",
+    ],
+    clinicalDetail: [
+      "IGF-1 LR3 carries a Glu3-to-Arg substitution plus a 13-residue N-terminal extension, markedly reducing affinity for IGF binding proteins while retaining high affinity for the IGF-1 receptor, driving IRS-1/PI3K/Akt signalling with downstream mTOR activation. FDA’s substance record indicates the N-terminal extension derives from a porcine somatotropin sequence — a human-porcine chimera, an immunogenicity consideration no human study has addressed.",
+      "Animal data are unflattering: an IGF-1 LR3 infusion in fetal sheep cut insulin during a hyperglycaemic clamp by 66%, and a one-week infusion in growth-restricted fetal sheep failed to improve growth. Never approved, anywhere, for any use, in humans or animals — and it has no compounding pathway of any kind (not on the 503A Bulks List, absent from all nomination categories, not even on FDA’s Category 2 or ‘nominated but withdrawn’ tables). The one approved IGF-1 product, INCRELEX (mecasermin), is a different molecule.",
+    ],
+  },
+  {
+    slug: "dsip",
+    name: "DSIP",
+    drugClass: "Delta Sleep-Inducing Peptide",
+    tier: "limited",
+    chipSub:
+      "Roughly 130 people across five decades and every indication combined — all older studies, all intravenous. The injection route clinics sell has never been studied in a human.",
+    category: "Longevity, sleep & circadian",
+    status: "PUBLISHED",
+    updated: "2026-08-21",
+    summary:
+      "A fifty-year-old ‘riddle’: science still can’t agree on its receptor or whether the body even makes it. It was the one peptide the July 2026 panel voted down.",
+    standfirst:
+      "DSIP was named in the 1970s for inducing deep ‘delta’ sleep — an effect later research struggled to confirm. Most human study was in the 1980s, in tiny groups, given intravenously. It is now sold as an injection under the skin, a route that has never been studied in a human being.",
+    whatItIs: [
+      "DSIP is a nine-amino-acid peptide first isolated in the 1970s from the blood of sleeping rabbits and named for the idea that it induced deep ‘delta’ sleep. It has never been approved as a medicine anywhere.",
+      "Most of the human research was done in the 1980s, in tiny groups, given intravenously in a sleep lab. It is now sold by peptide clinics as an injection under the skin for sleep — a route that has never been studied in a human being.",
+    ],
+    uses: [
+      { use: "Deep / slow-wave sleep enhancement and insomnia", tier: "limited", meaning: "Six published trials totalling ~60 people, all given the peptide intravenously; FDA concluded the results were ‘inconclusive and at best preliminary’ and that there is insufficient evidence to reach a conclusion on effectiveness." },
+      { use: "Sleep onset without sedation", tier: "limited", meaning: "Rests on the same handful of tiny 1980s intravenous studies; nothing supports this for the injectable form sold today." },
+      { use: "Opioid withdrawal", tier: "limited", meaning: "Two small uncontrolled studies, 67 people total, with no control group — no way to separate the peptide’s effect from the natural course of withdrawal." },
+      { use: "Narcolepsy", tier: "limited", meaning: "The entire human evidence base is a single case report — one person." },
+      { use: "Stress, blood-pressure normalisation, pain, anti-aging", tier: "theoretical", meaning: "Marketing claims not part of the FDA nomination, with no controlled human evidence behind them at all." },
+    ],
+    evidence: [
+      {
+        heading: "How it works",
+        paras: [
+          "DSIP was named for an effect — deep sleep — that later research struggled to confirm. Decades on, scientists still cannot agree on whether your body actually makes this peptide, what receptor it acts on, or how it would produce sleep. A 2006 peer-reviewed review is titled, accurately, ‘a still unresolved riddle.’",
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        paras: [
+          "Small, old, and delivered by the wrong route. FDA’s July 2026 briefing is the most complete accounting: for chronic insomnia, six trials with ~60 subjects total (n=6 to n=16), all intravenous; for narcolepsy, one case report; for opioid withdrawal, two small uncontrolled studies. That is roughly 130 people across five decades and every indication combined.",
+          "FDA’s decisive finding: ‘There was no study evaluating effectiveness to support use of emideltide… via the nominated SC route of administration.’ Clinics dispense it subcutaneously. Not one human has been studied that way.",
+        ],
+      },
+    ],
+    misunderstandings: [
+      { claim: "DSIP is a natural sleep hormone your body already produces.", reality: "After fifty years, whether DSIP genuinely exists as a functional endogenous peptide in humans remains unresolved — one review is titled ‘a still unresolved riddle.’ ‘Natural’ is not an established fact here, let alone a safety argument." },
+      { claim: "DSIP is clinically proven to increase deep, slow-wave sleep.", reality: "FDA reviewed the six existing trials — about 60 people total — and concluded the results were ‘inconclusive and at best preliminary,’ with small samples and inadequate controls." },
+      { claim: "DSIP came out of the July 2026 FDA peptide review looking good.", reality: "The exact opposite. Six of the seven peptides reviewed were recommended. DSIP/emideltide was the only one the committee voted down — a panel that repeatedly overruled FDA’s own scientists for other peptides declined to do so for this one." },
+      { claim: "It works without acting as a sedative, so it is gentle.", reality: "There is no established mechanism at all, sedative or otherwise. ‘Gentle’ is not a finding; it is an absence of data." },
+    ],
+    notFor: [
+      "Anyone who wants to know what they are injecting — FDA found that specific tests for impurities, aggregates and endotoxins ‘were not found’ anywhere in the public record.",
+      "Anyone offered a 1 mg/mL injectable should know FDA questioned whether it can even be made — the free base ‘has limited solubility in water,’ so the proposed concentration may not dissolve properly and may deliver an unpredictable dose.",
+      "Anyone with an immune or allergic history — FDA flagged immunogenicity risk from aggregation and peptide-related impurities in subcutaneous formulations.",
+      "Anyone with chronic insomnia, narcolepsy or opioid withdrawal who would use this instead of an evaluated treatment — approved products with established efficacy exist for all three.",
+      "Pregnant or breastfeeding women and anyone under 18 — no data.",
+    ],
+    dopingLine:
+      "Competitive athletes: prohibited at all times under WADA section S0 (non-approved substances) — DSIP/emideltide has no approval from any governmental health authority.",
+    questionsHeading: "What your consultation covers",
+    questions: [
+      "Whether your sleep problem has actually been evaluated — sleep apnoea, thyroid disease and depression all present as poor sleep and need treating on their own terms.",
+      "Your history and current medications, particularly sedatives, sleep medication, and any immune or allergic history.",
+      "What the existing human research measured, the route it used, and what that does and does not tell us about the injected form.",
+      "Where the material comes from: which pharmacy, free base or acetate, and the certificate of analysis for your lot.",
+      "How we will judge whether it is working, on what timeline, and the point at which we stop.",
+    ],
+    whereThisStands: [
+      "Never approved anywhere; identified in the 1970s. Human research is old and sparse, decades old, not replicated to modern standards.",
+      "A compound known about for fifty years with almost no modern trial data is telling you something.",
+    ],
+    clinicalDetail: [
+      "No established receptor, no confirmed endogenous role, and no accepted mechanism of action after five decades. Original 1970s work described induction of delta EEG activity in rabbits; 1980s human trials produced inconsistent effects on sleep architecture.",
+      "Never FDA-approved for any indication. FDA refers to DSIP as emideltide (a common name, not a USAN). Previously in Category 2; nomination withdrawn, re-nominated and reviewed at the July 2026 PCAC for opioid withdrawal, chronic insomnia and narcolepsy. FDA’s scientists recommended against listing — and, uniquely, the advisory committee agreed and voted it down. Not on the 503A Bulks List. Named in a 2020 FDA warning letter as a bulk substance not eligible for 503A exemptions.",
+    ],
+  },
+
   // PLANNED — reviewed source material on file (site-content/peptide-pages);
   // full page content transcribed in per the template before each is PUBLISHED.
   ...(
     [
-      ["kisspeptin", "Kisspeptin", "Reproductive signalling peptide", "Hormonal"],
-      ["kpv", "KPV", "Anti-inflammatory tripeptide", "Immune & inflammation"],
-      ["igf1-lr3", "IGF-1 LR3", "Insulin-like growth factor analogue", "Growth hormone pathway"],
-      ["dsip", "DSIP", "Delta sleep-inducing peptide", "Sleep & recovery"],
       ["aod9604", "AOD9604", "Modified growth hormone fragment", "Metabolic"],
       ["glutathione", "Glutathione", "Antioxidant tripeptide", "Repair & longevity"],
       ["5-amino-1mq", "5-Amino-1MQ", "NNMT inhibitor", "Metabolic"],
