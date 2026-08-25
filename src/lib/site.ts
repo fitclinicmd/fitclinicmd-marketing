@@ -21,9 +21,15 @@ export const signupUrl = APP_LIVE ? `${SITE.appUrl}/signup` : "/contact";
 export const loginUrl = `${SITE.appUrl}/login`;
 export const showSignIn = APP_LIVE;
 
+// The peptide library is the largest body of content on the site — 14 peptide
+// pages, 19 blend pages, and two section pages. Until 2026-08-25 it was reachable
+// only from the homepage finder and a link on /treatments: absent from the primary
+// nav, absent from the footer, and absent from the sitemap. Blends specifically had
+// no nav path at all. All three are fixed now; keep it linked.
 export const NAV = [
   { href: "/how-it-works", label: "How it works" },
   { href: "/treatments", label: "Treatments" },
+  { href: "/peptides", label: "Peptide library" },
   { href: "/providers", label: "Our providers" },
   { href: "/faq", label: "FAQ" },
 ] as const;
@@ -35,6 +41,8 @@ export const FOOTER_NAV = [
       { href: "/how-it-works", label: "How it works" },
       { href: "/treatments/peptides", label: "Peptide therapy" },
       { href: "/treatments/weight-management", label: "Weight management" },
+      { href: "/peptides", label: "Peptide library" },
+      { href: "/peptides/blends", label: "Peptide blends" },
     ],
   },
   {
