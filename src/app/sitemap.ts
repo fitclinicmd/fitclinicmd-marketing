@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { PUBLIC_LEGAL_DOCS } from "@/lib/legal";
 import { publishedArticles } from "@/lib/articles";
+import { publishedPeptides } from "@/lib/peptides";
+import { BLENDS } from "@/lib/blends";
 
 const ROUTES = [
   { path: "/", priority: 1.0 },
@@ -10,6 +12,10 @@ const ROUTES = [
   { path: "/treatments/peptides", priority: 0.9 },
   { path: "/treatments/weight-management", priority: 0.9 },
   { path: "/learn", priority: 0.7 },
+  { path: "/peptides", priority: 0.9 },
+  { path: "/peptides/blends", priority: 0.8 },
+  { path: "/peptides/glp-1", priority: 0.8 },
+  { path: "/peptides/fda-status", priority: 0.8 },
   { path: "/providers", priority: 0.7 },
   { path: "/faq", priority: 0.7 },
   { path: "/about", priority: 0.6 },
@@ -30,6 +36,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE.url}/learn/${a.slug}`,
       lastModified: new Date(a.updated),
       priority: 0.6,
+    })),
+    // Peptide library — the largest body of content on the site, and it was
+    // absent from the sitemap entirely until 2026-08-25. Generated from the
+    // registries, like the articles above, so new entries are never missed.
+    ...publishedPeptides().map((p) => ({
+      url: `${SITE.url}/peptides/${p.slug}`,
+      lastModified: new Date(p.updated),
+      priority: 0.7,
+    })),
+    ...BLENDS.map((b) => ({
+      url: `${SITE.url}/peptides/blends/${b.slug}`,
+      lastModified: new Date(b.updated),
+      priority: 0.7,
     })),
     ...PUBLIC_LEGAL_DOCS.map((d) => ({
       url: `${SITE.url}/legal/${d.slug}`,

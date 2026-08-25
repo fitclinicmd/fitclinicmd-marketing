@@ -1,9 +1,16 @@
+import Link from "next/link";
 import { Section, Eyebrow, Card, CTA } from "./ui";
 
 // Consultation-led "Program Pathways" presentation. There are no prices here by
 // design: peptide therapy is prescribed by a licensed provider after an
 // evaluation, never sold directly. The blend names below are how we organize
 // care and are a starting point for the conversation, not an off-the-shelf menu.
+//
+// NAMES: these are our own plain-English names, and they must stay that way.
+// The 503A partner's catalog names these formulations for archetypes; those
+// names are that company's property and are marked "reference only" in our
+// rename workbook. Do not reintroduce them here or anywhere public. The
+// mapping lives in lib/blends.ts as `sourceName`, which is never rendered.
 // (The retail catalog data still lives in @/lib/products if pricing is ever
 // surfaced elsewhere; it is intentionally not rendered on this page.)
 
@@ -17,17 +24,17 @@ const PATHWAYS: Pathway[] = [
     tagline: "Train harder. Recover faster.",
     blends: [
       {
-        name: "Inferno",
+        name: "BURN",
         peptides: "AOD-9604 · CJC-1295 · Ipamorelin · MOTS-c",
         description: "A stimulant-free approach to body composition — supporting fat metabolism, steady energy, and cellular output.",
       },
       {
-        name: "Atlas",
+        name: "BUILD",
         peptides: "CJC-1295 · Ipamorelin · Tesamorelin · IGF-1 LR3",
         description: "Built for serious muscle and strength — layered growth-hormone-axis support alongside direct anabolic signaling.",
       },
       {
-        name: "Apex",
+        name: "PERFORM",
         peptides: "Tesamorelin · CJC-1295 · Ipamorelin · BPC-157",
         description: "A foundation for strength and recovery — growth-hormone-axis support paired with tissue-repair peptides.",
       },
@@ -39,17 +46,17 @@ const PATHWAYS: Pathway[] = [
     tagline: "Age on your own terms.",
     blends: [
       {
-        name: "Fountain of Youth",
+        name: "RENEW",
         peptides: "GHK-Cu · BPC-157 · TB-500 · Epitalon",
         description: "Whole-body renewal — aimed at skin, connective tissue, and the systems tied to healthy aging.",
       },
       {
-        name: "Samson & Delilah",
+        name: "REGROW",
         peptides: "GHK-Cu · CJC-1295 · Ipamorelin · TB-500",
         description: "Focused on hair and scalp — supporting follicle health and the surrounding tissue and circulation.",
       },
       {
-        name: "Hyperion",
+        name: "MAINTAIN",
         peptides: "Ipamorelin · Tesamorelin",
         description: "A streamlined growth-hormone-support blend for recomposition and recovery, without a complex stack.",
       },
@@ -61,17 +68,17 @@ const PATHWAYS: Pathway[] = [
     tagline: "Feel like yourself again.",
     blends: [
       {
-        name: "Love & Happiness",
+        name: "CONNECT",
         peptides: "Oxytocin · PT-141",
         description: "Support for connection and intimacy — pairing emotional closeness with physical responsiveness.",
       },
       {
-        name: "Empress",
+        name: "RESTORE",
         peptides: "MOTS-c · BPC-157 · GHK-Cu · Kisspeptin-10",
         description: "Designed with women's midlife vitality in mind — energy, whole-body balance, and hormonal rhythm.",
       },
       {
-        name: "Hypnøs",
+        name: "REST",
         peptides: "DSIP · CJC-1295 · Ipamorelin · Selank",
         description: "Built around deeper, more restorative sleep and overnight recovery.",
       },
@@ -102,7 +109,12 @@ function PathwayCard({ pw }: { pw: Pathway }) {
       <ul className="mt-3 space-y-5">
         {pw.blends.map((b) => (
           <li key={b.name}>
-            <p className="font-semibold text-ink">{b.name}</p>
+            <Link
+              href={`/peptides/blends/${b.name.toLowerCase()}`}
+              className="font-semibold text-ink underline-offset-4 hover:text-clinic hover:underline"
+            >
+              {b.name}
+            </Link>
             <p className="mt-0.5 font-mono text-xs text-ink-soft">{b.peptides}</p>
             <p className="mt-1 text-sm text-ink-muted">{b.description}</p>
           </li>

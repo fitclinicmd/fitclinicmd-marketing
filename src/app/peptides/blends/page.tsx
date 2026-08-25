@@ -3,26 +3,17 @@ import Link from "next/link";
 import { Container, Section, Eyebrow, Card, CTA, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
+import { blendsByCategory, BLENDS, EVIDENCE_NOTE } from "@/lib/blends";
 
 export const metadata: Metadata = {
   title: "Peptide blends",
   description:
-    "Purpose-built peptide combinations that pair compounds for a shared goal — recovery, metabolic support, longevity. Educational profiles in preparation.",
+    "Nineteen compounded peptide combinations, grouped by what each is for. Every one is unstudied as a combination — the evidence belongs to the individual peptides, and each page says so plainly.",
 };
 
-// Blends are curated combinations of the single peptides in the library. The
-// individual-page profiles ship first (some already live); the per-blend
-// education pages are in preparation. This page names the goal-based families
-// and points to the individual compounds behind them, so a visitor can already
-// explore the parts. Non-promotional — no outcome claims.
-const FAMILIES: { name: string; goal: string; parts: string[] }[] = [
-  { name: "Recovery & repair", goal: "Connective-tissue and soft-tissue recovery.", parts: ["BPC-157", "TB-500"] },
-  { name: "Growth-hormone support", goal: "A smoother, more sustained GH pulse.", parts: ["CJC-1295", "Ipamorelin"] },
-  { name: "Metabolic & fat loss", goal: "Appetite regulation and energy metabolism.", parts: ["AOD-9604", "5-Amino-1MQ"] },
-  { name: "Longevity & cellular energy", goal: "Mitochondrial and cellular-energy support.", parts: ["NAD+", "MOTS-c", "Glutathione"] },
-];
-
 export default function Blends() {
+  const groups = blendsByCategory();
+
   return (
     <>
       <JsonLd
@@ -37,35 +28,57 @@ export default function Blends() {
           <Eyebrow>Education library</Eyebrow>
           <h1 className="max-w-3xl text-4xl sm:text-5xl">Peptide blends</h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            A blend pairs two or more peptides that work toward the same goal. The individual profiles
-            come first; each blend&apos;s own education page is in preparation. In the meantime, here are the
-            goal-based families and the compounds behind them.
+            A blend pairs two or more peptides that work toward the same goal. There are{" "}
+            {BLENDS.length} of them here, grouped by what they are for. Each has its own page
+            explaining why those particular peptides are put together — and what is, and is not,
+            known about the combination.
           </p>
         </Container>
       </div>
 
       <Section>
-        <div className="grid gap-6 sm:grid-cols-2">
-          {FAMILIES.map((f) => (
-            <Card key={f.name}>
-              <span className="inline-block rounded border border-ink/15 bg-ink/5 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-ink-muted">
-                In preparation
-              </span>
-              <h3 className="mt-3 text-xl">{f.name}</h3>
-              <p className="mt-1 text-sm text-ink-soft">{f.goal}</p>
-              <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-ink-muted">Built from</p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {f.parts.map((part) => (
-                  <span key={part} className="rounded-md border border-ink/10 bg-white px-2 py-1 text-xs text-ink-soft">
-                    {part}
-                  </span>
-                ))}
-              </div>
-            </Card>
-          ))}
+        {/* The evidence position, once, at the top of the index — the same
+            note repeats on every individual blend page. */}
+        <div className="rounded-xl2 border border-amber-200 bg-amber-50 p-6">
+          <p className="text-xs font-semibold uppercase tracking-wide text-amber-900">
+            Read this first
+          </p>
+          <p className="mt-3 max-w-3xl leading-relaxed text-amber-900/90">{EVIDENCE_NOTE}</p>
         </div>
 
-        <div className="mt-12 flex flex-wrap gap-3">
+        {groups.map((g) => (
+          <div key={g.category} className="mt-14">
+            <h2 className="text-2xl">{g.category}</h2>
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              {g.blends.map((b) => (
+                <Link key={b.slug} href={`/peptides/blends/${b.slug}`} className="group block">
+                  <Card className="h-full transition group-hover:border-clinic/40">
+                    <h3 className="text-xl">{b.name}</h3>
+                    <p className="mt-1 text-sm text-ink-soft">{b.tagline}</p>
+                    <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                      Built from
+                    </p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {b.components.map((c) => (
+                        <span
+                          key={c.peptide}
+                          className="rounded-md border border-ink/10 bg-white px-2 py-1 text-xs text-ink-soft"
+                        >
+                          {c.peptide}
+                        </span>
+                      ))}
+                    </div>
+                    <span className="mt-4 inline-block text-sm font-semibold text-clinic">
+                      Read about {b.name} →
+                    </span>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        <div className="mt-14 flex flex-wrap gap-3">
           <CTA href={signupUrl}>Talk to a licensed provider</CTA>
           <Link
             href="/peptides"

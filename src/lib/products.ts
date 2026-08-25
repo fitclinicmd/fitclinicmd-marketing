@@ -1,3 +1,11 @@
+// ⚠️ BLEND NAMES: use our own plain-English names only (RENEW, BURN, REST...).
+// The 503A partner's archetype names are that company's property and are marked
+// "reference only" in our rename workbook — they must never be published. The
+// mapping lives in lib/blends.ts as `sourceName`, which is never rendered.
+//
+// ⚠️ The blend `blurb` strings below say "studied for ..." — that is not
+// accurate. No blend here has been studied AS A BLEND. Rewrite before this file
+// is ever rendered; nothing imports it today.
 // PRODUCT MENU — peptides & proprietary blends.
 //
 // Source of truth for the catalog shown on /treatments/peptides. Prices come
@@ -71,23 +79,23 @@ export const INDIVIDUAL_PEPTIDES: Product[] = [
 ];
 
 export const PROPRIETARY_BLENDS: Product[] = [
-  { name: "Prometheus", category: "blend", strength: "CJC-1295 / Ipamorelin", blurb: "A growth-hormone-support blend studied for recovery and body composition.", providerPrice: 114.99 },
+  { name: "PULSE", category: "blend", strength: "CJC-1295 / Ipamorelin", blurb: "A growth-hormone-support blend studied for recovery and body composition.", providerPrice: 114.99 },
   { name: "Valkyr", category: "blend", strength: "BPC-157 / TB-500", blurb: "A recovery-focused blend studied for tissue repair and mobility.", providerPrice: 118.99 },
-  { name: "Fountain of Youth", category: "blend", strength: "GHK-CU / BPC-157 / TB-500 / Epitalon", blurb: "A longevity-and-recovery blend studied for skin, tissue, and healthy-aging support.", providerPrice: 169.99 },
-  { name: "Kälm", category: "blend", strength: "Semax / Selank", blurb: "A calm-and-focus blend studied for stress resilience and clarity.", providerPrice: 89.99 },
+  { name: "RENEW", category: "blend", strength: "GHK-CU / BPC-157 / TB-500 / Epitalon", blurb: "A longevity-and-recovery blend studied for skin, tissue, and healthy-aging support.", providerPrice: 169.99 },
+  { name: "CALM", category: "blend", strength: "Semax / Selank", blurb: "A calm-and-focus blend studied for stress resilience and clarity.", providerPrice: 89.99 },
   { name: "APEX", category: "blend", strength: "Tesamorelin / CJC-1295 / Ipamorelin / BPC-157", blurb: "A performance-and-recovery blend studied for body composition and repair.", providerPrice: 189.99 },
-  { name: "Adonix", category: "blend", strength: "Tesamorelin / Ipamorelin / AOD-9604 / Mots-C", blurb: "A body-composition blend studied for metabolic and recovery support.", providerPrice: 189.99 },
-  { name: "Samson & Delilah", category: "blend", strength: "GHK-CU / CJC-1295 / Ipamorelin / TB-500", blurb: "A recovery-and-appearance blend studied for tissue, skin, and repair support.", providerPrice: 169.99 },
-  { name: "Empress", category: "blend", strength: "Mots-C / BPC-157 / GHK-CU / Kisspeptin-10", blurb: "A women's wellness blend studied for metabolic, recovery, and hormonal support.", providerPrice: 179.99 },
-  { name: "Inferno", category: "blend", strength: "AOD-9604 / CJC-1295 / Ipamorelin / Mots-C", blurb: "A metabolic blend studied for body-composition and energy support.", providerPrice: 189.99 },
-  { name: "Lucid", category: "blend", strength: "Semax / Selank / Mots-C / Tesamorelin", blurb: "A focus-and-vitality blend studied for clarity, energy, and composition support.", providerPrice: 189.99 },
-  { name: "Love & Happiness", category: "blend", strength: "Oxytocin / PT-141", blurb: "An intimacy-and-mood blend studied for libido and wellbeing support.", providerPrice: 118.99 },
-  { name: "Atlas", category: "blend", strength: "CJC-1295 / Ipamorelin / Tesamorelin / IGF-1 LR3", blurb: "A performance blend studied for recovery and lean-tissue support.", providerPrice: 189.99 },
-  { name: "Sentinel", category: "blend", strength: "Thymosin Alpha-1 / BPC-157 / KPV / LL-37", blurb: "An immune-and-repair blend studied for immune, gut, and tissue support.", providerPrice: 159.99 },
-  { name: "Hypnøs", category: "blend", strength: "DSIP / Selank / CJC-1295 / Ipamorelin", blurb: "A sleep-and-recovery blend studied for rest and overnight repair support.", providerPrice: 189.99 },
-  { name: "Selene", category: "blend", strength: "GHK-CU / Tesamorelin", blurb: "A skin-and-composition blend studied for appearance and body-composition support.", providerPrice: 118.99 },
-  { name: "Bodhi", category: "blend", strength: "Semax / Selank / BPC-157 / KPV", blurb: "A mind-and-gut blend studied for clarity, calm, and gut support.", providerPrice: 169.99 },
-  { name: "Kali", category: "blend", strength: "BPC-157 / Mots-C / 5-Amino-1MQ / Tesamorelin", blurb: "A metabolic-recovery blend studied for composition and repair support.", providerPrice: 189.99 },
-  { name: "Hyperion", category: "blend", strength: "Ipamorelin / Tesamorelin", blurb: "A growth-hormone-support blend studied for recovery and body composition.", providerPrice: 118.99 },
-  { name: "Crave", category: "blend", strength: "PT-141 / Oxytocin / Kisspeptin-10", blurb: "An intimacy blend studied for libido and mood support.", providerPrice: 149.99 },
+  { name: "SCULPT", category: "blend", strength: "Tesamorelin / Ipamorelin / AOD-9604 / Mots-C", blurb: "A body-composition blend studied for metabolic and recovery support.", providerPrice: 189.99 },
+  { name: "REGROW", category: "blend", strength: "GHK-CU / CJC-1295 / Ipamorelin / TB-500", blurb: "A recovery-and-appearance blend studied for tissue, skin, and repair support.", providerPrice: 169.99 },
+  { name: "RESTORE", category: "blend", strength: "Mots-C / BPC-157 / GHK-CU / Kisspeptin-10", blurb: "A women's wellness blend studied for metabolic, recovery, and hormonal support.", providerPrice: 179.99 },
+  { name: "BURN", category: "blend", strength: "AOD-9604 / CJC-1295 / Ipamorelin / Mots-C", blurb: "A metabolic blend studied for body-composition and energy support.", providerPrice: 189.99 },
+  { name: "FOCUS", category: "blend", strength: "Semax / Selank / Mots-C / Tesamorelin", blurb: "A focus-and-vitality blend studied for clarity, energy, and composition support.", providerPrice: 189.99 },
+  { name: "CONNECT", category: "blend", strength: "Oxytocin / PT-141", blurb: "An intimacy-and-mood blend studied for libido and wellbeing support.", providerPrice: 118.99 },
+  { name: "BUILD", category: "blend", strength: "CJC-1295 / Ipamorelin / Tesamorelin / IGF-1 LR3", blurb: "A performance blend studied for recovery and lean-tissue support.", providerPrice: 189.99 },
+  { name: "DEFEND", category: "blend", strength: "Thymosin Alpha-1 / BPC-157 / KPV / LL-37", blurb: "An immune-and-repair blend studied for immune, gut, and tissue support.", providerPrice: 159.99 },
+  { name: "REST", category: "blend", strength: "DSIP / Selank / CJC-1295 / Ipamorelin", blurb: "A sleep-and-recovery blend studied for rest and overnight repair support.", providerPrice: 189.99 },
+  { name: "REFINE", category: "blend", strength: "GHK-CU / Tesamorelin", blurb: "A skin-and-composition blend studied for appearance and body-composition support.", providerPrice: 118.99 },
+  { name: "BALANCE", category: "blend", strength: "Semax / Selank / BPC-157 / KPV", blurb: "A mind-and-gut blend studied for clarity, calm, and gut support.", providerPrice: 169.99 },
+  { name: "GUARD", category: "blend", strength: "BPC-157 / Mots-C / 5-Amino-1MQ / Tesamorelin", blurb: "A metabolic-recovery blend studied for composition and repair support.", providerPrice: 189.99 },
+  { name: "MAINTAIN", category: "blend", strength: "Ipamorelin / Tesamorelin", blurb: "A growth-hormone-support blend studied for recovery and body composition.", providerPrice: 118.99 },
+  { name: "DESIRE", category: "blend", strength: "PT-141 / Oxytocin / Kisspeptin-10", blurb: "An intimacy blend studied for libido and mood support.", providerPrice: 149.99 },
 ];
