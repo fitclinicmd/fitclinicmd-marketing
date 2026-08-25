@@ -27,18 +27,28 @@ const STEPS = [
   },
 ];
 
+// Each pillar states a claim, so each one links to the page that substantiates
+// it — a claim the reader cannot check is just a slogan. The peptide pillar
+// goes to the education library rather than /treatments/peptides: the library is
+// the substantiation, and it is what people arrive looking for.
 const PILLARS = [
   {
     title: "Licensed providers, in your state",
     body: "Every visit is with a provider licensed where you live. Our system will not let a provider treat you otherwise.",
+    href: "/providers",
+    cta: "Meet the providers",
   },
   {
     title: "Focused on peptides & GLP-1",
     body: "Provider-guided peptide therapy and GLP-1 weight management — prescribed only when it's appropriate for you, never one-size-fits-all.",
+    href: "/peptides",
+    cta: "Browse the peptide library",
   },
   {
     title: "Care that continues",
     body: "Message your care team, track your labs, and adjust your plan from your portal between visits.",
+    href: "/how-it-works",
+    cta: "See how it works",
   },
 ];
 
@@ -84,11 +94,16 @@ export default function Home() {
       <Section className="border-t border-ink/10 bg-white">
         <div className="grid gap-6 md:grid-cols-3">
           {PILLARS.map((p) => (
-            <Card key={p.title}>
-              <div className="mb-4 h-1 w-12 rounded-full rule" />
-              <h2 className="text-xl">{p.title}</h2>
-              <p className="mt-2 text-ink-muted">{p.body}</p>
-            </Card>
+            <Link key={p.title} href={p.href} className="group block">
+              <Card className="h-full transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
+                <div className="mb-4 h-1 w-12 rounded-full rule" />
+                <h2 className="text-xl">{p.title}</h2>
+                <p className="mt-2 text-ink-muted">{p.body}</p>
+                <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2 group-hover:text-clinic-deep">
+                  {p.cta} <span aria-hidden="true">→</span>
+                </span>
+              </Card>
+            </Link>
           ))}
         </div>
       </Section>

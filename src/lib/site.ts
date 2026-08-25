@@ -26,10 +26,11 @@ export const showSignIn = APP_LIVE;
 // only from the homepage finder and a link on /treatments: absent from the primary
 // nav, absent from the footer, and absent from the sitemap.
 //
-// It is deliberately NOT in this list. It gets a dedicated pill button in the
-// header instead (see Header.tsx), which is more prominent than a text link and
-// visible at every breakpoint — a text nav entry as well would just duplicate it.
+// Peptides leads the nav AND has a pill in the header (see Header.tsx). That is
+// deliberate duplication, not an oversight: peptides are the current focus, and
+// the library is what people arrive looking for. Two routes to it beats one.
 export const NAV = [
+  { href: "/peptides", label: "Peptides" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/treatments", label: "Treatments" },
   { href: "/providers", label: "Our providers" },
