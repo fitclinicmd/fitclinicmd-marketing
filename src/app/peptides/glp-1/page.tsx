@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, CTA, ImportantSafetyInfo } from "@/components/ui";
-import { JsonLd, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -79,10 +79,24 @@ export default function Glp1() {
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
+        data={[
+          medicalWebPageSchema({
+            name: "GLP-1 therapy",
+            description:
+              "Semaglutide, tirzepatide and retatrutide — and the difference between an FDA-approved brand and a compounded preparation.",
+            path: "/peptides/glp-1",
+            about: {
+              name: "GLP-1 receptor agonists",
+              description:
+                "A class of medicines with FDA-approved brand forms. A compounded version of one is not the approved product.",
+              activeIngredient: ["Semaglutide", "Tirzepatide", "Retatrutide"],
+            },
+          }),
+          breadcrumbSchema([
           { name: "Peptides", path: "/peptides" },
           { name: "GLP-1 therapy", path: "/peptides/glp-1" },
-        ])}
+        ]),
+        ]}
       />
 
       <div className="wash border-b border-ink/10">

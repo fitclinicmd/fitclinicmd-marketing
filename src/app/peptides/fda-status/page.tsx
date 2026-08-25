@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Container, Section, Eyebrow, CTA, ImportantSafetyInfo } from "@/components/ui";
-import { JsonLd, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Peptides and the FDA — where things actually stand",
@@ -31,10 +31,18 @@ export default function FdaStatus() {
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
+        data={[
+          medicalWebPageSchema({
+            name: "Peptides and the FDA",
+            description:
+              "Where peptides actually stand with the FDA — and why \"an FDA panel recommended it\" and \"the FDA approved it\" are not the same thing.",
+            path: "/peptides/fda-status",
+          }),
+          breadcrumbSchema([
           { name: "Peptides", path: "/peptides" },
           { name: "Peptides and the FDA", path: "/peptides/fda-status" },
-        ])}
+        ]),
+        ]}
       />
 
       <div className="wash border-b border-ink/10">

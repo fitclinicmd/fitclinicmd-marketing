@@ -46,6 +46,59 @@ export function breadcrumbSchema(trail: { name: string; path: string }[]) {
   };
 }
 
+/**
+ * MedicalWebPage for the education library — one per peptide and per blend.
+ *
+ * `about` is typed **Substance**, not Drug, on purpose. Drug is schema.org's
+ * type for a medicinal product, and asserting it for a compounded peptide
+ * would structurally imply exactly the approval status these pages spend their
+ * word count denying. Substance is a MedicalEntity, is accurate for every
+ * compound here, and claims nothing about regulatory standing.
+ *
+ * `reviewedBy` is deliberately ABSENT. MedicalWebPage supports it and Google
+ * reads it, but no named clinician has reviewed these pages — asserting one
+ * would fabricate a medical credential in machine-readable form, which is the
+ * worst place to put a claim you cannot support. Add it only when a real
+ * reviewer exists, with their real name and credential.
+ *
+ * `lastReviewed` uses the content's own `updated` date, which is maintained in
+ * the registries and is a fact rather than an assertion about oversight.
+ */
+export function medicalWebPageSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+  lastReviewed?: string;
+  /** Omit on pages that are about a topic rather than a compound. */
+  about?: { name: string; description: string; activeIngredient?: string[] };
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `${SITE.url}${opts.path}#webpage`,
+    url: `${SITE.url}${opts.path}`,
+    name: opts.name,
+    description: opts.description,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+    ...(opts.lastReviewed ? { lastReviewed: opts.lastReviewed } : {}),
+    audience: { "@type": "MedicalAudience", audienceType: "Patient" },
+    ...(opts.about
+      ? {
+          about: {
+            "@type": "Substance",
+            name: opts.about.name,
+            description: opts.about.description,
+            ...(opts.about.activeIngredient?.length
+              ? { activeIngredient: opts.about.activeIngredient }
+              : {}),
+          },
+        }
+      : {}),
+  };
+}
+
 export function faqSchema(qa: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

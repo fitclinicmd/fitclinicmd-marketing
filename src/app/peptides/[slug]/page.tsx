@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container, Section, CTA, ImportantSafetyInfo } from "@/components/ui";
-import { JsonLd, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 import {
   PEPTIDES,
@@ -46,10 +46,19 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Peptides", path: "/peptides" },
-          { name: p.name, path: `/peptides/${p.slug}` },
-        ])}
+        data={[
+          medicalWebPageSchema({
+            name: `${p.name} — education`,
+            description: p.summary,
+            path: `/peptides/${p.slug}`,
+            lastReviewed: p.updated,
+            about: { name: p.name, description: `${p.drugClass}. ${p.summary}` },
+          }),
+          breadcrumbSchema([
+            { name: "Peptides", path: "/peptides" },
+            { name: p.name, path: `/peptides/${p.slug}` },
+          ]),
+        ]}
       />
 
       {/* 1 · Name and evidence chip */}
