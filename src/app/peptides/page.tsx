@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { PEPTIDES, TIER_LABEL, TIER_TONE, type Peptide } from "@/lib/peptides";
+import { PEPTIDES, CATEGORY_ORDER, TIER_LABEL, TIER_TONE, type Peptide } from "@/lib/peptides";
 
 export const metadata: Metadata = {
   title: "Peptide education library",
@@ -18,12 +18,13 @@ function PeptideCard({ p }: { p: Peptide }) {
   const inner = (
     <Card className="h-full transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
       <div className="flex items-center justify-between gap-3">
-        <span
-          className={`inline-block rounded border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${TIER_TONE[p.tier]}`}
-        >
-          {TIER_LABEL[p.tier]}
-        </span>
-        {p.status === "PLANNED" && (
+        {p.status === "PUBLISHED" ? (
+          <span
+            className={`inline-block rounded border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${TIER_TONE[p.tier]}`}
+          >
+            {TIER_LABEL[p.tier]}
+          </span>
+        ) : (
           <span className="text-[11px] font-medium uppercase tracking-wide text-ink-muted">
             In preparation
           </span>
@@ -45,7 +46,12 @@ function PeptideCard({ p }: { p: Peptide }) {
 }
 
 export default function PeptideLibrary() {
-  const categories = Array.from(new Set(PEPTIDES.map((p) => p.category)));
+  // Display in the catalog's contents-page order; any stray category falls to the end.
+  const present = Array.from(new Set(PEPTIDES.map((p) => p.category)));
+  const categories = [
+    ...CATEGORY_ORDER.filter((c) => present.includes(c)),
+    ...present.filter((c) => !CATEGORY_ORDER.includes(c)),
+  ];
 
   return (
     <>
@@ -98,6 +104,19 @@ export default function PeptideLibrary() {
             </div>
           </div>
         ))}
+
+        <Link href="/peptides/blends" className="group mt-4 block">
+          <Card className="flex flex-col items-start gap-2 border-clinic/20 bg-clinic/[0.03] transition group-hover:border-clinic sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Also available</p>
+              <h3 className="mt-1 text-xl">Peptide blends</h3>
+              <p className="mt-1 text-sm text-ink-soft">
+                Purpose-built combinations that pair peptides for a shared goal — recovery, metabolic, longevity.
+              </p>
+            </div>
+            <span className="whitespace-nowrap text-sm font-semibold text-clinic">Browse blends →</span>
+          </Card>
+        </Link>
 
         <ImportantSafetyInfo className="mt-14" />
       </Section>

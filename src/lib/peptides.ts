@@ -89,6 +89,13 @@ export type Peptide = {
   clinicalDetail?: string[]; // provider-level paragraphs
 };
 
+// Compact constructor for an in-preparation ("PLANNED") card. Tier/chipSub are
+// placeholders — the card hides the evidence chip for planned entries, so no
+// evidence claim is made on a page that doesn't exist yet.
+function planned(slug: string, name: string, drugClass: string, category: string, summary: string): Peptide {
+  return { slug, name, drugClass, category, summary, tier: "none", chipSub: "", status: "PLANNED", updated: "2026-08-25" };
+}
+
 export const PEPTIDES: Peptide[] = [
   {
     slug: "cjc-1295",
@@ -98,7 +105,7 @@ export const PEPTIDES: Peptide[] = [
     tierNote: "(one form) · Theoretical (the other)",
     chipSub:
       "A few dozen healthy volunteers, all short hormone studies. No efficacy outcome has ever been published.",
-    category: "Growth hormone pathway",
+    category: "Growth Hormone & Anabolic Signaling",
     status: "PUBLISHED",
     updated: "2026-08-20",
     summary:
@@ -241,7 +248,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "animal",
     chipSub:
       "About 81 people, total, have ever been given it in a documented study — and no completed, published, controlled human trial has shown it works for anything it is sold for.",
-    category: "Musculoskeletal & repair",
+    category: "Tissue Repair & Recovery",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -320,7 +327,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "theoretical",
     chipSub:
       "About 150 people studied, all dosed intravenously, none longer than a week. No published trial of the injected form used today has measured body composition, sleep or recovery.",
-    category: "Growth hormone pathway",
+    category: "Growth Hormone & Anabolic Signaling",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -391,7 +398,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "limited",
     chipSub:
       "The human evidence is cosmetic-appearance data in small topical skin studies. There are zero published human trials of injected or systemic GHK-Cu.",
-    category: "Repair & longevity",
+    category: "Tissue Repair & Recovery",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -468,7 +475,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "animal",
     chipSub:
       "Promising cell and mouse biology, with essentially no human data on what happens when the peptide is actually given to a person. The first controlled human trial only began in 2026.",
-    category: "Mitochondrial & cellular energy",
+    category: "Mitochondrial & Cellular Energy",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -541,7 +548,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "limited",
     chipSub:
       "Human trials of the injected/IV form are few and small — well under 200 people across every indication combined — and the largest dataset is uncontrolled.",
-    category: "Mitochondrial & cellular energy",
+    category: "Mitochondrial & Cellular Energy",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -615,7 +622,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "animal",
     chipSub:
       "Only two human studies of Epitalon itself exist, neither replicated. FDA states it found no clinical studies assessing the safety of Epitalon in humans; zero exist for the injection route clinics dispense.",
-    category: "Longevity, sleep & circadian",
+    category: "Longevity, Sleep & Circadian",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -689,7 +696,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "limited",
     chipSub:
       "Real hospital research exists — but it used kisspeptin-54 by IV drip. The form clinics dispense is kisspeptin-10 by injection, which has no published repeated-dosing trial for any marketed use.",
-    category: "Sexual & reproductive health",
+    category: "Sexual & Reproductive Health",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -762,7 +769,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "animal",
     chipSub:
       "No study has ever been published in which a human being received KPV, by any route. The entire evidence base is cell-culture and mouse work.",
-    category: "Inflammation & immune defense",
+    category: "Inflammation & Immune Defense",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -835,7 +842,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "animal",
     chipSub:
       "There is no published human study of IGF-1 LR3 at any dose, by any route, for any purpose. It was designed as a lab reagent, not a medicine — and it is among the more potent things in the catalogue.",
-    category: "Growth hormone pathway",
+    category: "Growth Hormone & Anabolic Signaling",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -909,7 +916,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "limited",
     chipSub:
       "Roughly 130 people across five decades and every indication combined — all older studies, all intravenous. The injection route clinics sell has never been studied in a human.",
-    category: "Longevity, sleep & circadian",
+    category: "Longevity, Sleep & Circadian",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -982,7 +989,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "human",
     chipSub:
       "Tested and failed. The pivotal 24-week trial (536 people) found no significant weight-loss difference from placebo, and development was terminated in 2007.",
-    category: "Metabolic & fat loss",
+    category: "Metabolic & Fat Loss",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -1057,7 +1064,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "limited",
     chipSub:
       "FDA reviewed it against 24 proposed uses in 2022 and did not find adequate evidence for any of them. The largest, best-controlled trials were negative.",
-    category: "Mitochondrial & cellular energy",
+    category: "Mitochondrial & Cellular Energy",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -1132,7 +1139,7 @@ export const PEPTIDES: Peptide[] = [
     tier: "animal",
     chipSub:
       "There is no human study of any kind — zero. The entire evidence base is a single 11-day proof-of-concept experiment in obese mice. Anyone taking it is the study.",
-    category: "Metabolic & fat loss",
+    category: "Metabolic & Fat Loss",
     status: "PUBLISHED",
     updated: "2026-08-21",
     summary:
@@ -1201,6 +1208,46 @@ export const PEPTIDES: Peptide[] = [
       "Not FDA-approved for anything, and further from any regulatory pathway than almost any compound in this category — never approved, never withdrawn, never submitted. On no FDA bulks list (503A or 503B), not on the Category 2 safety-risk list, and not even nominated for compounding. Not among the seven peptides addressed at the July 2026 PCAC.",
     ],
   },
+
+  // ── Planned pages (cards render as "in preparation"). Categories + one-line
+  //    descriptions from Todd/Medvora's reviewed catalog (Volume II). These
+  //    complete the 8-category library so the finder shows all 26 compounds.
+  planned("semaglutide", "Semaglutide", "GLP-1 receptor agonist", "Metabolic & Fat Loss",
+    "A GLP-1 receptor agonist that curbs appetite and slows digestion for steady, sustained weight loss."),
+  planned("tirzepatide", "Tirzepatide", "Dual GIP + GLP-1 receptor agonist", "Metabolic & Fat Loss",
+    "Activates two hunger-regulating hormone pathways at once — among the strongest results in its class."),
+  planned("sermorelin", "Sermorelin", "Growth hormone-releasing hormone analogue", "Growth Hormone & Anabolic Signaling",
+    "Signals the pituitary to release the body's own growth hormone, rather than replacing it."),
+  planned("tesamorelin", "Tesamorelin", "Growth hormone-releasing hormone analogue", "Growth Hormone & Anabolic Signaling",
+    "A stabilized growth-hormone signal aimed specifically at visceral fat."),
+  planned("ss-31", "SS-31", "Mitochondria-targeted peptide", "Mitochondrial & Cellular Energy",
+    "Protects the inner membrane of the mitochondria, where cellular energy is made."),
+  planned("tb-500", "TB-500", "Thymosin beta-4 fragment", "Tissue Repair & Recovery",
+    "Promotes cell migration and blood-vessel growth to speed tissue repair."),
+  planned("thymosin-alpha-1", "Thymosin Alpha-1", "Immune-modulating peptide", "Inflammation & Immune Defense",
+    "Trains the immune system to respond more precisely."),
+  planned("ll-37", "LL-37", "Antimicrobial (cathelicidin) peptide", "Inflammation & Immune Defense",
+    "A broad-spectrum antimicrobial peptide involved in wound healing."),
+  planned("semax", "Semax", "ACTH-derived neuropeptide", "Cognitive Function & Neuroprotection",
+    "Supports focus, memory, and mental clarity."),
+  planned("selank", "Selank", "Tuftsin-derived anxiolytic peptide", "Cognitive Function & Neuroprotection",
+    "Eases anxiety and stress without sedation."),
+  planned("pt-141", "PT-141", "Melanocortin receptor agonist", "Sexual & Reproductive Health",
+    "Acts on the brain's desire pathways rather than blood flow."),
+  planned("oxytocin", "Oxytocin", "Neuropeptide hormone", "Sexual & Reproductive Health",
+    "The hormone behind trust, bonding, and connection."),
+];
+
+// The library's display order (Todd/Medvora's contents-page grouping).
+export const CATEGORY_ORDER: string[] = [
+  "Metabolic & Fat Loss",
+  "Growth Hormone & Anabolic Signaling",
+  "Mitochondrial & Cellular Energy",
+  "Tissue Repair & Recovery",
+  "Inflammation & Immune Defense",
+  "Cognitive Function & Neuroprotection",
+  "Longevity, Sleep & Circadian",
+  "Sexual & Reproductive Health",
 ];
 
 export function publishedPeptides() {

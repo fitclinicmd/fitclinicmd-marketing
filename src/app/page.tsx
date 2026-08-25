@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container, Section, Eyebrow, CTA, Card, Claim, Photo } from "@/components/ui";
+import { CATEGORY_ORDER } from "@/lib/peptides";
 import GoalCards from "@/components/GoalCards";
 import { signupUrl } from "@/lib/site";
 
@@ -128,6 +129,49 @@ export default function Home() {
 
       {/* Goal-first entry — patients choose the outcome they want, not a drug */}
       <GoalCards />
+
+      {/* Peptide library finder — simple entry to individual peptides + blends */}
+      <Section className="border-t border-ink/10">
+        <div className="mx-auto max-w-2xl text-center">
+          <Eyebrow>Peptide library</Eyebrow>
+          <h2 className="text-3xl sm:text-4xl">Explore the peptide library.</h2>
+          <p className="mt-4 text-ink-muted">
+            Plain, sourced profiles of each compound — what it is, what people use it for, and what the
+            evidence actually shows. Browse one at a time, or by blend.
+          </p>
+        </div>
+        <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
+          <Link href="/peptides" className="group block">
+            <Card className="h-full transition group-hover:border-clinic">
+              <h3 className="text-xl">Individual peptides</h3>
+              <p className="mt-2 text-sm text-ink-soft">
+                26 compounds across 8 categories, each explained on its own page.
+              </p>
+              <span className="mt-4 inline-block text-sm font-semibold text-clinic">Browse peptides →</span>
+            </Card>
+          </Link>
+          <Link href="/peptides/blends" className="group block">
+            <Card className="h-full transition group-hover:border-clinic">
+              <h3 className="text-xl">Blends</h3>
+              <p className="mt-2 text-sm text-ink-soft">
+                Purpose-built combinations that pair peptides for a shared goal.
+              </p>
+              <span className="mt-4 inline-block text-sm font-semibold text-clinic">Browse blends →</span>
+            </Card>
+          </Link>
+        </div>
+        <div className="mx-auto mt-6 flex max-w-3xl flex-wrap justify-center gap-2">
+          {CATEGORY_ORDER.map((c) => (
+            <Link
+              key={c}
+              href="/peptides"
+              className="rounded-full border border-ink/15 px-3 py-1 text-xs text-ink-soft transition hover:border-clinic hover:text-clinic"
+            >
+              {c}
+            </Link>
+          ))}
+        </div>
+      </Section>
 
       {/* Lifestyle band — aspirational, logistics copy only (no treatment claim) */}
       <Section>
