@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container, CTA, ImportantSafetyInfo } from "@/components/ui";
-import { JsonLd, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 import { BLENDS, getBlend, EVIDENCE_NOTE } from "@/lib/blends";
 
@@ -30,11 +30,27 @@ export default async function BlendPage({ params }: { params: Promise<{ slug: st
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Peptides", path: "/peptides" },
-          { name: "Blends", path: "/peptides/blends" },
-          { name: b.name, path: `/peptides/blends/${b.slug}` },
-        ])}
+        data={[
+          medicalWebPageSchema({
+            name: `${b.name} — blend education`,
+            description: b.summary,
+            path: `/peptides/blends/${b.slug}`,
+            lastReviewed: b.updated,
+            about: {
+              name: b.name,
+              description: `${b.tagline} ${b.summary}`,
+              // A blend's components ARE its active ingredients, and naming them
+              // in structured data is what lets a retrieval system connect this
+              // page to the individual compound pages.
+              activeIngredient: b.components.map((c) => c.peptide),
+            },
+          }),
+          breadcrumbSchema([
+            { name: "Peptides", path: "/peptides" },
+            { name: "Blends", path: "/peptides/blends" },
+            { name: b.name, path: `/peptides/blends/${b.slug}` },
+          ]),
+        ]}
       />
 
       {/* 1 · Name and category */}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, CTA, ImportantSafetyInfo } from "@/components/ui";
-import { JsonLd, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 import { blendsByCategory, BLENDS, EVIDENCE_NOTE } from "@/lib/blends";
 
@@ -17,10 +17,18 @@ export default function Blends() {
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Peptides", path: "/peptides" },
-          { name: "Blends", path: "/peptides/blends" },
-        ])}
+        data={[
+          medicalWebPageSchema({
+            name: "Peptide blends",
+            description:
+              "Compounded peptide combinations, grouped by purpose. Every one is unstudied as a combination — the evidence belongs to the individual peptides.",
+            path: "/peptides/blends",
+          }),
+          breadcrumbSchema([
+            { name: "Peptides", path: "/peptides" },
+            { name: "Blends", path: "/peptides/blends" },
+          ]),
+        ]}
       />
 
       <div className="wash border-b border-ink/10">

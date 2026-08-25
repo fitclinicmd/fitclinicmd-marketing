@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, ImportantSafetyInfo } from "@/components/ui";
-import { JsonLd, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { PEPTIDES, CATEGORY_ORDER, TIER_LABEL, TIER_TONE, type Peptide } from "@/lib/peptides";
 
 export const metadata: Metadata = {
@@ -55,7 +55,17 @@ export default function PeptideLibrary() {
 
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Peptides", path: "/peptides" }])} />
+      <JsonLd
+        data={[
+          medicalWebPageSchema({
+            name: "Peptide education library",
+            description:
+              "One page per compound: what it is, what people use it for, what the evidence actually shows, and who it is not for.",
+            path: "/peptides",
+          }),
+          breadcrumbSchema([{ name: "Peptides", path: "/peptides" }]),
+        ]}
+      />
 
       <div className="wash border-b border-ink/10">
         <Container className="py-16 sm:py-20">
