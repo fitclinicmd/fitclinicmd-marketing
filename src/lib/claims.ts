@@ -28,6 +28,36 @@
 // HOW COUNSEL'S APPROVAL DROPS IN (per claim): edit `text` to the final wording,
 // record who/when in `approval`, and set `status: "APPROVED"`.
 
+// PRICING MODEL (corrected by Michael, 2026-08-25) — the two pricing claims below
+// were drafted against a flat all-inclusive membership. That is NOT the model.
+// Charges are itemized:
+//
+//   First visit  = provider consultation + lab work (only if ordered)
+//                  + prescribed medication + shipping
+//   Recurring    = medication + shipping. The consultation recurs ONLY if the
+//                  patient asks for one; it is never added automatically.
+//
+// STILL NEEDED before these can go to counsel — three numbers:
+//   $[APPOINTMENT]  the provider consultation fee
+//   $[LABS]         lab work, when ordered
+//   $[SHIPPING]     shipping
+//   [interval] and [NOTICE_DAYS] for the renewal cycle
+//
+// Medication is ALREADY determined and does not need a number here: retail is
+// providerPrice x 2 (lib/products.ts, RETAIL_MULTIPLIER), which today spans
+// $103.98-$317.98 for single peptides and $179.98-$379.98 for blends.
+//
+// ⚠️ THE VARIABLE-AMOUNT PROBLEM. Because the recurring charge depends on what
+// was prescribed, it is not a fixed figure, and a "renews at $X per month"
+// sentence cannot be made truthful by filling in a blank. Negative-option law
+// (ROSCA federally, plus state automatic-renewal statutes) requires the
+// consumer to know what they will be charged before it happens. With a variable
+// amount that means: state how the amount is determined, show the actual figure
+// before each charge, and give advance notice. The draft below is written that
+// way. Whatever wording counsel settles on, the billing implementation has to
+// match it exactly — a disclosure is only as accurate as what the code does on
+// renewal day.
+
 export type ClaimStatus = "PENDING_COUNSEL" | "DRAFT" | "APPROVED";
 
 export type Claim = {
@@ -93,16 +123,16 @@ export const CLAIMS: Record<string, Claim> = {
   "pricing-headline": {
     id: "pricing-headline",
     intent:
-      "Price, billing interval and what is included. Must carry the automatic-renewal disclosures required by ROSCA and state law (packet 2.3(3)).",
+      "What the patient pays, itemized. NOT a flat membership: first visit is consultation + labs (if ordered) + medication + shipping; the recurring charge drops the consultation unless the patient asks for another. Must carry the automatic-renewal disclosures required by ROSCA and state law (packet 2.3(3)).",
     status: "DRAFT",
-    text: "$[AMOUNT] per [month/quarter] — includes your provider consultation and, when prescribed, your medication and shipping. No hidden fees.",
+    text: "Your first visit is itemized, and you see the total before you pay: $[APPOINTMENT] for the provider consultation, $[LABS] for lab work if your provider orders it, the cost of your prescribed medication, and $[SHIPPING] shipping. After that you are charged only for medication and shipping — a further consultation is billed only if you ask for one.",
   },
   "pricing-autorenewal": {
     id: "pricing-autorenewal",
     intent:
-      "The automatic-renewal disclosure shown before purchase: amount, interval, that the card on file is charged automatically, and how to cancel.",
+      "The automatic-renewal disclosure shown before purchase. NOTE the recurring amount is VARIABLE — it depends on what was prescribed — so a fixed '$X per month' sentence cannot be truthful here. The disclosure must therefore state how the amount is determined, show the actual figure before each charge, and give advance notice. Amount, interval, automatic charging, and cancellation must all appear before purchase.",
     status: "DRAFT",
-    text: "Your membership renews automatically every [interval] at $[amount], charged to the card on file, until you cancel. Cancel anytime from your account; cancellation stops future charges.",
+    text: "Your medication ships every [interval] and your card on file is charged automatically until you cancel. Because the amount depends on what you are prescribed, we show your exact charge before each shipment and email you [NOTICE_DAYS] days beforehand. Cancel anytime from your account — cancelling stops all future charges.",
   },
   "provider-credentials": {
     id: "provider-credentials",
