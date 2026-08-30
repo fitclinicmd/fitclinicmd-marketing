@@ -32,38 +32,44 @@ export default function PeptidesIndex() {
           then the two ways into the library. No scrolling required to reach
           either — that ordering is deliberate, per Michael 2026-08-25. */}
       <div className="wash border-b border-ink/10">
-        <Container className="py-12 sm:py-14">
+        <Container className="py-8 sm:py-14">
           <Eyebrow>Education library</Eyebrow>
-          <h1 className="max-w-3xl text-4xl sm:text-5xl">Peptides, explained plainly.</h1>
+          <h1 className="max-w-3xl text-3xl sm:text-5xl">Peptides, explained plainly.</h1>
 
           {/* 1 · Foundations — opens in its own tab so nobody loses their place. */}
           <a
             href="/education/foundations.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-7 block rounded-xl2 border border-accent/60 bg-accent-light p-6 transition hover:border-clinic"
+            className="group mt-5 block rounded-xl2 border border-accent/60 bg-accent-light p-4 transition hover:border-clinic sm:mt-7 sm:p-6"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted">
               Start here
             </p>
-            <h2 className="mt-2 text-2xl">Peptide foundational knowledge</h2>
-            <p className="mt-2 max-w-2xl text-ink-soft">
+            <h2 className="mt-1 text-xl sm:mt-2 sm:text-2xl">Peptide foundational knowledge</h2>
+            {/* Hidden below sm: this paragraph is what pushed the two buttons
+                past the fold on a 375px screen, and the requirement is that both
+                are visible without scrolling. */}
+            <p className="mt-2 hidden max-w-2xl text-ink-soft sm:block">
               What a peptide actually is, why it is injected, who makes it, what “FDA approved”
               really means, how to read a health claim, and what happens at your first visit.
             </p>
-            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
+            <p className="mt-1 text-sm text-ink-soft sm:hidden">
+              Start here before anything else.
+            </p>
+            <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2 sm:mt-4">
               Read the foundations <span aria-hidden="true">↗</span>
             </span>
           </a>
 
           {/* 2 · The two libraries, side by side. */}
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6 sm:gap-4">
             <Link
               href="#single-peptides"
-              className="group rounded-xl2 border border-ink/15 bg-white p-6 transition hover:border-clinic"
+              className="group rounded-xl2 border border-ink/15 bg-white p-4 transition hover:border-clinic sm:p-6"
             >
-              <h2 className="text-xl">Single Peptides</h2>
-              <p className="mt-1 text-sm text-ink-muted">
+              <h2 className="text-lg sm:text-xl">Single Peptides</h2>
+              <p className="mt-1 text-xs text-ink-muted sm:text-sm">
                 {PEPTIDES.length} compounds, one page each.
               </p>
               <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
@@ -72,10 +78,10 @@ export default function PeptidesIndex() {
             </Link>
             <Link
               href="/peptides/blends"
-              className="group rounded-xl2 border border-ink/15 bg-white p-6 transition hover:border-clinic"
+              className="group rounded-xl2 border border-ink/15 bg-white p-4 transition hover:border-clinic sm:p-6"
             >
-              <h2 className="text-xl">Peptide Blends</h2>
-              <p className="mt-1 text-sm text-ink-muted">
+              <h2 className="text-lg sm:text-xl">Peptide Blends</h2>
+              <p className="mt-1 text-xs text-ink-muted sm:text-sm">
                 {BLENDS.length} combinations, grouped by purpose.
               </p>
               <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
