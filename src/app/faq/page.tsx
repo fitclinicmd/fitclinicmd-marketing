@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: "Do I need insurance?",
-    a: "No. FitClinicMD is cash-pay and we do not bill insurance. You pay one transparent price, so there are no claims, deductibles or surprise bills later.",
+    a: "No. FitClinicMD is cash-pay and we do not bill insurance — so there are no claims, deductibles or surprise bills later.",
   },
   {
     q: "Am I guaranteed a prescription?",
