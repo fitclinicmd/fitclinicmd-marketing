@@ -19,7 +19,16 @@ const PRINCIPLES = [
     title: "Your data isn't the product",
     body: "We don't run advertising trackers, we don't sell your information, and we don't share it with ad platforms. This website collects no health information at all — your medical details live only in the secure portal, which is a deliberately separate system.",
   },
-  // PRICING PRINCIPLE — REMOVED FROM THE PAGE 2026-08-25, KEPT FOR LATER.
+  {
+    title: "Pricing, straight from us",
+    // Deliberately no figure. Pricing is a regulated claim (lib/claims.ts) and
+    // the model is itemized with three numbers still unset, so this points at
+    // the contact channel instead of stating a price. Swap in a phone number
+    // here and on /faq once one exists — there is none on the site today, so
+    // "call us" would point at nothing.
+    body: "Ask us and we'll go through it with you. FitClinicMD is cash-pay and does not bill insurance, so there are no claims or deductibles to decode.",
+  },
+  // EARLIER PRICING PRINCIPLE — REMOVED FROM THE PAGE 2026-08-25, KEPT FOR LATER.
   //
   // Pulled for two reasons: the pricing model is not settled (it is itemized —
   // consultation, labs if ordered, medication, shipping — and three of those
