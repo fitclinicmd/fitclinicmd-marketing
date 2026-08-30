@@ -15,6 +15,11 @@ export const metadata: Metadata = {
 // claims registry — deliberately not answered here.
 const FAQ = [
   {
+    q: "What does it cost?",
+    // No figure here on purpose — see the note in app/about/page.tsx.
+    a: "Get in touch and we'll go through pricing with you before anything is decided.",
+  },
+  {
     q: "Do I need insurance?",
     a: "No. FitClinicMD is cash-pay and we do not bill insurance — so there are no claims, deductibles or surprise bills later.",
   },
