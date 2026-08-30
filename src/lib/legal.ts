@@ -66,9 +66,9 @@ export const PUBLIC_LEGAL_DOCS: PublicLegalDoc[] = [
     slug: "terms",
     title: "Terms of Service",
     summary: "The agreement between you and Medvora LLC for use of this service.",
-    version: "1.0",
+    version: "1.1",
     status: "PUBLISHED",
-    effectiveDate: "2026-08-01",
+    effectiveDate: "2026-08-25",
     sections: [
       {
         heading: "Who we are and what this is",
@@ -79,8 +79,9 @@ export const PUBLIC_LEGAL_DOCS: PublicLegalDoc[] = [
         body: "You must be at least 18 years old and physically located in a U.S. state where we offer services to create an account and receive care. You agree to provide accurate, current, and complete information and to keep it up to date. You are responsible for maintaining the security of your account credentials and for all activity under your account. Do not share your account or use anyone else's.",
       },
       {
-        heading: "Subscriptions, automatic renewal and cancellation",
-        body: "Most treatment is offered as an automatically renewing subscription. Before you are charged, we present the price, the billing interval, and the date of your first charge, and you must affirmatively agree to them. YOUR SUBSCRIPTION RENEWS AUTOMATICALLY: at the end of each billing interval, the payment method on file is charged the then-current subscription price, without further notice unless required by law, until you cancel. You may cancel at any time from your account; cancellation stops future charges and takes effect at the end of the current paid interval. If a payment fails, we may retry it and will attempt to notify you; if payment is not resolved within the grace period, the subscription is paused. This section is intended to satisfy the federal Restore Online Shoppers' Confidence Act (ROSCA) and applicable state automatic-renewal laws; the disclosures and affirmative-consent step are also presented in the checkout flow.",
+        heading: "Recurring charges, automatic renewal and cancellation",
+        body:
+          "Charges are itemized; this is not a flat membership. Your first visit is billed for the provider consultation, laboratory testing if your provider orders it, any medication prescribed, and shipping. You are shown the total and must affirmatively agree to it before you are charged. If you are prescribed an ongoing medication, that medication and its shipping RECUR AUTOMATICALLY: at the end of each interval the payment method on file is charged, until you cancel. THE RECURRING AMOUNT IS NOT FIXED \u2014 it depends on what you have been prescribed. For that reason we show you the exact amount before each charge and send it to you in advance of the charge date. A provider consultation is not part of a recurring charge and is never added automatically; a further consultation is billed only if you request one. You may cancel at any time from your account; cancellation stops future charges. If a payment fails, we may retry it and will attempt to notify you; if payment is not resolved within the grace period, recurring charges are paused. This section is intended to satisfy the federal Restore Online Shoppers\' Confidence Act (ROSCA) and applicable state automatic-renewal laws. Because the recurring amount is not fixed, advance notice of each charge is how those disclosure obligations are met; the disclosures and affirmative-consent step are also presented before purchase.",
       },
       {
         heading: "Medical disclaimer and no emergency use",
@@ -117,9 +118,9 @@ export const PUBLIC_LEGAL_DOCS: PublicLegalDoc[] = [
     title: "Informed Consent to Telehealth",
     summary:
       "What a telehealth visit is, its limits and risks, and what you agree to before being seen.",
-    version: "1.0",
+    version: "1.1",
     status: "PUBLISHED",
-    effectiveDate: "2026-08-01",
+    effectiveDate: "2026-08-25",
     sections: [
       {
         heading: "What telehealth is and how visits work",
@@ -143,7 +144,8 @@ export const PUBLIC_LEGAL_DOCS: PublicLegalDoc[] = [
       },
       {
         heading: "Fees, billing and cancellation",
-        body: "This is a cash-pay service. We do not bill health insurance, and your treatment is not covered or reimbursed by insurance through this platform. Most treatment is provided on a recurring subscription: you agree that the payment method on file will be charged automatically at the stated price and interval until you cancel. You may cancel at any time from your account, and cancellation stops future charges. Because medication is compounded and dispensed specifically for you, medication that you have received is generally not refundable; but if an order does not arrive, is delayed by weather or a shipping problem, or arrives damaged, contact us and we will make it right with a replacement or a refund where appropriate. Any applicable refund policy is described at the time of purchase and in the Terms of Service.",
+        body:
+          "This is a cash-pay service. We do not bill health insurance, and your treatment is not covered or reimbursed by insurance through this platform. Charges are itemized: your first visit is billed for the provider consultation, laboratory testing if your provider orders it, any medication prescribed, and shipping, and you see the total before you pay. If you are prescribed an ongoing medication, that medication and its shipping recur automatically until you cancel. The recurring amount depends on what you have been prescribed, so you are shown the exact figure before each charge and notified in advance of the charge date. A further provider consultation is billed only if you request one; it is never added automatically. You may cancel at any time from your account, and cancellation stops future charges. Because medication is compounded and dispensed specifically for you, medication that you have received is generally not refundable; but if an order does not arrive, is delayed by weather or a shipping problem, or arrives damaged, contact us and we will make it right with a replacement or a refund where appropriate. Any applicable refund policy is described at the time of purchase and in the Terms of Service.",
       },
       {
         heading: "Privacy, records and recording",
