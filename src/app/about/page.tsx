@@ -19,10 +19,22 @@ const PRINCIPLES = [
     title: "Your data isn't the product",
     body: "We don't run advertising trackers, we don't sell your information, and we don't share it with ad platforms. This website collects no health information at all — your medical details live only in the secure portal, which is a deliberately separate system.",
   },
-  {
-    title: "Prices you can see",
-    body: "One price, shown before you pay it, billed on a schedule you agreed to, cancellable from your account without a phone call. No claims, no deductibles, no bill arriving three months later.",
-  },
+  // PRICING PRINCIPLE — REMOVED FROM THE PAGE 2026-08-25, KEPT FOR LATER.
+  //
+  // Pulled for two reasons: the pricing model is not settled (it is itemized —
+  // consultation, labs if ordered, medication, shipping — and three of those
+  // numbers do not exist yet), and it described recurring billing, which was
+  // removed from the marketing copy sitewide. It is also a regulated claim, so
+  // whatever replaces it belongs in lib/claims.ts and needs counsel sign-off
+  // before it renders anywhere.
+  //
+  // Restore only once pricing is final and approved — and rewrite it first:
+  // "one price" is no longer true of an itemized model.
+  //
+  // {
+  //   title: "Prices you can see",
+  //   body: "One price, shown before you pay it, billed on a schedule you agreed to, cancellable from your account without a phone call. No claims, no deductibles, no bill arriving three months later.",
+  // },
   {
     title: "Boundaries we don't cross",
     body: "We only offer treatments we can stand behind, in states where our providers are licensed. Where the law or the evidence isn't settled, we wait rather than launch and apologize later.",
