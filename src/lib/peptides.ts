@@ -65,8 +65,7 @@ export const PEPTIDES: Peptide[] = [
     ],
     uses: [
       { use: "Fat loss and weight loss", inShort: "The primary use it is marketed for, tied to fat-cell metabolism." },
-      { use: "Insulin sensitivity and", inShort: "The enzyme it targets is tied to how fat tissue handles blood" },
-      { use: "metabolic health", inShort: "sugar." },
+      { use: "Insulin sensitivity and metabolic health", inShort: "The enzyme it targets is tied to how fat tissue handles blood sugar." },
       { use: "Cellular energy and NAD+", inShort: "Proposed to leave more of a key energy-building block available to cells." },
     ],
     notFor: [
@@ -94,8 +93,7 @@ export const PEPTIDES: Peptide[] = [
     ],
     uses: [
       { use: "Fat loss and weight loss", inShort: "Went through the largest human trial in this category; details are in the full review." },
-      { use: "Fat loss without growth", inShort: "Designed for selectivity, without raising blood sugar or IGF-1" },
-      { use: "hormone’s other effects", inShort: "the way growth hormone does." },
+      { use: "Fat loss without growth hormone’s other effects", inShort: "Designed for selectivity, without raising blood sugar or IGF-1 the way growth hormone does." },
       { use: "Joint and cartilage support", inShort: "A newer, less-studied use." },
     ],
     notFor: [
@@ -123,10 +121,8 @@ export const PEPTIDES: Peptide[] = [
     ],
     uses: [
       { use: "Type 2 diabetes", inShort: "An approved use, studied in large placebo-controlled trials." },
-      { use: "Long-term weight", inShort: "Approved for adults, and adolescents 12 and older, with" },
-      { use: "management", inShort: "obesity." },
-      { use: "Reducing cardiovascular", inShort: "Shown to lower heart attack, stroke, and cardiovascular death" },
-      { use: "events", inShort: "risk." },
+      { use: "Long-term weight management", inShort: "Approved for adults, and adolescents 12 and older, with obesity." },
+      { use: "Reducing cardiovascular events", inShort: "Shown to lower heart attack, stroke, and cardiovascular death risk." },
     ],
     notFor: [
       "Anyone with a personal or family history of medullary thyroid cancer, or MEN 2.",
@@ -180,12 +176,9 @@ export const PEPTIDES: Peptide[] = [
       "CJC-1295 is a lab-made analogue of a natural brain hormone, GHRH, that exists in two forms — with and without an added chemical anchor called DAC that extends how long it stays active. It is used by people interested in growth hormone support, usually as part of a nightly routine.",
     ],
     uses: [
-      { use: "Raising growth hormone and", inShort: "Established for the with-DAC form, which stays active for" },
-      { use: "IGF-1 levels", inShort: "about a week per dose." },
-      { use: "Body composition, fat loss,", inShort: "The reason most people use it, alongside a released growth" },
-      { use: "or recovery", inShort: "hormone pulse." },
-      { use: "Combined with ipamorelin or", inShort: "A common pairing intended to combine two release" },
-      { use: "other secretagogues", inShort: "pathways." },
+      { use: "Raising growth hormone and IGF-1 levels", inShort: "Established for the with-DAC form, which stays active for about a week per dose." },
+      { use: "Body composition, fat loss, or recovery", inShort: "The reason most people use it, alongside a released growth hormone pulse." },
+      { use: "Combined with ipamorelin or other secretagogues", inShort: "A common pairing intended to combine two release pathways." },
     ],
     notFor: [
       "Anyone with known coronary artery disease, a prior heart attack, or significant cardiac risk factors.",
@@ -212,10 +205,8 @@ export const PEPTIDES: Peptide[] = [
     ],
     uses: [
       { use: "Muscle growth and hypertrophy", inShort: "The primary use it is marketed for." },
-      { use: "Faster healing of tendons,", inShort: "Extends the mechanism beyond what has been directly" },
-      { use: "muscles and injuries", inShort: "tested." },
-      { use: "Site-specific growth where it", inShort: "A widely repeated claim; a circulating hormone does not stay" },
-      { use: "is injected", inShort: "localized to an injection site." },
+      { use: "Faster healing of tendons, muscles and injuries", inShort: "Extends the mechanism beyond what has been directly tested." },
+      { use: "Site-specific growth where it is injected", inShort: "A widely repeated claim; a circulating hormone does not stay localized to an injection site." },
     ],
     notFor: [
       "Anyone with an active cancer, a history of cancer, or an undiagnosed lump or symptom.",
@@ -241,8 +232,7 @@ export const PEPTIDES: Peptide[] = [
       "Ipamorelin is a short synthetic peptide that acts at the ghrelin receptor in the pituitary gland, prompting a pulse of the body’s own growth hormone rather than supplying it directly. It is used by people interested in body composition, recovery, and sleep quality, usually taken at night.",
     ],
     uses: [
-      { use: "Releasing your own growth", inShort: "The one effect measured directly — it does what it is" },
-      { use: "hormone", inShort: "designed to do." },
+      { use: "Releasing your own growth hormone", inShort: "The one effect measured directly — it does what it is designed to do." },
       { use: "Lean mass and body composition", inShort: "Follows from the growth hormone rise." },
       { use: "Sleep quality and recovery", inShort: "Commonly reported and consistent with the mechanism." },
     ],
@@ -298,8 +288,7 @@ export const PEPTIDES: Peptide[] = [
       "Tesamorelin is a lab-made copy of a natural brain hormone that prompts the pituitary gland to release growth hormone, targeted specifically at visceral fat. It is a fully FDA-approved medicine for one narrow use — excess abdominal fat in HIV-associated lipodystrophy — and is not intended for general weight loss.",
     ],
     uses: [
-      { use: "Excess visceral fat in HIV-", inShort: "The approved use; visceral fat down 11–15% versus placebo" },
-      { use: "associated lipodystrophy", inShort: "in trials." },
+      { use: "Excess visceral fat in HIV- associated lipodystrophy", inShort: "The approved use; visceral fat down 11–15% versus placebo in trials." },
       { use: "Liver fat in HIV patients with fatty liver disease", inShort: "A related use studied in the same patient population." },
       { use: "Cognitive function", inShort: "A newer, less-studied area of interest." },
     ],
@@ -329,8 +318,7 @@ export const PEPTIDES: Peptide[] = [
     uses: [
       { use: "General antioxidant and oxidative stress", inShort: "The underlying use tied to its natural role in the body." },
       { use: "Skin tone and brightening", inShort: "The most-marketed use." },
-      { use: "Chemotherapy side effects", inShort: "Studied as an add-on in oncology, alongside an oncologist’s" },
-      { use: "and neuropathy", inShort: "input." },
+      { use: "Chemotherapy side effects and neuropathy", inShort: "Studied as an add-on in oncology, alongside an oncologist’s input." },
     ],
     notFor: [
       "Anyone with asthma or reactive airways, where an inhaled or nebulised form is proposed.",
@@ -632,8 +620,7 @@ export const PEPTIDES: Peptide[] = [
       "Semax is a lab-made chain of seven amino acids copied from a small fragment of ACTH, the hormone the pituitary gland normally releases to trigger cortisol production. It is used by people interested in focus, memory, and mental performance, most often as a nasal spray.",
     ],
     uses: [
-      { use: "Recovery after ischemic", inShort: "The approved use in Russia, in a diagnosed patient" },
-      { use: "stroke", inShort: "population." },
+      { use: "Recovery after ischemic stroke", inShort: "The approved use in Russia, in a diagnosed patient population." },
       { use: "Cognitive focus or memory", inShort: "The use most associated with its wellness marketing." },
       { use: "General neuroprotection", inShort: "A broader use tied to the same underlying mechanism." },
     ],
@@ -689,10 +676,8 @@ export const PEPTIDES: Peptide[] = [
       "Epitalon is a synthetic four-amino-acid peptide developed in Russia to mimic a natural pineal gland extract tied to sleep and aging research. It is used by people interested in longevity and circadian rhythm, usually taken in short cycles rather than continuously.",
     ],
     uses: [
-      { use: "Longevity and cellular", inShort: "The use behind its reputation, tied to telomere-protecting" },
-      { use: "ageing", inShort: "mechanisms." },
-      { use: "Sleep quality and circadian", inShort: "The area with the most direct human research, in older" },
-      { use: "rhythm", inShort: "adults." },
+      { use: "Longevity and cellular ageing", inShort: "The use behind its reputation, tied to telomere-protecting mechanisms." },
+      { use: "Sleep quality and circadian rhythm", inShort: "The area with the most direct human research, in older adults." },
       { use: "Antioxidant and neuroprotective effects", inShort: "A less-marketed, secondary area of interest." },
     ],
     notFor: [
@@ -720,8 +705,7 @@ export const PEPTIDES: Peptide[] = [
     ],
     uses: [
       { use: "Low sexual desire", inShort: "Studied for its role in brain response to sexual stimuli." },
-      { use: "Fertility support and", inShort: "The strongest evidence, using a longer-acting form given" },
-      { use: "ovulation triggering", inShort: "intravenously." },
+      { use: "Fertility support and ovulation triggering", inShort: "The strongest evidence, using a longer-acting form given intravenously." },
       { use: "Testosterone and reproductive hormone support", inShort: "Reliably raises a key reproductive hormone signal." },
     ],
     notFor: [
@@ -775,8 +759,7 @@ export const PEPTIDES: Peptide[] = [
       "PT-141, also known as bremelanotide, is a lab-made peptide built to mimic a natural hormone involved in the brain’s desire and arousal pathway. As Vyleesi, it is FDA-approved for one specific population. It is used by people addressing low sexual desire and interest.",
     ],
     uses: [
-      { use: "Low sexual desire in", inShort: "The approved use — a modest, statistically significant" },
-      { use: "premenopausal women", inShort: "benefit." },
+      { use: "Low sexual desire in premenopausal women", inShort: "The approved use — a modest, statistically significant benefit." },
       { use: "Male erectile dysfunction, off-label", inShort: "Based on an older development program." },
       { use: "Male low libido without diagnosed ED", inShort: "Extrapolated from related research." },
     ],

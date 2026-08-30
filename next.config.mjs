@@ -15,8 +15,13 @@ const securityHeaders = [
 // RETIRED_BLEND_SLUGS in src/lib/blends.ts.
 const RETIRED_BLENDS = [
   "regrow", "refine", "restore", "guard", "burn", "perform",
-  "repair", "pulse", "maintain", "focus", "balance", "desire",
+  "pulse", "maintain", "focus", "balance", "desire",
 ];
+
+// "Wolverine" shipped briefly on 2026-08-25 and was renamed to "Repair" the
+// same day (Marvel trademark). Repair is also what the retired 19-blend set
+// called this exact formula, so that URL is live again rather than retired.
+const RENAMED_BLENDS = { wolverine: "repair" };
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -30,6 +35,11 @@ const nextConfig = {
       ...RETIRED_BLENDS.map((slug) => ({
         source: `/peptides/blends/${slug}`,
         destination: "/peptides/blends",
+        permanent: true,
+      })),
+      ...Object.entries(RENAMED_BLENDS).map(([from, to]) => ({
+        source: `/peptides/blends/${from}`,
+        destination: `/peptides/blends/${to}`,
         permanent: true,
       })),
       // Subscription content was removed sitewide 2026-08-25; this article was
