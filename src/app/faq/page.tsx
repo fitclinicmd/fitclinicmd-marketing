@@ -48,15 +48,15 @@ const FAQ = [
   },
   {
     q: "How does billing work?",
-    a: "Treatment is billed as a recurring subscription. You are shown the amount, the interval and the date before you agree, and the card you save is charged automatically each period. All of it is visible in your account.",
+    a: "You are shown exactly what you will be charged, and what it covers, before you agree to anything. Everything is itemized and visible in your account.",
   },
   {
     q: "How do I cancel?",
-    a: "From your account, yourself — you can pause or cancel your subscription without a phone call. Cancellation stops future charges; it does not refund medication already dispensed and shipped.",
+    a: "From your account, yourself — no phone call needed. Stopping future charges takes effect immediately; it does not refund medication already dispensed and shipped.",
   },
   {
     q: "What if a payment fails?",
-    a: "We contact you and give you time to update your payment method rather than immediately ending your care. If it isn't resolved, the subscription is paused.",
+    a: "We contact you and give you time to update your payment method rather than immediately ending your care. If it isn't resolved, your plan is paused.",
   },
   {
     q: "Which states do you serve?",

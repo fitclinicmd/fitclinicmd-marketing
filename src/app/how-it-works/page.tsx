@@ -43,7 +43,7 @@ const STEPS = [
   {
     n: "06",
     title: "Ongoing care and check-ins",
-    body: "Message your care team from the portal, review labs, and adjust your plan with your provider over time. Your subscription is managed from your account, and you can pause or cancel it there.",
+    body: "Message your care team from the portal, review labs, and adjust your plan with your provider over time. Everything is managed from your account, and you can pause or stop at any point there.",
     detail: "For as long as you're with us",
   },
 ];

@@ -2,56 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
-import { PEPTIDES, CATEGORY_ORDER, TIER_LABEL, TIER_TONE, type Peptide } from "@/lib/peptides";
+import { PEPTIDES, peptidesByCategory } from "@/lib/peptides";
+import { BLENDS } from "@/lib/blends";
 
 export const metadata: Metadata = {
   title: "Peptide education library",
   description:
-    "Plain, sourced explanations of individual peptides — what each one is, what people use it for, what the evidence actually shows, and who it is not for. Education, not marketing.",
+    "Start with the foundations, then browse single peptides or blends. One short page per compound, with a full review a click away.",
 };
 
-// Same editorial line as /learn: describe use, never promise outcome. The
-// evidence tier is a specification shown up front, not a warning. Nothing here
-// is an FDA-approved product except where a page expressly says so.
-
-function PeptideCard({ p }: { p: Peptide }) {
-  const inner = (
-    <Card className="h-full transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
-      <div className="flex items-center justify-between gap-3">
-        {p.status === "PUBLISHED" ? (
-          <span
-            className={`inline-block rounded border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${TIER_TONE[p.tier]}`}
-          >
-            {TIER_LABEL[p.tier]}
-          </span>
-        ) : (
-          <span className="text-[11px] font-medium uppercase tracking-wide text-ink-muted">
-            In preparation
-          </span>
-        )}
-      </div>
-      <h3 className="mt-3 text-xl">{p.name}</h3>
-      <p className="mt-1 text-sm text-ink-muted">{p.drugClass}</p>
-      <p className="mt-3 text-sm leading-relaxed text-ink-soft">{p.summary}</p>
-    </Card>
-  );
-
-  return p.status === "PUBLISHED" ? (
-    <Link href={`/peptides/${p.slug}`} className="group block">
-      {inner}
-    </Link>
-  ) : (
-    <div className="block opacity-80">{inner}</div>
-  );
-}
-
-export default function PeptideLibrary() {
-  // Display in the catalog's contents-page order; any stray category falls to the end.
-  const present = Array.from(new Set(PEPTIDES.map((p) => p.category)));
-  const categories = [
-    ...CATEGORY_ORDER.filter((c) => present.includes(c)),
-    ...present.filter((c) => !CATEGORY_ORDER.includes(c)),
-  ];
+export default function PeptidesIndex() {
+  const groups = peptidesByCategory();
 
   return (
     <>
@@ -60,73 +21,101 @@ export default function PeptideLibrary() {
           medicalWebPageSchema({
             name: "Peptide education library",
             description:
-              "One page per compound: what it is, what people use it for, what the evidence actually shows, and who it is not for.",
+              "Foundational knowledge, single peptides, and peptide blends — a short page for each, with a full review a click away.",
             path: "/peptides",
           }),
           breadcrumbSchema([{ name: "Peptides", path: "/peptides" }]),
         ]}
       />
 
+      {/* Everything above this fold is navigation: the foundations first,
+          then the two ways into the library. No scrolling required to reach
+          either — that ordering is deliberate, per Michael 2026-08-25. */}
       <div className="wash border-b border-ink/10">
-        <Container className="py-16 sm:py-20">
+        <Container className="py-12 sm:py-14">
           <Eyebrow>Education library</Eyebrow>
-          <h1 className="max-w-3xl text-4xl sm:text-5xl">Every peptide, explained honestly.</h1>
-          <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            One page per compound, all built the same way: what it is, what people use it for, what
-            the evidence actually shows, and who it is not for. The evidence tier is stated up front —
-            a specification, not a sales pitch. Nothing here is an FDA-approved product except where a
-            page expressly says so.
-          </p>
+          <h1 className="max-w-3xl text-4xl sm:text-5xl">Peptides, explained plainly.</h1>
+
+          {/* 1 · Foundations — opens in its own tab so nobody loses their place. */}
+          <a
+            href="/education/foundations.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-7 block rounded-xl2 border border-accent/60 bg-accent-light p-6 transition hover:border-clinic"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted">
+              Start here
+            </p>
+            <h2 className="mt-2 text-2xl">Peptide foundational knowledge</h2>
+            <p className="mt-2 max-w-2xl text-ink-soft">
+              What a peptide actually is, why it is injected, who makes it, what “FDA approved”
+              really means, how to read a health claim, and what happens at your first visit.
+            </p>
+            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
+              Read the foundations <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+
+          {/* 2 · The two libraries, side by side. */}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <Link
+              href="#single-peptides"
+              className="group rounded-xl2 border border-ink/15 bg-white p-6 transition hover:border-clinic"
+            >
+              <h2 className="text-xl">Single Peptides</h2>
+              <p className="mt-1 text-sm text-ink-muted">
+                {PEPTIDES.length} compounds, one page each.
+              </p>
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
+                Browse <span aria-hidden="true">→</span>
+              </span>
+            </Link>
+            <Link
+              href="/peptides/blends"
+              className="group rounded-xl2 border border-ink/15 bg-white p-6 transition hover:border-clinic"
+            >
+              <h2 className="text-xl">Peptide Blends</h2>
+              <p className="mt-1 text-sm text-ink-muted">
+                {BLENDS.length} combinations, grouped by purpose.
+              </p>
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
+                Browse <span aria-hidden="true">→</span>
+              </span>
+            </Link>
+          </div>
         </Container>
       </div>
 
-      <Section>
-        <div className="mb-14 grid gap-6 sm:grid-cols-2">
-          <Link href="/peptides/fda-status" className="group block">
-            <Card className="h-full border-clinic/20 bg-clinic/[0.03] transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
-              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Start here</p>
-              <h3 className="mt-2 text-xl">Peptides and the FDA — where things actually stand</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                What the July 2026 advisory vote did and did not do — and why “an FDA panel recommended it” and
-                “the FDA approved it” are not the same thing.
-              </p>
-            </Card>
-          </Link>
-          <Link href="/peptides/glp-1" className="group block">
-            <Card className="h-full border-clinic/20 bg-clinic/[0.03] transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
-              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Metabolic</p>
-              <h3 className="mt-2 text-xl">GLP-1 therapy</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                Semaglutide, tirzepatide and retatrutide — and the difference between an FDA-approved brand and a
-                compounded preparation.
-              </p>
-            </Card>
-          </Link>
+      <Section id="single-peptides">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl">Single peptides</h2>
+          <p className="mt-3 text-ink-muted">
+            One short page per compound — what it is, what people use it for, and who it is not
+            for. Each links to a full review if you want the long version.
+          </p>
         </div>
 
-        {categories.map((cat) => (
-          <div key={cat} className="mb-14 last:mb-0">
-            <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink-muted">{cat}</h2>
-            <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {PEPTIDES.filter((p) => p.category === cat).map((p) => (
-                <PeptideCard key={p.slug} p={p} />
+        {groups.map((g) => (
+          <div key={g.category} className="mt-12">
+            <h3 className="text-xl text-clinic">{g.category}</h3>
+            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {g.peptides.map((p) => (
+                <Link key={p.slug} href={`/peptides/${p.slug}`} className="group block">
+                  <Card className="h-full transition group-hover:border-clinic/40">
+                    <h4 className="text-lg">{p.name}</h4>
+                    <p className="mt-1 text-xs uppercase tracking-wide text-ink-muted">
+                      {p.subtitle}
+                    </p>
+                    <p className="mt-3 text-sm text-ink-soft">{p.oneLiner}</p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-clinic">
+                      Read about {p.name} →
+                    </span>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
         ))}
-
-        <Link href="/peptides/blends" className="group mt-4 block">
-          <Card className="flex flex-col items-start gap-2 border-clinic/20 bg-clinic/[0.03] transition group-hover:border-clinic sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">Also available</p>
-              <h3 className="mt-1 text-xl">Peptide blends</h3>
-              <p className="mt-1 text-sm text-ink-soft">
-                Purpose-built combinations that pair peptides for a shared goal — recovery, metabolic, longevity.
-              </p>
-            </div>
-            <span className="whitespace-nowrap text-sm font-semibold text-clinic">Browse blends →</span>
-          </Card>
-        </Link>
 
         <ImportantSafetyInfo className="mt-14" />
       </Section>

@@ -391,54 +391,7 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
-  {
-    slug: "reading-a-subscription-before-you-sign-up",
-    title: "Reading a subscription before you sign up",
-    summary:
-      "How recurring billing works, what to check before you agree, and how cancellation should work at any reputable clinic.",
-    topic: "Before you start",
-    updated: "2026-08-01",
-    readMinutes: 5,
-    status: "PUBLISHED",
-    body: [
-      {
-        type: "p",
-        text: "Most telehealth wellness care — including ours — is sold as a subscription. That's not a catch in itself; it's how ongoing treatment and refills are usually handled. But a subscription is a recurring commitment, and it's worth reading before you agree. Here's what to look for, at any clinic.",
-      },
-      { type: "h2", text: "How recurring billing works" },
-      {
-        type: "p",
-        text: "Before you're charged, a reputable clinic shows you the price, the billing interval, and the date of your first charge, and asks you to affirmatively agree to them. From there the subscription renews automatically: at the end of each interval, the card on file is charged the then-current price until you cancel. None of that should be buried — the disclosures and the agree step are required by law and should be plainly visible at checkout.",
-      },
-      { type: "h2", text: "What to check before you agree" },
-      {
-        type: "ul",
-        items: [
-          "The price and how often you'll be billed (monthly, quarterly).",
-          "What's actually included — the provider visit, the medication, shipping — and what costs extra.",
-          "When the first charge hits and when it renews.",
-          "How to cancel, and when cancellation takes effect.",
-          "The refund policy, including for medication that has already shipped.",
-          "Whether it's cash-pay — most of this care is not billed to insurance.",
-        ],
-      },
-      { type: "h2", text: "How cancellation should work" },
-      {
-        type: "p",
-        text: "You should be able to cancel at any time from your account, and cancelling should stop future charges, taking effect at the end of the interval you've already paid for. If a clinic makes cancellation hard to find, requires a phone call you can't get through on, or keeps charging after you cancel, that's a real red flag — the whole point of clear auto-renewal rules is to prevent exactly that.",
-      },
-      { type: "h2", text: "Cash-pay, and what it means" },
-      {
-        type: "p",
-        text: "Cash-pay means the clinic doesn't bill your health insurance — you pay directly. That can make pricing simpler and more transparent, but it also means the cost is yours to weigh, and it won't count toward an insurance deductible. Know the all-in number before you start.",
-      },
-      {
-        type: "callout",
-        text: "This describes how reputable subscription billing should work, including ours — always read the specific terms presented to you at checkout. This article is general information, not legal or financial advice.",
-      },
-    ],
-  },
-];
+  ];
 
 // MEDICAL REVIEW BYLINE — "Medically reviewed by …" is a factual claim that a
 // licensed clinician actually reviewed this content. It must be TRUE: a provider
