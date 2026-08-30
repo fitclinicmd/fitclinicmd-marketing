@@ -7,6 +7,11 @@
 // their URLs 301 to the blends index (see next.config.mjs) rather than 404,
 // because they were already live and in the sitemap.
 //
+// NAMING. "Wolverine" was renamed to "Repair" on 2026-08-25 (Marvel trademark).
+// Repair is also what the retired 19-blend set called this exact formula, so the
+// slug returns to /peptides/blends/repair rather than becoming a new URL, and
+// "repair" is no longer a retired slug.
+//
 // ⚠️ SEVERAL NAMES CARRIED OVER WITH DIFFERENT FORMULAS. Build in particular is
 // no longer the four-peptide stack containing IGF-1 LR3 — it is now CJC-1295 +
 // Ipamorelin, which is what the retired "Pulse" used to be. Renew moved from a
@@ -73,8 +78,7 @@ export const BLENDS: Blend[] = [
     ],
     uses: [
       { use: "Fat loss, particularly visceral fat", inShort: "Components address fat loss through separate, non- competing mechanisms." },
-      { use: "Lean-mass preservation during a", inShort: "CJC-1295 and Tesamorelin both support the GH axis," },
-      { use: "deficit", inShort: "believed to help protect muscle during fat loss." },
+      { use: "Lean-mass preservation during a deficit", inShort: "CJC-1295 and Tesamorelin both support the GH axis, believed to help protect muscle during fat loss." },
     ],
     notFor: [
       "Pregnant or breastfeeding patients",
@@ -100,8 +104,7 @@ export const BLENDS: Blend[] = [
       { peptide: "Ipamorelin", dose: "12mg", role: "Delivers a clean pulse on top of that baseline — cortisol- neutral, without the broader hormonal disturbance older secretagogues cause." },
     ],
     uses: [
-      { use: "Sleep quality and overnight", inShort: "A commonly cited rationale for this pairing, tied to" },
-      { use: "recovery", inShort: "growth hormone’s natural nighttime release pattern." },
+      { use: "Sleep quality and overnight recovery", inShort: "A commonly cited rationale for this pairing, tied to growth hormone’s natural nighttime release pattern." },
       { use: "Lean tissue support and recovery", inShort: "The combination is intended to mirror the body’s own pulsatile GH release more closely than either peptide alone." },
     ],
     notFor: [
@@ -145,12 +148,12 @@ export const BLENDS: Blend[] = [
     updated: "2026-08-25",
   },
   {
-    slug: "wolverine",
-    name: "Wolverine",
+    slug: "repair",
+    name: "Repair",
     category: "Tissue Repair & Recovery",
     oneLiner: "The two-peptide standard for tissue repair.",
     intro: [
-      "Wolverine pairs two widely used repair-focused peptides — BPC-157 and TB-500, each dosed at 10mg — in a single preparation. One is broadly protective, the other focused on cell movement and new blood vessel growth.",
+      "Repair pairs two widely used repair-focused peptides — BPC-157 and TB-500, each dosed at 10mg — in a single preparation. One is broadly protective, the other focused on cell movement and new blood vessel growth.",
     ],
     composition: [
       { peptide: "BPC-157", dose: "10mg", role: "The protective arm. Best known for supporting the gastrointestinal lining, and discussed for tendon, ligament, muscle, and skin repair. No human studies." },
@@ -167,7 +170,7 @@ export const BLENDS: Blend[] = [
       "Competitive athletes subject to anti-doping testing — both peptides are prohibited in-competition",
     ],
     pairsWith: [
-      { name: "GHK-Cu", slug: "ghk-cu", kind: "peptide", reason: "Adds collagen and connective-tissue support beneath Wolverine’s repair-focused pairing — the basis for the Glow and Klow blends." },
+      { name: "GHK-Cu", slug: "ghk-cu", kind: "peptide", reason: "Adds collagen and connective-tissue support beneath Repair’s repair-focused pairing — the basis for the Glow and Klow blends." },
       { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Supports the GH axis, which is often suppressed during prolonged injury recovery, to help the body return to baseline function. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
     ],
     updated: "2026-08-25",
@@ -187,8 +190,7 @@ export const BLENDS: Blend[] = [
     ],
     uses: [
       { use: "Skin firmness, collagen support", inShort: "GHK-Cu has the most developed evidence of the three for skin-specific effects, including human topical and injectable research." },
-      { use: "Connective-tissue and dermal", inShort: "BPC-157 and TB-500 contribute general repair support" },
-      { use: "repair", inShort: "underneath the skin-specific GHK-Cu effect." },
+      { use: "Connective-tissue and dermal repair", inShort: "BPC-157 and TB-500 contribute general repair support underneath the skin-specific GHK-Cu effect." },
     ],
     notFor: [
       "Pregnant or breastfeeding patients",
@@ -217,8 +219,7 @@ export const BLENDS: Blend[] = [
     ],
     uses: [
       { use: "Skin firmness, collagen support", inShort: "Same GHK-Cu-driven rationale as Glow, with an added anti-inflammatory component." },
-      { use: "Comprehensive tissue repair with", inShort: "The addition of KPV is intended to address inflammation" },
-      { use: "inflammation control", inShort: "alongside the structural repair the other three peptides support." },
+      { use: "Comprehensive tissue repair with inflammation control", inShort: "The addition of KPV is intended to address inflammation alongside the structural repair the other three peptides support." },
     ],
     notFor: [
       "Pregnant or breastfeeding patients",
@@ -245,8 +246,7 @@ export const BLENDS: Blend[] = [
     ],
     uses: [
       { use: "General immune support", inShort: "Thymosin Alpha-1 has the most developed evidence of the three, including approved uses outside the US for immune modulation." },
-      { use: "Inflammation control without", inShort: "KPV’s proposed mechanism specifically avoids blunting" },
-      { use: "immune suppression", inShort: "normal immune defense while calming excess inflammatory signaling." },
+      { use: "Inflammation control without immune suppression", inShort: "KPV’s proposed mechanism specifically avoids blunting normal immune defense while calming excess inflammatory signaling." },
     ],
     notFor: [
       "Pregnant or breastfeeding patients",
@@ -273,8 +273,7 @@ export const BLENDS: Blend[] = [
     ],
     uses: [
       { use: "Focus and cognitive clarity", inShort: "Semax has meaningful use history outside the US (approved in Russia for certain neurological indications); US evidence is more limited." },
-      { use: "Stress and anxiety support without", inShort: "Selank is studied for anxiolytic effects without the" },
-      { use: "sedation", inShort: "sedation associated with many anti-anxiety compounds." },
+      { use: "Stress and anxiety support without sedation", inShort: "Selank is studied for anxiolytic effects without the sedation associated with many anti-anxiety compounds." },
     ],
     notFor: [
       "Pregnant or breastfeeding patients",
@@ -329,8 +328,7 @@ export const BLENDS: Blend[] = [
       { peptide: "PT-141", dose: "10mg", role: "The arousal driver. Activates central arousal pathways in the brain for libido and responsiveness, rather than acting on blood flow the way some other options do." },
     ],
     uses: [
-      { use: "Emotional connection and intimacy", inShort: "Oxytocin’s bonding effects are well-characterized" },
-      { use: "support", inShort: "physiologically, though marketed intimacy use is broader than its approved indications." },
+      { use: "Emotional connection and intimacy support", inShort: "Oxytocin’s bonding effects are well-characterized physiologically, though marketed intimacy use is broader than its approved indications." },
       { use: "Libido and arousal support", inShort: "PT-141 (bremelanotide) is FDA-approved as Vyleesi for hypoactive sexual desire disorder in premenopausal women — the only FDA-approved compound in this blend." },
     ],
     notFor: [
@@ -357,10 +355,10 @@ export function blendsByCategory() {
   })).filter((g) => g.blends.length > 0);
 }
 
-/** Blends retired in the 2026-08-25 revision. These URLs were live and in the
- *  sitemap, so they 301 to the index rather than 404. Kept here as the single
- *  source of truth for the redirect list in next.config.mjs. */
+/** Blends retired in the 2026-08-25 revision. "repair" is deliberately NOT here:
+ *  the blend formerly shipped as "Wolverine" took that name, so the URL is live
+ *  again. "wolverine" redirects to it. */
 export const RETIRED_BLEND_SLUGS: string[] = [
   "regrow", "refine", "restore", "guard", "burn", "perform",
-  "repair", "pulse", "maintain", "focus", "balance", "desire",
+  "pulse", "maintain", "focus", "balance", "desire",
 ];
