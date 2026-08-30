@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitClinicMD — Peptide Foundational Knowledge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1B2D;
+    --ink-soft:#5A6472;
+    --paper:#F7F8F6;
+    --mist:#E7EEEE;
+    --teal:#0E7C86;
+    --teal-deep:#0A5D65;
+    --coral:#C1524B;
+    --line:#DBE2E1;
+    --lightblue:#F5FAFB;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{max-width:760px; margin:0 auto; padding:56px 28px 110px;}
+
+  header{margin-bottom:40px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--teal-deep); font-weight:600; margin-bottom:14px;
+  }
+  h1{
+    font-family:'Fraunces',serif; font-optical-sizing:auto; font-weight:500;
+    font-size:clamp(32px,5.5vw,50px); line-height:1.08; letter-spacing:-.01em;
+    margin:0 0 18px; max-width:640px;
+  }
+  h1 em{font-style:italic; font-weight:400; color:var(--teal-deep);}
+  .sub{font-size:16.5px; line-height:1.6; color:var(--ink-soft); max-width:600px; margin:0;}
+
+  .toc{
+    background:#fff; border:1px solid var(--line); border-left:3px solid var(--teal);
+    border-radius:4px; padding:26px 30px 10px; margin:40px 0 56px;
+  }
+  .toc-head{
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--teal-deep); font-weight:600; margin-bottom:6px;
+  }
+  .toc a{
+    display:block; padding:13px 0; border-top:1px solid var(--line);
+    text-decoration:none; color:inherit; cursor:pointer;
+  }
+  .toc a:hover .toc-title{color:var(--coral);}
+  .toc-row{display:flex; gap:10px; align-items:baseline;}
+  .toc-num{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:13px; color:var(--teal-deep); flex:none;}
+  .toc-title{font-weight:600; font-size:16px; color:var(--ink); transition:color .15s ease;}
+  .toc-q{margin:4px 0 0 30px; font-size:13.5px; font-style:italic; color:var(--ink-soft);}
+
+  .piece{padding-top:56px; border-top:1px solid var(--line); margin-top:56px; scroll-margin-top:24px;}
+  .piece:first-of-type{border-top:none; margin-top:0; padding-top:0;}
+  .piece-kicker{
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:13px;
+    letter-spacing:.06em; color:var(--teal-deep); margin-bottom:10px;
+  }
+  .piece h2{
+    font-family:'Fraunces',serif; font-optical-sizing:auto; font-weight:500;
+    font-size:clamp(26px,3.6vw,34px); line-height:1.12; letter-spacing:-.01em;
+    margin:0 0 16px; color:var(--ink);
+  }
+  .dek{
+    font-style:italic; color:var(--ink-soft); font-size:16px; line-height:1.55;
+    border-left:3px solid var(--line); padding-left:16px; margin:0 0 22px;
+  }
+  .piece h3{
+    font-family:'Fraunces',serif; font-weight:600; font-size:20px; letter-spacing:-.005em;
+    color:var(--ink); margin:30px 0 10px;
+  }
+  .piece p{font-size:16px; line-height:1.65; color:var(--ink); margin:0 0 14px;}
+  .piece p strong{font-weight:600;}
+  .piece ul{margin:0 0 14px; padding:0; list-style:none;}
+  .piece ul li{
+    position:relative; padding-left:20px; margin-bottom:9px; font-size:16px;
+    line-height:1.6; color:var(--ink);
+  }
+  .piece ul li::before{content:'•'; position:absolute; left:2px; color:var(--ink-soft);}
+
+  .callout{
+    background:var(--lightblue); border-left:3px solid var(--teal); border-radius:3px;
+    padding:20px 24px; margin:24px 0;
+  }
+  .callout-head{
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px;
+    letter-spacing:.08em; color:var(--teal-deep); margin-bottom:10px;
+  }
+  .callout ul{margin:0; padding:0; list-style:none;}
+  .callout ul li{position:relative; padding-left:18px; margin-bottom:9px; font-size:15px; line-height:1.55; color:var(--ink);}
+  .callout ul li:last-child{margin-bottom:0;}
+  .callout ul li::before{content:'•'; position:absolute; left:1px; color:var(--teal-deep);}
+
+  .flow{display:flex; flex-direction:column; gap:14px; margin:20px 0 22px;}
+  .flow-item{border:1px solid var(--line); border-radius:4px; padding:18px 22px;}
+  .flow-tag{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px; letter-spacing:.06em; color:var(--coral); margin-bottom:6px;}
+  .flow-title{font-family:'Fraunces',serif; font-weight:600; font-size:18px; color:var(--ink); margin-bottom:8px;}
+  .flow-item p{margin-bottom:8px; font-size:15px;}
+  .flow-item p:last-child{margin-bottom:0;}
+
+  .disclosure{
+    background:var(--mist); border-radius:4px; padding:28px 30px; margin-top:64px;
+  }
+  .disclosure h2{
+    font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin:0 0 14px; color:var(--ink);
+  }
+  .disclosure p{font-size:14px; line-height:1.6; color:var(--ink-soft); margin:0 0 12px;}
+  .disclosure p:last-child{margin-bottom:0;}
+
+  footer{
+    margin-top:48px; font-size:12.5px; color:var(--ink-soft);
+    font-family:'IBM Plex Mono',monospace; letter-spacing:.02em;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="eyebrow">FitClinicMD — Peptide Library</div>
+    <h1>Peptide <em>foundational</em> knowledge</h1>
+    <p class="sub">General information for anyone who has heard about peptides and wants to understand the landscape before speaking with a doctor. Ten short pieces, compiled from what is publicly published across medical centers, health authorities, and reporting. This is not medical advice.</p>
+  </header>
+
+  <div class="toc">
+    <div class="toc-head">Read in order · about twenty minutes</div>
+    <a href="#p1"><div class="toc-row"><span class="toc-num">01</span><span class="toc-title">What a peptide actually is</span></div><div class="toc-q">How is this different from a protein, a hormone, or a supplement?</div></a>
+    <a href="#p2"><div class="toc-row"><span class="toc-num">02</span><span class="toc-title">Why you inject it instead of swallowing it</span></div><div class="toc-q">Why can’t I just take a pill?</div></a>
+    <a href="#p3"><div class="toc-row"><span class="toc-num">03</span><span class="toc-title">Who makes your medication</span></div><div class="toc-q">Who prepares this, and under what rules?</div></a>
+    <a href="#p4"><div class="toc-row"><span class="toc-num">04</span><span class="toc-title">What “FDA approved” actually means</span></div><div class="toc-q">Approved, compounded, investigational, unapproved — what’s the difference?</div></a>
+    <a href="#p5"><div class="toc-row"><span class="toc-num">05</span><span class="toc-title">How to read a health claim</span></div><div class="toc-q">What does “promising early research” actually mean?</div></a>
+    <a href="#p6"><div class="toc-row"><span class="toc-num">06</span><span class="toc-title">What you’re buying when you buy online</span></div><div class="toc-q">Why is a website different from a pharmacy?</div></a>
+    <a href="#p7"><div class="toc-row"><span class="toc-num">07</span><span class="toc-title">What happens at your first visit</span></div><div class="toc-q">What will the doctor actually ask and test?</div></a>
+    <a href="#p8"><div class="toc-row"><span class="toc-num">08</span><span class="toc-title">What to ask before you start</span></div><div class="toc-q">What should I be asking that I don’t know to ask?</div></a>
+    <a href="#p9"><div class="toc-row"><span class="toc-num">09</span><span class="toc-title">When the answer should be no</span></div><div class="toc-q">Should I be ruling myself out?</div></a>
+    <a href="#p10"><div class="toc-row"><span class="toc-num">10</span><span class="toc-title">What this looks like day to day</span></div><div class="toc-q">What am I actually signing up for?</div></a>
+  </div>
+
+  <section class="piece" id="p1">
+    <div class="piece-kicker">01 / 10</div>
+    <h2>What a peptide actually is</h2>
+    <p class="dek">If you’ve started reading about peptides, you’ve probably noticed the word gets used to mean about six different things. Here’s the plain version.</p>
+    <p>Every protein in your body is built from the same small set of building blocks called amino acids. A peptide is simply a short chain of them — usually somewhere between two and fifty, joined end to end.</p>
+    <p>The easiest way to hold it: amino acids are letters, a peptide is a word, a protein is a paragraph. Same alphabet. Wildly different length and complexity.</p>
+    <p>That’s genuinely all the word means. It describes what a molecule is made of — nothing about what it does, whether it works, or whether it’s safe.</p>
+    <h3>So is a peptide a hormone?</h3>
+    <p>Sometimes. But they’re answers to different questions.</p>
+    <p>“Peptide” describes the structure. “Hormone” describes the job — a chemical messenger that travels through your blood telling organs and tissues what to do.</p>
+    <p>Some hormones are peptides. Insulin is. So are oxytocin and growth hormone. Others aren’t peptides at all — testosterone, cortisol and estrogen are built from cholesterol and behave completely differently in the body.</p>
+    <p>Saying “peptides are hormones” is a bit like saying “words are instructions.” Some are. Most aren’t.</p>
+    <h3>And a supplement?</h3>
+    <p>Different thing again, and this one trips people up.</p>
+    <p>“Supplement” isn’t a description of chemistry. It’s a legal category — the lane a product travels in. Vitamins, minerals, herbs and amino acids can be sold as supplements. Most therapeutic peptides can’t be, because anything being developed or sold as a drug is specifically excluded from that category.</p>
+    <p>Which is why the peptides people ask us about are prescription items handled by a pharmacy and a physician, not something you pick up in a health-food shop. If you find one on a shelf next to the magnesium, something has gone wrong somewhere in the chain.</p>
+    <h3>Why this matters before you read anything else</h3>
+    <p>Once you know that “peptide” only describes shape and size, a lot of marketing language stops working.</p>
+    <p><strong>“It’s a peptide, so it’s natural”</strong> — insulin is natural too, and the wrong amount will kill you. Natural and safe are unrelated ideas.</p>
+    <p><strong>“It’s basically just amino acids, like protein powder”</strong> — protein powder is food, which your body dismantles into raw material. A therapeutic peptide is a specific signaling molecule given at a specific dose for a specific reason.</p>
+    <p><strong>“It’s a peptide, so it’s like hormone replacement”</strong> — most peptides being marketed today aren’t replacing a measured deficiency of anything.</p>
+    <p>None of that means peptides don’t do anything. Several are approved medicines that millions of people rely on. It means the word itself isn’t evidence, and anyone using it as though it were should prompt a raised eyebrow.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>The word tells you nothing about the evidence.</strong> Insulin and a compound with a handful of animal studies behind it are both peptides. What separates them is the research, not the chemistry.</li>
+        <li><strong>Approved peptide medicines exist.</strong> Insulin, the GLP-1 medications used in weight management, and several others have been through full clinical testing. Most compounds marketed as “peptide therapy” have not.</li>
+        <li><strong>Structure isn’t function.</strong> Two peptides of similar size can do entirely unrelated things — or nothing at all.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p2">
+    <div class="piece-kicker">02 / 10</div>
+    <h2>Why you inject it instead of swallowing it</h2>
+    <p class="dek">The most common question we get, and the answer is more interesting than “because that’s how it’s done.”</p>
+    <p>Your digestive system exists to destroy exactly the kind of molecule a peptide is. That’s the whole answer. Everything else is detail.</p>
+    <p>Swallow a peptide and the first thing it meets is stomach acid, along with an enzyme whose entire job is chopping protein chains apart. Whatever survives that moves into the small intestine and meets four more enzymes doing the same work. Anything still intact then has to cross the intestinal wall — and peptides are large, water-loving molecules that the gut lining is specifically built to keep out.</p>
+    <p>The result is a number worth remembering. For most therapeutic peptides, less than one percent of a swallowed dose reaches the bloodstream intact. Sometimes less than a tenth of a percent.</p>
+    <p>Think of it as posting a handwritten letter through a paper shredder. The letter doesn’t arrive smudged. It arrives as confetti, and confetti carries no message.</p>
+    <p>Injecting simply refuses to use that route. You hand the letter to the recipient directly.</p>
+    <h3>“But they make an oral version now”</h3>
+    <p>They make two, and both are instructive.</p>
+    <p>There is an oral form of semaglutide. Making it work at all required pairing the drug with a special absorption agent that briefly buffers stomach acid. Even then, roughly one percent of the dose gets through — and the instructions are punishing. Empty stomach, first thing in the morning, no more than a few ounces of water, then wait half an hour before eating, drinking or taking anything else. Don’t split it, crush it or chew it.</p>
+    <p>There’s a similar oral version of octreotide, another peptide medicine — this one used to manage acromegaly, a disorder of excess growth hormone. Approved by the FDA in 2020, it works through an entirely different mechanism: a capsule coating that briefly and reversibly loosens the tight seal between intestinal cells, opening a narrow window for the peptide to cross before the effect wears off.</p>
+    <p>That’s the scale of engineering required: enormous formulation programs, and the payoff is about one percent delivery of a drug potent enough to survive it.</p>
+    <h3>What that means for oral peptide products</h3>
+    <p>When a website sells an “oral peptide” capsule, spray or cream for a compound with no such formulation behind it, the reasonable assumption is that very little of the labelled peptide reaches the bloodstream intact.</p>
+    <p>Sublingual and under-the-tongue products bypass stomach acid, which is a real advantage. But the molecule still has to cross a membrane built to exclude it, and for most peptides there’s no published human data showing meaningful absorption. That absence is itself informative — the chemistry predicts failure, and nobody has published anything to the contrary.</p>
+    <p>Collagen peptides are a separate conversation entirely. Those are consumed as food and broken down into amino acids, which is a nutrition argument, not a drug-delivery one.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>Injection isn’t a business decision.</strong> It’s a chemistry constraint. Approved peptide medicines are injected for the same reason.</li>
+        <li><strong>Under the skin, not into muscle or vein.</strong> Subcutaneous injection uses a very short, very fine needle into the fat layer. Most people find it far less unpleasant than they expect.</li>
+        <li><strong>“Oral” or “sublingual” on a peptide product deserves a question.</strong> Ask what human data exists showing it’s absorbed. For most products, the honest answer is none.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p3">
+    <div class="piece-kicker">03 / 10</div>
+    <h2>Who makes your medication</h2>
+    <p class="dek">Most peptide therapy comes from a compounding pharmacy. Here’s what that means, and why the specific pharmacy matters more than almost anything else.</p>
+    <p>Compounding is a pharmacist preparing a medication rather than dispensing one that arrived sealed from a manufacturer. It’s a long-standing and entirely legitimate part of medicine. The classic examples are a child who can’t swallow a tablet, or a patient allergic to a dye in the commercial version.</p>
+    <p>A compounding pharmacy is licensed by its state, staffed by licensed pharmacists, and inspected. It is not a loophole, and it is not a back door.</p>
+    <p>It’s also not the same thing as an FDA-approved medicine and understanding that difference is the single most useful thing on this page.</p>
+    <h3>What “compounded” does and doesn’t tell you</h3>
+    <p>It tells you a licensed professional prepared this for a specific, named patient with a valid prescription, working under state and federal rules, using ingredients that come with documentation of what they are.</p>
+    <p>It doesn’t tell you that a regulator reviewed this particular product for safety, effectiveness or quality before it reached you. Nobody did. That review process exists only for approved drugs.</p>
+    <p>Both halves are true at once, and honest clinics say both.</p>
+    <p>There’s a useful comparison here. An approved medicine is like a building with a certificate of occupancy — inspected and signed off before anyone moved in. A compounded preparation is a renovation done by a licensed contractor working to code: legitimate, skilled, permitted — but nobody inspected this particular kitchen before you cooked in it.</p>
+    <h3>Why the specific pharmacy matters so much</h3>
+    <p>Because “compounded” describes a pathway, not a quality grade. The quality you actually receive is the quality of the individual facility.</p>
+    <p>This is not theoretical. In 2012 a compounding pharmacy in Massachusetts shipped contaminated steroid injections across twenty states. Sixty-four people died. The investigation found the company had shipped product before sterility test results came back, never told customers when results came back unclean, and used fake prescriptions to move volume.</p>
+    <p>Everything about how compounding is regulated today traces back to that. It’s also why any clinic worth using can tell you exactly which pharmacy prepares your medication and what testing it does.</p>
+    <h3>Two kinds of compounding pharmacy</h3>
+    <p>You may see these referred to by their section of the law, and the distinction is simple enough.</p>
+    <p>One type prepares medication patient by patient, against an individual prescription with your name on it. Think of a tailor.</p>
+    <p>The other produces in batches and sells to clinics for stock. It accepts substantially heavier manufacturing standards and federal inspection in exchange. Think of a factory that’s audited for consistency.</p>
+    <p>FitClinicMD’s model is the first. Every preparation is made against a prescription written for one identified patient after an evaluation.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>Compounded medications are not FDA-approved.</strong> We say this on every page because it’s true and because you should hear it from us rather than discover it later.</li>
+        <li><strong>“FDA-registered facility” is not the same as approved.</strong> Registration means an address is on a list. It is not a verdict on anything.</li>
+        <li><strong>Ask which pharmacy.</strong> Then ask what state it’s licensed in and whether it tests for sterility and potency. Any legitimate provider will answer without hesitating.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p4">
+    <div class="piece-kicker">04 / 10</div>
+    <h2>What “FDA approved” actually means</h2>
+    <p class="dek">Four words that get used interchangeably and mean completely different things. This is the distinction people get wrong most often.</p>
+    <p>We’ll keep this short, because you don’t need to become an expert — you need to be able to tell four situations apart.</p>
+    <h3>Approved</h3>
+    <p>A company submitted a specific product to the FDA, ran laboratory, animal and human testing, and the agency reviewed the whole file and concluded the benefits outweigh the risks for a defined use.</p>
+    <p>Note how narrow that is. Approval covers one product, from one manufacturer, at defined doses, for a defined purpose. It isn’t a blessing on a molecule in general.</p>
+    <h3>Compounded</h3>
+    <p>A licensed pharmacy prepared it for an individual patient under the rules described in the previous piece. Legal, professional, and not reviewed by the FDA for safety, effectiveness or quality before it reached you.</p>
+    <h3>Investigational</h3>
+    <p>It’s being studied in people under an authorized research protocol. This is the one most often misread as promising.</p>
+    <p>“Investigational” means unknown. It doesn’t mean cutting-edge or nearly-there. The FDA’s own figures are sobering: of drugs that begin human testing, roughly six percent make it all the way through. So for the overwhelming majority, “investigational” eventually resolves to didn’t work, or wasn’t safe enough.</p>
+    <h3>Unapproved, and sold anyway</h3>
+    <p>The fourth category, and the one nobody explains.</p>
+    <p>Products can and do sit on websites for years without ever having been reviewed. The FDA prioritizes enforcement by risk rather than sweeping every unapproved product off the market at once. So, the fact that something is still being sold is not evidence that anyone approved it — only that it hasn’t reached the top of anyone’s list.</p>
+    <h3>The traps</h3>
+    <ul>
+      <li><strong>“It’s FDA-registered.”</strong> Facilities register. Registration is a list, not an approval.</li>
+      <li><strong>“They haven’t shut it down, so it must be fine.”</strong> Enforcement is by priority. Availability is not permission.</li>
+      <li><strong>“It’s used in clinical trials.”</strong> Being studied is the opposite of being proven. It means the answer isn’t in yet.</li>
+      <li><strong>“It has breakthrough designation.”</strong> That’s a fast lane on the motorway. It isn’t arrival.</li>
+      <li><strong>“It’s approved in Europe.”</strong> Different regulator, different standard — and often it isn’t approved there either.</li>
+    </ul>
+    <h3>Where peptide therapy sits</h3>
+    <p>Plainly: most of the compounds discussed on this site are not FDA-approved medicines. A few are — the GLP-1 medications used in weight management are approved products with very large clinical trials behind them. Most of the rest are not, and are prepared by compounding pharmacies.</p>
+    <p>We’d rather you knew that at the start than found out at the end. It doesn’t mean the compounds are useless or dangerous. It means the honest answer to “has this been proven?” is usually “not to that standard, and here’s what does exist” — which is exactly what the individual peptide pages set out to tell you.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>One clean test.</strong> Is this exact product, at this dose, for this use, listed in the FDA’s own drug database? If not, whatever else is true, it isn’t approved.</li>
+        <li><strong>Approval is per-use.</strong> The same drug can be approved for one condition and not another. That’s normal, not a technicality.</li>
+        <li><strong>A prescription is not an approval.</strong> Physicians can lawfully prescribe compounded and unapproved products in defined circumstances. The prescription reflects a clinician’s judgement, not a regulator’s review.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p5">
+    <div class="piece-kicker">05 / 10</div>
+    <h2>How to read a health claim</h2>
+    <p class="dek">Most disappointing treatment stories start the same way: a real finding at a weak level of evidence gets described as though it were a strong one. Here’s how to tell them apart.</p>
+    <p>You don’t need a science background for this. You need four categories and one habit.</p>
+    <h3>The four categories, weakest to strongest</h3>
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-tag">WEAKEST</div>
+        <div class="flow-title">Animal and laboratory studies</div>
+        <p>A compound was tested in mice, rats, or cells in a dish. This is where a great deal of peptide research actually sits — and it’s the right place to start asking a question, not a place to find an answer. A mouse is not a small human. Species differ in dose, metabolism, and how long they live. Injury models in rodents are chosen because they’re reproducible, not because they resemble a torn human shoulder.</p>
+      </div>
+      <div class="flow-item">
+        <div class="flow-tag">WEAK</div>
+        <div class="flow-title">Case reports</div>
+        <p>One person, or a handful, took something and something happened. Essential for spotting rare harms. Useless for establishing that a treatment works, because there’s no comparison — no way to know what would have happened anyway. Ten glowing testimonials are ten case reports with the unflattering ones left out.</p>
+      </div>
+      <div class="flow-item">
+        <div class="flow-tag">MODERATE</div>
+        <div class="flow-title">Uncontrolled trials</div>
+        <p>Everyone gets the treatment, everyone knows it, and results are compared to how people felt before. These make almost anything look effective, for three reasons that have nothing to do with the drug: people seek treatment when they feel worst and worst tends to be followed by better; most injuries and many symptoms improve on their own; and expectation is powerful.</p>
+      </div>
+      <div class="flow-item">
+        <div class="flow-tag">STRONGEST</div>
+        <div class="flow-title">Randomised controlled trials</div>
+        <p>A coin flip decides who gets the treatment and who gets a dummy, and ideally nobody knows which. That’s the point — the coin has no opinion about who deserves to improve, and blinding stops expectation doing the work. This is the only design that answers the question that matters: did people improve more than they would have anyway?</p>
+      </div>
+    </div>
+    <h3>The habit: count the humans, not the papers</h3>
+    <p>“There are dozens of studies” is a sentence that means nothing on its own. Dozens of rodent studies is one kind of claim. Two human trials is a completely different kind.</p>
+    <p>Ask how many people have taken this, for how long, and whether anyone got a placebo.</p>
+    <p>A study of twelve people is a poll of twelve voters. You wouldn’t call an election on it.</p>
+    <h3>Phrases worth translating</h3>
+    <ul>
+      <li><strong>“Promising preliminary research”</strong> — small, early, unconfirmed, and statistically likely to shrink or vanish when tested properly. This is honest shorthand, not a red flag in itself. It just doesn’t mean what people hear.</li>
+      <li><strong>“Studies show”</strong> — ask which studies, in what species, in how many.</li>
+      <li><strong>“Clinically proven”</strong> — has no fixed meaning. Ask what trial.</li>
+      <li><strong>“No side effects were reported”</strong> — in a twenty-person, eight-week study you would not expect to detect anything affecting fewer than one in twenty people, or anything that takes a year to appear.</li>
+      <li><strong>“The mechanism makes sense”</strong> — mechanism is the weakest form of evidence there is. Medicine is full of mechanisms that made perfect sense and turned out to do nothing.</li>
+    </ul>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>Peer-reviewed doesn’t mean true.</strong> It means the study was reported competently. Not that the conclusion is right, or that it applies to you.</li>
+        <li><strong>One study is never the answer.</strong> The strongest evidence is several studies, by different researchers, pointing the same way.</li>
+        <li><strong>Applied to peptides, honestly:</strong> a meaningful share of what’s marketed as peptide therapy sits in the animal-study category. That’s the actual state of the field, and it’s why the individual pages on this site say which category each compound falls into.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p6">
+    <div class="piece-kicker">06 / 10</div>
+    <h2>What you’re buying when you buy online</h2>
+    <p class="dek">There’s a large online market selling peptides in vials labelled “for research use only.” Here’s what’s actually going on there.</p>
+    <p>You’ve probably seen these sites. The vials say “research use only” or “not for human consumption.” Buyers understand the wink. So does everyone else.</p>
+    <p>That labelling doesn’t do what it appears to. Regulators have said repeatedly that when a website’s own marketing makes clear the products are meant for people, the disclaimer on the vial doesn’t change what the product legally is. The label isn’t a safety standard or a purity grade. It’s an attempt to move liability, and it doesn’t work.</p>
+    <h3>What’s actually in the vial</h3>
+    <p>We want to be straight about this, because a lot of the writing on this topic overstates what’s known.</p>
+    <p>Independent published testing of gray-market peptide vials is thinner than most articles imply. What is well documented is enough.</p>
+    <p>Sterility failures happen at licensed facilities. A US compounding pharmacy under federal inspection was found unable to assure it could produce sterile product — wrong disinfectants in clean rooms, missing testing, incomplete records. If that can happen somewhere being inspected, an anonymous overseas supplier that nobody inspects is not doing better.</p>
+    <p>Sometimes it’s the wrong drug entirely. International health authorities have warned about falsified injection pens where the vial may contain a completely different medication — including insulin. That’s not a wasted-money problem. That’s a hospital problem.</p>
+    <p>Counterfeit product has reached legitimate pharmacies. In one case regulators found that even the needles were counterfeit, so their sterility couldn’t be confirmed.</p>
+    <p>The molecule itself may differ. Imported raw powder often uses different salt forms of a compound, which regulators have specifically said are not the same active ingredient as the approved medicine.</p>
+    <h3>What a certificate of analysis is worth</h3>
+    <p>Most gray-market sites post one. Treat it as decoration.</p>
+    <p>An image of a lab report on a website is unverifiable, frequently generic, and often for a different batch than the one you received. A certificate has meaning inside a regulated chain of custody, where an identified supplier is accountable and a lot number tracks back to a specific run. Outside that, it’s a picture.</p>
+    <h3>What a regulated route actually buys you</h3>
+    <p>Not purity percentages. Accountability.</p>
+    <p>There’s a named, licensed prescriber whose judgement is on record. A pharmacy that holds a state licence it doesn’t want to lose. Ingredients that arrive with documentation from an identified source. Preparation under sterility controls with testing. Reportable adverse events. A lot number. And — the part people forget — someone to call if something goes wrong.</p>
+    <p>None of that exists when the seller is a website that took cryptocurrency and shipped from an unmarked address.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>“Research grade” isn’t a purity standard.</strong> It’s a labelling status.</li>
+        <li><strong>A doctor saying peptides are reasonable is not permission to buy one online.</strong> No clinician can supervise a product of unknown identity. If you’re already using something from an online source, tell your provider. It doesn’t help you to leave it out, and it can genuinely matter.</li>
+        <li><strong>Thousands of people use these sites and are fine.</strong> True, and not the reassurance it sounds like. Contamination and wrong-ingredient problems are sporadic and individually hard to attribute — which is exactly why they persist.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p7">
+    <div class="piece-kicker">07 / 10</div>
+    <h2>What happens at your first visit</h2>
+    <p class="dek">A real consultation looks less exciting than the internet suggests. That’s the point of it.</p>
+    <p>A first visit is a screening appointment, not a shopping appointment. Here’s what to expect, roughly in order.</p>
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-tag">01 · TAKES THE LONGEST</div>
+        <div class="flow-title">Your history</div>
+        <p>Not a symptom checklist — a proper history. Current and past conditions, surgeries, and specifically cancer history, including in your family. Whether you’re pregnant, trying to become pregnant, or breastfeeding. A complete list of everything you take, prescription and over-the-counter, including supplements.</p>
+        <p>If you’ve been buying anything online, say so. There’s no version of this where leaving it out helps you, and a provider can’t prescribe safely around something they don’t know about.</p>
+      </div>
+      <div class="flow-item">
+        <div class="flow-tag">02 · WORTH BEING HONEST HERE</div>
+        <div class="flow-title">What you’re actually trying to achieve</div>
+        <p>A good provider spends real time on this, and may tell you that the thing you want isn’t something any peptide has meaningful evidence for. They may point at something less interesting — sleep, training load, protein intake, an existing approved medication, a referral — because it’s the higher-yield option.</p>
+        <p>That’s not a sales failure. That’s the visit working.</p>
+      </div>
+      <div class="flow-item">
+        <div class="flow-tag">03 · ONLY WHERE CLINICALLY INDICATED</div>
+        <div class="flow-title">Labs</div>
+        <p>There is no universal peptide panel, and any clinic that runs the same panel on everyone is doing something other than medicine. What gets tested depends on what’s being considered and on you.</p>
+        <p>As a guide: baseline metabolic markers and blood sugar are commonly checked before anything affecting growth-hormone signalling, because that class of compound can affect glucose. Kidney and liver function, a blood count and thyroid function are common. Age-appropriate cancer screening being up to date matters more here than people expect.</p>
+      </div>
+      <div class="flow-item">
+        <div class="flow-tag">04 · THE PART THAT EARNS THE VISIT</div>
+        <div class="flow-title">Ruling things out</div>
+        <p>Your provider should be actively looking for reasons not to prescribe — cancer history, pregnancy, certain thyroid and endocrine conditions, uncontrolled diabetes, specific allergies. Volunteer these rather than waiting to be asked about each one: it’s your health, and you’re the one in charge of it.</p>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>A prescription is never guaranteed.</strong> Our providers prescribe only when they judge treatment appropriate. If it isn’t, they’ll tell you why.</li>
+        <li><strong>Bring a written list.</strong> Everything you take, allergies, conditions, and anything bought online. It’s the single most useful thing you can do to prepare.</li>
+        <li><strong>A questionnaire is not a consultation.</strong> A form that never asks about cancer history, pregnancy or your other medications hasn’t screened you for anything.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p8">
+    <div class="piece-kicker">08 / 10</div>
+    <h2>What to ask before you start</h2>
+    <p class="dek">Good questions do two things at once. They get you information, and they tell you what kind of clinic you’re sitting in.</p>
+    <p>A provider who welcomes these is a good sign. One who gets defensive has just told you something useful.</p>
+    <h3>About the product</h3>
+    <ul>
+      <li>Is this FDA-approved for what you’re proposing to use it for? If not, is it compounded — and by which pharmacy, licensed in which state?</li>
+    </ul>
+    <h3>About you specifically</h3>
+    <ul>
+      <li>Given my history — cancer, family cancer history, thyroid conditions, diabetes, kidney or liver disease, pregnancy plans, everything I currently take — is there any reason I shouldn’t take this?</li>
+      <li>What would make you refuse to prescribe it?</li>
+    </ul>
+    <p>None of this is a trick question. It’s simply what a straight answer sounds like from someone who has actually thought it through.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>You’re allowed to leave and think about it.</strong> Any provider worth using expects that. Urgency is a sales technique, not a clinical finding.</li>
+        <li><strong>Write the answers down.</strong> You will not remember them, and the differences between clinics become obvious once they’re side by side on paper.</li>
+        <li><strong>Ask the same questions everywhere.</strong> The variation in answers tells you more than any single answer does.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p9">
+    <div class="piece-kicker">09 / 10</div>
+    <h2>When the answer should be no</h2>
+    <p class="dek">Every education library in this field is written for the patient who goes ahead. This piece is for the one who shouldn’t.</p>
+    <p>We’d rather tell you now than take your money and tell you later. What follows is general — these are categories where caution or exclusion applies, and every one of them is a conversation with a physician who knows your history, not a rule you apply to yourself.</p>
+    <h3>Active or recent cancer</h3>
+    <p>This is the most important one on the page.</p>
+    <p>Several peptides are intended to increase growth-hormone signalling. Growth hormone is, by definition, a growth factor. The approved medicine in that class is specifically not given to patients with active cancer for exactly that reason, and its labelling directs that any previous cancer be fully treated and inactive first — with treatment stopped at any sign of recurrence.</p>
+    <p>A cancer history from years ago doesn’t automatically rule you out. It does mean this is a discussion, not a formality.</p>
+    <h3>Pregnancy, trying to conceive, or breastfeeding</h3>
+    <p>The default across this category is no, and the reason is simple: the safety data doesn’t exist. Pregnant women are, correctly, not enrolled in studies of experimental compounds.</p>
+    <p>“No safety data” does not mean “probably fine.” It means nobody has looked, and the reason nobody has looked is that the downside is unacceptable.</p>
+    <h3>Certain endocrine and thyroid histories</h3>
+    <p>The approved GLP-1 medications are not given to people with a personal or family history of a particular thyroid cancer, or with a specific inherited endocrine syndrome. Growth-hormone-axis compounds are avoided where the pituitary has been affected by surgery, a tumour, radiation or head injury.</p>
+    <h3>Uncontrolled diabetes or blood sugar problems</h3>
+    <p>Specifically relevant to growth-hormone-axis compounds, which can affect glucose tolerance. This is a documented, measured effect on the approved drug in that class — not a theoretical concern. It’s also why blood sugar gets checked before and during.</p>
+    <h3>Competitive athletes</h3>
+    <p>This one is a career risk rather than a health risk, and it catches people out.</p>
+    <p>Anti-doping rules work as a whitelist, not a blacklist. A category exists that prohibits any substance not approved by a health authority for human use — which covers most of what’s marketed as peptide therapy. BPC-157 is explicitly prohibited at all times.</p>
+    <p>“It wasn’t on the banned list” is not a defence. If you compete in a tested sport at any level, including masters and amateur categories, check before you start.</p>
+    <h3>Children and adolescents</h3>
+    <p>Growth-axis intervention in a still-growing skeleton is a paediatric endocrinology matter. It isn’t a wellness-clinic matter, and we don’t treat it as one.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>Being ruled out is a service.</strong> It costs you nothing and saves you from something.</li>
+        <li><strong>Bring the awkward history.</strong> Cancer, pregnancy plans, psychiatric history, anything bought online. It changes the advice, which is the entire point of asking.</li>
+        <li><strong>If nobody asked you any of this, you weren’t screened.</strong> That’s true regardless of how professional the website looked.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="piece" id="p10">
+    <div class="piece-kicker">10 / 10</div>
+    <h2>What this looks like day to day</h2>
+    <p class="dek">Nobody writes this part, and it’s the part that determines whether people actually stick with it.</p>
+    <p>Peptide therapy is mostly logistics. The injection is the small bit.</p>
+    <h3>The injection</h3>
+    <p>Subcutaneous — into the fat layer just under the skin, not into muscle or a vein. A short, fine needle. Most people find it far less unpleasant than they’d imagined, and the anticipation is worse than the event.</p>
+    <p>Common sites are the abdomen a couple of inches away from the navel, the outer thigh, or the back of the upper arm. Clean the skin, pinch, insert, done.</p>
+    <p>Rotate where you inject. Using the same spot repeatedly causes a lumpy thickening of the fat underneath, which then absorbs medication unpredictably. Move at least an inch each time. It’s like walking the same path across a lawn every day — eventually you have a trench, and nothing grows there.</p>
+    <p>Never reuse a needle. Never share a pen or a vial with anyone, for any reason.</p>
+    <h3>Yours arrives ready to use</h3>
+    <p>You may read elsewhere about reconstituting peptides — adding liquid to a freeze-dried powder, rolling the vial rather than shaking it, working out how long the mixture lasts.</p>
+    <p>You won’t be doing any of that. Everything we dispense arrives already prepared by the pharmacy, ready to draw and inject.</p>
+    <p>That’s worth a sentence because mixing your own is a real source of error. When someone prepares a vial themselves and then measures out doses from it, the arithmetic goes wrong more often than people expect, and it goes wrong in both directions. Removing that step removes a whole category of mistake.</p>
+    <p>It does mean one thing is more important, not less. See below.</p>
+    <h3>Storage — and why it matters more with a ready-mixed vial</h3>
+    <p>Most of this lives in the fridge. Some products tolerate room temperature for a defined window once opened.</p>
+    <p>A dry powder is fairly forgiving — it will survive a warm afternoon. A liquid is not. Once a peptide is in solution, temperature does real damage, and the window is finite. That’s the trade for not having to mix anything yourself.</p>
+    <p>Where in the fridge matters more than people realize. A refrigerator is not one temperature. The back of a shelf — particularly near the vent the cold air blows from — often runs several degrees colder than the dial claims, cold enough to freeze what’s pushed up against it. That is how a vial gets ruined while you’ve done everything right.</p>
+    <p>The door is the opposite problem. It’s the warmest part and the most variable, because it meets room air every time someone opens it.</p>
+    <p>Keep it on a middle shelf, toward the front, off the back wall and out of the door. That’s the steadiest spot in most home refrigerators. If you want certainty rather than guesswork, a fridge thermometer costs a few dollars and tells you what’s actually happening instead of what the dial says.</p>
+    <p>Never freeze it. This is the underappreciated one. Ice crystals destroy peptide structure, and a frozen-then-thawed vial looks completely normal afterwards — like a cracked egg inside an intact shell. It’s why cold-chain shipping matters, and why a package left on a porch through a July afternoon or a January night is a real problem rather than a theoretical one.</p>
+    <h3>Sharps</h3>
+    <p>You need a proper sharps container in the house. Used needles go in immediately — never loose in household rubbish or recycling, never flushed. A heavy-duty plastic container works if you don’t have a purpose-made one. Disposal rules vary by state, so check yours.</p>
+    <h3>What you’re actually signing up for</h3>
+    <p>Fridge space, and the discipline to use it. A sharps container somewhere sensible. Injections on a schedule — weekly for some, daily for others. Travel planning, including a cooler and a plan for airport security. Follow-up appointments and blood draws.</p>
+    <p>For most people the injection becomes routine within a fortnight. The ongoing effort is logistics, not the needle — and that’s the honest thing to weigh before starting, because a treatment you can’t sustain isn’t a treatment.</p>
+    <div class="callout">
+      <div class="callout-head">GOOD TO KNOW</div>
+      <ul>
+        <li><strong>Clear doesn’t mean good.</strong> Degradation and freeze damage are invisible. You cannot assess a vial by looking at it — which is exactly why the delivery and the fridge matter.</li>
+        <li><strong>Ask about travel before you book.</strong> It’s answerable, and much easier before than at a security desk.</li>
+        <li><strong>Front of the shelf, not the back.</strong> The single most common way a correctly stored vial gets frozen is being pushed to the back where the cold air comes in.</li>
+        <li><strong>Tell your provider if something goes wrong with storage.</strong> A wasted vial is cheaper than an injection of something that has degraded.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="disclosure">
+    <h2>Important information</h2>
+    <p>The information on these pages is general education. It is not medical advice, and it is not a recommendation for any particular treatment.</p>
+    <p>Most of the compounds discussed here are not approved by the U.S. Food and Drug Administration for the uses described. Where a compound is prepared by a compounding pharmacy, that preparation is not an FDA-approved product, and the FDA has not reviewed it for safety, effectiveness, or quality.</p>
+    <p>Descriptions of what a compound is “used for” reflect how it is commonly used and discussed. They are not claims that it is effective for any purpose. For most of these compounds the available research is limited, and much of it comes from laboratory or animal studies rather than trials in people.</p>
+    <p>No treatment is provided on the basis of this website. Any prescription follows an individual evaluation by a licensed provider, and is issued only where that provider judges it clinically appropriate. A prescription is never guaranteed.</p>
+    <p>This service is not for emergencies. If you have a medical emergency, call 911 or go to your nearest emergency department.</p>
+  </div>
+
+  <footer>FitClinicMD · Physician-guided peptide therapy</footer>
+</div>
+</body>
+</html>

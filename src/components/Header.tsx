@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NAV, signupUrl, loginUrl, showSignIn } from "@/lib/site";
-import { publishedPeptides } from "@/lib/peptides";
+import { PEPTIDES } from "@/lib/peptides";
 import { BLENDS } from "@/lib/blends";
 import { Container, CTA } from "./ui";
 
@@ -14,7 +14,7 @@ import { Container, CTA } from "./ui";
 // competing with "Get started", which is the conversion action. It stays visible
 // at every breakpoint, shedding only its count on the smallest screens.
 export default function Header() {
-  const libraryCount = publishedPeptides().length + BLENDS.length;
+  const libraryCount = PEPTIDES.length + BLENDS.length;
 
   const navLinks = (
     <ul className="flex items-center gap-5 text-sm text-ink-muted">

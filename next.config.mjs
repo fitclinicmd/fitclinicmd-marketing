@@ -10,12 +10,36 @@ const securityHeaders = [
   { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=(), interest-cohort=()" },
 ];
 
+// Blends retired in the 2026-08-25 revision. These URLs were live and in the
+// sitemap, so they 301 to the blends index rather than 404. Kept in step with
+// RETIRED_BLEND_SLUGS in src/lib/blends.ts.
+const RETIRED_BLENDS = [
+  "regrow", "refine", "restore", "guard", "burn", "perform",
+  "repair", "pulse", "maintain", "focus", "balance", "desire",
+];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
+  },
+  async redirects() {
+    return [
+      ...RETIRED_BLENDS.map((slug) => ({
+        source: `/peptides/blends/${slug}`,
+        destination: "/peptides/blends",
+        permanent: true,
+      })),
+      // Subscription content was removed sitewide 2026-08-25; this article was
+      // live and in the sitemap, so it redirects rather than 404s.
+      {
+        source: "/learn/reading-a-subscription-before-you-sign-up",
+        destination: "/learn",
+        permanent: true,
+      },
+    ];
   },
 };
 

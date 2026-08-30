@@ -8,7 +8,7 @@ import { publishedArticles, plannedArticles } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "Learn",
   description:
-    "Straightforward explanations of how telehealth care, compounded medication, labs and subscription billing actually work.",
+    "Straightforward explanations of how telehealth care, compounded medication, labs and billing actually work.",
 };
 
 // Content is sourced from lib/articles.ts. Anything describing what a medication
