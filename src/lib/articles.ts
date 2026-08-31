@@ -279,11 +279,11 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "What the research shows — and its limits" },
       {
         type: "p",
-        text: "In laboratory and animal studies, MOTS-c has been associated with improvements in how muscle mitochondria produce energy and with reductions in cellular oxidative stress; earlier animal work linked it to metabolic measures such as insulin sensitivity. A 2026 University of Copenhagen study pointed to specific cellular pathways — PGC-1α and AMPK, part of the cell's energy-sensing machinery — as part of how it may act.",
+        text: "In laboratory research, MOTS-c has been associated with improvements in how muscle mitochondria produce energy and with reductions in cellular oxidative stress; earlier laboratory work linked it to metabolic measures such as insulin sensitivity. A 2026 University of Copenhagen study pointed to specific cellular pathways — PGC-1α and AMPK, part of the cell's energy-sensing machinery — as part of how it may act.",
       },
       {
         type: "callout",
-        text: "The honest part: much of this evidence is early and preclinical — largely animal models — and effects seen in mice do not automatically translate to people. Human research is limited and ongoing. Mitochondrial peptides are not FDA-approved, and no outcome is promised.",
+        text: "The honest part: this evidence is early laboratory research, and what is seen there does not automatically translate to people. It has not been tested in people at any scale — human research is limited and ongoing. Mitochondrial peptides are not FDA-approved, and no outcome is promised.",
       },
       { type: "h2", text: "Where NAD+ fits" },
       {

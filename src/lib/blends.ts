@@ -77,7 +77,7 @@ export const BLENDS: Blend[] = [
       { peptide: "MOTS-c", dose: "10mg", role: "The engine-room piece. Keeps mitochondrial output and insulin sensitivity up to match the demand." },
     ],
     uses: [
-      { use: "Fat loss, particularly visceral fat", inShort: "Components address fat loss through separate, non- competing mechanisms." },
+      { use: "Fat loss, particularly visceral fat", inShort: "Components address fat loss through separate, non-competing mechanisms." },
       { use: "Lean-mass preservation during a deficit", inShort: "CJC-1295 and Tesamorelin both support the GH axis, believed to help protect muscle during fat loss." },
     ],
     notFor: [
@@ -87,7 +87,7 @@ export const BLENDS: Blend[] = [
     ],
     pairsWith: [
       { name: "BPC-157", slug: "bpc-157", kind: "peptide", reason: "Adds gut and tissue protection during the caloric deficit this blend is built for — useful if GI comfort is a concern while losing fat." },
-      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "A gentler, lower-dose GHRH layer some patients add for sustained coverage between Tesamorelin’s pulses. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "A gentler, lower-dose GHRH layer some patients add for sustained coverage between Tesamorelin’s pulses. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -101,7 +101,7 @@ export const BLENDS: Blend[] = [
     ],
     composition: [
       { peptide: "CJC-1295", dose: "6mg", role: "Ignites the pathway — establishes a sustained baseline signal telling the pituitary to release growth hormone." },
-      { peptide: "Ipamorelin", dose: "12mg", role: "Delivers a clean pulse on top of that baseline — cortisol- neutral, without the broader hormonal disturbance older secretagogues cause." },
+      { peptide: "Ipamorelin", dose: "12mg", role: "Delivers a clean pulse on top of that baseline — cortisol-neutral, without the broader hormonal disturbance older secretagogues cause." },
     ],
     uses: [
       { use: "Sleep quality and overnight recovery", inShort: "A commonly cited rationale for this pairing, tied to growth hormone’s natural nighttime release pattern." },
@@ -111,11 +111,11 @@ export const BLENDS: Blend[] = [
       "Pregnant or breastfeeding patients",
       "Anyone with active malignancy or a history of cancer without physician clearance",
       "Patients with uncontrolled diabetes or significant cardiovascular disease",
-      "Competitive athletes subject to anti-doping testing — GH secretagogues are prohibited in- competition",
+      "Competitive athletes subject to anti-doping testing — GH secretagogues are prohibited in-competition",
     ],
     pairsWith: [
       { name: "BPC-157", slug: "bpc-157", kind: "peptide", reason: "Adds tissue and gut repair underneath a stack that’s otherwise focused purely on GH signaling." },
-      { name: "Tesamorelin", slug: "tesamorelin", kind: "peptide", reason: "Adds visceral-fat targeting on top of Build’s general GH pulse, for patients who want both recovery and fat-loss coverage. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Tesamorelin", slug: "tesamorelin", kind: "peptide", reason: "Adds visceral-fat targeting on top of Build’s general GH pulse, for patients who want both recovery and fat-loss coverage. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -130,7 +130,7 @@ export const BLENDS: Blend[] = [
     composition: [
       { peptide: "MOTS-c", dose: "10mg", role: "The signal piece. Activates AMPK, the cell’s main metabolic switch, telling mitochondria to multiply and burn fuel more efficiently." },
       { peptide: "SS-31", dose: "10mg", role: "The structural piece. Binds and stabilizes cardiolipin in the inner mitochondrial membrane — the only ingredient here with a real FDA approval behind it (as elamipretide, for Barth syndrome)." },
-      { peptide: "NAD+", dose: "500mg", role: "The fuel piece. The coenzyme every one of those energy- producing reactions actually runs on — levels decline substantially with age." },
+      { peptide: "NAD+", dose: "500mg", role: "The fuel piece. The coenzyme every one of those energy-producing reactions actually runs on — levels decline substantially with age." },
     ],
     uses: [
       { use: "Cellular energy / fatigue support", inShort: "The most consistent rationale across the three components — each targets a distinct point in mitochondrial energy production." },
@@ -143,7 +143,7 @@ export const BLENDS: Blend[] = [
     ],
     pairsWith: [
       { name: "Glutathione", slug: "glutathione", kind: "peptide", reason: "The body’s primary antioxidant, addressing oxidative stress alongside the mitochondrial repair and energy work this blend does." },
-      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Broadens coverage into the GH axis for patients whose fatigue has a hormonal component beyond cellular energy alone. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Broadens coverage into the GH axis for patients whose fatigue has a hormonal component beyond cellular energy alone. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -171,7 +171,7 @@ export const BLENDS: Blend[] = [
     ],
     pairsWith: [
       { name: "GHK-Cu", slug: "ghk-cu", kind: "peptide", reason: "Adds collagen and connective-tissue support beneath Repair’s repair-focused pairing — the basis for the Glow and Klow blends." },
-      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Supports the GH axis, which is often suppressed during prolonged injury recovery, to help the body return to baseline function. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Supports the GH axis, which is often suppressed during prolonged injury recovery, to help the body return to baseline function. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -185,7 +185,7 @@ export const BLENDS: Blend[] = [
     ],
     composition: [
       { peptide: "GHK-Cu", dose: "50mg", role: "The renewal signal. A copper-binding peptide that supports collagen and elastin production, skin remodeling, and connective-tissue repair." },
-      { peptide: "BPC-157", dose: "10mg", role: "The protector. Contributes general tissue repair and anti- inflammatory support underneath the skin-focused effect." },
+      { peptide: "BPC-157", dose: "10mg", role: "The protector. Contributes general tissue repair and anti-inflammatory support underneath the skin-focused effect." },
       { peptide: "TB-500", dose: "10mg", role: "The circulation piece. Promotes cell migration and new blood vessel formation, supporting circulation to the skin and connective tissue." },
     ],
     uses: [
@@ -199,7 +199,7 @@ export const BLENDS: Blend[] = [
       "Anyone on anticoagulant medication without provider review",
     ],
     pairsWith: [
-      { name: "NAD+", slug: "nad", kind: "peptide", reason: "Adds mitochondrial and cofactor support beneath the regenerative work Glow is doing, addressing the cellular energy decline that often precedes visible aging. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "NAD+", slug: "nad", kind: "peptide", reason: "Adds mitochondrial and cofactor support beneath the regenerative work Glow is doing, addressing the cellular energy decline that often precedes visible aging. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -213,7 +213,7 @@ export const BLENDS: Blend[] = [
     ],
     composition: [
       { peptide: "GHK-Cu", dose: "55mg", role: "The renewal signal. A copper-binding peptide that supports collagen and elastin production, skin remodeling, and connective-tissue repair." },
-      { peptide: "BPC-157", dose: "12mg", role: "The protector. Contributes general tissue repair and anti- inflammatory support underneath the skin-focused effect." },
+      { peptide: "BPC-157", dose: "12mg", role: "The protector. Contributes general tissue repair and anti-inflammatory support underneath the skin-focused effect." },
       { peptide: "TB-500", dose: "12mg", role: "The circulation piece. Promotes cell migration and new blood vessel formation, supporting circulation to the skin and connective tissue." },
       { peptide: "KPV", dose: "12mg", role: "The inflammation control. Calms excess inflammatory signaling without suppressing normal immune function, rounding out the repair-and-renewal focus." },
     ],
@@ -227,7 +227,7 @@ export const BLENDS: Blend[] = [
       "Anyone with a personal or family history of cancer, without physician clearance",
     ],
     pairsWith: [
-      { name: "NAD+", slug: "nad", kind: "peptide", reason: "Adds mitochondrial and cofactor support beneath the regenerative work Klow is doing. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "NAD+", slug: "nad", kind: "peptide", reason: "Adds mitochondrial and cofactor support beneath the regenerative work Klow is doing. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -255,7 +255,7 @@ export const BLENDS: Blend[] = [
     ],
     pairsWith: [
       { name: "NAD+", slug: "nad", kind: "peptide", reason: "Supports the mitochondrial energy demands of activated immune cells during high-burden states — real cellular cost to mounting a coordinated response." },
-      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Restores GH signaling that’s often suppressed during prolonged immune activation or post- infectious recovery. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Sermorelin", slug: "sermorelin", kind: "peptide", reason: "Restores GH signaling that’s often suppressed during prolonged immune activation or post-infectious recovery. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -265,7 +265,7 @@ export const BLENDS: Blend[] = [
     category: "Cognitive Function & Neuroprotection",
     oneLiner: "Two neuropeptides aimed at stress load, not sedation.",
     intro: [
-      "A two-peptide pairing that combines a focus- and memory-oriented compound with an anti-anxiety compound, intended to support mental clarity and calm at the same time rather than trading one for the other.",
+      "A two-peptide pairing that combines a focus-and memory-oriented compound with an anti-anxiety compound, intended to support mental clarity and calm at the same time rather than trading one for the other.",
     ],
     composition: [
       { peptide: "Semax", dose: "5mg", role: "The clarity driver. Elevates BDNF to support cognition, memory, and neural resilience." },
@@ -283,7 +283,7 @@ export const BLENDS: Blend[] = [
     ],
     pairsWith: [
       { name: "NAD+", slug: "nad", kind: "peptide", reason: "Provides the cellular and mitochondrial energy substrate that supports neural resilience under sustained cortisol load." },
-      { name: "DSIP", slug: "dsip", kind: "peptide", reason: "Improves sleep depth, often compromised in the same patients carrying the chronic cortisol load Calm is meant to ease. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "DSIP", slug: "dsip", kind: "peptide", reason: "Improves sleep depth, often compromised in the same patients carrying the chronic cortisol load Calm is meant to ease. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -311,7 +311,7 @@ export const BLENDS: Blend[] = [
       "Competitive athletes subject to anti-doping testing — CJC-1295 is prohibited in-competition",
     ],
     pairsWith: [
-      { name: "Selank", slug: "selank", kind: "peptide", reason: "Reduces cortisol and the background stress response that often interferes with sleep onset in the first place — addresses a cause Rest’s own three peptides don’t directly target. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Selank", slug: "selank", kind: "peptide", reason: "Reduces cortisol and the background stress response that often interferes with sleep onset in the first place — addresses a cause Rest’s own three peptides don’t directly target. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },
@@ -338,7 +338,7 @@ export const BLENDS: Blend[] = [
     ],
     pairsWith: [
       { name: "Kisspeptin", slug: "kisspeptin", kind: "peptide", reason: "Adds upstream reproductive hormone signaling that amplifies the bonding and arousal pathways Connect targets." },
-      { name: "Selank", slug: "selank", kind: "peptide", reason: "Reduces social and performance-related anxiety that can interfere with intimate presence and emotional availability. in your name, using ingredients traceable to a named source, under published sterile- compounding standards." },
+      { name: "Selank", slug: "selank", kind: "peptide", reason: "Reduces social and performance-related anxiety that can interfere with intimate presence and emotional availability. in your name, using ingredients traceable to a named source, under published sterile-compounding standards." },
     ],
     updated: "2026-08-25",
   },

@@ -63,8 +63,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "CJC-1295 sets up a steady, longer-lasting signal telling the pituitary to release growth hormone. Ipamorelin adds a clean, sharp pulse on top of that signal, without raising cortisol or other hormones the way older growth-hormone peptides can. Together they’re meant to produce a release pattern closer to what the body does naturally than either one alone. Clinical detail: CJC-1295 is a GHRH analog that establishes sustained GHRH-receptor signaling at the pituitary. Ipamorelin is a selective ghrelin-receptor (GHS-R) agonist that delivers a cortisol-and prolactin-neutral GH pulse. Because the two act on different receptors in the same pathway, their combined effect is proposed to be synergistic — GHRH signaling amplifying the pituitary’s responsiveness to the GHRP pulse — producing a more pronounced and more naturally patterned GH release than either compound alone." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "CJC-1295 and Ipamorelin each have limited human data individually, and neither is FDA-approved for any indication. The combination itself has not been tested in a controlled human trial — the rationale for pairing them (complementary receptor mechanisms) is mechanistic, not the product of comparative research. This is one of the more commonly used combinations in compounded peptide therapy, which speaks to clinical popularity, not to proven superiority over either peptide alone." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? CJC-1295 and Ipamorelin each have limited human data individually, and neither is FDA-approved for any indication. The combination itself has not been tested in a controlled human trial — the rationale for pairing them (complementary receptor mechanisms) is mechanistic, not the product of comparative research. This is one of the more commonly used combinations in compounded peptide therapy, which speaks to clinical popularity, not to proven superiority over either peptide alone." },
         ],
       },
       {
@@ -134,8 +133,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "Semax is aimed at sharpening focus and supporting memory. Selank is aimed at calming stress and anxiety without making you drowsy. The idea behind pairing them is that mental performance often suffers from both a lack of clarity and a background hum of stress at the same time — so addressing both together, rather than picking one, is the rationale. Clinical detail: Semax inhibits enkephalin breakdown and enhances dopamine and serotonin transmission, while raising BDNF, nerve growth factor, and VEGF to support neuroplasticity and cerebral blood flow, without raising heart rate. Selank modulates the GABAergic system, enhancing natural GABA sensitivity and release for an anxiolytic effect without sedation, while also raising serotonin and dopamine turnover and BDNF expression. The two act on complementary but distinct neurochemical pathways — catecholaminergic/neurotrophic (Semax) and GABAergic/HPA-axis (Selank) — that are proposed to converge on overall cognitive-emotional stability." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "Both peptides have real use history and regulatory approval outside the United States (Semax and Selank are both approved medicines in Russia for specific neurological and anxiety-related indications), which is more developed evidence than many compounds in this space. Neither is FDA-approved in the US, and the specific combination of the two has not been studied in a controlled trial — the pairing rationale is mechanistic, not the result of comparative research." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? Both peptides have real use history and regulatory approval outside the United States (Semax and Selank are both approved medicines in Russia for specific neurological and anxiety-related indications), which is more developed evidence than many compounds in this space. Neither is FDA-approved in the US, and the specific combination of the two has not been studied in a controlled trial — the pairing rationale is mechanistic, not the result of comparative research." },
         ],
       },
       {
@@ -203,8 +201,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "Oxytocin works on trust, closeness, and emotional bonding — the feeling side of intimacy. PT-141 works centrally in the brain on desire and arousal itself, not on blood flow the way some other options do. The idea behind combining them is that intimacy has both an emotional and a physical component, and addressing only one tends to leave the other side unaddressed. Clinical detail: Oxytocin binds receptors across the brain and body, modulating dopamine and serotonin to enhance trust and calm, amplifying arousal, and lowering amygdala activity to blunt fear and anxiety — mechanisms centered on social-emotional bonding. PT-141 (bremelanotide) binds melanocortin receptors MC3R and MC4R in the hypothalamus, increasing dopamine release and engaging arousal and reward circuits centrally, rather than acting on vascular smooth muscle the way PDE5 inhibitors do. The two act on distinct, complementary systems — social-bonding neurochemistry and central arousal circuitry." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "PT-141 is the strongest single data point in this blend — bremelanotide is FDA-approved (as Vyleesi) for hypoactive sexual desire disorder in premenopausal women, meaning that component has real regulatory-grade clinical trial evidence behind it, though for a specific population and indication. Oxytocin’s bonding and social-cognitive effects are well-documented physiologically, but its use for general intimacy support is broader than any approved indication. No study has tested oxytocin and PT-141 together as a combination." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? PT-141 is the strongest single data point in this blend — bremelanotide is FDA-approved (as Vyleesi) for hypoactive sexual desire disorder in premenopausal women, meaning that component has real regulatory-grade clinical trial evidence behind it, though for a specific population and indication. Oxytocin’s bonding and social-cognitive effects are well-documented physiologically, but its use for general intimacy support is broader than any approved indication. No study has tested oxytocin and PT-141 together as a combination." },
         ],
       },
       {
@@ -270,10 +267,8 @@ export const FULL_REVIEWS: FullReview[] = [
             ["LL-37", "1mg", "The direct responder. A broad-spectrum antimicrobial peptide that acts on pathogens itself, rather than only signaling other cells to respond."],
           ] },
           { type: "subhead", text: "The combination logic" },
-          { type: "subhead", text: "The three work at different points in how the immune system responds. Thymosin Alpha-1 helps" },
-          { type: "para", text: "coordinate the immune cells that do the actual defending. KPV turns down inflammation that’s run too high, without shutting down the immune system’s normal job. LL-37 acts directly on pathogens themselves. Together, the idea is coordination, calibration, and direct defense. Clinical detail: Thymosin Alpha-1 is a biological response modifier that activates T-lymphocytes and natural killer cells and raises interleukin-2 and interferon-gamma, while also calming pro-inflammatory cytokine excess — a dual immune-modulating action. KPV (the C-terminal tripeptide of alpha-MSH) inhibits NF-κB activation, the transcription factor driving inflammatory cytokine production, without broadly suppressing immune competence. LL-37 is a cathelicidin-derived peptide with a cationic, amphipathic structure that disrupts microbial membranes directly, while also recruiting immune cells and promoting wound re-epithelialization. The three are proposed to act on non-competing points: coordination, inflammatory calibration, and direct antimicrobial action." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "Thymosin Alpha-1 has the most developed evidence of the three — it is approved in some countries outside the US for immune-related indications, though not FDA-approved domestically. KPV and LL-37 both have supportive laboratory and mechanistic data but limited human trial evidence for the uses commonly marketed. No study has tested this specific three-peptide combination; the rationale for combining them is mechanistic layering, not comparative trial evidence." },
+          { type: "para", text: "The three work at different points in how the immune system responds. Thymosin Alpha-1 helps coordinate the immune cells that do the actual defending. KPV turns down inflammation that’s run too high, without shutting down the immune system’s normal job. LL-37 acts directly on pathogens themselves. Together, the idea is coordination, calibration, and direct defense. Clinical detail: Thymosin Alpha-1 is a biological response modifier that activates T-lymphocytes and natural killer cells and raises interleukin-2 and interferon-gamma, while also calming pro-inflammatory cytokine excess — a dual immune-modulating action. KPV (the C-terminal tripeptide of alpha-MSH) inhibits NF-κB activation, the transcription factor driving inflammatory cytokine production, without broadly suppressing immune competence. LL-37 is a cathelicidin-derived peptide with a cationic, amphipathic structure that disrupts microbial membranes directly, while also recruiting immune cells and promoting wound re-epithelialization. The three are proposed to act on non-competing points: coordination, inflammatory calibration, and direct antimicrobial action." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? Thymosin Alpha-1 has the most developed evidence of the three — it is approved in some countries outside the US for immune-related indications, though not FDA-approved domestically. KPV and LL-37 both have supportive laboratory and mechanistic data but limited human trial evidence for the uses commonly marketed. No study has tested this specific three-peptide combination; the rationale for combining them is mechanistic layering, not comparative trial evidence." },
         ],
       },
       {
@@ -339,8 +334,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "GHK-Cu is the ingredient doing the skin-specific work — it’s tied to collagen and elastin production. BPC-157 and TB-500 are added underneath that to support general tissue repair and circulation, since skin health depends on the connective tissue and blood supply beneath it, not just the surface layer. Clinical detail: GHK-Cu delivers bioavailable copper and drives collagen, elastin, and glycosaminoglycan synthesis; at the genetic level it has been shown to influence expression of hundreds of repair-related genes and raise antioxidant enzyme activity. BPC-157 contributes broad cytoprotective and angiogenic support via VEGFR2-Akt-eNOS pathway modulation. TB-500 promotes cell motility and angiogenesis via actin regulation and VEGF upregulation. The combination is proposed to support skin renewal (GHK-Cu) on top of the circulatory and connective-tissue foundation the other two provide." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "GHK-Cu has real human evidence for skin-related effects, largely from topical cosmetic research; injectable/systemic use has less direct human data. BPC-157 and TB-500 remain laboratory-data-primarily for their proposed mechanisms, and no direct combination trial exists for either pairing within this blend. The rationale for combining a skin-focused peptide with two general repair peptides is mechanistic layering, not comparative trial evidence." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? GHK-Cu has real human evidence for skin-related effects, largely from topical cosmetic research; injectable/systemic use has less direct human data. BPC-157 and TB-500 remain laboratory-data-primarily for their proposed mechanisms, and no direct combination trial exists for either pairing within this blend. The rationale for combining a skin-focused peptide with two general repair peptides is mechanistic layering, not comparative trial evidence." },
         ],
       },
       {
@@ -407,8 +401,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "This is the same idea as Glow, with one addition: KPV, which calms excess inflammation without shutting down the immune system’s normal work. The thinking is that inflammation can slow skin and tissue renewal, so controlling it alongside the repair process may support better results than repair alone. Doses here run modestly above the market-standard ratio for this combination — same proportions, scaled up. Clinical detail: GHK-Cu, BPC-157, and TB-500 act as described for Glow. KPV, the C-terminal tripeptide of alpha-MSH, inhibits NF-κB activation — the transcription factor driving inflammatory cytokine production — without broadly suppressing immune competence. Its addition is proposed to reduce inflammatory interference with the collagen-synthesis and angiogenic processes the other three peptides support. The 55/12/12/12mg dosing here is a proportional increase (roughly 10–20%) over the market-standard 50/10/10/10mg ratio, preserving the same relative balance between components." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "The evidence picture for GHK-Cu, BPC-157, and TB-500 is the same as described for Glow. KPV has supportive laboratory and mechanistic data for its anti-inflammatory action but limited human trial evidence for the skin-specific use implied here. No study has tested this four-peptide combination at any dose, and no study has specifically tested this scaled-up ratio against the more common 50/10/10/10mg version." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? The evidence picture for GHK-Cu, BPC-157, and TB-500 is the same as described for Glow. KPV has supportive laboratory and mechanistic data for its anti-inflammatory action but limited human trial evidence for the skin-specific use implied here. No study has tested this four-peptide combination at any dose, and no study has specifically tested this scaled-up ratio against the more common 50/10/10/10mg version." },
         ],
       },
       {
@@ -474,8 +467,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "Each of these three works on a different part of the same problem. SS-31 repairs the physical structure inside the mitochondria where energy is made. MOTS-c sends a signal that tells the cell to build more mitochondria and use fuel more efficiently. NAD+ supplies the raw material every one of those energy-producing reactions actually runs on. Put together, the idea is structure, signal, and fuel, addressed at the same time. Clinical detail: SS-31 (elamipretide) selectively binds cardiolipin in the inner mitochondrial membrane, protecting cristae architecture and electron transport chain function. MOTS-c is a mitochondrial-DNA-encoded peptide that activates AMPK signaling, promoting mitochondrial biogenesis and improved glucose/fatty-acid metabolism. NAD+ is the essential coenzyme substrate for Complex I of the electron transport chain and for sirtuin activity; its cellular pool declines significantly with age. The three are proposed to act on non-competing points of the same energy-production pathway." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "SS-31 has the most developed evidence of the three, including FDA accelerated approval (as elamipretide) for a rare mitochondrial condition, Barth syndrome — though that approval does not extend to general energy or longevity use. MOTS-c has meaningful laboratory research on metabolic adaptation and preliminary human interest. NAD+ has a large body of general metabolic literature but is a coenzyme, not a drug, and dosing conventions vary widely by route. No study has tested this specific three-part combination." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? SS-31 has the most developed evidence of the three, including FDA accelerated approval (as elamipretide) for a rare mitochondrial condition, Barth syndrome — though that approval does not extend to general energy or longevity use. MOTS-c has meaningful laboratory research on metabolic adaptation and preliminary human interest. NAD+ has a large body of general metabolic literature but is a coenzyme, not a drug, and dosing conventions vary widely by route. No study has tested this specific three-part combination." },
         ],
       },
       {
@@ -540,8 +532,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "The idea behind combining these two is that they cover different parts of the healing process. BPC-157 is thought to calm inflammation and protect tissue broadly. TB-500 is thought to help cells move to where they’re needed and encourage new blood vessels to form, bringing more blood flow — and more of what a tissue needs to heal — to an injured area. Used together, one is protecting while the other is rebuilding. Clinical detail: BPC-157’s proposed mechanism centers on upregulation of growth-hormone receptor expression in fibroblasts and modulation of the VEGFR2-Akt-eNOS pathway supporting angiogenesis and cell migration, alongside broad cytoprotective and anti-inflammatory effects. TB-500 (Tβ4 fragment) acts primarily through actin regulation, promoting cell motility, differentiation, and angiogenesis via upregulation of VEGF and matrix metalloproteinases. The two mechanisms are non-overlapping — angiogenic support (TB-500) paired with broader tissue protection and independent pro-angiogenic signaling (BPC-157) — which is the stated rationale for pairing rather than redundancy." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "Each individual peptide has a body of laboratory research behind its proposed repair mechanisms. Neither has been tested in a randomized controlled human trial for any indication, and no study, in the laboratory or in people, has tested this specific two-peptide combination against either peptide alone. The rationale for pairing them is mechanistic (non-overlapping pathways), not the result of a comparative trial. That is not the same as saying it does not work — but it does mean the combination itself is unproven, even where the individual components have supportive laboratory research." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? Each individual peptide has a body of laboratory research behind its proposed repair mechanisms. Neither has been tested in a randomized controlled human trial for any indication, and no study, in the laboratory or in people, has tested this specific two-peptide combination against either peptide alone. The rationale for pairing them is mechanistic (non-overlapping pathways), not the result of a comparative trial. That is not the same as saying it does not work — but it does mean the combination itself is unproven, even where the individual components have supportive laboratory research." },
         ],
       },
       {
@@ -570,7 +561,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Competitive athletes subject to anti-doping testing — both peptides are prohibited in-competition",
           ] },
           { type: "subhead", text: "Who it suits" },
-          { type: "para", text: "Patients recovering from a soft-tissue injury (tendon, ligament, or muscle) who have discussed the animal-only evidence base with their provider and are not in one of the excluded groups above. Not a substitute for physical therapy, surgical repair where indicated, or a documented recovery plan." },
+          { type: "para", text: "Patients recovering from a soft-tissue injury (tendon, ligament, or muscle) who have discussed with their provider that it has not been tested in people and are not in one of the excluded groups above. Not a substitute for physical therapy, surgical repair where indicated, or a documented recovery plan." },
         ],
       },
       {
@@ -607,8 +598,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "DSIP is meant to help trigger the deep, restorative stage of sleep specifically, not just make you drowsy. CJC-1295 is added because growth hormone is naturally released most during that same deep-sleep window, so the idea is to support that release rather than work against it. BPC-157 rounds it out with general tissue support, so the overnight window is being used for repair as well as rest. Clinical detail: DSIP (delta sleep-inducing peptide) enhances slow-wave sleep and modulates the hypothalamus to balance hormonal rhythms, including normalizing cortisol, without acting as a classic sedative. CJC-1295 is a GHRH analog that, when timed to the sleep window, is proposed to amplify the endogenous nocturnal GH pulse that occurs naturally during slow-wave sleep. BPC-157 contributes broad cytoprotective and tissue-repair signaling via growth-hormone receptor upregulation and VEGFR2-Akt-eNOS pathway modulation. The three are proposed to work on complementary, non-competing timescales within the same overnight recovery window." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "DSIP has decades of laboratory research behind its proposed sleep-architecture effects but limited modern human trial data. CJC-1295 and BPC-157 each have their own separate evidence bases (discussed on their individual pages) but neither was studied specifically for sleep-timed administration. No study has tested this three-peptide sleep-timed combination directly — the rationale is built from each component’s individual mechanism, not from combination-specific research." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? DSIP has decades of laboratory research behind its proposed sleep-architecture effects but limited modern human trial data. CJC-1295 and BPC-157 each have their own separate evidence bases (discussed on their individual pages) but neither was studied specifically for sleep-timed administration. No study has tested this three-peptide sleep-timed combination directly — the rationale is built from each component’s individual mechanism, not from combination-specific research." },
         ],
       },
       {
@@ -675,8 +665,7 @@ export const FULL_REVIEWS: FullReview[] = [
           ] },
           { type: "subhead", text: "The combination logic" },
           { type: "para", text: "The idea is to attack fat loss from more than one direction at once. Tesamorelin and CJC-1295 both work through the growth-hormone system to target stored fat and help protect muscle. AOD-9604 works a different way entirely — it acts directly on fat cells without touching the broader hormone system. MOTS-c supports the cellular energy production needed to keep up with all of that metabolic activity. Clinical detail: Tesamorelin and CJC-1295 are both GHRH analogs that stimulate pulsatile endogenous GH release, supporting lipolysis and IGF-1-mediated lean tissue preservation. AOD-9604, a modified HGH 176-191 fragment, is proposed to stimulate lipolysis and inhibit lipogenesis via beta-adrenergic receptor activity independent of the GH/IGF-1 axis, avoiding the blood-glucose effects associated with full-length GH. MOTS-c activates AMPK signaling, supporting glucose uptake, fatty-acid oxidation, and mitochondrial biogenesis — proposed to sustain the metabolic throughput the other three components require." },
-          { type: "subhead", text: "Is there evidence for the combination, or only for the parts?" },
-          { type: "para", text: "Tesamorelin carries real weight here — it’s FDA-approved (as Egrifta) specifically for reducing visceral fat in a defined patient population, backed by controlled trials showing measurable visceral-fat reduction versus placebo. CJC-1295, AOD-9604, and MOTS-c each have laboratory or limited human data for fat metabolism individually, but no FDA approval. No study has tested this specific four-peptide combination against its individual components or against any of them alone. The rationale for combining them is mechanistic — four non-overlapping pathways toward the same goal — not the result of a comparative trial." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? Tesamorelin carries real weight here — it’s FDA-approved (as Egrifta) specifically for reducing visceral fat in a defined patient population, backed by controlled trials showing measurable visceral-fat reduction versus placebo. CJC-1295, AOD-9604, and MOTS-c each have laboratory or limited human data for fat metabolism individually, but no FDA approval. No study has tested this specific four-peptide combination against its individual components or against any of them alone. The rationale for combining them is mechanistic — four non-overlapping pathways toward the same goal — not the result of a comparative trial." },
         ],
       },
       {
@@ -736,8 +725,7 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it is",
         blocks: [
           { type: "para", text: "5-Amino-1MQ is not a peptide, despite being sold and marketed alongside them. It is a small synthetic chemical designed in a University of Texas laboratory in 2017 to block an enzyme called nicotinamide N-methyltransferase (NNMT), an enzyme that is unusually active in the fat tissue of laboratory research." },
-          { type: "subhead", text: "It is sold as an oral capsule for fat loss and metabolic support, positioned as a once-daily" },
-          { type: "para", text: "supplement rather than an injectable therapy." },
+          { type: "para", text: "It is sold as an oral capsule for fat loss and metabolic support, positioned as a once-daily supplement rather than an injectable therapy." },
         ],
       },
       {
@@ -753,17 +741,14 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "NNMT is an enzyme that uses a molecule called SAM (S-adenosylmethionine) to inactivate" },
-          { type: "para", text: "nicotinamide, a building block the body otherwise uses to make NAD+, the coenzyme cells rely on for energy production. NNMT activity rises in the fat tissue of laboratory research, and researchers proposed that blocking the enzyme might redirect nicotinamide back toward NAD+ production and away from fat storage. 5-Amino-1MQ was engineered specifically to inhibit NNMT. In the laboratory research that established the compound's reputation, blocking NNMT was associated with weight loss without a reduction in food intake, along with markers suggestive of improved insulin sensitivity — findings researchers attributed to downstream effects on NAD+ availability and fat-cell metabolism." },
+          { type: "para", text: "NNMT is an enzyme that uses a molecule called SAM (S-adenosylmethionine) to inactivate nicotinamide, a building block the body otherwise uses to make NAD+, the coenzyme cells rely on for energy production. NNMT activity rises in the fat tissue of laboratory research, and researchers proposed that blocking the enzyme might redirect nicotinamide back toward NAD+ production and away from fat storage. 5-Amino-1MQ was engineered specifically to inhibit NNMT. In the laboratory research that established the compound's reputation, blocking NNMT was associated with weight loss without a reduction in food intake, along with markers suggestive of improved insulin sensitivity — findings researchers attributed to downstream effects on NAD+ availability and fat-cell metabolism." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The finding most often cited for 5-Amino-1MQ comes from laboratory research" },
-          { type: "para", text: "given the compound for eleven days lost weight without any change in how much they ate. That single line of laboratory research is the foundation for essentially every claim made about the compound." },
-          { type: "subhead", text: "The same research group's follow-on work looked at insulin sensitivity and NAD+-related" },
-          { type: "para", text: "markers in laboratory research, using the same NNMT-blocking mechanism. No human clinical trial" },
+          { type: "para", text: "The finding most often cited for 5-Amino-1MQ comes from laboratory research given the compound for eleven days lost weight without any change in how much they ate. That single line of laboratory research is the foundation for essentially every claim made about the compound." },
+          { type: "para", text: "The same research group's follow-on work looked at insulin sensitivity and NAD+-related markers in laboratory research, using the same NNMT-blocking mechanism. No human clinical trial" },
           { type: "para", text: "of 5-Amino-1MQ has been published — for fat loss, metabolic health, or any other proposed use. Everything currently claimed about the compound in people is extrapolated from that laboratory research rather than demonstrated in it." },
         ],
       },
@@ -787,8 +772,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone with liver disease or abnormal liver tests.",
             "Anyone taking prescription medication, without a review first — there is no human interaction data.",
           ] },
-          { type: "subhead", text: "Competitive athletes: 5-Amino-1MQ is not currently named on the WADA Prohibited List. Athletes" },
-          { type: "para", text: "in tested sport should still confirm current status with their sport's anti-doping authority before use, since compounded and supplement-market products carry a contamination risk that can result in an inadvertent positive test regardless of the labeled ingredient." },
+          { type: "para", text: "Competitive athletes: 5-Amino-1MQ is not currently named on the WADA Prohibited List. Athletes in tested sport should still confirm current status with their sport's anti-doping authority before use, since compounded and supplement-market products carry a contamination risk that can result in an inadvertent positive test regardless of the labeled ingredient." },
         ],
       },
       {
@@ -831,8 +815,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "AOD-9604 is a laboratory-made piece of human growth hormone — specifically the fifteen-" },
-          { type: "para", text: "amino-acid tail of the molecule, residues 176-191. Growth hormone burns fat but also raises blood sugar and drives tissue growth elsewhere in the body; AOD-9604 was designed to isolate the fat-burning end of the growth hormone molecule and leave the rest behind. It is sold for fat loss and, more recently, for joint support, sometimes marketed under the name HGH Fragment 176-191." },
+          { type: "para", text: "AOD-9604 is a laboratory-made piece of human growth hormone — specifically the fifteenamino-acid tail of the molecule, residues 176-191. Growth hormone burns fat but also raises blood sugar and drives tissue growth elsewhere in the body; AOD-9604 was designed to isolate the fat-burning end of the growth hormone molecule and leave the rest behind. It is sold for fat loss and, more recently, for joint support, sometimes marketed under the name HGH Fragment 176-191." },
         ],
       },
       {
@@ -841,7 +824,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "table", columns: ["USED FOR", "WHAT THAT MEANS"], rows: [
             ["Fat loss and weight loss", "Taken through a full 24-week randomised trial in several hundred people — the result is in the full review."],
             ["Fat loss without growth hormone's other effects", "Laboratory findings suggest the selectivity: it does not raise blood sugar or IGF-1 the way growth hormone does."],
-            ["Joint and cartilage support", "Comes from a rabbit osteoarthritis study; no human joint study exists."],
+            ["Joint and cartilage support", "Some have used it for this. Not tested in people."],
           ] },
         ],
       },
@@ -849,17 +832,14 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "How it works",
         blocks: [
           { type: "para", text: "Growth hormone acts on fat tissue partly through a region at the tail end of the molecule, separate from the region responsible for its growth-promoting and blood-sugar-raising effects elsewhere in the body. AOD-9604 reproduces that tail-end fragment on its own, with the aim of retaining the fat-metabolizing activity while leaving out the parts of growth hormone associated with elevated IGF-1 and blood sugar." },
-          { type: "subhead", text: "In laboratory research, this selectivity has held up: AOD-9604 has not been shown to raise blood" },
-          { type: "para", text: "sugar or IGF-1 the way intact growth hormone does, which is the basis for it being marketed as a lower-risk fat-loss alternative to growth hormone itself." },
+          { type: "para", text: "In laboratory research, this selectivity has held up: AOD-9604 has not been shown to raise blood sugar or IGF-1 the way intact growth hormone does, which is the basis for it being marketed as a lower-risk fat-loss alternative to growth hormone itself." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "AOD-9604 went through a full 24-week randomized, placebo-controlled human trial in several" },
-          { type: "para", text: "hundred people — the largest and most rigorous human study behind any compound in this category. The trial did not find a statistically significant difference in weight loss between AOD-9604 and placebo, and development of the compound as a weight-loss drug was discontinued after that result." },
-          { type: "subhead", text: "Separately, a rabbit study looked at cartilage and joint outcomes, which is the basis for the" },
-          { type: "para", text: "more recent joint-support marketing — no human joint trial has been conducted. The laboratory safety data on selectivity (not raising IGF-1 or blood sugar) is considered the most solid part of the record." },
+          { type: "para", text: "AOD-9604 went through a full 24-week randomized, placebo-controlled human trial in several hundred people — the largest and most rigorous human study behind any compound in this category. The trial did not find a statistically significant difference in weight loss between AOD-9604 and placebo, and development of the compound as a weight-loss drug was discontinued after that result." },
+          { type: "para", text: "Separately, laboratory research looked at cartilage and joint outcomes, which is the basis for the more recent joint-support marketing — no human joint trial has been conducted. The laboratory safety data on selectivity (not raising IGF-1 or blood sugar) is considered the most solid part of the record." },
         ],
       },
       {
@@ -868,7 +848,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "list", items: [
             "“It's a proven fat-loss treatment because it went through human trials.” It went through the largest human trial of any compound in this category, and that trial found no significant weight-loss benefit over placebo.",
             "“It's basically HGH, just safer.” It is a small fragment of growth hormone, not growth hormone itself, and reproduces only part of the parent molecule's activity.",
-            "“The joint-support use has been studied in people.” The joint and cartilage evidence comes from a single rabbit osteoarthritis study; no human joint trial exists.",
+            "“The joint-support use has been studied in people.” The joint and cartilage use has not been tested in people.",
             "“Since the fat-loss trial failed, the safety data doesn't matter.” The trial's safety findings — no significant rise in blood sugar or IGF-1 — are considered a genuine, separate result from its lack of efficacy.",
           ] },
         ],
@@ -882,8 +862,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone being offered it as a cream or a capsule — neither route has human exposure data.",
             "Anyone with an immune or allergic history, if an injectable is proposed.",
           ] },
-          { type: "subhead", text: "Competitive athletes: AOD-9604 is derived from human growth hormone and falls within WADA's" },
-          { type: "para", text: "S2 category of prohibited peptide hormones, growth factors, and related substances; it is prohibited at all times in tested sport." },
+          { type: "para", text: "Competitive athletes: AOD-9604 is derived from human growth hormone and falls within WADA's S2 category of prohibited peptide hormones, growth factors, and related substances; it is prohibited at all times in tested sport." },
         ],
       },
       {
@@ -909,7 +888,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "Clinical detail",
         blocks: [
-          { type: "para", text: "Reproduces amino acids 176-191, the C-terminal fragment of human growth hormone. Tested in a 24-week randomized, placebo-controlled trial in several hundred participants for weight loss; no significant benefit found and development stopped. Laboratory data indicates it does not raise IGF-1 or blood glucose the way intact growth hormone does. Joint and cartilage evidence comes from a single rabbit osteoarthritis study; no human joint trial exists. Also marketed as HGH Fragment 176-191." },
+          { type: "para", text: "Reproduces amino acids 176-191, the C-terminal fragment of human growth hormone. Tested in a 24-week randomized, placebo-controlled trial in several hundred participants for weight loss; no significant benefit found and development stopped. Laboratory data indicates it does not raise IGF-1 or blood glucose the way intact growth hormone does. The joint and cartilage use has not been tested in people. Also marketed as HGH Fragment 176-191." },
           { type: "para", text: "The information on this page is general education. It is not medical advice and it is not a recommendation for any treatment. AOD-9604 is not an FDA-approved medicine for the uses described here. A compounded preparation is not an FDA-approved product and has not been reviewed by the FDA for safety, effectiveness or quality. Descriptions of what this is used for reflect how it is commonly used and discussed. They are not claims that it is effective for any purpose. Any prescription follows an individual evaluation by a licensed provider and is issued only where that provider judges it clinically appropriate. A prescription is never guaranteed." },
         ],
       },
@@ -926,12 +905,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "BPC-157 is a lab-made chain of 15 amino acids, copied from a small piece of a larger protein" },
-          { type: "para", text: "originally found in human gastric juice. Despite that origin, the 15-amino-acid fragment itself is not something the body is known to make or use as a signal on its own, and researchers have not identified a specific receptor or molecular target that it acts on." },
-          { type: "subhead", text: "It is sold by injection, nasal spray, and oral capsule, and marketed for injury healing, gut" },
-          { type: "para", text: "problems, and joint pain. Almost everything known about it comes from laboratory research; the entire documented human record amounts to roughly 80 people across five small studies." },
-          { type: "subhead", text: "It has never been approved by any regulatory authority anywhere in the world, and there is no" },
-          { type: "para", text: "completed, published, properly controlled human trial showing that it works for any of the uses it is marketed for." },
+          { type: "para", text: "BPC-157 is a lab-made chain of 15 amino acids, copied from a small piece of a larger protein originally found in human gastric juice. Despite that origin, the 15-amino-acid fragment itself is not something the body is known to make or use as a signal on its own, and researchers have not identified a specific receptor or molecular target that it acts on." },
+          { type: "para", text: "It is sold by injection, nasal spray, and oral capsule, and marketed for injury healing, gut problems, and joint pain. Almost everything known about it comes from laboratory research; the entire documented human record amounts to roughly 80 people across five small studies." },
+          { type: "para", text: "It has never been approved by any regulatory authority anywhere in the world, and there is no completed, published, properly controlled human trial showing that it works for any of the uses it is marketed for." },
         ],
       },
       {
@@ -949,22 +925,17 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Honestly, nobody knows for certain. This isn't a case where the mechanism is understood but" },
-          { type: "para", text: "untested in people — the basic biology is unresolved too. In laboratory research, giving BPC-157 appears to nudge several general repair systems at once, including nitric oxide signaling and" },
+          { type: "para", text: "Honestly, nobody knows for certain. This isn't a case where the mechanism is understood but untested in people — the basic biology is unresolved too. In laboratory research, giving BPC-157 appears to nudge several general repair systems at once, including nitric oxide signaling and" },
           { type: "para", text: "the growth of new small blood vessels into injured tissue, which in laboratory research helps healing proceed faster." },
-          { type: "subhead", text: "That same blood-vessel-growth mechanism proposed to explain benefit is also the basis of an" },
-          { type: "para", text: "unresolved safety question: the pathway involved is active in roughly half of the human cancers studied, and no carcinogenicity study of BPC-157 has ever been performed. No human pharmacokinetic data exists for the routes most people actually use it by — oral, subcutaneous, or nasal. Only rectal, intra-articular, intravesical, and intravenous routes have been studied in humans, and even rectal dosing does not appear to produce meaningful systemic absorption." },
+          { type: "para", text: "That same blood-vessel-growth mechanism proposed to explain benefit is also the basis of an unresolved safety question: the pathway involved is active in roughly half of the human cancers studied, and no carcinogenicity study of BPC-157 has ever been performed. No human pharmacokinetic data exists for the routes most people actually use it by — oral, subcutaneous, or nasal. Only rectal, intra-articular, intravesical, and intravenous routes have been studied in humans, and even rectal dosing does not appear to produce meaningful systemic absorption." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Two very different bodies of research exist for BPC-157, and marketing frequently blurs them" },
-          { type: "para", text: "together: extensive laboratory experiments describing tissue-repair effects, and a genuinely small human record — five studies, roughly 80 people combined, most uncontrolled or unpublished in full." },
-          { type: "subhead", text: "Of those five human studies, only one was randomized and placebo-controlled, in ulcerative" },
-          { type: "para", text: "colitis using a rectal route, and it was never published beyond a conference abstract, limiting how much can be evaluated from it. The most frequently cited “human evidence” for joint or injury use is a retrospective chart review of 17 patients with no control group, no blinding, and only subjective outcome measures." },
-          { type: "subhead", text: "A properly designed, controlled human trial for a musculoskeletal use — a hamstring muscle" },
-          { type: "para", text: "strain — only began enrolling in 2026, with results not expected before 2028. Until it reports, there is no controlled human evidence for the injury-healing use BPC-157 is most commonly marketed for." },
+          { type: "para", text: "Two very different bodies of research exist for BPC-157, and marketing frequently blurs them together: extensive laboratory experiments describing tissue-repair effects, and a genuinely small human record — five studies, roughly 80 people combined, most uncontrolled or unpublished in full." },
+          { type: "para", text: "Of those five human studies, only one was randomized and placebo-controlled, in ulcerative colitis using a rectal route, and it was never published beyond a conference abstract, limiting how much can be evaluated from it. The most frequently cited “human evidence” for joint or injury use is a retrospective chart review of 17 patients with no control group, no blinding, and only subjective outcome measures." },
+          { type: "para", text: "A properly designed, controlled human trial for a musculoskeletal use — a hamstring muscle strain — only began enrolling in 2026, with results not expected before 2028. Until it reports, there is no controlled human evidence for the injury-healing use BPC-157 is most commonly marketed for." },
         ],
       },
       {
@@ -989,8 +960,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone sourcing product from an unverified online vendor rather than a licensed pharmacy.",
             "Competitive athletes subject to WADA testing.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Prohibited at all times, in and out of competition, under WADA's S0" },
-          { type: "para", text: "category for substances with no approval anywhere in the world for human therapeutic use. A therapeutic use exemption is not available for an S0 substance, and anti-doping operates on strict liability regardless of a clinician's recommendation — an athlete has been sanctioned for a product containing this compound without ever testing positive for it." },
+          { type: "para", text: "Competitive athletes: Prohibited at all times, in and out of competition, under WADA's S0 category for substances with no approval anywhere in the world for human therapeutic use. A therapeutic use exemption is not available for an S0 substance, and anti-doping operates on strict liability regardless of a clinician's recommendation — an athlete has been sanctioned for a product containing this compound without ever testing positive for it." },
         ],
       },
       {
@@ -1034,8 +1004,7 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it is",
         blocks: [
           { type: "para", text: "CJC-1295 is a lab-made analogue of the first 29 building blocks of a natural brain hormone, growth hormone-releasing hormone (GHRH), modified with several amino-acid substitutions so it resists breakdown longer than the natural signal. It is sold under one name but actually exists as two chemically distinct products: “with DAC,” which carries an added chemical anchor that binds permanently to a protein in the blood, and “without DAC” (also sold as Mod GRF 1-29), which does not." },
-          { type: "subhead", text: "That distinction matters more than almost anything else about this compound. The with-DAC" },
-          { type: "para", text: "form remains active in the body for roughly a week per dose and is the form used in essentially all of the published human research. The without-DAC form clears within minutes and has never been evaluated in a controlled human study of any kind. CJC-1295 has never been approved by the FDA, in either form, for any use, in any country. It is sold today only as a compounded preparation, and it frequently appears alongside other growth hormone-releasing peptides in combination blends." },
+          { type: "para", text: "That distinction matters more than almost anything else about this compound. The with-DAC form remains active in the body for roughly a week per dose and is the form used in essentially all of the published human research. The without-DAC form clears within minutes and has never been evaluated in a controlled human study of any kind. CJC-1295 has never been approved by the FDA, in either form, for any use, in any country. It is sold today only as a compounded preparation, and it frequently appears alongside other growth hormone-releasing peptides in combination blends." },
           { type: "subhead", text: "With DAC vs. without DAC" },
           { type: "para", text: "WITH DAC                                 WITHOUT DAC" },
           { type: "para", text: "Half-life                   Roughly 6–8 days, anchored to the        Never measured in a human study; blood protein albumin                    the commonly quoted ~30-minute figure has no published human source" },
@@ -1059,23 +1028,16 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "The pituitary gland normally releases growth hormone in pulses, prompted by a natural" },
-          { type: "para", text: "hormone signal from the brain. CJC-1295 is a modified copy of that signal, designed to bind the same receptor on the pituitary and trigger a pulse of growth hormone release, which then travels to the liver and prompts it to produce IGF-1." },
-          { type: "subhead", text: "The with-DAC form carries an added chemical group that forms a permanent bond with a" },
-          { type: "para", text: "protein circulating in the blood, which is what extends its activity to roughly a week per dose instead of minutes. The one study that measured the actual pattern of hormone release found that the pulses themselves were essentially unchanged in frequency or size — what rose was the baseline level of growth hormone between pulses, held elevated for days at a time, a different pattern than the body's own release. Like other compounds in this class, it only works if the pituitary gland still has growth hormone available to release. If the pituitary itself is damaged, missing, or unresponsive, CJC-1295 has nothing to stimulate." },
+          { type: "para", text: "The pituitary gland normally releases growth hormone in pulses, prompted by a natural hormone signal from the brain. CJC-1295 is a modified copy of that signal, designed to bind the same receptor on the pituitary and trigger a pulse of growth hormone release, which then travels to the liver and prompts it to produce IGF-1." },
+          { type: "para", text: "The with-DAC form carries an added chemical group that forms a permanent bond with a protein circulating in the blood, which is what extends its activity to roughly a week per dose instead of minutes. The one study that measured the actual pattern of hormone release found that the pulses themselves were essentially unchanged in frequency or size — what rose was the baseline level of growth hormone between pulses, held elevated for days at a time, a different pattern than the body's own release. Like other compounds in this class, it only works if the pituitary gland still has growth hormone available to release. If the pituitary itself is damaged, missing, or unresponsive, CJC-1295 has nothing to stimulate." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The published human evidence for CJC-1295 is small and belongs almost entirely to the with-" },
-          { type: "subhead", text: "DAC form: three published studies, all in healthy volunteers, together amounting to a few" },
-          { type: "para", text: "dozen people, the longest lasting under two months, all measuring hormone levels rather than whether anyone actually got better." },
-          { type: "subhead", text: "The one trial designed to test whether the drug produces a real-world benefit — in people with" },
-          { type: "subhead", text: "HIV-associated abdominal fat gain — was terminated early after a participant had a fatal heart" },
-          { type: "para", text: "attack during the study. The treating physician attributed the event to pre-existing coronary artery disease rather than the drug, but the trial's results were never published, so the question it was designed to answer remains unanswered." },
-          { type: "subhead", text: "For the without-DAC form, sold in many blends today, there is no controlled human study of" },
-          { type: "para", text: "any kind — no efficacy data and no measured half-life. A 2024 regulatory review found no evidence of effectiveness in humans for any proposed use across all submitted forms, and flagged laboratory findings of DNA damage in pituitary cells in nonclinical testing." },
+          { type: "para", text: "The published human evidence for CJC-1295 is small and belongs almost entirely to the withDAC form: three published studies, all in healthy volunteers, together amounting to a few dozen people, the longest lasting under two months, all measuring hormone levels rather than whether anyone actually got better." },
+          { type: "para", text: "The one trial designed to test whether the drug produces a real-world benefit — in people with HIV-associated abdominal fat gain — was terminated early after a participant had a fatal heart attack during the study. The treating physician attributed the event to pre-existing coronary artery disease rather than the drug, but the trial's results were never published, so the question it was designed to answer remains unanswered." },
+          { type: "para", text: "For the without-DAC form, sold in many blends today, there is no controlled human study of any kind — no efficacy data and no measured half-life. A 2024 regulatory review found no evidence of effectiveness in humans for any proposed use across all submitted forms, and flagged laboratory findings of DNA damage in pituitary cells in nonclinical testing." },
         ],
       },
       {
@@ -1102,8 +1064,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Pregnant or breastfeeding patients, or anyone trying to conceive.",
             "Anyone whose supplier cannot say definitively whether the vial is the with-DAC or without- DAC form.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Prohibited at all times, named explicitly on the WADA Prohibited List" },
-          { type: "para", text: "alongside other growth hormone-releasing factors. Anti-doping testing can distinguish the with-DAC and without-DAC forms as separate substances, and a therapeutic use exemption is not a realistic option since there is no approved therapeutic use for either form." },
+          { type: "para", text: "Competitive athletes: Prohibited at all times, named explicitly on the WADA Prohibited List alongside other growth hormone-releasing factors. Anti-doping testing can distinguish the with-DAC and without-DAC forms as separate substances, and a therapeutic use exemption is not a realistic option since there is no approved therapeutic use for either form." },
         ],
       },
       {
@@ -1146,8 +1107,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "DSIP is a short chain of nine amino acids, first identified in the 1970s in research on sleep" },
-          { type: "para", text: "physiology. Its name comes from what researchers were studying at the time: delta sleep, the deepest and most physically restorative stage of the night. It is used by people looking to improve the quality of their sleep rather than simply the number of hours — the difference between time spent in bed and waking up feeling like the night actually did something restorative." },
+          { type: "para", text: "DSIP is a short chain of nine amino acids, first identified in the 1970s in research on sleep physiology. Its name comes from what researchers were studying at the time: delta sleep, the deepest and most physically restorative stage of the night. It is used by people looking to improve the quality of their sleep rather than simply the number of hours — the difference between time spent in bed and waking up feeling like the night actually did something restorative." },
         ],
       },
       {
@@ -1163,19 +1123,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "DSIP was originally isolated from the blood of rabbits during studies of sleep-inducing" },
-          { type: "para", text: "substances, and early research proposed that it interacts with the body's stress-hormone and sleep-regulating systems. Unlike a sedative, it is not thought to act on the same receptors as prescription sleep medications." },
-          { type: "subhead", text: "The proposed mechanism involves influence over the deeper stages of the sleep cycle rather" },
-          { type: "para", text: "than simply causing drowsiness, which is the basis for it being described as improving sleep quality rather than sleep quantity. This mechanism has not been mapped with the same precision as it has for approved sleep medications." },
+          { type: "para", text: "DSIP was first isolated in laboratory research on sleep-inducing substances, and early research proposed that it interacts with the body's stress-hormone and sleep-regulating systems. Unlike a sedative, it is not thought to act on the same receptors as prescription sleep medications." },
+          { type: "para", text: "The proposed mechanism involves influence over the deeper stages of the sleep cycle rather than simply causing drowsiness, which is the basis for it being described as improving sleep quality rather than sleep quantity. This mechanism has not been mapped with the same precision as it has for approved sleep medications." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The original human research behind DSIP, dating to the 1970s and 1980s, is a small body of" },
-          { type: "para", text: "early studies exploring delta sleep and ease of falling asleep. That research is decades old and has not been repeated to modern clinical-trial standards." },
-          { type: "subhead", text: "A stress-and-recovery use is sometimes proposed based on how DSIP appears to interact with" },
-          { type: "para", text: "stress-hormone rhythms, but this rests on theory rather than dedicated human study. No large-scale, modern, controlled human trial of DSIP for sleep, stress, or any other use has been published." },
+          { type: "para", text: "The original human research behind DSIP, dating to the 1970s and 1980s, is a small body of early studies exploring delta sleep and ease of falling asleep. That research is decades old and has not been repeated to modern clinical-trial standards." },
+          { type: "para", text: "A stress-and-recovery use is sometimes proposed based on how DSIP appears to interact with stress-hormone rhythms, but this rests on theory rather than dedicated human study. No large-scale, modern, controlled human trial of DSIP for sleep, stress, or any other use has been published." },
         ],
       },
       {
@@ -1223,7 +1179,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "Clinical detail",
         blocks: [
-          { type: "para", text: "A nine-amino-acid peptide first identified in the 1970s in sleep research, originally isolated from rabbit blood. Named for delta sleep, the deepest, most physically restorative stage of non-REM sleep. Not thought to act on the same receptors as prescription sedative or hypnotic medications. Human research is limited to small studies from the 1970s-1980s, not repeated to modern trial standards. No large-scale modern controlled human trial has been published for sleep, stress, or any other proposed use." },
+          { type: "para", text: "A nine-amino-acid peptide first identified in the 1970s in sleep research, first isolated in laboratory research. Named for delta sleep, the deepest, most physically restorative stage of non-REM sleep. Not thought to act on the same receptors as prescription sedative or hypnotic medications. Human research is limited to small studies from the 1970s-1980s, not repeated to modern trial standards. No large-scale modern controlled human trial has been published for sleep, stress, or any other proposed use." },
           { type: "para", text: "The information on this page is general education. It is not medical advice and it is not a recommendation for any treatment. DSIP is not an FDA-approved medicine for the uses described here. A compounded preparation is not an FDA-approved product and has not been reviewed by the FDA for safety, effectiveness or quality. Descriptions of what this is used for reflect how it is commonly used and discussed. They are not claims that it is effective for any purpose. Any prescription follows an individual evaluation by a licensed provider and is issued only where that provider judges it clinically appropriate. A prescription is never guaranteed." },
         ],
       },
@@ -1240,8 +1196,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Epitalon is a very small lab-made peptide — four amino acids — designed in Russia to imitate a" },
-          { type: "para", text: "natural extract of the pineal gland, the structure in the brain that helps regulate the sleep-wake cycle. It is used by people interested in longevity and circadian rhythm, usually taken in short cycles rather than continuously. The claim most often attached to it concerns telomeres, the protective caps on the ends of chromosomes." },
+          { type: "para", text: "Epitalon is a very small lab-made peptide — four amino acids — designed in Russia to imitate a natural extract of the pineal gland, the structure in the brain that helps regulate the sleep-wake cycle. It is used by people interested in longevity and circadian rhythm, usually taken in short cycles rather than continuously. The claim most often attached to it concerns telomeres, the protective caps on the ends of chromosomes." },
         ],
       },
       {
@@ -1257,19 +1212,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Epitalon was developed as a synthetic analogue of epithalamin, a natural pineal gland extract" },
-          { type: "para", text: "studied in earlier Russian research on aging and circadian regulation. The proposed mechanism most associated with the compound is activation of telomerase, the enzyme that maintains the length of telomeres, the protective end-caps on chromosomes that shorten with each cell division." },
-          { type: "subhead", text: "A separate proposed mechanism involves influence over melatonin production and circadian" },
-          { type: "para", text: "rhythm, which is the basis for its use in sleep-related contexts distinct from the longevity claims." },
+          { type: "para", text: "Epitalon was developed as a synthetic analogue of epithalamin, a natural pineal gland extract studied in earlier Russian research on aging and circadian regulation. The proposed mechanism most associated with the compound is activation of telomerase, the enzyme that maintains the length of telomeres, the protective end-caps on chromosomes that shorten with each cell division." },
+          { type: "para", text: "A separate proposed mechanism involves influence over melatonin production and circadian rhythm, which is the basis for its use in sleep-related contexts distinct from the longevity claims." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The telomerase-activation and lifespan work behind Epitalon's reputation was conducted in" },
-          { type: "para", text: "Laboratory research — this is the origin of the longevity claims attached to the compound, but it has not been replicated in a modern human trial." },
-          { type: "subhead", text: "Separately, small Russian studies in older adults examined melatonin rhythm and sleep" },
-          { type: "para", text: "quality; this is the strongest human evidence that exists for the compound, though it predates modern clinical-trial standards. An additional line of laboratory research has examined antioxidant and neuroprotective effects, but no human trial has tested this use." },
+          { type: "para", text: "The telomerase-activation and lifespan work behind Epitalon's reputation was conducted in Laboratory research — this is the origin of the longevity claims attached to the compound, but it has not been replicated in a modern human trial." },
+          { type: "para", text: "Separately, small Russian studies in older adults examined melatonin rhythm and sleep quality; this is the strongest human evidence that exists for the compound, though it predates modern clinical-trial standards. An additional line of laboratory research has examined antioxidant and neuroprotective effects, but no human trial has tested this use." },
         ],
       },
       {
@@ -1292,8 +1243,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Pregnant or breastfeeding women, and anyone under 18.",
             "Anyone considering subcutaneous injection specifically — that route carries an immune-reaction risk the topical and oral forms do not.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Epitalon is not currently named on the WADA Prohibited List. Athletes in" },
-          { type: "para", text: "tested sport should still confirm current status with their sport's anti-doping authority before use, given the contamination risk inherent to compounded peptide products." },
+          { type: "para", text: "Competitive athletes: Epitalon is not currently named on the WADA Prohibited List. Athletes in tested sport should still confirm current status with their sport's anti-doping authority before use, given the contamination risk inherent to compounded peptide products." },
         ],
       },
       {
@@ -1336,8 +1286,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "GHK is a very small natural molecule — three amino acids — that circulates in human blood" },
-          { type: "para", text: "and is released from tissue after an injury. It binds copper, and that copper-carrying form is called GHK-Cu. It has been used in skin care for decades and is best known there. More recently, it is used by people looking at tissue repair, skin quality, and recovery, in topical and injectable forms." },
+          { type: "para", text: "GHK is a very small natural molecule — three amino acids — that circulates in human blood and is released from tissue after an injury. It binds copper, and that copper-carrying form is called GHK-Cu. It has been used in skin care for decades and is best known there. More recently, it is used by people looking at tissue repair, skin quality, and recovery, in topical and injectable forms." },
         ],
       },
       {
@@ -1354,19 +1303,15 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "How it works",
         blocks: [
           { type: "para", text: "GHK-Cu's activity is tied to its role as a copper carrier: copper is a cofactor for several enzymes involved in collagen and elastin production and in antioxidant defense. GHK naturally rises at sites of tissue injury, which is part of why it has been studied as a signal involved in wound healing." },
-          { type: "subhead", text: "In skin, the proposed mechanism is stimulation of collagen synthesis and modulation of the" },
-          { type: "para", text: "skin's structural proteins, which is the basis for its use in cosmetic formulations aimed at fine lines and skin firmness." },
+          { type: "para", text: "In skin, the proposed mechanism is stimulation of collagen synthesis and modulation of the skin's structural proteins, which is the basis for its use in cosmetic formulations aimed at fine lines and skin firmness." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Small controlled trials of the topical form have measured changes in skin appearance — fine" },
-          { type: "para", text: "lines, firmness, and skin density — making topical use the best-supported application of GHK-" },
-          { type: "subhead", text: "Cu. Collagen production in skin is considered the most solidly supported mechanism, again" },
-          { type: "para", text: "based on topical studies. Wound healing and scar reduction have been studied in laboratory research but not in human trials." },
-          { type: "subhead", text: "The injectable form used in some clinical settings has a substantially thinner evidence base" },
-          { type: "para", text: "than the topical form, and evidence for one route should not be assumed to transfer to the other." },
+          { type: "para", text: "Small controlled trials of the topical form have measured changes in skin appearance — fine lines, firmness, and skin density — making topical use the best-supported application of GHK-" },
+          { type: "para", text: "Cu. Collagen production in skin is considered the most solidly supported mechanism, again based on topical studies. Wound healing and scar reduction have been studied in laboratory research but not in human trials." },
+          { type: "para", text: "The injectable form used in some clinical settings has a substantially thinner evidence base than the topical form, and evidence for one route should not be assumed to transfer to the other." },
         ],
       },
       {
@@ -1389,8 +1334,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone with an active cancer diagnosis, without discussing it first.",
             "Anyone with sensitive skin, eczema or rosacea should patch-test any topical first.",
           ] },
-          { type: "subhead", text: "Competitive athletes: GHK-Cu is not currently named on the WADA Prohibited List. Athletes in" },
-          { type: "para", text: "tested sport should still confirm current status with their sport's anti-doping authority before use, particularly for compounded injectable forms, given the contamination risk inherent to compounded products." },
+          { type: "para", text: "Competitive athletes: GHK-Cu is not currently named on the WADA Prohibited List. Athletes in tested sport should still confirm current status with their sport's anti-doping authority before use, particularly for compounded injectable forms, given the contamination risk inherent to compounded products." },
         ],
       },
       {
@@ -1449,19 +1393,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "As the body's primary intracellular antioxidant, glutathione works by donating electrons to" },
-          { type: "para", text: "neutralize reactive oxygen species and other reactive by-products of normal metabolism, and it plays a central role in liver detoxification pathways. Because oral glutathione is largely broken down by digestion before it can be absorbed intact, routes that bypass the digestive system — injection, intravenous infusion, or nebulized inhalation — are used instead." },
-          { type: "subhead", text: "The proposed skin-brightening effect is thought to work through glutathione's influence on" },
-          { type: "para", text: "melanin production, shifting pigment production toward a lighter form of melanin, though the underlying biochemistry is better established in laboratory settings than confirmed in controlled human skin studies." },
+          { type: "para", text: "As the body's primary intracellular antioxidant, glutathione works by donating electrons to neutralize reactive oxygen species and other reactive by-products of normal metabolism, and it plays a central role in liver detoxification pathways. Because oral glutathione is largely broken down by digestion before it can be absorbed intact, routes that bypass the digestive system — injection, intravenous infusion, or nebulized inhalation — are used instead." },
+          { type: "para", text: "The proposed skin-brightening effect is thought to work through glutathione's influence on melanin production, shifting pigment production toward a lighter form of melanin, though the underlying biochemistry is better established in laboratory settings than confirmed in controlled human skin studies." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Small human studies of glutathione have generally measured blood markers of oxidative stress" },
-          { type: "para", text: "rather than direct clinical outcomes. Skin tone and brightening is the most heavily marketed use, but the trials behind it are small and their results are mixed." },
-          { type: "subhead", text: "Glutathione has also been studied as an add-on therapy for chemotherapy side effects and" },
-          { type: "para", text: "chemotherapy-induced neuropathy in oncology settings, where results require interpretation" },
+          { type: "para", text: "Small human studies of glutathione have generally measured blood markers of oxidative stress rather than direct clinical outcomes. Skin tone and brightening is the most heavily marketed use, but the trials behind it are small and their results are mixed." },
+          { type: "para", text: "Glutathione has also been studied as an add-on therapy for chemotherapy side effects and chemotherapy-induced neuropathy in oncology settings, where results require interpretation" },
           { type: "para", text: "alongside a patient's oncologist. Across all these uses, the human evidence base is limited in size and consistency relative to how widely the compound is marketed." },
         ],
       },
@@ -1485,8 +1425,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone with liver disease or abnormal liver tests.",
             "Pregnant or breastfeeding patients, and anyone on chemotherapy without involving their oncologist.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Glutathione itself is not prohibited by WADA. Athletes in tested sport" },
-          { type: "para", text: "should be aware that WADA's M2 category restricts large-volume intravenous infusions (generally above 100 mL within a 12-hour period) except under specific permitted circumstances, which can affect how an infusion is administered rather than whether glutathione itself is allowed." },
+          { type: "para", text: "Competitive athletes: Glutathione itself is not prohibited by WADA. Athletes in tested sport should be aware that WADA's M2 category restricts large-volume intravenous infusions (generally above 100 mL within a 12-hour period) except under specific permitted circumstances, which can affect how an infusion is administered rather than whether glutathione itself is allowed." },
         ],
       },
       {
@@ -1529,10 +1468,8 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "IGF-1 LR3 is a laboratory-engineered version of IGF-1, the growth factor the liver produces" },
-          { type: "para", text: "when growth hormone signals it to. Two modifications — a substituted amino acid and an added 13-amino-acid tail — let it circulate in the bloodstream far longer and act more freely than the natural molecule." },
-          { type: "subhead", text: "It is sold for muscle growth and recovery. It was originally designed as a research and cell-" },
-          { type: "para", text: "culture reagent rather than as a medicine, and it is among the more aggressive compounds encountered on a peptide menu." },
+          { type: "para", text: "IGF-1 LR3 is a laboratory-engineered version of IGF-1, the growth factor the liver produces when growth hormone signals it to. Two modifications — a substituted amino acid and an added 13-amino-acid tail — let it circulate in the bloodstream far longer and act more freely than the natural molecule." },
+          { type: "para", text: "It is sold for muscle growth and recovery. It was originally designed as a research and cellculture reagent rather than as a medicine, and it is among the more aggressive compounds encountered on a peptide menu." },
         ],
       },
       {
@@ -1549,17 +1486,14 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "How it works",
         blocks: [
           { type: "para", text: "Natural IGF-1 is tightly regulated by binding proteins in the blood that limit how much of it is free to act on tissue at any given time. The engineering behind IGF-1 LR3 — the amino-acid substitution and the extended tail — reduces its binding to those regulatory proteins, which is what gives it its long half-life and its more unrestrained activity compared with the natural hormone." },
-          { type: "subhead", text: "Because it escapes the body's normal binding-protein restraint, IGF-1 LR3 is thought to act" },
-          { type: "para", text: "more potently and for longer on IGF-1 receptors throughout the body, including in muscle tissue — the basis for its use for muscle growth — but also in other tissues where unrestrained IGF-1 signaling raises safety concerns." },
+          { type: "para", text: "Because it escapes the body's normal binding-protein restraint, IGF-1 LR3 is thought to act more potently and for longer on IGF-1 receptors throughout the body, including in muscle tissue — the basis for its use for muscle growth — but also in other tissues where unrestrained IGF-1 signaling raises safety concerns." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The mechanism behind IGF-1 LR3's muscle-growth effect is well characterized at the" },
-          { type: "para", text: "biochemical level, and the laboratory research supporting it is clear, but no human clinical trial of IGF-1 LR3 has been conducted. Claims about faster healing of tendons, muscle, and injuries extend the mechanism beyond anything that has actually been tested." },
-          { type: "subhead", text: "The claim that IGF-1 LR3 produces site-specific muscle growth where it is injected — a widely" },
-          { type: "para", text: "repeated claim in bodybuilding circles — is not supported by how the pharmacology of a circulating protein hormone actually works; a hormone released into the bloodstream circulates systemically rather than staying localized to an injection site." },
+          { type: "para", text: "The mechanism behind IGF-1 LR3's muscle-growth effect is well characterized at the biochemical level, and the laboratory research supporting it is clear, but no human clinical trial of IGF-1 LR3 has been conducted. Claims about faster healing of tendons, muscle, and injuries extend the mechanism beyond anything that has actually been tested." },
+          { type: "para", text: "The claim that IGF-1 LR3 produces site-specific muscle growth where it is injected — a widely repeated claim in bodybuilding circles — is not supported by how the pharmacology of a circulating protein hormone actually works; a hormone released into the bloodstream circulates systemically rather than staying localized to an injection site." },
         ],
       },
       {
@@ -1582,8 +1516,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone taking insulin or any glucose-lowering medication, or who trains fasted or drinks alcohol.",
             "Anyone pregnant, trying to conceive, or breastfeeding, and any child or adolescent.",
           ] },
-          { type: "subhead", text: "Competitive athletes: IGF-1 and its analogues, including IGF-1 LR3, fall within WADA's S2" },
-          { type: "para", text: "category of prohibited peptide hormones, growth factors, and related substances; they are prohibited at all times in tested sport." },
+          { type: "para", text: "Competitive athletes: IGF-1 and its analogues, including IGF-1 LR3, fall within WADA's S2 category of prohibited peptide hormones, growth factors, and related substances; they are prohibited at all times in tested sport." },
         ],
       },
       {
@@ -1626,8 +1559,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Ipamorelin is a very short synthetic peptide — five amino acids — that acts at the ghrelin" },
-          { type: "para", text: "receptor in the pituitary gland, prompting a pulse of the body's own growth hormone rather than supplying growth hormone from an outside source. It is used by people interested in body composition, recovery, and sleep quality, usually taken at night to sit alongside the body's own overnight growth hormone release. It is considered the most selective of the growth hormone secretagogues, which is part of why it is the one most often chosen." },
+          { type: "para", text: "Ipamorelin is a very short synthetic peptide — five amino acids — that acts at the ghrelin receptor in the pituitary gland, prompting a pulse of the body's own growth hormone rather than supplying growth hormone from an outside source. It is used by people interested in body composition, recovery, and sleep quality, usually taken at night to sit alongside the body's own overnight growth hormone release. It is considered the most selective of the growth hormone secretagogues, which is part of why it is the one most often chosen." },
         ],
       },
       {
@@ -1643,19 +1575,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Ipamorelin binds to the ghrelin receptor (also called the growth hormone secretagogue" },
-          { type: "para", text: "receptor) in the pituitary gland, triggering the pituitary to release a pulse of the body's own growth hormone. This differs from directly injecting growth hormone itself — it works by stimulating the body's own release mechanism." },
-          { type: "subhead", text: "Compared with older growth hormone secretagogues, Ipamorelin is described as more" },
-          { type: "para", text: "selective for growth hormone release, with less effect on cortisol, prolactin, and appetite-related hormones — which is the basis for it being considered the most selective compound in its class." },
+          { type: "para", text: "Ipamorelin binds to the ghrelin receptor (also called the growth hormone secretagogue receptor) in the pituitary gland, triggering the pituitary to release a pulse of the body's own growth hormone. This differs from directly injecting growth hormone itself — it works by stimulating the body's own release mechanism." },
+          { type: "para", text: "Compared with older growth hormone secretagogues, Ipamorelin is described as more selective for growth hormone release, with less effect on cortisol, prolactin, and appetite-related hormones — which is the basis for it being considered the most selective compound in its class." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The growth-hormone-releasing effect of Ipamorelin has been measured directly in human" },
-          { type: "para", text: "studies — this is the one effect that has actually been tested in people, and the peptide reliably does what it is designed to do at the level of the pituitary pulse." },
-          { type: "subhead", text: "Claims about lean mass, body composition, sleep quality, and recovery follow logically from" },
-          { type: "para", text: "the growth hormone increase but have not themselves been measured in a published human trial. Essentially all of the human data on Ipamorelin comes from two published studies, the" },
+          { type: "para", text: "The growth-hormone-releasing effect of Ipamorelin has been measured directly in human studies — this is the one effect that has actually been tested in people, and the peptide reliably does what it is designed to do at the level of the pituitary pulse." },
+          { type: "para", text: "Claims about lean mass, body composition, sleep quality, and recovery follow logically from the growth hormone increase but have not themselves been measured in a published human trial. Essentially all of the human data on Ipamorelin comes from two published studies, the" },
           { type: "para", text: "principal one a 1999 trial in 40 healthy men given the compound intravenously — a different route than the injectable form used today." },
         ],
       },
@@ -1679,8 +1607,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone pregnant, trying to conceive, or breastfeeding.",
             "Children and adolescents whose growth plates are still open.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Growth hormone-releasing peptides, including Ipamorelin, fall within" },
-          { type: "para", text: "WADA's S2 category of prohibited peptide hormones, growth factors, and related substances; they are prohibited at all times in tested sport." },
+          { type: "para", text: "Competitive athletes: Growth hormone-releasing peptides, including Ipamorelin, fall within WADA's S2 category of prohibited peptide hormones, growth factors, and related substances; they are prohibited at all times in tested sport." },
         ],
       },
       {
@@ -1723,8 +1650,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Kisspeptin is a natural signaling peptide made in the hypothalamus that sits at the top of the" },
-          { type: "para", text: "reproductive hormone chain — it tells the brain to release GnRH (gonadotropin-releasing hormone), which sets the rest of the hormonal sequence in motion down to testosterone and estrogen. It is used by people interested in libido, sexual desire, and reproductive hormone signaling." },
+          { type: "para", text: "Kisspeptin is a natural signaling peptide made in the hypothalamus that sits at the top of the reproductive hormone chain — it tells the brain to release GnRH (gonadotropin-releasing hormone), which sets the rest of the hormonal sequence in motion down to testosterone and estrogen. It is used by people interested in libido, sexual desire, and reproductive hormone signaling." },
         ],
       },
       {
@@ -1740,17 +1666,14 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Kisspeptin neurons in the hypothalamus are now understood to be the master regulator that" },
-          { type: "para", text: "triggers GnRH release, which in turn stimulates the pituitary to release luteinizing hormone (LH) and follicle-stimulating hormone (FSH) — the hormones that drive testosterone production in men and the ovulatory cycle in women. This places kisspeptin upstream of the entire reproductive hormone axis. Because of this position at the top of the hormonal chain, kisspeptin has also been studied for its direct effects on brain regions involved in sexual arousal and desire, separate from its role in the downstream hormone cascade." },
+          { type: "para", text: "Kisspeptin neurons in the hypothalamus are now understood to be the master regulator that triggers GnRH release, which in turn stimulates the pituitary to release luteinizing hormone (LH) and follicle-stimulating hormone (FSH) — the hormones that drive testosterone production in men and the ovulatory cycle in women. This places kisspeptin upstream of the entire reproductive hormone axis. Because of this position at the top of the hormonal chain, kisspeptin has also been studied for its direct effects on brain regions involved in sexual arousal and desire, separate from its role in the downstream hormone cascade." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Hospital studies at Imperial College London have measured brain response to sexual stimuli in" },
-          { type: "para", text: "people given kisspeptin, providing limited but real human evidence for a role in sexual desire." },
-          { type: "subhead", text: "Kisspeptin reliably raises LH in these studies, but whether that translates into a durable" },
-          { type: "para", text: "testosterone or reproductive hormone effect is less settled. The strongest evidence for kisspeptin comes from fertility and IVF trials, where a longer-acting form given intravenously has been used to trigger ovulation — a different form and route from what is typically offered for libido or hormone-support use, and a distinction worth keeping in mind when interpreting the evidence." },
+          { type: "para", text: "Hospital studies at Imperial College London have measured brain response to sexual stimuli in people given kisspeptin, providing limited but real human evidence for a role in sexual desire." },
+          { type: "para", text: "Kisspeptin reliably raises LH in these studies, but whether that translates into a durable testosterone or reproductive hormone effect is less settled. The strongest evidence for kisspeptin comes from fertility and IVF trials, where a longer-acting form given intravenously has been used to trigger ovulation — a different form and route from what is typically offered for libido or hormone-support use, and a distinction worth keeping in mind when interpreting the evidence." },
         ],
       },
       {
@@ -1773,8 +1696,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone trying to conceive or on fertility treatment who is not under the care of a fertility specialist.",
             "Anyone with a hormone or pituitary disorder, and anyone in tested sport.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Kisspeptin is named on the WADA Prohibited List. Anyone in tested sport" },
-          { type: "para", text: "should treat this as disqualifying for use, regardless of the intended purpose." },
+          { type: "para", text: "Competitive athletes: Kisspeptin is named on the WADA Prohibited List. Anyone in tested sport should treat this as disqualifying for use, regardless of the intended purpose." },
         ],
       },
       {
@@ -1817,10 +1739,8 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "KPV is a three-amino-acid piece of alpha-melanocyte-stimulating hormone (alpha-MSH), a" },
-          { type: "para", text: "natural hormone the body uses in part to help keep inflammation in check. It is the smallest active fragment of that larger molecule." },
-          { type: "subhead", text: "It is used by people dealing with gut inflammation, inflammatory skin conditions, and general" },
-          { type: "para", text: "inflammatory load, and is supplied as capsules, injections, or creams depending on the target." },
+          { type: "para", text: "KPV is a three-amino-acid piece of alpha-melanocyte-stimulating hormone (alpha-MSH), a natural hormone the body uses in part to help keep inflammation in check. It is the smallest active fragment of that larger molecule." },
+          { type: "para", text: "It is used by people dealing with gut inflammation, inflammatory skin conditions, and general inflammatory load, and is supplied as capsules, injections, or creams depending on the target." },
         ],
       },
       {
@@ -1836,18 +1756,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Alpha-MSH has anti-inflammatory activity separate from its better-known role in skin" },
-          { type: "para", text: "pigmentation, and KPV represents the smallest fragment of the molecule shown to retain that anti-inflammatory activity in laboratory and laboratory research, without the pigmentation-related effects of the full hormone." },
-          { type: "subhead", text: "The proposed mechanism involves modulating immune-cell activity and inflammatory signaling" },
-          { type: "para", text: "pathways, which is the basis for its use in both gut and skin inflammatory contexts — different tissues, but the same underlying immune-modulation concept." },
+          { type: "para", text: "Alpha-MSH has anti-inflammatory activity separate from its better-known role in skin pigmentation, and KPV represents the smallest fragment of the molecule shown to retain that anti-inflammatory activity in laboratory and laboratory research, without the pigmentation-related effects of the full hormone." },
+          { type: "para", text: "The proposed mechanism involves modulating immune-cell activity and inflammatory signaling pathways, which is the basis for its use in both gut and skin inflammatory contexts — different tissues, but the same underlying immune-modulation concept." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
           { type: "para", text: "The main line of evidence for KPV comes from laboratory research into inflammatory bowel disease, where it has been studied as a potential anti-inflammatory agent for gut conditions. Inflammatory skin conditions have similarly been studied in laboratory research." },
-          { type: "subhead", text: "A broader use for general anti-inflammatory support is sometimes proposed, but this extends" },
-          { type: "para", text: "the mechanism beyond what has actually been tested — no human clinical trial of KPV, for any use, has been published." },
+          { type: "para", text: "A broader use for general anti-inflammatory support is sometimes proposed, but this extends the mechanism beyond what has actually been tested — no human clinical trial of KPV, for any use, has been published." },
         ],
       },
       {
@@ -1929,19 +1846,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "LL-37's antimicrobial action comes from its structure: a positively charged shape that lets it" },
-          { type: "para", text: "insert into and destabilize the membranes of bacteria, fungi, and some viruses, causing them to break down. It is also chemotactic — it recruits immune cells to a site of infection or injury and promotes new blood vessel growth and skin-cell migration, the proposed basis for a wound-healing effect." },
-          { type: "subhead", text: "A separate, less-marketed mechanism matters just as much: LL-37 binds fragments of the" },
-          { type: "para", text: "body's own DNA and RNA released from damaged cells, and those complexes can trigger a strong inflammatory immune response. This is the same pathway implicated in driving, not resolving, several inflammatory and autoimmune skin conditions — a mechanism worth understanding before treating LL-37 as a simple immune booster." },
+          { type: "para", text: "LL-37's antimicrobial action comes from its structure: a positively charged shape that lets it insert into and destabilize the membranes of bacteria, fungi, and some viruses, causing them to break down. It is also chemotactic — it recruits immune cells to a site of infection or injury and promotes new blood vessel growth and skin-cell migration, the proposed basis for a wound-healing effect." },
+          { type: "para", text: "A separate, less-marketed mechanism matters just as much: LL-37 binds fragments of the body's own DNA and RNA released from damaged cells, and those complexes can trigger a strong inflammatory immune response. This is the same pathway implicated in driving, not resolving, several inflammatory and autoimmune skin conditions — a mechanism worth understanding before treating LL-37 as a simple immune booster." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The body's own, naturally produced LL-37 is very well studied — a large, decades-deep" },
-          { type: "para", text: "literature on its role in immune defense, wound biology, psoriasis, rosacea, atopic dermatitis, lupus, and other conditions. That is legitimate science, but it is research on a peptide the body already regulates tightly, not evidence that giving someone additional, externally administered LL-37 is beneficial." },
-          { type: "subhead", text: "Administered synthetic LL-37 in humans has been tested in a small, narrow set of controlled" },
-          { type: "para", text: "trials — essentially four, all in wound care, totaling roughly 200 people. The largest and most rigorous of these, a 149-person trial of topical LL-37 for venous leg ulcers, did not meet its primary healing endpoint in the overall study population; a benefit only appeared in a smaller, post-hoc subgroup of larger wounds. Two smaller trials showed modest, inconsistent positive signals. No trial has tested LL-37 for immune support, antimicrobial defense, or any skin condition beyond wound care." },
+          { type: "para", text: "The body's own, naturally produced LL-37 is very well studied — a large, decades-deep literature on its role in immune defense, wound biology, psoriasis, rosacea, atopic dermatitis, lupus, and other conditions. That is legitimate science, but it is research on a peptide the body already regulates tightly, not evidence that giving someone additional, externally administered LL-37 is beneficial." },
+          { type: "para", text: "Administered synthetic LL-37 in humans has been tested in a small, narrow set of controlled trials — essentially four, all in wound care, totaling roughly 200 people. The largest and most rigorous of these, a 149-person trial of topical LL-37 for venous leg ulcers, did not meet its primary healing endpoint in the overall study population; a benefit only appeared in a smaller, post-hoc subgroup of larger wounds. Two smaller trials showed modest, inconsistent positive signals. No trial has tested LL-37 for immune support, antimicrobial defense, or any skin condition beyond wound care." },
         ],
       },
       {
@@ -1966,8 +1879,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone sourcing product from an unverified research-use-only vendor.",
             "Competitive athletes subject to WADA testing. Competitive athletes: LL-37 is not currently named specifically on the WADA Prohibited List, but",
           ] },
-          { type: "subhead", text: "WADA's S0 category (\"Non-Approved Substances\") prohibits, at all times, any substance without" },
-          { type: "para", text: "current approval by a governmental health authority for human therapeutic use — a category that has been applied to other unapproved peptides. Athletes in tested sport should confirm current status with their sport's anti-doping authority before use." },
+          { type: "para", text: "WADA's S0 category (\"Non-Approved Substances\") prohibits, at all times, any substance without current approval by a governmental health authority for human therapeutic use — a category that has been applied to other unapproved peptides. Athletes in tested sport should confirm current status with their sport's anti-doping authority before use." },
         ],
       },
       {
@@ -2010,8 +1922,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "MOTS-c is a small, lab-synthesized chain of 16 amino acids. What makes it scientifically" },
-          { type: "para", text: "unusual is where its blueprint comes from: almost everything a cell makes is encoded by nuclear DNA, but MOTS-c's instructions sit inside a short stretch of the mitochondrial genome — the DNA carried by mitochondria, the structures inside cells that generate energy. For decades, mitochondrial DNA was assumed to code only for a handful of energy-machinery proteins; MOTS-c is one of a small, only recently recognized family of \"mitochondrial-derived peptides\" that appear to let mitochondria send signals elsewhere in the cell and body. It was discovered in 2015 by researchers at the USC Leonard Davis School of Gerontology, through a bioinformatic screen of previously overlooked mitochondrial coding regions, published in Cell Metabolism. It is sold today as a subcutaneous injectable, through compounding pharmacies and online research-chemical vendors, marketed for metabolic health, weight loss, exercise performance, and general longevity — none of which is an FDA-recognized indication, and almost none of which has actually been tested by giving the peptide to a person." },
+          { type: "para", text: "MOTS-c is a small, lab-synthesized chain of 16 amino acids. What makes it scientifically unusual is where its blueprint comes from: almost everything a cell makes is encoded by nuclear DNA, but MOTS-c's instructions sit inside a short stretch of the mitochondrial genome — the DNA carried by mitochondria, the structures inside cells that generate energy. For decades, mitochondrial DNA was assumed to code only for a handful of energy-machinery proteins; MOTS-c is one of a small, only recently recognized family of \"mitochondrial-derived peptides\" that appear to let mitochondria send signals elsewhere in the cell and body. It was discovered in 2015 by researchers at the USC Leonard Davis School of Gerontology, through a bioinformatic screen of previously overlooked mitochondrial coding regions, published in Cell Metabolism. It is sold today as a subcutaneous injectable, through compounding pharmacies and online research-chemical vendors, marketed for metabolic health, weight loss, exercise performance, and general longevity — none of which is an FDA-recognized indication, and almost none of which has actually been tested by giving the peptide to a person." },
         ],
       },
       {
@@ -2029,21 +1940,16 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "The leading proposed mechanism is that MOTS-c activates AMPK (AMP-activated protein" },
-          { type: "para", text: "kinase), a master cellular fuel-sensing enzyme that also switches on with exercise, calorie restriction, and drugs like metformin. In laboratory studies, MOTS-c-driven AMPK activation is linked to increased glucose uptake into muscle, increased fat burning, and suppressed glucose output from the liver. A second, AMPK-independent pathway has also been proposed, in which MOTS-c moves into the cell nucleus under metabolic stress and interacts with stress-response genes." },
-          { type: "subhead", text: "The \"exercise mimetic\" reputation comes from a 2021 laboratory study in which giving MOTS-c to" },
-          { type: "para", text: "Laboratory research reported roughly doubled treadmill running duration versus untreated controls. The same paper found that a bout of exercise raises a person's own MOTS-c — roughly twelve-fold in skeletal muscle tissue and about 1.5 to 1.6-fold in circulating blood, in a small ten-person sample. That is a different kind of evidence than an injection working: it shows exercise triggers a rise in the body's own MOTS-c, not that injecting MOTS-c reproduces what exercise does. No human study has tested whether administering the peptide improves running capacity, VO2 max, strength, or any other performance measure." },
+          { type: "para", text: "The leading proposed mechanism is that MOTS-c activates AMPK (AMP-activated protein kinase), a master cellular fuel-sensing enzyme that also switches on with exercise, calorie restriction, and drugs like metformin. In laboratory studies, MOTS-c-driven AMPK activation is linked to increased glucose uptake into muscle, increased fat burning, and suppressed glucose output from the liver. A second, AMPK-independent pathway has also been proposed, in which MOTS-c moves into the cell nucleus under metabolic stress and interacts with stress-response genes." },
+          { type: "para", text: "The \"exercise mimetic\" reputation comes from a 2021 laboratory study in which giving MOTS-c to Laboratory research reported roughly doubled treadmill running duration versus untreated controls. The same paper found that a bout of exercise raises a person's own MOTS-c — roughly twelve-fold in skeletal muscle tissue and about 1.5 to 1.6-fold in circulating blood, in a small ten-person sample. That is a different kind of evidence than an injection working: it shows exercise triggers a rise in the body's own MOTS-c, not that injecting MOTS-c reproduces what exercise does. No human study has tested whether administering the peptide improves running capacity, VO2 max, strength, or any other performance measure." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Two very different bodies of research exist for MOTS-c, and marketing routinely blurs them" },
-          { type: "para", text: "together. The first is observational human research measuring people's own natural circulating" },
-          { type: "subhead", text: "MOTS-c: several published cohort studies have linked lower blood MOTS-c to higher fasting" },
-          { type: "para", text: "insulin and worse insulin resistance, reported reduced levels in type 2 diabetes, and correlated levels with muscle mass and physical performance in older adults. A 2025 study of 169 people testing MOTS-c as a brain-aging biomarker found at best a weak, inconsistent signal, explicitly describing \"poor discriminatory power.\" None of this involves giving anyone MOTS-c — it is blood-level correlation research, not evidence that adding more of it produces a benefit. The second body of research — actually administering MOTS-c to people — is extremely thin, bordering on nonexistent for the peptide people are being sold. FDA's own review states it has \"not identified any human exposure data on drug products containing MOTs-C administered via any route of administration.\" The only related interventional human data comes from CB4211, a chemically modified analog of MOTS-c — a different molecule, not MOTS-c itself — which went through a Phase 1a/1b randomized, placebo-controlled trial of roughly 88 people. It was reasonably well tolerated but was temporarily paused for injection-site reactions, showed modest liver-enzyme reductions but no significant difference in liver fat versus placebo, and the company developing it subsequently dissolved and discontinued the program." },
-          { type: "subhead", text: "For the actual native peptide, the first real controlled human efficacy trial — a Phase 2a" },
-          { type: "para", text: "randomized, double-blind, placebo-controlled study testing MOTS-c by subcutaneous injection in roughly 120 adults with prediabetes and overweight or obesity — only began recruiting in February 2026, with an estimated completion date of May 2028. It has reported nothing yet, which means interventional human evidence for the peptide actually sold under this name is, as of now, essentially zero completed studies." },
+          { type: "para", text: "Two very different bodies of research exist for MOTS-c, and marketing routinely blurs them together. The first is observational human research measuring people's own natural circulating" },
+          { type: "para", text: "MOTS-c: several published cohort studies have linked lower blood MOTS-c to higher fasting insulin and worse insulin resistance, reported reduced levels in type 2 diabetes, and correlated levels with muscle mass and physical performance in older adults. A 2025 study of 169 people testing MOTS-c as a brain-aging biomarker found at best a weak, inconsistent signal, explicitly describing \"poor discriminatory power.\" None of this involves giving anyone MOTS-c — it is blood-level correlation research, not evidence that adding more of it produces a benefit. The second body of research — actually administering MOTS-c to people — is extremely thin, bordering on nonexistent for the peptide people are being sold. FDA's own review states it has \"not identified any human exposure data on drug products containing MOTs-C administered via any route of administration.\" The only related interventional human data comes from CB4211, a chemically modified analog of MOTS-c — a different molecule, not MOTS-c itself — which went through a Phase 1a/1b randomized, placebo-controlled trial of roughly 88 people. It was reasonably well tolerated but was temporarily paused for injection-site reactions, showed modest liver-enzyme reductions but no significant difference in liver fat versus placebo, and the company developing it subsequently dissolved and discontinued the program." },
+          { type: "para", text: "For the actual native peptide, the first real controlled human efficacy trial — a Phase 2a randomized, double-blind, placebo-controlled study testing MOTS-c by subcutaneous injection in roughly 120 adults with prediabetes and overweight or obesity — only began recruiting in February 2026, with an estimated completion date of May 2028. It has reported nothing yet, which means interventional human evidence for the peptide actually sold under this name is, as of now, essentially zero completed studies." },
         ],
       },
       {
@@ -2068,8 +1974,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone sourcing product from an unverified research-use-only vendor.",
             "Competitive athletes subject to WADA-code testing.",
           ] },
-          { type: "subhead", text: "Competitive athletes: MOTS-c is prohibited at all times, in and out of competition, under WADA" },
-          { type: "para", text: "category S4 (Hormone and Metabolic Modulators), listed as an AMPK activator. A therapeutic use exemption is not a realistic path around this, since a TUE requires an approved therapeutic use and MOTS-c has none. Anti-doping operates on strict liability regardless of a clinician's recommendation or the fact that the substance is naturally produced by the body." },
+          { type: "para", text: "Competitive athletes: MOTS-c is prohibited at all times, in and out of competition, under WADA category S4 (Hormone and Metabolic Modulators), listed as an AMPK activator. A therapeutic use exemption is not a realistic path around this, since a TUE requires an approved therapeutic use and MOTS-c has none. Anti-doping operates on strict liability regardless of a clinician's recommendation or the fact that the substance is naturally produced by the body." },
         ],
       },
       {
@@ -2112,12 +2017,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "NAD+ (nicotinamide adenine dinucleotide) is not a peptide or a novel compound — it is a" },
-          { type: "para", text: "coenzyme every cell already makes and uses constantly, central to how a cell converts food into usable energy and required by enzymes that repair damaged DNA and regulate cell-aging processes. The body builds it from dietary vitamin B3 and related precursor molecules, as part of that vitamin's core biological job." },
-          { type: "subhead", text: "What is offered clinically is the injected or IV form — a compounded preparation held to a" },
-          { type: "para", text: "different regulatory standard than an over-the-counter oral supplement such as nicotinamide riboside or nicotinamide mononucleotide. NAD+ levels measured in some tissues do appear to fall with age and with poor sleep, alcohol use, and chronic illness, which is the basis of a large, genuinely active field of aging biology — but a large 2026 analysis of blood NAD+ across seven cohorts found the molecule \"surprisingly stable\" and did not consistently fall with age the way the popular narrative assumes, a newer, unsettled finding that complicates the simple \"NAD+ declines, so replace it\" premise." },
-          { type: "subhead", text: "Human trials of the injected form are limited, and infusion speed matters — going too fast is" },
-          { type: "para", text: "the most common reason people feel uncomfortable during a session, which is why infusions are typically given slowly, over several hours." },
+          { type: "para", text: "NAD+ (nicotinamide adenine dinucleotide) is not a peptide or a novel compound — it is a coenzyme every cell already makes and uses constantly, central to how a cell converts food into usable energy and required by enzymes that repair damaged DNA and regulate cell-aging processes. The body builds it from dietary vitamin B3 and related precursor molecules, as part of that vitamin's core biological job." },
+          { type: "para", text: "What is offered clinically is the injected or IV form — a compounded preparation held to a different regulatory standard than an over-the-counter oral supplement such as nicotinamide riboside or nicotinamide mononucleotide. NAD+ levels measured in some tissues do appear to fall with age and with poor sleep, alcohol use, and chronic illness, which is the basis of a large, genuinely active field of aging biology — but a large 2026 analysis of blood NAD+ across seven cohorts found the molecule \"surprisingly stable\" and did not consistently fall with age the way the popular narrative assumes, a newer, unsettled finding that complicates the simple \"NAD+ declines, so replace it\" premise." },
+          { type: "para", text: "Human trials of the injected form are limited, and infusion speed matters — going too fast is the most common reason people feel uncomfortable during a session, which is why infusions are typically given slowly, over several hours." },
         ],
       },
       {
@@ -2135,25 +2037,18 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "NAD+ and its reduced partner, NADH, form the cell's central electron shuttle: in every" },
-          { type: "para", text: "mitochondrion, this pair cycles constantly to move electrons through the chain that generates" },
-          { type: "subhead", text: "ATP, the cell's energy currency. NAD+ is also consumed as a substrate by two enzyme families" },
-          { type: "para", text: "tied to DNA repair and cell regulation — sirtuins, studied heavily in longevity research, and PARPs, which detect and help repair damaged DNA, using up NAD+ each time they act." },
-          { type: "subhead", text: "Chronic DNA damage or metabolic stress can drive PARP activity up, one proposed mechanism" },
-          { type: "para", text: "for age-or stress-related decline in some tissues." },
-          { type: "subhead", text: "The gap between this real biology and the infusion claim is where the marketing gets ahead of" },
-          { type: "para", text: "the evidence. NAD+ is a large, charged molecule not expected to cross an intact cell membrane on its own, and no clear, established transporter moves whole extracellular NAD+ into human cells at meaningful scale; a small pilot pharmacokinetic study found plasma clearance patterns consistent with NAD+ being broken down outside cells before it would ever reach the inside of one. A 2026 randomized pilot trial found that IV nicotinamide riboside, a precursor, reliably raised measured blood NAD+, while IV NAD+ itself, unexpectedly, did not show the same clear elevation — a finding that directly cuts against the logic used to justify infusing the finished molecule rather than a precursor." },
+          { type: "para", text: "NAD+ and its reduced partner, NADH, form the cell's central electron shuttle: in every mitochondrion, this pair cycles constantly to move electrons through the chain that generates" },
+          { type: "para", text: "ATP, the cell's energy currency. NAD+ is also consumed as a substrate by two enzyme families tied to DNA repair and cell regulation — sirtuins, studied heavily in longevity research, and PARPs, which detect and help repair damaged DNA, using up NAD+ each time they act." },
+          { type: "para", text: "Chronic DNA damage or metabolic stress can drive PARP activity up, one proposed mechanism for age-or stress-related decline in some tissues." },
+          { type: "para", text: "The gap between this real biology and the infusion claim is where the marketing gets ahead of the evidence. NAD+ is a large, charged molecule not expected to cross an intact cell membrane on its own, and no clear, established transporter moves whole extracellular NAD+ into human cells at meaningful scale; a small pilot pharmacokinetic study found plasma clearance patterns consistent with NAD+ being broken down outside cells before it would ever reach the inside of one. A 2026 randomized pilot trial found that IV nicotinamide riboside, a precursor, reliably raised measured blood NAD+, while IV NAD+ itself, unexpectedly, did not show the same clear elevation — a finding that directly cuts against the logic used to justify infusing the finished molecule rather than a precursor." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "FDA's own review of nominated indications located only five qualifying human studies of" },
-          { type: "para", text: "injected or oral NAD across nearly six decades, from 1961 to 2019: 124 patients given IV NAD for addiction, 12 given oral NADH for chronic fatigue, and a handful more for Parkinson's disease — a genuinely small evidence base for a widely marketed treatment." },
-          { type: "subhead", text: "The most-cited human data, for addiction and withdrawal support, comes from a retrospective" },
-          { type: "para", text: "chart review of about 60 patients given IV NAD+ as one part of a multi-ingredient protocol — not randomized, not blinded, with no control group, and only 45% survey follow-up at 12 to 20 months. A statistically significant drop in withdrawal scores by day 5 was reported, but because NAD+ was one part of a larger protocol, its individual contribution was never isolated." },
-          { type: "subhead", text: "A 2026 systematic review of 113 NAD+ studies found zero controlled human trials of IV NAD+" },
-          { type: "para", text: "for anti-aging purposes. One small, peer-reviewed study reported IV NAD+ improved measures of cognitive performance in human subjects — a genuine but single, unreplicated finding that should be read as preliminary rather than established." },
+          { type: "para", text: "FDA's own review of nominated indications located only five qualifying human studies of injected or oral NAD across nearly six decades, from 1961 to 2019: 124 patients given IV NAD for addiction, 12 given oral NADH for chronic fatigue, and a handful more for Parkinson's disease — a genuinely small evidence base for a widely marketed treatment." },
+          { type: "para", text: "The most-cited human data, for addiction and withdrawal support, comes from a retrospective chart review of about 60 patients given IV NAD+ as one part of a multi-ingredient protocol — not randomized, not blinded, with no control group, and only 45% survey follow-up at 12 to 20 months. A statistically significant drop in withdrawal scores by day 5 was reported, but because NAD+ was one part of a larger protocol, its individual contribution was never isolated." },
+          { type: "para", text: "A 2026 systematic review of 113 NAD+ studies found zero controlled human trials of IV NAD+ for anti-aging purposes. One small, peer-reviewed study reported IV NAD+ improved measures of cognitive performance in human subjects — a genuine but single, unreplicated finding that should be read as preliminary rather than established." },
         ],
       },
       {
@@ -2179,8 +2074,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone being offered it specifically as an anti-aging or cognitive \"cure,\" rather than as an unproven adjunct.",
             "Anyone expecting established dosing, frequency, or long-term safety data for repeated infusions — these have not been systematically studied.",
           ] },
-          { type: "subhead", text: "Competitive athletes: NAD+ does not appear on the WADA Prohibited List and is not treated as a" },
-          { type: "para", text: "banned or monitored substance by USADA. The practical caveats for a competing athlete are not doping-status ones: contamination or mislabeling risk from an unregulated compounded product is real, and any multi-ingredient NAD+ IV formula should be checked against the current Prohibited List ingredient-by-ingredient, since NAD+'s own clean status doesn't extend to whatever else is in the bag." },
+          { type: "para", text: "Competitive athletes: NAD+ does not appear on the WADA Prohibited List and is not treated as a banned or monitored substance by USADA. The practical caveats for a competing athlete are not doping-status ones: contamination or mislabeling risk from an unregulated compounded product is real, and any multi-ingredient NAD+ IV formula should be checked against the current Prohibited List ingredient-by-ingredient, since NAD+'s own clean status doesn't extend to whatever else is in the bag." },
         ],
       },
       {
@@ -2223,10 +2117,8 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Oxytocin is a hormone the body already makes — produced in the hypothalamus and released" },
-          { type: "para", text: "from the pituitary gland, most powerfully during labor, delivery, and breastfeeding, and in smaller pulses during touch, closeness, and orgasm, which has earned it the nickname \"the bonding hormone.\" As an FDA-approved hospital drug (brand names Pitocin and Syntocinon), it has one well-established job: given by IV or IM in a hospital, it causes the uterus to contract, which is why it's used to induce or strengthen labor and to control bleeding after delivery. What's offered at many wellness and peptide clinics today is a different product for a different purpose: a compounded nasal spray or subcutaneous injection, most often used for mood, social connection, or intimacy. It is the same molecule, but the dose, the route, and the reason for taking it have nothing to do with the FDA-approved hospital use — the approved use and the wellness use should not be assumed to carry the same evidence or the same safety record." },
-          { type: "subhead", text: "The research behind the wellness use is real but considerably newer and more mixed than the" },
-          { type: "para", text: "decades of hospital experience behind the approved drug, a distinction worth understanding upfront, since \"FDA-approved\" as a hospital drug does not extend to a compounded product sold for an unrelated purpose." },
+          { type: "para", text: "Oxytocin is a hormone the body already makes — produced in the hypothalamus and released from the pituitary gland, most powerfully during labor, delivery, and breastfeeding, and in smaller pulses during touch, closeness, and orgasm, which has earned it the nickname \"the bonding hormone.\" As an FDA-approved hospital drug (brand names Pitocin and Syntocinon), it has one well-established job: given by IV or IM in a hospital, it causes the uterus to contract, which is why it's used to induce or strengthen labor and to control bleeding after delivery. What's offered at many wellness and peptide clinics today is a different product for a different purpose: a compounded nasal spray or subcutaneous injection, most often used for mood, social connection, or intimacy. It is the same molecule, but the dose, the route, and the reason for taking it have nothing to do with the FDA-approved hospital use — the approved use and the wellness use should not be assumed to carry the same evidence or the same safety record." },
+          { type: "para", text: "The research behind the wellness use is real but considerably newer and more mixed than the decades of hospital experience behind the approved drug, a distinction worth understanding upfront, since \"FDA-approved\" as a hospital drug does not extend to a compounded product sold for an unrelated purpose." },
         ],
       },
       {
@@ -2245,19 +2137,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "As the approved obstetric drug, oxytocin works peripherally: it binds receptors on uterine" },
-          { type: "para", text: "smooth muscle — which becomes far more receptor-dense near term — to trigger contraction, and it acts on cells around the milk ducts to trigger letdown during breastfeeding. None of that requires the drug to reach the brain." },
-          { type: "subhead", text: "The wellness use depends on a different, mechanistically shakier bet: reaching brain circuits" },
-          { type: "para", text: "involved in social behavior. Oxytocin doesn't cross an intact blood-brain barrier in meaningful amounts from ordinary circulating blood, which is why wellness use is delivered intranasally, on the idea that it can travel to the brain along the olfactory and trigeminal nerves. There is real evidence this pathway exists — a primate tracer study found labeled oxytocin given intranasally does reach the brain, and a human study measuring blood and cerebrospinal fluid together after an intranasal dose found brain-fluid oxytocin rose, but slowly, with no correlation to blood levels. But reaching the brain in a measurable, unusual way is not the same as reaching it in amounts large enough, reliably enough, to change behavior, and the dose-response relationship is not a simple more-is-better curve — some studies find an effect at one dose but not clearly at doses in between." },
+          { type: "para", text: "As the approved obstetric drug, oxytocin works peripherally: it binds receptors on uterine smooth muscle — which becomes far more receptor-dense near term — to trigger contraction, and it acts on cells around the milk ducts to trigger letdown during breastfeeding. None of that requires the drug to reach the brain." },
+          { type: "para", text: "The wellness use depends on a different, mechanistically shakier bet: reaching brain circuits involved in social behavior. Oxytocin doesn't cross an intact blood-brain barrier in meaningful amounts from ordinary circulating blood, which is why wellness use is delivered intranasally, on the idea that it can travel to the brain along the olfactory and trigeminal nerves. There is real evidence this pathway exists — laboratory tracer research found labeled oxytocin given intranasally does reach the brain, and a human study measuring blood and cerebrospinal fluid together after an intranasal dose found brain-fluid oxytocin rose, but slowly, with no correlation to blood levels. But reaching the brain in a measurable, unusual way is not the same as reaching it in amounts large enough, reliably enough, to change behavior, and the dose-response relationship is not a simple more-is-better curve — some studies find an effect at one dose but not clearly at doses in between." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Obstetric use is one of the most established interventions in modern medicine: standard" },
-          { type: "para", text: "hospital practice for decades, recommended by the World Health Organization as a first-line uterotonic, with dosing, contraindications, and major risks well characterized from large-scale clinical experience. The social and bonding literature is a large academic field, launched substantially by a highly influential 2005 trust-game study reporting that a single intranasal dose sharply increased trust in a financial game. That field has an unusually well-documented replication problem: a well-powered, pre-registered direct replication of the original finding found no effect on trusting behavior; two separate attempted replications of another widely cited trust paradigm both came back null; and a 2013 meta-analysis found effect sizes more modest than popular coverage suggests, with only the autism subgroup reaching significance among clinical populations." },
-          { type: "subhead", text: "The single largest, best-powered trial ever run on this question — 290 children and" },
-          { type: "para", text: "adolescents with autism, over 24 weeks, published in the New England Journal of Medicine — found no significant difference from placebo on its primary outcome, despite autism being the subgroup where earlier, smaller studies had shown the field's best signal. That doesn't mean every effect is zero; meta-analyses still find small positive signals in aggregate. It does mean the certainty implied by wellness-clinic marketing outruns the actual state of the science." },
+          { type: "para", text: "Obstetric use is one of the most established interventions in modern medicine: standard hospital practice for decades, recommended by the World Health Organization as a first-line uterotonic, with dosing, contraindications, and major risks well characterized from large-scale clinical experience. The social and bonding literature is a large academic field, launched substantially by a highly influential 2005 trust-game study reporting that a single intranasal dose sharply increased trust in a financial game. That field has an unusually well-documented replication problem: a well-powered, pre-registered direct replication of the original finding found no effect on trusting behavior; two separate attempted replications of another widely cited trust paradigm both came back null; and a 2013 meta-analysis found effect sizes more modest than popular coverage suggests, with only the autism subgroup reaching significance among clinical populations." },
+          { type: "para", text: "The single largest, best-powered trial ever run on this question — 290 children and adolescents with autism, over 24 weeks, published in the New England Journal of Medicine — found no significant difference from placebo on its primary outcome, despite autism being the subgroup where earlier, smaller studies had shown the field's best signal. That doesn't mean every effect is zero; meta-analyses still find small positive signals in aggregate. It does mean the certainty implied by wellness-clinic marketing outruns the actual state of the science." },
         ],
       },
       {
@@ -2265,9 +2153,8 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "list", items: [
             "“It's the same approved drug just for a different purpose.” The molecule is the same, but the FDA approval covers only IV/IM administration for labor and postpartum bleeding control, in a hospital, under medical supervision. Intranasal or subcutaneous use for mood or bonding is a different route, dose range, population, and outcome measure entirely.",
-            "“It's the 'love hormone,' so a nasal spray will make you bond with your partner.” The 2005 study that popularized this idea used a laboratory trust game with strangers, not romantic bonding, and its central finding failed to replicate in a large, well-",
+            "“It's the 'love hormone,' so a nasal spray will make you bond with your partner.” The 2005 study that popularized this idea used a laboratory trust game with strangers, not romantic bonding, and its central finding failed to replicate in a large, wellpowered, pre-registered 2020 study. Meta-analyses find effects that do exist are small and depend heavily on context and individual history.",
           ] },
-          { type: "para", text: "powered, pre-registered 2020 study. Meta-analyses find effects that do exist are small and depend heavily on context and individual history." },
           { type: "list", items: [
             "“It's a natural hormone the body already makes, so it's safe to use however you want.” The FDA label for the approved drug carries real, well-documented risks even at approved doses — uterine hyperstimulation and rupture with improper administration, and water intoxication from oxytocin's antidiuretic effect. Compounded wellness formulations have no FDA-reviewed dosing.",
             "“A nasal spray gets oxytocin straight into the brain, so it works better than a shot.” There is genuine evidence for a direct nose-to-brain pathway, but the amount reaching the brain this way is small, the timing is unusual, and the dose-response relationship is not a simple more-equals-more curve. Getting into the brain and reliably changing behavior are two different claims, and only the first has solid support.",
@@ -2285,8 +2172,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Known hypersensitivity to oxytocin.",
             "Pregnancy outside obstetric care, or sourcing product from an unlicensed seller rather than a licensed pharmacy.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Oxytocin does not appear to be named on the WADA Prohibited List and" },
-          { type: "para", text: "does not fit the biology of WADA's peptide-hormone category, which targets growth-hormone-axis and gonadotropin-related substances rather than oxytocin. This is a \"not found\" rather than a definitively confirmed clearance, since the current list could not be checked line-by-line for this review; a competing athlete should verify current status directly with USADA or Global DRO before use." },
+          { type: "para", text: "Competitive athletes: Oxytocin does not appear to be named on the WADA Prohibited List and does not fit the biology of WADA's peptide-hormone category, which targets growth-hormone-axis and gonadotropin-related substances rather than oxytocin. This is a \"not found\" rather than a definitively confirmed clearance, since the current list could not be checked line-by-line for this review; a competing athlete should verify current status directly with USADA or Global DRO before use." },
         ],
       },
       {
@@ -2329,12 +2215,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "PT-141, also known by its chemical name bremelanotide, is a lab-made, seven-amino-acid" },
-          { type: "para", text: "cyclic peptide built to mimic a natural hormone called alpha-melanocyte-stimulating hormone (α-MSH). As Vyleesi, it is FDA-approved for one specific population: premenopausal women with hypoactive sexual desire disorder (HSDD), where low desire causes marked distress and isn't better explained by another medical or psychiatric condition, a relationship problem, or a medication. Separately from Vyleesi, the same molecule is available as a compounded preparation, sold under its research name PT-141, used off-label for other patients — notably men, for whom no FDA-approved option currently exists for this purpose." },
-          { type: "subhead", text: "It is most often described alongside PDE5 inhibitors like sildenafil, but the two work in" },
-          { type: "para", text: "essentially different places in the body. PDE5 inhibitors act locally, relaxing blood vessels in the penis, and only amplify arousal that is already present. Bremelanotide acts further upstream, on receptors in the brain and central nervous system involved in the desire and arousal pathway itself, independent of local blood flow — which is why it is taken as a single as-needed injection well before activity rather than \"on demand,\" and why its side-effect pattern looks nothing like a PDE5 inhibitor's." },
-          { type: "subhead", text: "The approved product and the compounded product are not interchangeable. Vyleesi is a" },
-          { type: "para", text: "single, standardized 1.75 mg subcutaneous auto-injector dose with FDA-reviewed manufacturing controls. Compounded or gray-market \"PT-141\" — including nasal sprays and higher-dose vials — is not reviewed by FDA for identity, purity, potency, or sterility, and the nasal route it commonly uses is the same route an earlier FDA safety review flagged strongly enough to end that entire development program in 2007." },
+          { type: "para", text: "PT-141, also known by its chemical name bremelanotide, is a lab-made, seven-amino-acid cyclic peptide built to mimic a natural hormone called alpha-melanocyte-stimulating hormone (α-MSH). As Vyleesi, it is FDA-approved for one specific population: premenopausal women with hypoactive sexual desire disorder (HSDD), where low desire causes marked distress and isn't better explained by another medical or psychiatric condition, a relationship problem, or a medication. Separately from Vyleesi, the same molecule is available as a compounded preparation, sold under its research name PT-141, used off-label for other patients — notably men, for whom no FDA-approved option currently exists for this purpose." },
+          { type: "para", text: "It is most often described alongside PDE5 inhibitors like sildenafil, but the two work in essentially different places in the body. PDE5 inhibitors act locally, relaxing blood vessels in the penis, and only amplify arousal that is already present. Bremelanotide acts further upstream, on receptors in the brain and central nervous system involved in the desire and arousal pathway itself, independent of local blood flow — which is why it is taken as a single as-needed injection well before activity rather than \"on demand,\" and why its side-effect pattern looks nothing like a PDE5 inhibitor's." },
+          { type: "para", text: "The approved product and the compounded product are not interchangeable. Vyleesi is a single, standardized 1.75 mg subcutaneous auto-injector dose with FDA-reviewed manufacturing controls. Compounded or gray-market \"PT-141\" — including nasal sprays and higher-dose vials — is not reviewed by FDA for identity, purity, potency, or sterility, and the nasal route it commonly uses is the same route an earlier FDA safety review flagged strongly enough to end that entire development program in 2007." },
         ],
       },
       {
@@ -2353,15 +2236,13 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Bremelanotide is a melanocortin receptor (MCR) agonist — it nonselectively activates several" },
-          { type: "para", text: "receptor subtypes, most consequentially MC4R, found on central-nervous-system neurons implicated in laboratory research of sexual desire and arousal circuits, and MC1R, found on melanocytes, activation of which is the mechanistic explanation for the drug's hyperpigmentation side effect. The FDA label is direct that the underlying story stops there: \"The mechanism of action of bremelanotide for the treatment of hypoactive sexual desire disorder is unknown.\" What is documented is receptor pharmacology and the downstream effects — blood pressure and heart rate changes, nausea, pigmentation — that follow from activating multiple melanocortin receptor subtypes at once, not a validated causal chain explaining exactly how that translates into increased desire in a given patient." },
+          { type: "para", text: "Bremelanotide is a melanocortin receptor (MCR) agonist — it nonselectively activates several receptor subtypes, most consequentially MC4R, found on central-nervous-system neurons implicated in laboratory research of sexual desire and arousal circuits, and MC1R, found on melanocytes, activation of which is the mechanistic explanation for the drug's hyperpigmentation side effect. The FDA label is direct that the underlying story stops there: \"The mechanism of action of bremelanotide for the treatment of hypoactive sexual desire disorder is unknown.\" What is documented is receptor pharmacology and the downstream effects — blood pressure and heart rate changes, nausea, pigmentation — that follow from activating multiple melanocortin receptor subtypes at once, not a validated causal chain explaining exactly how that translates into increased desire in a given patient." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The approved indication rests on two identical Phase 3, randomized, placebo-controlled trials" },
-          { type: "para", text: "(the RECONNECT program) enrolling 1,247 premenopausal women over 24 weeks. Both co-primary endpoints — a validated desire-domain score and a distress score — showed statistically significant improvement over placebo, though the effect sizes were modest by conventional standards (roughly 0.27 to 0.39 on the standard scale). On the secondary endpoint that arguably matters most to a patient — the number of satisfying sexual events — there was no statistically significant difference from placebo. Nausea occurred in 40% of participants (versus 1.3% on placebo) and flushing in 20% (versus 0.3%); 18% of the treatment group discontinued the trial, 8% specifically for nausea. The off-label male-use literature is considerably thinner and older, tracing almost entirely to the original 1990s–2000s intranasal PT-141 program that FDA safety concerns ended in 2007– 2008, before it reached approval. The most-cited controlled study — 342 men who had not responded to sildenafil — reported a \"positive clinical response\" in 33.5% of the bremelanotide group versus 8.5% on placebo, but this specific paper carries a formal, unresolved 2023 journal Expression of Concern. No trial has tested the doses or routes sold today, and no dedicated trial exists for postmenopausal women or for general enhancement use in people without a diagnosed condition." },
+          { type: "para", text: "The approved indication rests on two identical Phase 3, randomized, placebo-controlled trials (the RECONNECT program) enrolling 1,247 premenopausal women over 24 weeks. Both co-primary endpoints — a validated desire-domain score and a distress score — showed statistically significant improvement over placebo, though the effect sizes were modest by conventional standards (roughly 0.27 to 0.39 on the standard scale). On the secondary endpoint that arguably matters most to a patient — the number of satisfying sexual events — there was no statistically significant difference from placebo. Nausea occurred in 40% of participants (versus 1.3% on placebo) and flushing in 20% (versus 0.3%); 18% of the treatment group discontinued the trial, 8% specifically for nausea. The off-label male-use literature is considerably thinner and older, tracing almost entirely to the original 1990s–2000s intranasal PT-141 program that FDA safety concerns ended in 2007– 2008, before it reached approval. The most-cited controlled study — 342 men who had not responded to sildenafil — reported a \"positive clinical response\" in 33.5% of the bremelanotide group versus 8.5% on placebo, but this specific paper carries a formal, unresolved 2023 journal Expression of Concern. No trial has tested the doses or routes sold today, and no dedicated trial exists for postmenopausal women or for general enhancement use in people without a diagnosed condition." },
         ],
       },
       {
@@ -2389,10 +2270,8 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone sourcing \"PT-141\" from an unregulated online vendor.",
             "More than one dose in 24 hours, or more than about 8 doses a month — both exceed the tested and labeled regimen.",
           ] },
-          { type: "subhead", text: "Competitive athletes: The terms \"melanocortin,\" \"bremelanotide,\" \"PT-141,\" and \"melanotan\" do" },
-          { type: "para", text: "not appear on the current WADA Prohibited List, and no anti-doping sanction case involving it was identified — likely reflecting that bremelanotide's FDA approval (Vyleesi) keeps it out of WADA's catch-all category for substances with no approval anywhere. This should be read as \"not found,\" not as a guaranteed clearance; a competing athlete should independently confirm current status through Global DRO or their national anti-doping agency, and should know that an unregulated compounded or gray-market vial carries its own contamination risk that could trigger a positive test for an unrelated substance." },
-          { type: "subhead", text: "Approved product, or a compounded preparation — and the difference" },
-          { type: "para", text: "matters" },
+          { type: "para", text: "Competitive athletes: The terms \"melanocortin,\" \"bremelanotide,\" \"PT-141,\" and \"melanotan\" do not appear on the current WADA Prohibited List, and no anti-doping sanction case involving it was identified — likely reflecting that bremelanotide's FDA approval (Vyleesi) keeps it out of WADA's catch-all category for substances with no approval anywhere. This should be read as \"not found,\" not as a guaranteed clearance; a competing athlete should independently confirm current status through Global DRO or their national anti-doping agency, and should know that an unregulated compounded or gray-market vial carries its own contamination risk that could trigger a positive test for an unrelated substance." },
+          { type: "para", text: "Approved product, or a compounded preparation — and the difference matters" },
           { type: "para", text: "This is an FDA-approved medicine. It is available as the manufacturer's own approved product, and — separately — as a compounded preparation. Which one is being offered is always stated plainly. If the approved product is right, that is what gets prescribed:" },
           { type: "list", items: [
             "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
@@ -2431,14 +2310,10 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Selank is a synthetic seven-amino-acid peptide engineered in Russia in the 1990s as a" },
-          { type: "para", text: "chemically stabilized analog of tuftsin, a naturally occurring fragment of the antibody protein" },
-          { type: "subhead", text: "IgG involved in normal immune signaling. It was designed to resist the enzymes that break" },
-          { type: "para", text: "down natural tuftsin quickly, extending its activity in the body. It is most often used as an intranasal spray for calm and stress resilience, marketed as a non-sedating alternative to a benzodiazepine, though gray-market vendors also sell injectable versions." },
-          { type: "subhead", text: "Selank is a licensed prescription medicine in Russia, developed and studied through Russian" },
-          { type: "para", text: "government-affiliated pharmacology institutes, though it has never been reviewed by the FDA and carries no approval, in any form, in the United States. It sits in FDA's \"nominated but withdrawn\" compounding-substance table, where FDA states it lacks important information regarding safety issues raised by Selank administered to humans." },
-          { type: "subhead", text: "The human research behind it is real but modest — a handful of small Russian trials, developed" },
-          { type: "para", text: "and tested almost entirely by the same government-affiliated institutions that created the compound, published mostly in Russian-language journals, without independent replication in the West." },
+          { type: "para", text: "Selank is a synthetic seven-amino-acid peptide engineered in Russia in the 1990s as a chemically stabilized analog of tuftsin, a naturally occurring fragment of the antibody protein" },
+          { type: "para", text: "IgG involved in normal immune signaling. It was designed to resist the enzymes that break down natural tuftsin quickly, extending its activity in the body. It is most often used as an intranasal spray for calm and stress resilience, marketed as a non-sedating alternative to a benzodiazepine, though gray-market vendors also sell injectable versions." },
+          { type: "para", text: "Selank is a licensed prescription medicine in Russia, developed and studied through Russian government-affiliated pharmacology institutes, though it has never been reviewed by the FDA and carries no approval, in any form, in the United States. It sits in FDA's \"nominated but withdrawn\" compounding-substance table, where FDA states it lacks important information regarding safety issues raised by Selank administered to humans." },
+          { type: "para", text: "The human research behind it is real but modest — a handful of small Russian trials, developed and tested almost entirely by the same government-affiliated institutions that created the compound, published mostly in Russian-language journals, without independent replication in the West." },
         ],
       },
       {
@@ -2457,23 +2332,17 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Selank's proposed mechanisms are derived almost entirely from laboratory research, not" },
-          { type: "para", text: "human mechanistic research. The longest-standing claim is that it inhibits enzymes that break down the body's own opioid-like enkephalins, prolonging their activity, proposed as distinct from how a benzodiazepine binds its receptor. In-vitro and laboratory research also report Selank alters GABA-related gene expression and interacts with serotonin signaling, and laboratory research report it regulates brain-derived neurotrophic factor (BDNF) in regions tied to memory and stress. As a tuftsin analog, laboratory research also report immune and antiviral effects." },
-          { type: "subhead", text: "How well-established this is matters for setting expectations: not very, by the standard" },
-          { type: "para", text: "patients should expect elsewhere in this catalog. There is no human-confirmed mechanism — these hypotheses come from a small, overlapping set of Russian labs, have not been confirmed with human neuroimaging or receptor studies, and are at points in tension with each other. This should be described as a proposed, laboratory-supported story, not settled pharmacology." },
+          { type: "para", text: "Selank's proposed mechanisms are derived almost entirely from laboratory research, not human mechanistic research. The longest-standing claim is that it inhibits enzymes that break down the body's own opioid-like enkephalins, prolonging their activity, proposed as distinct from how a benzodiazepine binds its receptor. In-vitro and laboratory research also report Selank alters GABA-related gene expression and interacts with serotonin signaling, and laboratory research report it regulates brain-derived neurotrophic factor (BDNF) in regions tied to memory and stress. As a tuftsin analog, laboratory research also report immune and antiviral effects." },
+          { type: "para", text: "How well-established this is matters for setting expectations: not very, by the standard patients should expect elsewhere in this catalog. There is no human-confirmed mechanism — these hypotheses come from a small, overlapping set of Russian labs, have not been confirmed with human neuroimaging or receptor studies, and are at points in tension with each other. This should be described as a proposed, laboratory-supported story, not settled pharmacology." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Total human exposure is small and narrow. Core trials are Russian studies of generalized" },
-          { type: "para", text: "anxiety and related conditions, typically a few dozen patients each — one frequently cited trial enrolled 20 patients over about two weeks. Cumulative published human subjects across all" },
-          { type: "subhead", text: "Selank trials appears to be in the low hundreds at most, nearly all recruited in Russia, with" },
-          { type: "para", text: "follow-up almost always days to a few weeks. Virtually all research traces to a tight cluster of Russian, government-affiliated institutions that both developed the compound and ran the trials evaluating it — a structural independence concern. Human trials are generally small, open-label or loosely controlled, some comparing" },
-          { type: "subhead", text: "Selank to an active comparator rather than placebo, published mainly in Russian-language" },
-          { type: "para", text: "journals with details not consistently auditable by outside reviewers." },
-          { type: "subhead", text: "No independent Western replication has been identified. The broader English-language" },
-          { type: "para", text: "literature shows essentially no non-Russian trials of Selank, and no FDA, EMA, or other major regulator has conducted a clinical review of its efficacy data." },
+          { type: "para", text: "Total human exposure is small and narrow. Core trials are Russian studies of generalized anxiety and related conditions, typically a few dozen patients each — one frequently cited trial enrolled 20 patients over about two weeks. Cumulative published human subjects across all" },
+          { type: "para", text: "Selank trials appears to be in the low hundreds at most, nearly all recruited in Russia, with follow-up almost always days to a few weeks. Virtually all research traces to a tight cluster of Russian, government-affiliated institutions that both developed the compound and ran the trials evaluating it — a structural independence concern. Human trials are generally small, open-label or loosely controlled, some comparing" },
+          { type: "para", text: "Selank to an active comparator rather than placebo, published mainly in Russian-language journals with details not consistently auditable by outside reviewers." },
+          { type: "para", text: "No independent Western replication has been identified. The broader English-language literature shows essentially no non-Russian trials of Selank, and no FDA, EMA, or other major regulator has conducted a clinical review of its efficacy data." },
         ],
       },
       {
@@ -2499,8 +2368,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone relying on it as a substance-use-disorder treatment — no human evidence supports this use.",
             "Competitive athletes subject to WADA or USADA testing.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Selank is not individually named on the WADA Prohibited List, but it is" },
-          { type: "para", text: "reasonably treated as falling under WADA's S0 (\"Non-Approved Substances\") category — prohibited at all times — because its only marketing approval is in Russia, not a regulator recognized for this purpose by most WADA-signatory countries. Athletes should check Global DRO or contact USADA directly and assume prohibited status by default rather than assuming permissibility from an absent name-specific listing." },
+          { type: "para", text: "Competitive athletes: Selank is not individually named on the WADA Prohibited List, but it is reasonably treated as falling under WADA's S0 (\"Non-Approved Substances\") category — prohibited at all times — because its only marketing approval is in Russia, not a regulator recognized for this purpose by most WADA-signatory countries. Athletes should check Global DRO or contact USADA directly and assume prohibited status by default rather than assuming permissibility from an absent name-specific listing." },
         ],
       },
       {
@@ -2543,12 +2411,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Semaglutide is a lab-made copy of a natural gut hormone called GLP-1, which the body" },
-          { type: "para", text: "releases after eating. It has been chemically modified — including an amino acid substitution and a fatty-acid side chain that binds to albumin in the blood — so that it remains active for about a week instead of being broken down within minutes. It lowers blood sugar, slows how quickly the stomach empties, and signals appetite centers in the brain." },
-          { type: "subhead", text: "It is a fully FDA-approved prescription medicine, marketed under several brand names, with an" },
-          { type: "para", text: "initial US approval in 2017. It has since been evaluated in randomized trials involving tens of thousands of people, including several trials of thousands of participants followed for three to four years — a scale of evidence well beyond most compounds discussed on this site." },
-          { type: "subhead", text: "Semaglutide is also available as a separate compounded preparation. The shortage that once" },
-          { type: "para", text: "justified widespread compounding was declared resolved in 2025, and the compounding enforcement-discretion window has since closed; what a patient actually receives — the FDA-approved product or a compounded version — depends on which pathway a clinic or pharmacy is offering." },
+          { type: "para", text: "Semaglutide is a lab-made copy of a natural gut hormone called GLP-1, which the body releases after eating. It has been chemically modified — including an amino acid substitution and a fatty-acid side chain that binds to albumin in the blood — so that it remains active for about a week instead of being broken down within minutes. It lowers blood sugar, slows how quickly the stomach empties, and signals appetite centers in the brain." },
+          { type: "para", text: "It is a fully FDA-approved prescription medicine, marketed under several brand names, with an initial US approval in 2017. It has since been evaluated in randomized trials involving tens of thousands of people, including several trials of thousands of participants followed for three to four years — a scale of evidence well beyond most compounds discussed on this site." },
+          { type: "para", text: "Semaglutide is also available as a separate compounded preparation. The shortage that once justified widespread compounding was declared resolved in 2025, and the compounding enforcement-discretion window has since closed; what a patient actually receives — the FDA-approved product or a compounded version — depends on which pathway a clinic or pharmacy is offering." },
         ],
       },
       {
@@ -2569,17 +2434,14 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "How it works",
         blocks: [
           { type: "para", text: "The intestine naturally releases GLP-1 whenever food arrives. GLP-1 does three things at once: it tells the pancreas to release insulin, but only when blood sugar is actually high; it tells the pancreas to stop releasing the hormone that pushes blood sugar up; and it tells the stomach to empty more slowly and the brain that the body is full." },
-          { type: "subhead", text: "Natural GLP-1 breaks down within minutes. Semaglutide is that same signal rebuilt so the body" },
-          { type: "para", text: "cannot clear it quickly — one weekly injection (or a daily tablet, co-formulated with an absorption enhancer) keeps the fullness and blood-sugar signal active for roughly a week at a time." },
-          { type: "subhead", text: "The effect lasts only as long as the medicine is taken — it functions as an ongoing treatment" },
-          { type: "para", text: "for a chronic condition rather than a one-time reset. Most common side effects, such as nausea and constipation, are the same mechanism turned up too high, which is why dosing is increased gradually over months." },
+          { type: "para", text: "Natural GLP-1 breaks down within minutes. Semaglutide is that same signal rebuilt so the body cannot clear it quickly — one weekly injection (or a daily tablet, co-formulated with an absorption enhancer) keeps the fullness and blood-sugar signal active for roughly a week at a time." },
+          { type: "para", text: "The effect lasts only as long as the medicine is taken — it functions as an ongoing treatment for a chronic condition rather than a one-time reset. Most common side effects, such as nausea and constipation, are the same mechanism turned up too high, which is why dosing is increased gradually over months." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Semaglutide has one of the largest clinical trial evidence bases of any compound discussed on" },
-          { type: "para", text: "this site: FDA approval across several indications rests on separate randomized, controlled trial programs that together randomized tens of thousands of people, including multi-year outcome trials that measured hard endpoints such as cardiovascular events and kidney disease progression, not just weight or blood sugar. Effectiveness varies meaningfully by population. Weight-loss results reported in trials of people with type 2 diabetes have been smaller than in trials of people without diabetes, and some approvals — including a 2025 approval for a form of fatty liver disease — rest on an accelerated pathway using a biomarker endpoint, with confirmatory long-term outcome data still pending. None of this trial evidence transfers to compounded semaglutide, which by definition is not the specific product that was studied. Some other investigated uses have far thinner evidence, ranging from a single small trial to no dedicated trial at all, and a large randomized trial specifically testing semaglutide for slowing Alzheimer's disease did not meet its primary endpoint, despite improving certain disease-related biomarkers." },
+          { type: "para", text: "Semaglutide has one of the largest clinical trial evidence bases of any compound discussed on this site: FDA approval across several indications rests on separate randomized, controlled trial programs that together randomized tens of thousands of people, including multi-year outcome trials that measured hard endpoints such as cardiovascular events and kidney disease progression, not just weight or blood sugar. Effectiveness varies meaningfully by population. Weight-loss results reported in trials of people with type 2 diabetes have been smaller than in trials of people without diabetes, and some approvals — including a 2025 approval for a form of fatty liver disease — rest on an accelerated pathway using a biomarker endpoint, with confirmatory long-term outcome data still pending. None of this trial evidence transfers to compounded semaglutide, which by definition is not the specific product that was studied. Some other investigated uses have far thinner evidence, ranging from a single small trial to no dedicated trial at all, and a large randomized trial specifically testing semaglutide for slowing Alzheimer's disease did not meet its primary endpoint, despite improving certain disease-related biomarkers." },
         ],
       },
       {
@@ -2607,10 +2469,8 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone scheduled for a procedure requiring general anesthesia or sedation, without informing the anesthesia team in advance.",
             "Anyone sourcing product from an unverified online seller rather than a licensed pharmacy.",
           ] },
-          { type: "subhead", text: "Competitive athletes: GLP-1 medicines including semaglutide are not currently prohibited in" },
-          { type: "para", text: "sport, and a therapeutic use exemption is not required to use an FDA-approved product as prescribed. Semaglutide has, however, been placed on WADA's Monitoring Program, meaning testing laboratories track its use even though it is not a violation — and the more practical risk for athletes lies in sourcing an unapproved or compounded product of uncertain content rather than in the approved medicine itself." },
-          { type: "subhead", text: "Approved product, or a compounded preparation — and the difference" },
-          { type: "para", text: "matters" },
+          { type: "para", text: "Competitive athletes: GLP-1 medicines including semaglutide are not currently prohibited in sport, and a therapeutic use exemption is not required to use an FDA-approved product as prescribed. Semaglutide has, however, been placed on WADA's Monitoring Program, meaning testing laboratories track its use even though it is not a violation — and the more practical risk for athletes lies in sourcing an unapproved or compounded product of uncertain content rather than in the approved medicine itself." },
+          { type: "para", text: "Approved product, or a compounded preparation — and the difference matters" },
           { type: "para", text: "This is an FDA-approved medicine. It is available as the manufacturer's own approved product, and — separately — as a compounded preparation. Which one is being offered is always stated plainly. If the approved product is right, that is what gets prescribed:" },
           { type: "list", items: [
             "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
@@ -2649,12 +2509,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Semax is a lab-made chain of seven amino acids copied from a small fragment of ACTH" },
-          { type: "para", text: "(adrenocorticotropic hormone), the hormone the pituitary gland normally releases to trigger cortisol production. It was modified to retain some of ACTH's effects on the brain and nervous system while losing ACTH's hormonal effects on the adrenal glands, so it is not expected to raise cortisol the way natural ACTH does." },
-          { type: "subhead", text: "In Russia, Semax is a licensed prescription nasal-drop medicine, approved in 2011 and placed" },
-          { type: "para", text: "on Russia's List of Vital & Essential Drugs, used mainly for people recovering from ischemic stroke and for certain other neurological conditions. In the US wellness market it is sold very differently — almost always as a nasal spray, sometimes for injection — and marketed as a nootropic for focus, memory, and mental performance in otherwise healthy people. That US marketing use is not the use it was studied or approved for in Russia, and it has never been evaluated by FDA for any purpose." },
-          { type: "subhead", text: "Fewer than 50 healthy adults have ever been studied taking Semax, in short dose-finding" },
-          { type: "para", text: "studies that did not measure focus or memory as an outcome — a meaningful gap between the stroke-recovery evidence that exists and the cognitive-enhancement claim that drives most current sales." },
+          { type: "para", text: "Semax is a lab-made chain of seven amino acids copied from a small fragment of ACTH (adrenocorticotropic hormone), the hormone the pituitary gland normally releases to trigger cortisol production. It was modified to retain some of ACTH's effects on the brain and nervous system while losing ACTH's hormonal effects on the adrenal glands, so it is not expected to raise cortisol the way natural ACTH does." },
+          { type: "para", text: "In Russia, Semax is a licensed prescription nasal-drop medicine, approved in 2011 and placed on Russia's List of Vital & Essential Drugs, used mainly for people recovering from ischemic stroke and for certain other neurological conditions. In the US wellness market it is sold very differently — almost always as a nasal spray, sometimes for injection — and marketed as a nootropic for focus, memory, and mental performance in otherwise healthy people. That US marketing use is not the use it was studied or approved for in Russia, and it has never been evaluated by FDA for any purpose." },
+          { type: "para", text: "Fewer than 50 healthy adults have ever been studied taking Semax, in short dose-finding studies that did not measure focus or memory as an outcome — a meaningful gap between the stroke-recovery evidence that exists and the cognitive-enhancement claim that drives most current sales." },
         ],
       },
       {
@@ -2672,23 +2529,17 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "The proposed mechanism centers on raising BDNF and related neurotrophic signals, affecting" },
-          { type: "para", text: "serotonin and dopamine signaling systems, and shifting which genes get switched on in brain tissue after injury in laboratory research stroke models. FDA's 2026 review describes Semax's mechanism as working through \"poorly understood mechanisms of action.\"" },
-          { type: "subhead", text: "A notable laboratory finding deserves mention: Semax potentiated amphetamine-induced" },
-          { type: "para", text: "dopamine release and locomotor activity in laboratory research. FDA flagged this as concerning, since increased dopaminergic tone in this brain region is a response typically induced by drugs of abuse, and no study has tested whether Semax itself has reinforcing or addictive properties." },
-          { type: "subhead", text: "One small Russian human study examined BDNF levels alongside motor recovery in stroke" },
-          { type: "para", text: "patients — the closest thing to human mechanistic confirmation, though it is a single, small trial." },
+          { type: "para", text: "The proposed mechanism centers on raising BDNF and related neurotrophic signals, affecting serotonin and dopamine signaling systems, and shifting which genes get switched on in brain tissue after injury in laboratory research stroke models. FDA's 2026 review describes Semax's mechanism as working through \"poorly understood mechanisms of action.\"" },
+          { type: "para", text: "A notable laboratory finding deserves mention: Semax potentiated amphetamine-induced dopamine release and locomotor activity in laboratory research. FDA flagged this as concerning, since increased dopaminergic tone in this brain region is a response typically induced by drugs of abuse, and no study has tested whether Semax itself has reinforcing or addictive properties." },
+          { type: "para", text: "One small Russian human study examined BDNF levels alongside motor recovery in stroke patients — the closest thing to human mechanistic confirmation, though it is a single, small trial." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "FDA's own 2026 review counts roughly 550 documented human exposures across Semax's" },
-          { type: "para", text: "entire history: 33 to 47 healthy adults in short dose-finding pharmacology studies that did not measure cognitive performance, 69 adults with diagnosed neurological conditions such as chronic ischemic brain disease, migraine, and trigeminal neuralgia, and 451 children treated in Russian clinical settings for depression or tics — by far the largest population studied, and one with little bearing on the healthy-adult cognitive-enhancement claim Semax is sold on in the US." },
-          { type: "subhead", text: "Two claims need to be kept separate, because marketing blurs them. Post-stroke" },
-          { type: "para", text: "neuroprotection and recovery — the actual Russian-approved use — rests on real human trials in a real patient population spanning decades, though limited to a single Russian research lineage, small samples, and no independent Western replication. Cognitive enhancement in healthy people — the claim actually driving US sales — has essentially no dedicated evidence; controlled trials for this specific use in healthy adults essentially do not exist." },
-          { type: "subhead", text: "Tellingly, when FDA's own reviewers examined largely this same body of Russian clinical" },
-          { type: "para", text: "evidence in 2026, they concluded it showed \"insufficient evidence of effectiveness\" — even for the narrower, disease-specific indications actually nominated, a materially lower bar than the healthy-adult cognitive-enhancement claim driving US sales." },
+          { type: "para", text: "FDA's own 2026 review counts roughly 550 documented human exposures across Semax's entire history: 33 to 47 healthy adults in short dose-finding pharmacology studies that did not measure cognitive performance, 69 adults with diagnosed neurological conditions such as chronic ischemic brain disease, migraine, and trigeminal neuralgia, and 451 children treated in Russian clinical settings for depression or tics — by far the largest population studied, and one with little bearing on the healthy-adult cognitive-enhancement claim Semax is sold on in the US." },
+          { type: "para", text: "Two claims need to be kept separate, because marketing blurs them. Post-stroke neuroprotection and recovery — the actual Russian-approved use — rests on real human trials in a real patient population spanning decades, though limited to a single Russian research lineage, small samples, and no independent Western replication. Cognitive enhancement in healthy people — the claim actually driving US sales — has essentially no dedicated evidence; controlled trials for this specific use in healthy adults essentially do not exist." },
+          { type: "para", text: "Tellingly, when FDA's own reviewers examined largely this same body of Russian clinical evidence in 2026, they concluded it showed \"insufficient evidence of effectiveness\" — even for the narrower, disease-specific indications actually nominated, a materially lower bar than the healthy-adult cognitive-enhancement claim driving US sales." },
         ],
       },
       {
@@ -2714,8 +2565,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Substituting for emergency stroke care.",
             "Competitive athletes under WADA Code without first checking current status.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Semax is not explicitly named on the WADA Prohibited List. Because it" },
-          { type: "para", text: "does have current government approval — Russia's — its fit under WADA's S0 (\"Non-Approved Substances\") catch-all is genuinely unresolved rather than settled, and no confirmed sanction case specific to Semax was located. Status should be treated as unresolved and high-risk, not cleared, and a competing athlete should check Global DRO or their national anti-doping organization before use." },
+          { type: "para", text: "Competitive athletes: Semax is not explicitly named on the WADA Prohibited List. Because it does have current government approval — Russia's — its fit under WADA's S0 (\"Non-Approved Substances\") catch-all is genuinely unresolved rather than settled, and no confirmed sanction case specific to Semax was located. Status should be treated as unresolved and high-risk, not cleared, and a competing athlete should check Global DRO or their national anti-doping organization before use." },
         ],
       },
       {
@@ -2759,10 +2609,8 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it is",
         blocks: [
           { type: "para", text: "Sermorelin is a lab-made copy of the first 29 building blocks of a natural brain hormone, growth hormone-releasing hormone (GHRH), which signals the pituitary gland to release its own growth hormone in short bursts rather than delivering growth hormone directly." },
-          { type: "subhead", text: "A version was once sold in the United States under the brand name Geref — first as a single-" },
-          { type: "para", text: "dose diagnostic test of pituitary function, later as a nightly injection for children with diagnosed growth hormone deficiency. Both approvals were withdrawn in 2009 when the manufacturer discontinued the product for business reasons." },
-          { type: "subhead", text: "What is available today is a compounded preparation made from bulk sermorelin powder; it" },
-          { type: "para", text: "has not itself been reviewed by the FDA for safety, effectiveness, or quality, and it only works if the pituitary gland still has growth hormone available to release." },
+          { type: "para", text: "A version was once sold in the United States under the brand name Geref — first as a singledose diagnostic test of pituitary function, later as a nightly injection for children with diagnosed growth hormone deficiency. Both approvals were withdrawn in 2009 when the manufacturer discontinued the product for business reasons." },
+          { type: "para", text: "What is available today is a compounded preparation made from bulk sermorelin powder; it has not itself been reviewed by the FDA for safety, effectiveness, or quality, and it only works if the pituitary gland still has growth hormone available to release." },
         ],
       },
       {
@@ -2780,17 +2628,14 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "A hormone from the hypothalamus, GHRH, is the natural “go” signal that prompts the pituitary" },
-          { type: "para", text: "gland to release growth hormone. Sermorelin is a shortened synthetic copy of that signal; injected under the skin, typically at bedtime, it prompts a pulse of growth hormone release, which then travels to the liver and prompts it to produce IGF-1. Because sermorelin acts upstream of growth hormone itself, it only works if the pituitary still has growth hormone available to release — if the pituitary is damaged, missing, or unresponsive, sermorelin has nothing to stimulate. It also clears from the body within minutes, producing a short, pulse-like effect rather than a steady elevation." },
-          { type: "subhead", text: "The idea that this makes it inherently safer than growth hormone itself — because the body's" },
-          { type: "para", text: "own feedback loops limit how much can be released — is a plausible mechanism, not a finding confirmed by a study that directly compared the two in adults." },
+          { type: "para", text: "A hormone from the hypothalamus, GHRH, is the natural “go” signal that prompts the pituitary gland to release growth hormone. Sermorelin is a shortened synthetic copy of that signal; injected under the skin, typically at bedtime, it prompts a pulse of growth hormone release, which then travels to the liver and prompts it to produce IGF-1. Because sermorelin acts upstream of growth hormone itself, it only works if the pituitary still has growth hormone available to release — if the pituitary is damaged, missing, or unresponsive, sermorelin has nothing to stimulate. It also clears from the body within minutes, producing a short, pulse-like effect rather than a steady elevation." },
+          { type: "para", text: "The idea that this makes it inherently safer than growth hormone itself — because the body's own feedback loops limit how much can be released — is a plausible mechanism, not a finding confirmed by a study that directly compared the two in adults." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The pediatric approval rested on a 12-month, open-label trial without a placebo or comparison" },
-          { type: "para", text: "group, in previously untreated children with diagnosed growth hormone deficiency; a later review of the pediatric literature found sermorelin's growth effect less pronounced than that of growth hormone itself. In adults — the population being sold sermorelin today — the published record is small: roughly 130 adults total across a handful of studies, the largest around 90 people, none longer than six months. One six-month study found a measurable rise in IGF-1 and modest shifts in body composition, but no improvement in strength, aerobic fitness, or physical function. No adult trial has tested sermorelin for fat loss, athletic performance, injury recovery, sleep, libido, or longevity as a primary outcome. The larger and more heavily studied growth hormone literature, which sermorelin's own mechanism depends on, has similarly found no strength or functional benefit from raising growth hormone in healthy older adults." },
+          { type: "para", text: "The pediatric approval rested on a 12-month, open-label trial without a placebo or comparison group, in previously untreated children with diagnosed growth hormone deficiency; a later review of the pediatric literature found sermorelin's growth effect less pronounced than that of growth hormone itself. In adults — the population being sold sermorelin today — the published record is small: roughly 130 adults total across a handful of studies, the largest around 90 people, none longer than six months. One six-month study found a measurable rise in IGF-1 and modest shifts in body composition, but no improvement in strength, aerobic fitness, or physical function. No adult trial has tested sermorelin for fat loss, athletic performance, injury recovery, sleep, libido, or longevity as a primary outcome. The larger and more heavily studied growth hormone literature, which sermorelin's own mechanism depends on, has similarly found no strength or functional benefit from raising growth hormone in healthy older adults." },
         ],
       },
       {
@@ -2815,8 +2660,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Children and adolescents outside a diagnosed, specialist-managed growth hormone deficiency.",
             "Anyone unwilling or unable to attend monitoring visits and lab draws.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Prohibited at all times, in and out of competition, under the WADA" },
-          { type: "para", text: "category covering growth hormone-releasing factors. A therapeutic use exemption is considered highly unlikely to be approved, since there is no FDA-approved product or indication to support one for adult use." },
+          { type: "para", text: "Competitive athletes: Prohibited at all times, in and out of competition, under the WADA category covering growth hormone-releasing factors. A therapeutic use exemption is considered highly unlikely to be approved, since there is no FDA-approved product or indication to support one for adult use." },
         ],
       },
       {
@@ -2859,12 +2703,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "SS-31, known by its drug development name elamipretide, is a four-amino-acid peptide" },
-          { type: "para", text: "engineered to be drawn specifically into the inner membrane of mitochondria, the structures inside cells that generate energy. It works differently from most compounds in this catalog: rather than acting on a hormone receptor, it binds a molecule called cardiolipin, found almost exclusively in that inner mitochondrial membrane, which organizes the machinery that produces cellular energy." },
-          { type: "subhead", text: "Under the brand name Forzinity, elamipretide is FDA-approved — the only compound in this" },
-          { type: "para", text: "catalog that can say that — but only for one ultra-rare, genetic, pediatric-onset disease called" },
-          { type: "subhead", text: "Barth syndrome, and only after an earlier rejection. What is sold through compounding" },
-          { type: "para", text: "pharmacies and peptide vendors as \"SS-31\" for general longevity or mitochondrial-health use is a different, untested product, aimed at a population and use the approved drug's trials never studied." },
+          { type: "para", text: "SS-31, known by its drug development name elamipretide, is a four-amino-acid peptide engineered to be drawn specifically into the inner membrane of mitochondria, the structures inside cells that generate energy. It works differently from most compounds in this catalog: rather than acting on a hormone receptor, it binds a molecule called cardiolipin, found almost exclusively in that inner mitochondrial membrane, which organizes the machinery that produces cellular energy." },
+          { type: "para", text: "Under the brand name Forzinity, elamipretide is FDA-approved — the only compound in this catalog that can say that — but only for one ultra-rare, genetic, pediatric-onset disease called" },
+          { type: "para", text: "Barth syndrome, and only after an earlier rejection. What is sold through compounding pharmacies and peptide vendors as \"SS-31\" for general longevity or mitochondrial-health use is a different, untested product, aimed at a population and use the approved drug's trials never studied." },
         ],
       },
       {
@@ -2882,19 +2723,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Cardiolipin folds the inner mitochondrial membrane into the folds that organize the electron" },
-          { type: "para", text: "transport chain, the machinery that produces ATP, the cell's energy currency. When cardiolipin is damaged — by oxidative stress, aging, or disease — that folded structure collapses, the electron transport chain leaks more cell-damaging byproducts, and that damages more cardiolipin, a self-reinforcing decline implicated in rare mitochondrial diseases and, more broadly, in general age-and disease-related mitochondrial dysfunction." },
-          { type: "subhead", text: "SS-31 binds cardiolipin directly, without disrupting the membrane itself, and is proposed to" },
-          { type: "para", text: "stabilize that folded structure, better organize the electron transport chain, reduce the leakage of damaging byproducts, and support ATP production. This mechanism is well characterized at the biochemical level — but as the research below shows, that has not reliably translated into positive results in the largest human trials that have tested it." },
+          { type: "para", text: "Cardiolipin folds the inner mitochondrial membrane into the folds that organize the electron transport chain, the machinery that produces ATP, the cell's energy currency. When cardiolipin is damaged — by oxidative stress, aging, or disease — that folded structure collapses, the electron transport chain leaks more cell-damaging byproducts, and that damages more cardiolipin, a self-reinforcing decline implicated in rare mitochondrial diseases and, more broadly, in general age-and disease-related mitochondrial dysfunction." },
+          { type: "para", text: "SS-31 binds cardiolipin directly, without disrupting the membrane itself, and is proposed to stabilize that folded structure, better organize the electron transport chain, reduce the leakage of damaging byproducts, and support ATP production. This mechanism is well characterized at the biochemical level — but as the research below shows, that has not reliably translated into positive results in the largest human trials that have tested it." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The one approval that exists — for Barth syndrome, a rare genetic disease affecting heart and" },
-          { type: "para", text: "skeletal muscle — followed a difficult path: an original application was rejected by the FDA in 2025 after a lengthy review, and the drug was ultimately approved later that year only under an accelerated pathway, based on a muscle-strength measurement used as a surrogate for benefit, from a small 12-person trial whose blinded phase did not show a significant effect on its original primary measures. The confirmatory trial FDA required as a condition of approval only began in early 2026, with results not due until 2030, and the approval can be withdrawn if that trial fails." },
-          { type: "subhead", text: "In two other serious diseases, elamipretide's largest, most rigorous trials did not succeed. A" },
-          { type: "para", text: "218-person Phase 3 trial in a genetic muscle disease called primary mitochondrial myopathy failed both of its main measures, with only an unreplicated subgroup finding a benefit. A separate 176-person Phase 2 trial in a form of age-related vision loss (geographic atrophy) also missed both of its main measures, though a secondary anatomical signal is being tested further in an ongoing, larger trial. A small heart-failure trial found no meaningful benefit, and elamipretide no longer appears in the company's stated development pipeline for that use. None of this trial history — in any of these diseases — was conducted in healthy adults, or with a longevity or general-wellness goal. That evidence base, for the way SS-31 is actually marketed through compounding today, does not exist." },
+          { type: "para", text: "The one approval that exists — for Barth syndrome, a rare genetic disease affecting heart and skeletal muscle — followed a difficult path: an original application was rejected by the FDA in 2025 after a lengthy review, and the drug was ultimately approved later that year only under an accelerated pathway, based on a muscle-strength measurement used as a surrogate for benefit, from a small 12-person trial whose blinded phase did not show a significant effect on its original primary measures. The confirmatory trial FDA required as a condition of approval only began in early 2026, with results not due until 2030, and the approval can be withdrawn if that trial fails." },
+          { type: "para", text: "In two other serious diseases, elamipretide's largest, most rigorous trials did not succeed. A 218-person Phase 3 trial in a genetic muscle disease called primary mitochondrial myopathy failed both of its main measures, with only an unreplicated subgroup finding a benefit. A separate 176-person Phase 2 trial in a form of age-related vision loss (geographic atrophy) also missed both of its main measures, though a secondary anatomical signal is being tested further in an ongoing, larger trial. A small heart-failure trial found no meaningful benefit, and elamipretide no longer appears in the company's stated development pipeline for that use. None of this trial history — in any of these diseases — was conducted in healthy adults, or with a longevity or general-wellness goal. That evidence base, for the way SS-31 is actually marketed through compounding today, does not exist." },
         ],
       },
       {
@@ -2919,8 +2756,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone sourcing product from an unverified compounder or vendor with no confirmed dose, purity, or sterility.",
             "Competitive athletes — status has changed recently with the new approval, so current WADA/USADA status should be independently verified.",
           ] },
-          { type: "subhead", text: "Competitive athletes: SS-31 does not currently appear by name on the WADA Prohibited List, and" },
-          { type: "para", text: "now that it holds an FDA approval for Barth syndrome, it may no longer clearly fit the catch-all category applied to unapproved substances. This is a recent, still-settling status rather than a firm, permanent clearance — competitive athletes should verify current status with their sport's anti-doping authority before use." },
+          { type: "para", text: "Competitive athletes: SS-31 does not currently appear by name on the WADA Prohibited List, and now that it holds an FDA approval for Barth syndrome, it may no longer clearly fit the catch-all category applied to unapproved substances. This is a recent, still-settling status rather than a firm, permanent clearance — competitive athletes should verify current status with their sport's anti-doping authority before use." },
         ],
       },
       {
@@ -2963,12 +2799,9 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "TB-500 is a lab-made chain of seven amino acids, built to copy one small stretch — positions" },
-          { type: "para", text: "17 through 23 — of a much larger, naturally occurring 43-amino-acid protein called thymosin beta-4, a protein the body already makes in nearly every cell type, especially at sites of injury and inflammation. TB-500 carries an added acetyl chemical group on the front end of the chain, a modification FDA's own reviewers state \"irreversibly alters\" the molecule's charge, size, and behavior. TB-500 is not simply a piece of thymosin beta-4 — it is a chemically modified piece, and its activity in the body cannot be assumed to match either the unmodified natural fragment or the full parent protein." },
-          { type: "subhead", text: "TB-500 is sold almost exclusively as a self-administered subcutaneous or intramuscular" },
-          { type: "para", text: "injection, most often through online \"research use only\" vendors, and is most often used for tendon, ligament, and muscle injury recovery, general wound healing, and vascular support. It is most often used for those recovery goals, and the evidence commonly cited for that use comes mainly from studies of the related, unmodified natural protein rather than from TB-500 itself." },
-          { type: "subhead", text: "TB-500 should not be confused with two other \"thymosin\"-family names that circulate in" },
-          { type: "para", text: "wellness marketing. Thymosin alpha-1 is a structurally unrelated peptide, approved in more than 30 countries for hepatitis and as cancer-treatment support (though not in the US), that works through a different immune-activating mechanism. Thymalin is a different substance again. The shared \"thymosin\" name reflects a shared origin in 1960s–70s thymus-tissue research, not a shared mechanism or safety record." },
+          { type: "para", text: "TB-500 is a lab-made chain of seven amino acids, built to copy one small stretch — positions 17 through 23 — of a much larger, naturally occurring 43-amino-acid protein called thymosin beta-4, a protein the body already makes in nearly every cell type, especially at sites of injury and inflammation. TB-500 carries an added acetyl chemical group on the front end of the chain, a modification FDA's own reviewers state \"irreversibly alters\" the molecule's charge, size, and behavior. TB-500 is not simply a piece of thymosin beta-4 — it is a chemically modified piece, and its activity in the body cannot be assumed to match either the unmodified natural fragment or the full parent protein." },
+          { type: "para", text: "TB-500 is sold almost exclusively as a self-administered subcutaneous or intramuscular injection, most often through online \"research use only\" vendors, and is most often used for tendon, ligament, and muscle injury recovery, general wound healing, and vascular support. It is most often used for those recovery goals, and the evidence commonly cited for that use comes mainly from studies of the related, unmodified natural protein rather than from TB-500 itself." },
+          { type: "para", text: "TB-500 should not be confused with two other \"thymosin\"-family names that circulate in wellness marketing. Thymosin alpha-1 is a structurally unrelated peptide, approved in more than 30 countries for hepatitis and as cancer-treatment support (though not in the US), that works through a different immune-activating mechanism. Thymalin is a different substance again. The shared \"thymosin\" name reflects a shared origin in 1960s–70s thymus-tissue research, not a shared mechanism or safety record." },
         ],
       },
       {
@@ -2976,7 +2809,7 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "table", columns: ["USED FOR", "WHAT THAT MEANS"], rows: [
             ["Tendon, ligament, and muscle injury recovery", "Some have used it for this. Not tested in people."],
-            ["General wound and skin healing", "Supporting studies used a related, unmodified protein in laboratory research. When TB-500 itself was directly tested in a 2024 in vitro assay, it did not induce wound healing at the tested concentration."],
+            ["General wound and skin healing", "Supporting studies used a related, unmodified protein in laboratory research. When TB-500 itself was directly tested in a 2024 laboratory assay, it did not induce wound healing at the tested concentration."],
             ["Cardiac tissue repair after heart attack", "A published study associated naturally elevated blood levels of the parent protein with improved outcomes after stem-cell therapy — a correlational biomarker finding, not a trial of administered TB-500."],
             ["Hair growth", "Some have used it for this. Not tested in people."],
             ["Vascular support and general recovery", "Some have used it for this. Not tested in people."],
@@ -2987,21 +2820,16 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "The proposed mechanism starts from real, well-established cell biology: a six-amino-acid core" },
-          { type: "para", text: "within TB-500's sequence is known as the \"actin-binding region\" of thymosin beta-4, and the parent protein does bind actin as part of normal cell function. Actin filaments are the internal scaffolding cells use to change shape and move, so a molecule that influences actin dynamics is mechanistically plausible as an influence on the cell migration involved in wound repair. Marketing extends that story further, to new blood vessel formation and general tissue repair." },
-          { type: "subhead", text: "The complication is that essentially none of the underlying research demonstrating actin-" },
-          { type: "para", text: "binding, cell migration, or wound-healing effects was performed on TB-500 itself. The most frequently cited supporting study tested topical full-length thymosin beta-4 and the plain, non-acetylated fragment in laboratory research — not TB-500. FDA's reviewers are explicit that \"the pharmacological profile of the non-acetylated heptapeptide LKKTETQ cannot be directly extrapolated to the N-acetylated heptapeptide TB-500.\"" },
-          { type: "subhead", text: "When TB-500 itself was actually tested — a 2024 study using confluent fibroblast cultures — it" },
-          { type: "para", text: "did not induce wound healing at the tested concentration. One of TB-500's own breakdown products did show wound-healing activity in the same experiment, an unresolved finding suggesting the molecule sold and injected as \"TB-500\" may not be the active agent at all, and that whatever it breaks down into inside the body has not itself been fully characterized." },
+          { type: "para", text: "The proposed mechanism starts from real, well-established cell biology: a six-amino-acid core within TB-500's sequence is known as the \"actin-binding region\" of thymosin beta-4, and the parent protein does bind actin as part of normal cell function. Actin filaments are the internal scaffolding cells use to change shape and move, so a molecule that influences actin dynamics is mechanistically plausible as an influence on the cell migration involved in wound repair. Marketing extends that story further, to new blood vessel formation and general tissue repair." },
+          { type: "para", text: "The complication is that essentially none of the underlying research demonstrating actinbinding, cell migration, or wound-healing effects was performed on TB-500 itself. The most frequently cited supporting study tested topical full-length thymosin beta-4 and the plain, non-acetylated fragment in laboratory research — not TB-500. FDA's reviewers are explicit that \"the pharmacological profile of the non-acetylated heptapeptide LKKTETQ cannot be directly extrapolated to the N-acetylated heptapeptide TB-500.\"" },
+          { type: "para", text: "When TB-500 itself was actually tested — a 2024 study using confluent fibroblast cultures — it did not induce wound healing at the tested concentration. One of TB-500's own breakdown products did show wound-healing activity in the same experiment, an unresolved finding suggesting the molecule sold and injected as \"TB-500\" may not be the active agent at all, and that whatever it breaks down into inside the body has not itself been fully characterized." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "This is where TB-500 diverges most sharply from other compounds in this catalog: the honest" },
-          { type: "para", text: "number of documented human subjects is zero. FDA's July 2026 review states plainly that \"the nomination did not include, and FDA did not find any information in the medical literature where, TB-500 was administered to patients to treat any disease or condition\" — no human has ever been studied taking TB-500, by any route, for any indication, published anywhere. By comparison, BPC-157 — a related but distinct compound in this same catalog — has roughly 81 documented human subjects across its published literature; TB-500's record is meaningfully thinner still. No formal toxicology of any kind exists either: no acute, repeat-dose, genotoxicity, reproductive, or carcinogenicity studies have been conducted in any species. Laboratory pharmacokinetic data is also thin and off-route — the only data identified comes from horses given a subcutaneous dose, not the intramuscular route TB-500 is marketed for, with blood levels so low they were undetectable within hours." },
-          { type: "subhead", text: "A 2026 scoping review that mapped 80 studies across the entire thymosin beta-4 and TB-500" },
-          { type: "para", text: "literature found that only one study tested TB-500 itself directly — the same 2024 in vitro metabolite experiment described above — and identified \"no human interventional studies of" },
+          { type: "para", text: "This is where TB-500 diverges most sharply from other compounds in this catalog: the honest number of documented human subjects is zero. FDA's July 2026 review states plainly that \"the nomination did not include, and FDA did not find any information in the medical literature where, TB-500 was administered to patients to treat any disease or condition\" — no human has ever been studied taking TB-500, by any route, for any indication, published anywhere. By comparison, BPC-157 — a related but distinct compound in this same catalog — has roughly 81 documented human subjects across its published literature; TB-500's record is meaningfully thinner still. No formal toxicology of any kind exists either: no acute, repeat-dose, genotoxicity, reproductive, or carcinogenicity studies have been conducted in any species. Laboratory pharmacokinetic data is also thin and off-route — the only data identified comes from horses given a subcutaneous dose, not the intramuscular route TB-500 is marketed for, with blood levels so low they were undetectable within hours." },
+          { type: "para", text: "A 2026 scoping review that mapped 80 studies across the entire thymosin beta-4 and TB-500 literature found that only one study tested TB-500 itself directly — the same 2024 laboratory metabolite experiment described above — and identified \"no human interventional studies of" },
           { type: "para", text: "administered TB4 or TB-500\" in tendon, ligament, muscle, bone, cartilage, fat-graft, or spine categories, which covers essentially every musculoskeletal use TB-500 is actually marketed for." },
         ],
       },
@@ -3027,8 +2855,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone sourcing it outside a licensed, regulated pathway — TB-500 is not currently on the 503A Bulks List, so no legal compounding pathway exists for it today.",
             "Competitive athletes subject to WADA-code testing.",
           ] },
-          { type: "subhead", text: "Competitive athletes: TB-500 is explicitly named and prohibited at all times, in and out of" },
-          { type: "para", text: "competition, under WADA category S2.3, which lists \"Thymosin-β4 and its derivatives e.g. TB-500.\" Anti-doping testing operates on strict liability, and WADA has funded detection methods targeting TB-500's metabolites since 2013, so a clinician's recommendation or a compounding label offers no protection once it is detected." },
+          { type: "para", text: "Competitive athletes: TB-500 is explicitly named and prohibited at all times, in and out of competition, under WADA category S2.3, which lists \"Thymosin-β4 and its derivatives e.g. TB-500.\" Anti-doping testing operates on strict liability, and WADA has funded detection methods targeting TB-500's metabolites since 2013, so a clinician's recommendation or a compounding label offers no protection once it is detected." },
         ],
       },
       {
@@ -3071,11 +2898,8 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Tesamorelin is a lab-made copy of a 44-amino-acid natural brain hormone, growth hormone-" },
-          { type: "para", text: "releasing hormone (GHRH), with one chemical addition that slows how quickly the body breaks it down. Like Sermorelin and CJC-1295 in this catalog, it prompts the pituitary gland to release the body's own growth hormone. What sets it apart from both: it is the one FDA-approved medicine in this specific family, marketed as Egrifta, for a single, narrow use — reducing excess abdominal fat in HIV-associated lipodystrophy." },
-          { type: "subhead", text: "Because tesamorelin keeps nearly the entire 44-amino-acid GHRH sequence — longer than" },
-          { type: "subhead", text: "Sermorelin's shortened 29-amino-acid fragment or CJC-1295's similar-length backbone — it" },
-          { type: "para", text: "crossed a regulatory threshold in 2020 that reclassified it as a licensed biologic rather than an ordinary drug. That reclassification matters more than it sounds: it changes which compounding rules can legally apply to it, in a stricter direction, not a looser one." },
+          { type: "para", text: "Tesamorelin is a lab-made copy of a 44-amino-acid natural brain hormone, growth hormonereleasing hormone (GHRH), with one chemical addition that slows how quickly the body breaks it down. Like Sermorelin and CJC-1295 in this catalog, it prompts the pituitary gland to release the body's own growth hormone. What sets it apart from both: it is the one FDA-approved medicine in this specific family, marketed as Egrifta, for a single, narrow use — reducing excess abdominal fat in HIV-associated lipodystrophy." },
+          { type: "para", text: "Because tesamorelin keeps nearly the entire 44-amino-acid GHRH sequence — longer than Sermorelin's shortened 29-amino-acid fragment or CJC-1295's similar-length backbone — it crossed a regulatory threshold in 2020 that reclassified it as a licensed biologic rather than an ordinary drug. That reclassification matters more than it sounds: it changes which compounding rules can legally apply to it, in a stricter direction, not a looser one." },
         ],
       },
       {
@@ -3093,21 +2917,16 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Tesamorelin binds the GHRH receptor on pituitary cells, triggering a pulse of the body's own" },
-          { type: "para", text: "growth hormone, which prompts the liver to produce IGF-1 — roughly doubling it in the pivotal trials. Growth hormone preferentially drives fat loss from visceral fat, the more metabolically active fat around the organs, rather than subcutaneous fat just under the skin, which is the basis for its approved, narrowly targeted use and for the label's explicit statement that it is not intended for general weight loss." },
-          { type: "subhead", text: "Like other compounds in this family, it only works if the pituitary gland still has growth" },
-          { type: "para", text: "hormone available to release — it has nothing to stimulate if the pituitary itself is damaged, missing, or unresponsive." },
+          { type: "para", text: "Tesamorelin binds the GHRH receptor on pituitary cells, triggering a pulse of the body's own growth hormone, which prompts the liver to produce IGF-1 — roughly doubling it in the pivotal trials. Growth hormone preferentially drives fat loss from visceral fat, the more metabolically active fat around the organs, rather than subcutaneous fat just under the skin, which is the basis for its approved, narrowly targeted use and for the label's explicit statement that it is not intended for general weight loss." },
+          { type: "para", text: "Like other compounds in this family, it only works if the pituitary gland still has growth hormone available to release — it has nothing to stimulate if the pituitary itself is damaged, missing, or unresponsive." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "The FDA approval rests on real, sizable Phase 3 evidence: two randomized, placebo-controlled" },
-          { type: "para", text: "trials in HIV-associated lipodystrophy, together studying roughly 800 people, over 26 weeks (one extended to 52 weeks). Visceral fat fell by roughly 11 to 15 percent more than placebo, while subcutaneous fat was essentially unchanged — a considerably larger and more rigorous evidence base than most compounds in this category, though FDA's own reviewers noted that visceral-fat reduction is a validated but surrogate measure, and the exact clinical benefit of that degree of reduction is less certain." },
-          { type: "subhead", text: "Evidence outside the approved population is real but much thinner. A 12-month trial in 60 non-" },
-          { type: "para", text: "HIV obese adults with reduced growth hormone secretion found a similar visceral-fat benefit, but it has never been replicated and applies to a pre-selected subgroup, not general obesity. A separate 152-person trial in older adults, including some with mild cognitive impairment, found improved composite cognition and executive function scores over 20 weeks — a genuine but single, unreplicated finding that also showed a rise in fasting insulin in the cognitively impaired subgroup." },
-          { type: "subhead", text: "Because tesamorelin is now a licensed biologic rather than an ordinary unapproved drug, it" },
-          { type: "para", text: "does not appear on FDA's 503A or 503B compounding bulk-substance lists at all — not because it was reviewed and cleared, but because those lists govern drugs, and current FDA guidance states that licensed biologics are not eligible for the standard compounding exemptions available to unapproved peptides. Compounded \"tesamorelin\" sold for general anti-aging or weight-loss use sits in a more legally uncertain position than compounds like Sermorelin, not a more permissive one." },
+          { type: "para", text: "The FDA approval rests on real, sizable Phase 3 evidence: two randomized, placebo-controlled trials in HIV-associated lipodystrophy, together studying roughly 800 people, over 26 weeks (one extended to 52 weeks). Visceral fat fell by roughly 11 to 15 percent more than placebo, while subcutaneous fat was essentially unchanged — a considerably larger and more rigorous evidence base than most compounds in this category, though FDA's own reviewers noted that visceral-fat reduction is a validated but surrogate measure, and the exact clinical benefit of that degree of reduction is less certain." },
+          { type: "para", text: "Evidence outside the approved population is real but much thinner. A 12-month trial in 60 nonHIV obese adults with reduced growth hormone secretion found a similar visceral-fat benefit, but it has never been replicated and applies to a pre-selected subgroup, not general obesity. A separate 152-person trial in older adults, including some with mild cognitive impairment, found improved composite cognition and executive function scores over 20 weeks — a genuine but single, unreplicated finding that also showed a rise in fasting insulin in the cognitively impaired subgroup." },
+          { type: "para", text: "Because tesamorelin is now a licensed biologic rather than an ordinary unapproved drug, it does not appear on FDA's 503A or 503B compounding bulk-substance lists at all — not because it was reviewed and cleared, but because those lists govern drugs, and current FDA guidance states that licensed biologics are not eligible for the standard compounding exemptions available to unapproved peptides. Compounded \"tesamorelin\" sold for general anti-aging or weight-loss use sits in a more legally uncertain position than compounds like Sermorelin, not a more permissive one." },
         ],
       },
       {
@@ -3175,11 +2994,8 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "What it is",
         blocks: [
-          { type: "subhead", text: "Thymosin alpha-1 is a small protein fragment that the thymus gland naturally produces. The" },
-          { type: "para", text: "thymus is where T cells — the immune system's coordinating cells — are trained, and this peptide is part of that signaling process." },
-          { type: "subhead", text: "A synthetic copy, known generically as thymalfasin, has been given to patients outside the" },
-          { type: "subhead", text: "United States for more than three decades, making it one of the most extensively studied" },
-          { type: "para", text: "compounds in this category." },
+          { type: "para", text: "Thymosin alpha-1 is a small protein fragment that the thymus gland naturally produces. The thymus is where T cells — the immune system's coordinating cells — are trained, and this peptide is part of that signaling process." },
+          { type: "para", text: "A synthetic copy, known generically as thymalfasin, has been given to patients outside the United States for more than three decades, making it one of the most extensively studied compounds in this category." },
         ],
       },
       {
@@ -3195,19 +3011,15 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Thymosin alpha-1 is thought to act on the immune system by promoting T-cell maturation and" },
-          { type: "para", text: "modulating the activity of dendritic cells and other components of both innate and adaptive immunity. This immune-modulating activity is the basis for its use in conditions where the immune system needs support responding to infection or a poor vaccine response." },
-          { type: "subhead", text: "Because the mechanism is immune activation rather than simple immune suppression, its" },
-          { type: "para", text: "effects have been studied specifically in defined clinical contexts — chronic viral infection, immunocompromise, and severe infection — rather than as a general-purpose immune booster." },
+          { type: "para", text: "Thymosin alpha-1 is thought to act on the immune system by promoting T-cell maturation and modulating the activity of dendritic cells and other components of both innate and adaptive immunity. This immune-modulating activity is the basis for its use in conditions where the immune system needs support responding to infection or a poor vaccine response." },
+          { type: "para", text: "Because the mechanism is immune activation rather than simple immune suppression, its effects have been studied specifically in defined clinical contexts — chronic viral infection, immunocompromise, and severe infection — rather than as a general-purpose immune booster." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "Randomized human trials support its use in chronic hepatitis B, and it is approved for that" },
-          { type: "para", text: "indication in several countries outside the United States. Trials in dialysis and immunocompromised patients have also measured antibody response to vaccination, supporting its use in people who respond poorly to standard vaccination." },
-          { type: "subhead", text: "Thymosin alpha-1 has also been studied in hospital trials as an add-on to standard care for" },
-          { type: "para", text: "sepsis and severe infection. Across these three use areas, the trial evidence is real and human, though results were mixed in some of the studies, and the largely favorable results are" },
+          { type: "para", text: "Randomized human trials support its use in chronic hepatitis B, and it is approved for that indication in several countries outside the United States. Trials in dialysis and immunocompromised patients have also measured antibody response to vaccination, supporting its use in people who respond poorly to standard vaccination." },
+          { type: "para", text: "Thymosin alpha-1 has also been studied in hospital trials as an add-on to standard care for sepsis and severe infection. Across these three use areas, the trial evidence is real and human, though results were mixed in some of the studies, and the largely favorable results are" },
           { type: "para", text: "concentrated in the specific patient groups actually studied, not a general immune-enhancement population." },
         ],
       },
@@ -3231,8 +3043,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Anyone with an autoimmune condition — the mechanism is immune activation.",
             "Anyone pregnant or breastfeeding, and anyone with a known hypersensitivity to it.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Thymosin alpha-1 is a distinct molecule from thymosin beta-4 and its" },
-          { type: "para", text: "fragments (such as TB-500), which are the thymosin-family peptides specifically named on WADA's Prohibited List. It is not currently named on the WADA Prohibited List, though athletes in tested sport should confirm current status with their sport's anti-doping authority before use." },
+          { type: "para", text: "Competitive athletes: Thymosin alpha-1 is a distinct molecule from thymosin beta-4 and its fragments (such as TB-500), which are the thymosin-family peptides specifically named on WADA's Prohibited List. It is not currently named on the WADA Prohibited List, though athletes in tested sport should confirm current status with their sport's anti-doping authority before use." },
         ],
       },
       {
@@ -3276,12 +3087,9 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it is",
         blocks: [
           { type: "para", text: "Tirzepatide is a lab-made molecule that copies two natural gut hormones released after eating," },
-          { type: "subhead", text: "GLP-1 and GIP, engineered to remain active in the body for about a week between doses rather" },
-          { type: "para", text: "than being broken down within minutes the way the natural hormones are. It is a fully FDA-approved medicine, marketed under two brand names, and is also available separately as a compounded preparation." },
-          { type: "subhead", text: "Its clinical development involved more than 24,000 people, and it carries three separate FDA" },
-          { type: "para", text: "approvals — for type 2 diabetes, for chronic weight management, and, more recently, for moderate-to-severe obstructive sleep apnea in adults with obesity. Each of those approvals reflects its own period of study and its own FDA review rather than one blanket approval covering every use." },
-          { type: "subhead", text: "Because tirzepatide is dual-path, what a given patient actually receives depends on which" },
-          { type: "para", text: "pathway a clinic or pharmacy is offering: the FDA-approved product, or a separate compounded version made by a pharmacy from bulk material. That distinction is worth confirming before starting, since only one of the two has been reviewed by FDA for safety, effectiveness, and quality." },
+          { type: "para", text: "GLP-1 and GIP, engineered to remain active in the body for about a week between doses rather than being broken down within minutes the way the natural hormones are. It is a fully FDA-approved medicine, marketed under two brand names, and is also available separately as a compounded preparation." },
+          { type: "para", text: "Its clinical development involved more than 24,000 people, and it carries three separate FDA approvals — for type 2 diabetes, for chronic weight management, and, more recently, for moderate-to-severe obstructive sleep apnea in adults with obesity. Each of those approvals reflects its own period of study and its own FDA review rather than one blanket approval covering every use." },
+          { type: "para", text: "Because tirzepatide is dual-path, what a given patient actually receives depends on which pathway a clinic or pharmacy is offering: the FDA-approved product, or a separate compounded version made by a pharmacy from bulk material. That distinction is worth confirming before starting, since only one of the two has been reviewed by FDA for safety, effectiveness, and quality." },
         ],
       },
       {
@@ -3298,23 +3106,17 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "How it works",
         blocks: [
-          { type: "subhead", text: "Tirzepatide activates two different gut-hormone receptors at once — GIP and GLP-1 — rather" },
-          { type: "para", text: "than the single GLP-1 pathway most other drugs in this category act on. Both hormones are normally released after eating; together they prompt the pancreas to release insulin when blood sugar is high, slow how quickly the stomach empties, and signal appetite centers in the brain that the body is full." },
-          { type: "subhead", text: "The molecule is structurally modified with a fatty-acid chain that binds to albumin, a protein" },
-          { type: "para", text: "circulating in the blood. That binding is what extends its activity to roughly a week per dose, allowing once-weekly injection instead of the minutes-long natural hormone signal." },
-          { type: "subhead", text: "The mechanism behind the sleep apnea approval is understood mainly through its connection" },
-          { type: "para", text: "to weight loss — reducing fat around the upper airway is thought to be the main driver — rather than through a separate, independently studied action on sleep physiology itself." },
+          { type: "para", text: "Tirzepatide activates two different gut-hormone receptors at once — GIP and GLP-1 — rather than the single GLP-1 pathway most other drugs in this category act on. Both hormones are normally released after eating; together they prompt the pancreas to release insulin when blood sugar is high, slow how quickly the stomach empties, and signal appetite centers in the brain that the body is full." },
+          { type: "para", text: "The molecule is structurally modified with a fatty-acid chain that binds to albumin, a protein circulating in the blood. That binding is what extends its activity to roughly a week per dose, allowing once-weekly injection instead of the minutes-long natural hormone signal." },
+          { type: "para", text: "The mechanism behind the sleep apnea approval is understood mainly through its connection to weight loss — reducing fat around the upper airway is thought to be the main driver — rather than through a separate, independently studied action on sleep physiology itself." },
         ],
       },
       {
         heading: "What the research actually looked at",
         blocks: [
-          { type: "subhead", text: "FDA approval for each of tirzepatide's three indications rested on its own independently" },
-          { type: "para", text: "reviewed set of randomized trials, together involving more than 24,000 people across the overall clinical development program — a considerably larger evidence base than most compounds discussed on this site." },
-          { type: "subhead", text: "Compounded tirzepatide is a separate question from the approved product. The compounding" },
-          { type: "para", text: "shortage that once justified widespread pharmacy compounding was declared resolved, and the enforcement-discretion window for compounding tirzepatide closed on 18 February 2025 for 503A pharmacies and 19 March 2025 for 503B facilities — roughly two months earlier than the equivalent deadlines for semaglutide. FDA has since issued warning letters to telehealth sellers of compounded GLP-1 and GIP/GLP-1 products." },
-          { type: "subhead", text: "Uses outside the three approved indications are extrapolated from the same receptor biology" },
-          { type: "para", text: "studied in the approved trials, but have not themselves been independently tested for those specific off-label purposes in a comparable randomized trial program." },
+          { type: "para", text: "FDA approval for each of tirzepatide's three indications rested on its own independently reviewed set of randomized trials, together involving more than 24,000 people across the overall clinical development program — a considerably larger evidence base than most compounds discussed on this site." },
+          { type: "para", text: "Compounded tirzepatide is a separate question from the approved product. The compounding shortage that once justified widespread pharmacy compounding was declared resolved, and the enforcement-discretion window for compounding tirzepatide closed on 18 February 2025 for 503A pharmacies and 19 March 2025 for 503B facilities — roughly two months earlier than the equivalent deadlines for semaglutide. FDA has since issued warning letters to telehealth sellers of compounded GLP-1 and GIP/GLP-1 products." },
+          { type: "para", text: "Uses outside the three approved indications are extrapolated from the same receptor biology studied in the approved trials, but have not themselves been independently tested for those specific off-label purposes in a comparable randomized trial program." },
         ],
       },
       {
@@ -3339,11 +3141,9 @@ export const FULL_REVIEWS: FullReview[] = [
             "Pregnant or breastfeeding patients, or anyone actively trying to conceive.",
             "Anyone with a history of pancreatitis or significant gastrointestinal disease, without discussing it first.",
           ] },
-          { type: "subhead", text: "Competitive athletes: Not currently listed as a prohibited substance by WADA or USADA; GLP-1-" },
-          { type: "para", text: "pathway medicines as a class are not prohibited in sport, and a therapeutic use exemption is not" },
+          { type: "para", text: "Competitive athletes: Not currently listed as a prohibited substance by WADA or USADA; GLP-1pathway medicines as a class are not prohibited in sport, and a therapeutic use exemption is not" },
           { type: "para", text: "required to use the FDA-approved product as prescribed. A related compound in this same drug class, semaglutide, has been placed on WADA's Monitoring Program, and the practical risk for athletes lies mainly in sourcing an unapproved or compounded product of uncertain content rather than in the approved medicine itself." },
-          { type: "subhead", text: "Approved product, or a compounded preparation — and the difference" },
-          { type: "para", text: "matters" },
+          { type: "para", text: "Approved product, or a compounded preparation — and the difference matters" },
           { type: "para", text: "This is an FDA-approved medicine. It is available as the manufacturer's own approved product, and — separately — as a compounded preparation. Which one is being offered is always stated plainly. If the approved product is right, that is what gets prescribed:" },
           { type: "list", items: [
             "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
