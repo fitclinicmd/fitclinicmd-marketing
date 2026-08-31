@@ -5,7 +5,7 @@ import { Container, EmergencyNotice } from "./ui";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-ink/10 bg-white">
+    <footer data-site-footer className="border-t border-ink/10 bg-white">
       <Container className="py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>

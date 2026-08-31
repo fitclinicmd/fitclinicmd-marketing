@@ -70,10 +70,8 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it's used for",
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
-            ["Sleep quality and overnight", "A commonly cited rationale for this"],
-            ["recovery", "pairing, tied to growth hormone’s natural nighttime release pattern."],
-            ["Lean tissue support and", "The combination is intended to mirror"],
-            ["recovery", "the body’s own pulsatile GH release more closely than either peptide alone."],
+            ["Sleep quality and overnight recovery", "A commonly cited rationale for this pairing, tied to growth hormone’s natural nighttime release pattern."],
+            ["Lean tissue support and recovery", "The combination is intended to mirror the body’s own pulsatile GH release more closely than either peptide alone."],
             ["Foundational GH support", "Frequently used as a base pairing that other peptides are added to for more targeted goals."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
@@ -141,10 +139,8 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
             ["Focus and cognitive clarity", "Semax has meaningful use history outside the US (approved in Russia for certain neurological indications); US evidence is more limited."],
-            ["Stress and anxiety support", "Selank is studied for anxiolytic effects"],
-            ["without sedation", "without the sedation associated with many anti-anxiety compounds."],
-            ["Combined focus-under-", "The rationale for pairing them — clarity"],
-            ["stress use", "plus calm — is mechanistic, not from a trial of the pair itself."],
+            ["Stress and anxiety support without sedation", "Selank is studied for anxiolytic effects without the sedation associated with many anti-anxiety compounds."],
+            ["Combined focus-under-stress use", "The rationale for pairing them — clarity plus calm — is mechanistic, not from a trial of the pair itself."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
           { type: "list", items: [
@@ -208,7 +204,8 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it's used for",
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
-            ["Emotional connection and intimacy support Libido and arousal support", "Oxytocin’s bonding effects are well-characterized physiologically, though marketed intimacy use is broader than its approved indications. PT-141 (bremelanotide) is FDA-approved as Vyleesi for hypoactive sexual desire disorder in premenopausal women — the only FDA-approved compound in this blend."],
+            ["Emotional connection and intimacy support", "Oxytocin’s bonding effects are well-characterized physiologically, though marketed intimacy use is broader than its approved indications."],
+            ["Libido and arousal support", "PT-141 (bremelanotide) is FDA-approved as Vyleesi for hypoactive sexual desire disorder in premenopausal women — the only FDA-approved compound in this blend."],
             ["Combined bonding-and-arousal use", "The rationale for pairing an emotional-bonding peptide with a central-arousal peptide is mechanistic, not from a trial of the pair itself."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
@@ -276,7 +273,8 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
             ["General immune support", "Thymosin Alpha-1 has the most developed evidence of the three, including approved uses outside the US for immune modulation."],
-            ["Inflammation control without immune suppression Antimicrobial / wound-related support", "KPV’s proposed mechanism specifically avoids blunting normal immune defense while calming excess inflammatory signaling. LL-37’s primary studied role; broad-spectrum activity against bacteria, viruses, and fungi in laboratory research."],
+            ["Inflammation control without immune suppression", "KPV’s proposed mechanism specifically avoids blunting normal immune defense while calming excess inflammatory signaling."],
+            ["Antimicrobial / wound-related support", "Some have used it for this. Not tested in people."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
           { type: "list", items: [
@@ -519,7 +517,7 @@ export const FULL_REVIEWS: FullReview[] = [
     kind: "blend",
     slug: "repair",
     category: "TISSUE REPAIR & RECOVERY",
-    title: "Wolverine — Full Review",
+    title: "Repair — Full Review",
     subtitle: "FORMULA",
     standfirst: "BPC-157 10mg + TB-500 10mg",
     sections: [
@@ -540,7 +538,8 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
             ["Soft-tissue injury recovery", "Some have used it for this. Not tested in people."],
-            ["Tendon, ligament & muscle repair Gut lining support", "Not tested in people. Specific to BPC-157’s individual research; TB-500 does not carry this use."],
+            ["Tendon, ligament & muscle repair", "Some have used it for this. Not tested in people."],
+            ["Gut lining support", "Specific to BPC-157’s individual research; TB-500 does not carry this use."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
           { type: "list", items: [
@@ -575,7 +574,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
           ] },
-          { type: "para", text: "A compounded preparation is not an FDA-approved medicine — but it is the difference between a licensed pharmacy working to a standard and an unregulated website. This page describes Wolverine for general educational purposes. It is not medical advice and does not replace a consultation with a licensed provider. Individual results vary, and combination products carry the risks of each included peptide." },
+          { type: "para", text: "A compounded preparation is not an FDA-approved medicine — but it is the difference between a licensed pharmacy working to a standard and an unregulated website. This page describes Repair for general educational purposes. It is not medical advice and does not replace a consultation with a licensed provider. Individual results vary, and combination products carry the risks of each included peptide." },
         ],
       },
     ],
@@ -605,7 +604,8 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What it's used for",
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
-            ["Deep sleep / sleep architecture Overnight recovery", "DSIP’s primary studied use; enhances delta-wave sleep specifically rather than simply promoting drowsiness. The rationale for adding CJC-1295 and BPC-157 to a sleep-focused peptide, aligning GH release and tissue repair with the sleep window."],
+            ["Deep sleep / sleep architecture", "DSIP’s primary studied use; enhances delta-wave sleep specifically rather than simply promoting drowsiness."],
+            ["Overnight recovery", "The rationale for adding CJC-1295 and BPC-157 to a sleep-focused peptide, aligning GH release and tissue repair with the sleep window."],
             ["Stress-related sleep disruption", "DSIP is also studied for its role in normalizing cortisol, which is relevant to stress-driven sleep disturbance."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
@@ -673,7 +673,8 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
             ["Fat loss, particularly visceral fat", "The most consistent rationale across sources for this combination; the components address fat loss through separate, non-competing mechanisms."],
-            ["Lean-mass preservation during a deficit Metabolic flexibility / insulin sensitivity", "CJC-1295 and Tesamorelin both support the GH axis, which is believed to help protect muscle during fat loss. MOTS-c’s primary studied mechanism; included here to support the metabolic demand the other three ingredients create."],
+            ["Lean-mass preservation during a deficit", "CJC-1295 and Tesamorelin both support the GH axis, which is believed to help protect muscle during fat loss."],
+            ["Metabolic flexibility / insulin sensitivity", "MOTS-c’s primary studied mechanism; included here to support the metabolic demand the other three ingredients create."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
           { type: "list", items: [
