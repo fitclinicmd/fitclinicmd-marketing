@@ -146,7 +146,7 @@ export const PEPTIDES: Peptide[] = [
     oneLiner: "Talked about for delivering some of the strongest weight-loss results available.",
     intro: [
       "How it differs from Semaglutide: Tirzepatide activates two gut hormones, GIP and GLP-1, instead of one, and produced greater average weight loss in a 72-week head-to-head trial of about 750 people — roughly 20% versus 14% of body weight, each at its approved dose.",
-      "Tirzepatide is a lab-made molecule that activates two natural gut hormones released after eating, GIP and GLP-1, engineered to remain active for about a week between doses. It is a fully FDA- approved medicine. It is used by people managing type 2 diabetes, chronic weight management, and moderate-to- severe obstructive sleep apnea.",
+      "Tirzepatide is a lab-made molecule that activates two natural gut hormones released after eating, GIP and GLP-1, engineered to remain active for about a week between doses. It is a fully FDA- approved medicine. It is used by people managing type 2 diabetes, chronic weight management, and moderate-to-severe obstructive sleep apnea.",
     ],
     uses: [
       { use: "Type 2 diabetes", inShort: "One of three approved uses, alongside standard diabetes care." },
