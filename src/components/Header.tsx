@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { NAV, signupUrl, loginUrl, showSignIn } from "@/lib/site";
 import { PEPTIDES } from "@/lib/peptides";
 import { BLENDS } from "@/lib/blends";
@@ -31,9 +32,20 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-sand/85 backdrop-blur-sm">
       <Container className="flex h-16 items-center justify-between gap-6">
-        <Link href="/" className="shrink-0 text-lg font-semibold tracking-tight">
-          <span className="font-display text-ink">FitClinic</span>
-          <span className="font-display text-clinic">MD</span>
+        {/* The real wordmark. This was previously set as text in Fraunces — a
+            serif, where the logo is a geometric sans — with the colours
+            inverted (FitClinic in ink, MD in teal). It did not look like the
+            logo. Intrinsic size is 2097x373; rendered at 132px wide, so it has
+            plenty of pixels on a retina display. */}
+        <Link href="/" className="shrink-0" aria-label="FitClinicMD — home">
+          <Image
+            src="/fitclinicmd-wordmark.png"
+            alt="FitClinicMD"
+            width={132}
+            height={23}
+            priority
+            className="h-[23px] w-auto"
+          />
         </Link>
 
         <nav aria-label="Primary" className="hidden lg:block">
