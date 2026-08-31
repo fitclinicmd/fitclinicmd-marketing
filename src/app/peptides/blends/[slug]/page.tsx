@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container, CTA, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
-import { BLENDS, getBlend, blendFullReviewUrl } from "@/lib/blends";
+import { BLENDS, getBlend } from "@/lib/blends";
 
 export function generateStaticParams() {
   return BLENDS.map((b) => ({ slug: b.slug }));
@@ -164,8 +164,8 @@ export default async function BlendPage({ params }: { params: Promise<{ slug: st
           )}
 
           <section className="mt-12">
-            <a
-              href={blendFullReviewUrl(b.slug)}
+            <Link
+              href={`/peptides/blends/${b.slug}/full`}
               target="_blank"
               rel="noopener noreferrer"
               className="group block rounded-xl2 border border-clinic/40 bg-clinic-light/40 p-6 transition hover:border-clinic"
@@ -177,7 +177,7 @@ export default async function BlendPage({ params }: { params: Promise<{ slug: st
                 How the combination is put together, what each component contributes, who it is not
                 for in full, how it is sourced and prepared, and what your consultation covers.
               </p>
-            </a>
+            </Link>
           </section>
 
           <div className="mt-12 flex flex-wrap gap-3">
