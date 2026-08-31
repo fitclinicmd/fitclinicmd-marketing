@@ -189,7 +189,7 @@ export function ImportantSafetyInfo({ className = "" }: { className?: string }) 
 export function PreLaunchBanner({ pending }: { pending: number }) {
   if (pending === 0) return null;
   return (
-    <div className="bg-ink px-4 py-2 text-center text-xs text-white">
+    <div data-prelaunch-banner className="bg-ink px-4 py-2 text-center text-xs text-white">
       <strong className="font-semibold">Pre-launch preview.</strong>{" "}
       {pending} marketing {pending === 1 ? "claim is" : "claims are"} awaiting counsel approval and
       shown as drafts pending review. This site is not indexed and is not open to patients.

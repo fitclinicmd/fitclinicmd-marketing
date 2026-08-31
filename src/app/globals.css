@@ -109,3 +109,48 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Print / PDF
+   The downloadable full-review PDFs are generated from these very pages
+   (headless Chrome --print-to-pdf), so this stylesheet IS the PDF layout.
+   Regenerating after a content change is what keeps the download from drifting
+   away from the page — they drifted once already.
+   --------------------------------------------------------------------------- */
+@media print {
+  :root { --print-ink: #1a1a1a; }
+
+  /* Site chrome is navigation, not document content. */
+  header[data-site-header],
+  footer[data-site-footer],
+  [data-print-hide],
+  [data-prelaunch-banner] { display: none !important; }
+
+  html, body {
+    background: #fff !important;
+    color: var(--print-ink) !important;
+    font-size: 10.5pt;
+  }
+
+  main { padding: 0 !important; }
+
+  /* Full-bleed washes read as grey slabs on paper. */
+  .wash, [class*="bg-"] { background: transparent !important; }
+
+  a { color: var(--print-ink) !important; text-decoration: none !important; }
+
+  h1 { font-size: 20pt; }
+  h2 { font-size: 13pt; margin-top: 16pt; }
+  h3 { font-size: 11pt; }
+  h1, h2, h3 { break-after: avoid-page; page-break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+
+  table { break-inside: auto; width: 100%; font-size: 9.5pt; }
+  tr, li { break-inside: avoid; page-break-inside: avoid; }
+  thead { display: table-header-group; }      /* repeat headers across pages */
+
+  /* The on-page horizontal scroller must not clip in print. */
+  [class*="overflow-x"] { overflow: visible !important; }
+}
+
+@page { margin: 16mm 14mm; }

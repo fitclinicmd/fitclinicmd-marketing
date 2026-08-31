@@ -54,6 +54,7 @@ export default async function PeptideFullReview({
       <div className="wash border-b border-ink/10">
         <Container className="py-14 sm:py-16">
           <Link
+            data-print-hide
             href={`/peptides/${slug}`}
             className="text-xs font-semibold uppercase tracking-[0.18em] text-clinic"
           >
@@ -79,7 +80,7 @@ export default async function PeptideFullReview({
 
           {/* The approved PDF stays available — same content, for printing or
               for a provider who wants the document rather than the page. */}
-          <section className="mt-12">
+          <section data-print-hide className="mt-12">
             <a
               href={reviewPdfUrl("peptide", slug)}
               target="_blank"
@@ -90,7 +91,7 @@ export default async function PeptideFullReview({
             </a>
           </section>
 
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div data-print-hide className="mt-10 flex flex-wrap gap-3">
             <CTA href={signupUrl}>Talk to a licensed provider</CTA>
             <CTA href={`/peptides/${slug}`} variant="secondary">
               Back to {p.name}
