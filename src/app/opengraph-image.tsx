@@ -45,9 +45,12 @@ export default function OgImage() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
+          {/* Matches the wordmark: "FitClinic" teal, "MD" ink. This card
+              previously had it the other way round, which is how the header
+              was wrong too — both are corrected now. */}
           <div style={{ display: "flex", fontSize: 92, fontWeight: 800, letterSpacing: -2 }}>
-            <span style={{ color: INK }}>FitClinic</span>
-            <span style={{ color: CLINIC }}>MD</span>
+            <span style={{ color: CLINIC }}>FitClinic</span>
+            <span style={{ color: INK }}>MD</span>
           </div>
           <div style={{ fontSize: 40, color: INK, marginTop: 18, maxWidth: 900, lineHeight: 1.25 }}>
             Weight, hormone, and wellness therapies — prescribed by licensed U.S. providers when
