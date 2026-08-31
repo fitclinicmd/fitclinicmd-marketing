@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FOOTER_NAV, SITE } from "@/lib/site";
 import { Container, EmergencyNotice } from "./ui";
 
@@ -8,10 +9,13 @@ export default function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="text-lg font-semibold">
-              <span className="font-display text-ink">FitClinic</span>
-              <span className="font-display text-clinic">MD</span>
-            </p>
+            <Image
+              src="/fitclinicmd-wordmark.png"
+              alt="FitClinicMD"
+              width={150}
+              height={27}
+              className="h-[27px] w-auto"
+            />
             <p className="mt-2 max-w-xs text-sm text-ink-muted">
               Physician-guided care by licensed providers, with medication fulfilled by a partner
               compounding pharmacy.
