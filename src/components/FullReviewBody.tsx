@@ -17,6 +17,13 @@ export default function FullReviewBody({ sections }: { sections: ReviewSection[]
                 </p>
               );
             }
+            if (b.type === "subhead") {
+              return (
+                <h3 key={i} className="mt-8 text-lg font-semibold text-ink">
+                  {b.text}
+                </h3>
+              );
+            }
             if (b.type === "list") {
               return (
                 <ul key={i} className="mt-4 space-y-3">
