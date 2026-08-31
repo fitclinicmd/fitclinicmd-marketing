@@ -4,6 +4,7 @@ import { PUBLIC_LEGAL_DOCS } from "@/lib/legal";
 import { publishedArticles } from "@/lib/articles";
 import { PEPTIDES } from "@/lib/peptides";
 import { BLENDS } from "@/lib/blends";
+import { FULL_REVIEWS } from "@/lib/fullReviews";
 
 const ROUTES = [
   { path: "/", priority: 1.0 },
@@ -50,6 +51,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE.url}/peptides/blends/${b.slug}`,
       lastModified: new Date(b.updated),
       priority: 0.7,
+    })),
+    // Long-form reviews. These existed only as PDFs until 2026-08-31 and were
+    // therefore absent from the sitemap entirely — roughly 43,000 words of the
+    // deepest content on the site, invisible.
+    ...FULL_REVIEWS.map((r) => ({
+      url:
+        r.kind === "peptide"
+          ? `${SITE.url}/peptides/${r.slug}/full`
+          : `${SITE.url}/peptides/blends/${r.slug}/full`,
+      lastModified: now,
+      priority: 0.6,
     })),
     ...PUBLIC_LEGAL_DOCS.map((d) => ({
       url: `${SITE.url}/legal/${d.slug}`,

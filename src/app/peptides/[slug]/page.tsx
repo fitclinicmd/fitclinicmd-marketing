@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container, CTA, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
-import { PEPTIDES, getPeptide, fullReviewUrl } from "@/lib/peptides";
+import { PEPTIDES, getPeptide } from "@/lib/peptides";
 
 export function generateStaticParams() {
   return PEPTIDES.map((p) => ({ slug: p.slug }));
@@ -137,8 +137,10 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
 
           {/* Full review — the approved long-form document, new tab. */}
           <section className="mt-12">
-            <a
-              href={fullReviewUrl(p.slug)}
+            {/* Now an HTML page rather than the PDF — still a new tab, as
+                specified. The PDF is offered as a download on that page. */}
+            <Link
+              href={`/peptides/${p.slug}/full`}
               target="_blank"
               rel="noopener noreferrer"
               className="group block rounded-xl2 border border-clinic/40 bg-clinic-light/40 p-6 transition hover:border-clinic"
@@ -150,7 +152,7 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
                 How it works, what the research actually measured and where it stopped, who it is
                 not for in full, how it is sourced and prepared, and what your consultation covers.
               </p>
-            </a>
+            </Link>
           </section>
 
           <div className="mt-12 flex flex-wrap gap-3">

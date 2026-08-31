@@ -21,6 +21,7 @@ import { publishedArticles } from "./articles";
 import { PUBLIC_LEGAL_DOCS } from "./legal";
 import { PEPTIDES } from "./peptides";
 import { BLENDS, blendsByCategory } from "./blends";
+import { FULL_REVIEWS } from "./fullReviews";
 
 const PRELAUNCH_NOTICE = `# ${SITE.name}
 
@@ -70,7 +71,11 @@ function pageLines() {
 
 function peptideLines() {
   return PEPTIDES.map(
-    (p) => `- /peptides/${p.slug}: ${p.name} — ${p.subtitle}. ${p.oneLiner}`,
+    (p) =>
+      `- /peptides/${p.slug}: ${p.name} — ${p.subtitle}. ${p.oneLiner}` +
+      (FULL_REVIEWS.some((r) => r.kind === "peptide" && r.slug === p.slug)
+        ? ` Long-form review: /peptides/${p.slug}/full`
+        : ""),
   ).join("\n");
 }
 
@@ -84,7 +89,7 @@ function blendLines() {
             (b) =>
               `- /peptides/blends/${b.slug}: ${b.name} — ${b.oneLiner} Components: ${b.composition
                 .map((c) => c.peptide)
-                .join(", ")}.`,
+                .join(", ")}. Long-form review: /peptides/blends/${b.slug}/full`,
           )
           .join("\n"),
     )
