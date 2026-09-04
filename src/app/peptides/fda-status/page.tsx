@@ -153,8 +153,10 @@ export default function FdaStatus() {
           <section className="mt-12">
             <h2 className="text-2xl">The vote</h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
-              Six of seven were recommended. The margins were narrow and several members abstained. Tallies
-              come from attorneys who attended; FDA has not published official minutes.
+              Six of seven were recommended, and the margins were narrow with several members abstaining.
+              The tallies below are <strong>as reported</strong> by attorneys who attended — FDA has not
+              published official minutes for this meeting, so no figure here can be checked against the
+              agency&rsquo;s own record yet. Treat them as the best account available rather than a final one.
             </p>
             <div className="mt-4 overflow-hidden rounded-xl2 border border-ink/10">
               <table className="w-full border-collapse text-left text-sm">
@@ -162,7 +164,7 @@ export default function FdaStatus() {
                   <tr>
                     <th className="p-3 font-semibold">Peptide</th>
                     <th className="p-3 font-semibold">Nominated for</th>
-                    <th className="p-3 font-semibold">Vote</th>
+                    <th className="p-3 font-semibold">Vote (as reported)</th>
                     <th className="p-3 font-semibold">Outcome</th>
                   </tr>
                 </thead>
