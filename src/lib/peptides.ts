@@ -48,6 +48,23 @@ export const CATEGORY_ORDER: string[] = [
   "Sexual & Reproductive Health",
 ];
 
+/**
+ * Stable anchor per category, so an outside page can deep-link to one group.
+ * The slugs are Todd's (2026-09-02) — they are shorter than the headings and
+ * already referenced from the education pages, so they are part of the URL
+ * contract now: renaming a heading must not change its anchor.
+ */
+export const CATEGORY_ANCHORS: Record<string, string> = {
+  "Metabolic & Fat Loss": "metabolic",
+  "Growth Hormone & Anabolic Signaling": "growth",
+  "Mitochondrial & Cellular Energy": "energy",
+  "Tissue Repair & Recovery": "repair",
+  "Inflammation & Immune Defense": "immune",
+  "Cognitive Function & Neuroprotection": "cognitive",
+  "Longevity, Sleep & Circadian": "sleep",
+  "Sexual & Reproductive Health": "sexual",
+};
+
 /** Approved long-form review, opened in a new tab. */
 export function fullReviewUrl(slug: string): string {
   return `/education/peptides/${slug}.pdf`;
@@ -146,7 +163,7 @@ export const PEPTIDES: Peptide[] = [
     oneLiner: "Talked about for delivering some of the strongest weight-loss results available.",
     intro: [
       "How it differs from Semaglutide: Tirzepatide activates two gut hormones, GIP and GLP-1, instead of one, and produced greater average weight loss in a 72-week head-to-head trial of about 750 people — roughly 20% versus 14% of body weight, each at its approved dose.",
-      "Tirzepatide is a lab-made molecule that activates two natural gut hormones released after eating, GIP and GLP-1, engineered to remain active for about a week between doses. It is a fully FDA- approved medicine. It is used by people managing type 2 diabetes, chronic weight management, and moderate-to-severe obstructive sleep apnea.",
+      "Tirzepatide is a lab-made molecule that activates two natural gut hormones released after eating, GIP and GLP-1, engineered to remain active for about a week between doses. It is a fully FDA-approved medicine. It is used by people managing type 2 diabetes, chronic weight management, and moderate-to-severe obstructive sleep apnea.",
     ],
     uses: [
       { use: "Type 2 diabetes", inShort: "One of three approved uses, alongside standard diabetes care." },
@@ -288,7 +305,7 @@ export const PEPTIDES: Peptide[] = [
       "Tesamorelin is a lab-made copy of a natural brain hormone that prompts the pituitary gland to release growth hormone, targeted specifically at visceral fat. It is a fully FDA-approved medicine for one narrow use — excess abdominal fat in HIV-associated lipodystrophy — and is not intended for general weight loss.",
     ],
     uses: [
-      { use: "Excess visceral fat in HIV- associated lipodystrophy", inShort: "The approved use; visceral fat down 11–15% versus placebo in trials." },
+      { use: "Excess visceral fat in HIV-associated lipodystrophy", inShort: "The approved use; visceral fat down 11–15% versus placebo in trials." },
       { use: "Liver fat in HIV patients with fatty liver disease", inShort: "A related use studied in the same patient population." },
       { use: "Cognitive function", inShort: "A newer, less-studied area of interest." },
     ],

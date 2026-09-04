@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
-import { PEPTIDES, peptidesByCategory } from "@/lib/peptides";
+import { PEPTIDES, peptidesByCategory, CATEGORY_ANCHORS } from "@/lib/peptides";
 import { BLENDS } from "@/lib/blends";
 
 export const metadata: Metadata = {
@@ -103,7 +103,12 @@ export default function PeptidesIndex() {
 
         {groups.map((g) => (
           <div key={g.category} className="mt-12">
-            <h3 className="text-xl text-clinic">{g.category}</h3>
+            <h3
+              id={CATEGORY_ANCHORS[g.category]}
+              className="scroll-mt-24 text-xl text-clinic"
+            >
+              {g.category}
+            </h3>
             <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {g.peptides.map((p) => (
                 <Link key={p.slug} href={`/peptides/${p.slug}`} className="group block">
