@@ -18,7 +18,10 @@
 // references, because there the animal finding IS the reason for the
 // contraindication — PT-141's fetal harm, Semax's abuse-potential signal.
 // Stripping those would delete a safety rationale while leaving the exclusion
-// unexplained, which is the opposite of protective.
+// unexplained, which is the opposite of protective. Per Michael 2026-09-04,
+// each now also states that animal findings are the earliest stage of research
+// and unconfirmed in people — phrased so it explains the limit WITHOUT giving
+// anyone a reason to discount the contraindication.
 //
 // EVIDENCE LABELS REMOVED. The source documents carry an EVIDENCE column with
 // tier words (\"Animal data only\", \"Theoretical\", \"Human trials\"). Those were
@@ -652,20 +655,20 @@ export const FULL_REVIEWS: FullReview[] = [
     category: "METABOLIC & FAT LOSS",
     title: "Sculpt — Full Review",
     subtitle: "FORMULA",
-    standfirst: "Tesamorelin 10mg + CJC-1295 6mg + AOD-9604 10mg + MOTS-c 10mg",
+    standfirst: "Tesamorelin 10mg + Ipamorelin 10mg + AOD-9604 10mg + MOTS-c 10mg",
     sections: [
       {
         heading: "What's in it",
         blocks: [
           { type: "table", columns: ["PEPTIDE", "DOSE", "ROLE IN THIS BLEND"], rows: [
             ["Tesamorelin", "10mg", "The visceral-fat signal. A GHRH analog with its own FDA-approved history (as Egrifta) — the only ingredient here with regulatory-grade trial data."],
-            ["CJC-1295", "6mg", "Extends and smooths the growth-hormone pulse Tesamorelin starts."],
+            ["Ipamorelin", "10mg", "Delivers a clean, cortisol-neutral GH pulse on top of Tesamorelin's signal."],
             ["AOD-9604", "10mg", "A different angle — acts on fat cells directly, without touching the GH/IGF-1 axis the other two rely on."],
             ["MOTS-c", "10mg", "The engine-room piece. Keeps mitochondrial output and insulin sensitivity up to match the demand."],
           ] },
           { type: "subhead", text: "The combination logic" },
-          { type: "para", text: "The idea is to attack fat loss from more than one direction at once. Tesamorelin and CJC-1295 both work through the growth-hormone system to target stored fat and help protect muscle. AOD-9604 works a different way entirely — it acts directly on fat cells without touching the broader hormone system. MOTS-c supports the cellular energy production needed to keep up with all of that metabolic activity. Clinical detail: Tesamorelin and CJC-1295 are both GHRH analogs that stimulate pulsatile endogenous GH release, supporting lipolysis and IGF-1-mediated lean tissue preservation. AOD-9604, a modified HGH 176-191 fragment, is proposed to stimulate lipolysis and inhibit lipogenesis via beta-adrenergic receptor activity independent of the GH/IGF-1 axis, avoiding the blood-glucose effects associated with full-length GH. MOTS-c activates AMPK signaling, supporting glucose uptake, fatty-acid oxidation, and mitochondrial biogenesis — proposed to sustain the metabolic throughput the other three components require." },
-          { type: "para", text: "Is there evidence for the combination, or only for the parts? Tesamorelin carries real weight here — it’s FDA-approved (as Egrifta) specifically for reducing visceral fat in a defined patient population, backed by controlled trials showing measurable visceral-fat reduction versus placebo. CJC-1295, AOD-9604, and MOTS-c each have laboratory or limited human data for fat metabolism individually, but no FDA approval. No study has tested this specific four-peptide combination against its individual components or against any of them alone. The rationale for combining them is mechanistic — four non-overlapping pathways toward the same goal — not the result of a comparative trial." },
+          { type: "para", text: "The idea is to attack fat loss from more than one direction at once. Tesamorelin targets visceral fat through the growth-hormone system, and Ipamorelin adds a clean pulse on top to help protect muscle without the cortisol swings older GH peptides cause. AOD-9604 works a different way entirely — it acts directly on fat cells without touching the broader hormone system. MOTS-c supports the cellular energy production needed to keep up with all of that metabolic activity. Clinical detail: Tesamorelin is a GHRH analog that stimulates pulsatile endogenous GH release, supporting lipolysis and IGF-1-mediated lean tissue preservation. Ipamorelin is a selective ghrelin-receptor (GHS-R) agonist that delivers a cortisol- and prolactin-neutral GH pulse on top of that signal — the two act on different receptors in the same pathway, proposed to produce a more pronounced GH release than either alone. AOD-9604, a modified HGH 176-191 fragment, is proposed to stimulate lipolysis and inhibit lipogenesis via beta-adrenergic receptor activity independent of the GH/IGF-1 axis, avoiding the blood-glucose effects associated with full-length GH. MOTS-c activates AMPK signaling, supporting glucose uptake, fatty-acid oxidation, and mitochondrial biogenesis — proposed to sustain the metabolic throughput the other three components require." },
+          { type: "para", text: "Is there evidence for the combination, or only for the parts? Tesamorelin carries real weight here — it’s FDA-approved (as Egrifta) specifically for reducing visceral fat in a defined patient population, backed by controlled trials showing measurable visceral-fat reduction versus placebo. Ipamorelin, AOD-9604, and MOTS-c each have laboratory or limited human data individually, but no FDA approval. The Tesamorelin-Ipamorelin pairing is a commonly used GH combination in compounded therapy, though that reflects popularity rather than a comparative trial. No study has tested this specific four-peptide combination against its individual components or against any of them alone. The rationale for combining them is mechanistic — four non-overlapping pathways toward the same goal — not the result of a comparative trial." },
         ],
       },
       {
@@ -673,13 +676,13 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "table", columns: ["USED FOR", "IN SHORT"], rows: [
             ["Fat loss, particularly visceral fat", "The most consistent rationale across sources for this combination; the components address fat loss through separate, non-competing mechanisms."],
-            ["Lean-mass preservation during a deficit", "CJC-1295 and Tesamorelin both support the GH axis, which is believed to help protect muscle during fat loss."],
+            ["Lean-mass preservation during a deficit", "Tesamorelin and Ipamorelin together support the GH axis, which is believed to help protect muscle during fat loss."],
             ["Metabolic flexibility / insulin sensitivity", "MOTS-c’s primary studied mechanism; included here to support the metabolic demand the other three ingredients create."],
           ] },
           { type: "subhead", text: "Overlaps & stacked risks" },
           { type: "list", items: [
             "Stacking four active peptides means the combined side-effect profile of all four, not a reduced one.",
-            "Growth-hormone-axis peptides (Tesamorelin, CJC-1295) can affect insulin sensitivity and glucose metabolism.",
+            "Growth-hormone-axis peptides (Tesamorelin, Ipamorelin) can affect insulin sensitivity and glucose metabolism.",
             "Long-term human safety data does not exist for this combination at any dose.",
             "Injection-site reactions and transient flushing are the most commonly reported effects across the individual components.",
           ] },
@@ -2264,7 +2267,7 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "list", items: [
             "Uncontrolled hypertension or known cardiovascular disease — an explicit label contraindication, since bremelanotide causes transient blood pressure and heart rate changes after each dose.",
-            "Pregnancy, or trying to conceive without reliable contraception — animal studies showed fetal harm at exposures well above the maximum recommended human dose.",
+            "Pregnancy, or trying to conceive without reliable contraception — animal studies showed fetal harm at exposures well above the maximum recommended human dose. Animal findings are the earliest stage of research and no human study has confirmed them; where the possible harm is to a pregnancy, that signal is reason enough to exclude rather than wait.",
             "Low desire caused by another medical condition, psychiatric condition, relationship problem, or medication — the approved trials specifically excluded these causes.",
             "Postmenopausal women — excluded from the pivotal trials and explicitly outside the label's indication.",
             "Repeated or frequent dosing beyond label guidance, particularly for anyone at higher risk of visible pigmentation change.",
@@ -2560,7 +2563,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "list", items: [
             "Pregnancy or breastfeeding, or trying to conceive — no reproductive or developmental toxicity data were identified.",
             "Active psychosis or significant psychiatric instability, given Semax's direct effects on dopaminergic and serotonergic signaling.",
-            "A personal or family history of substance-use disorder, or stimulant sensitivity — Semax potentiates amphetamine-induced dopamine release in animal studies, and no abuse-potential studies exist.",
+            "A personal or family history of substance-use disorder, or stimulant sensitivity — Semax potentiates amphetamine-induced dopamine release in animal studies, and no abuse-potential study in people exists. Animal findings are the earliest stage of research and no human study has confirmed them; an unmeasured abuse signal is reason enough to exclude rather than wait.",
             "Significant nasal mucosal disease or recent nasal surgery — nasal irritation is the most consistently reported effect of the intranasal form.",
             "Subcutaneous injection use — every published human study used the intranasal route; no human data exists for injection.",
             "Substituting for emergency stroke care.",
