@@ -31,7 +31,7 @@ const MEDS: Med[] = [
     name: "Semaglutide",
     tag: "GLP-1 receptor agonist",
     mechanism: "Activates the GLP-1 receptor to help regulate appetite, slow gastric emptying, and improve blood-sugar control.",
-    what: "One of the most recognised medicines for weight management and type 2 diabetes, and the active ingredient in several widely advertised prescription products.",
+    what: "One of the most recognized medicines for weight management and type 2 diabetes, and the active ingredient in several widely advertised prescription products.",
     brands: [
       { name: "Ozempic®", use: "type 2 diabetes" },
       { name: "Wegovy®", use: "chronic weight management" },
