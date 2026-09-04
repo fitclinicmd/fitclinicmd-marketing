@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Container, Section, Eyebrow, CTA, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
+import PrimarySources, { type Source } from "@/components/PrimarySources";
 
 export const metadata: Metadata = {
   title: "Peptides and the FDA — where things actually stand",
@@ -25,6 +26,51 @@ const VOTE: [string, string, string, string][] = [
   ["Semax", "Cerebral ischemia, migraine", "8–5–1", "Recommended"],
   ["Epitalon", "Insomnia", "7–4–1", "Recommended"],
   ["Emideltide (DSIP)", "Opioid withdrawal, insomnia", "6–7–1", "Rejected"],
+];
+
+/** Every URL confirmed to resolve on 2026-09-04 before shipping. */
+const SOURCES: Source[] = [
+  {
+    href: "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026",
+    title: "July 23-24, 2026 meeting of the Pharmacy Compounding Advisory Committee",
+    publisher: "U.S. Food and Drug Administration",
+    note: "The official meeting announcement, including the seven substances considered and the agenda for both days.",
+  },
+  {
+    href: "https://www.federalregister.gov/documents/2026/04/16/2026-07361/pharmacy-compounding-advisory-committee-notice-of-meeting-establishment-of-a-public-docket-request",
+    title: "Notice of meeting and establishment of a public docket (docket FDA-2025-N-6895)",
+    publisher: "Federal Register, 16 April 2026",
+    note: "The notice that opened the comment period referenced in the timeline.",
+  },
+  {
+    href: "https://www.fda.gov/advisory-committees/pharmacy-compounding-advisory-committee/2026-meeting-materials-pharmacy-compounding-advisory-committee",
+    title: "2026 meeting materials, Pharmacy Compounding Advisory Committee",
+    publisher: "U.S. Food and Drug Administration",
+    note: "Where FDA posts the briefing packages and, in time, the minutes for this meeting.",
+  },
+  {
+    href: "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-used-compounding-under-section-503a-fdc-act",
+    title: "Bulk drug substances used in compounding under section 503A",
+    publisher: "U.S. Food and Drug Administration",
+    note: "The list itself — what being placed on it does and does not permit.",
+  },
+  {
+    href: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/interim-policy-compounding-using-bulk-drug-substances-under-section-503a-federal-food-drug-and",
+    title: "Interim policy on compounding using bulk drug substances under section 503A",
+    publisher: "U.S. Food and Drug Administration",
+    note: "The guidance that defines the category 1 and category 2 distinction.",
+  },
+  {
+    href: "https://www.fda.gov/news-events/press-announcements/fda-warns-30-telehealth-companies-against-illegal-marketing-compounded-glp-1s",
+    title: "FDA warns 30 telehealth companies against illegal marketing of compounded GLP-1s",
+    publisher: "U.S. Food and Drug Administration",
+    note: "The enforcement action described in the February-March entry.",
+  },
+  {
+    href: "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs",
+    title: "FDA intends to take action against non-FDA-approved GLP-1 drugs",
+    publisher: "U.S. Food and Drug Administration",
+  },
 ];
 
 export default function FdaStatus() {
@@ -184,6 +230,8 @@ export default function FdaStatus() {
           <div className="mt-10 flex flex-wrap gap-3">
             <CTA href="/peptides" variant="secondary">Back to the peptide library</CTA>
           </div>
+
+          <PrimarySources sources={SOURCES} className="mt-10" />
 
           <ImportantSafetyInfo className="mt-10" />
         </article>
