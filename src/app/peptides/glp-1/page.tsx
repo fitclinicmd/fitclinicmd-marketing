@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container, Section, Eyebrow, Card, CTA, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
+import PrimarySources, { type Source } from "@/components/PrimarySources";
 
 export const metadata: Metadata = {
   title: "GLP-1 therapy — Semaglutide, Tirzepatide, Retatrutide",
@@ -72,6 +73,32 @@ const MEDS: Med[] = [
       "Increased caloric expenditure",
       "Reduction in visceral fat",
     ],
+  },
+];
+
+/** Every URL confirmed to resolve on 2026-09-04 before shipping. */
+const SOURCES: Source[] = [
+  {
+    href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize",
+    title: "FDA clarifies policies for compounders as national GLP-1 supply begins to stabilize",
+    publisher: "U.S. Food and Drug Administration",
+    note: "Why compounded GLP-1s were widely available during the shortage, and what changed when it ended.",
+  },
+  {
+    href: "https://www.fda.gov/drugs/human-drug-compounding/fda-telehealth-companies-what-know-when-promoting-compounded-drugs",
+    title: "FDA to telehealth companies: what to know when promoting compounded drugs",
+    publisher: "U.S. Food and Drug Administration",
+    note: "The agency's own statement of where marketing claims cross the line.",
+  },
+  {
+    href: "https://www.fda.gov/news-events/press-announcements/fda-warns-30-telehealth-companies-against-illegal-marketing-compounded-glp-1s",
+    title: "FDA warns 30 telehealth companies against illegal marketing of compounded GLP-1s",
+    publisher: "U.S. Food and Drug Administration",
+  },
+  {
+    href: "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs",
+    title: "FDA intends to take action against non-FDA-approved GLP-1 drugs",
+    publisher: "U.S. Food and Drug Administration",
   },
 ];
 
@@ -179,6 +206,8 @@ export default function Glp1() {
               Back to the peptide library
             </Link>
           </div>
+
+          <PrimarySources sources={SOURCES} className="mt-10" />
 
           <ImportantSafetyInfo className="mt-10" />
         </article>
