@@ -71,7 +71,7 @@ export const BLENDS: Blend[] = [
       "Four peptides approaching fat loss from different angles: two work through the growth-hormone axis, one acts directly on fat cells, one supports mitochondrial capacity to sustain the demand.",
     ],
     composition: [
-      { peptide: "Tesamorelin", dose: "10mg", role: "The visceral-fat signal. A GHRH analog with its own FDA- approved history (as Egrifta) — the only ingredient here with regulatory-grade trial data." },
+      { peptide: "Tesamorelin", dose: "10mg", role: "The visceral-fat signal. A GHRH analog with its own FDA-approved history (as Egrifta) — the only ingredient here with regulatory-grade trial data." },
       { peptide: "CJC-1295", dose: "6mg", role: "Extends and smooths the growth-hormone pulse Tesamorelin starts." },
       { peptide: "AOD-9604", dose: "10mg", role: "A different angle — acts on fat cells directly, without touching the GH/IGF-1 axis the other two rely on." },
       { peptide: "MOTS-c", dose: "10mg", role: "The engine-room piece. Keeps mitochondrial output and insulin sensitivity up to match the demand." },
