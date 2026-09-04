@@ -72,13 +72,13 @@ export const BLENDS: Blend[] = [
     ],
     composition: [
       { peptide: "Tesamorelin", dose: "10mg", role: "The visceral-fat signal. A GHRH analog with its own FDA-approved history (as Egrifta) — the only ingredient here with regulatory-grade trial data." },
-      { peptide: "CJC-1295", dose: "6mg", role: "Extends and smooths the growth-hormone pulse Tesamorelin starts." },
+      { peptide: "Ipamorelin", dose: "10mg", role: "Delivers a clean, cortisol-neutral GH pulse on top of Tesamorelin's signal." },
       { peptide: "AOD-9604", dose: "10mg", role: "A different angle — acts on fat cells directly, without touching the GH/IGF-1 axis the other two rely on." },
       { peptide: "MOTS-c", dose: "10mg", role: "The engine-room piece. Keeps mitochondrial output and insulin sensitivity up to match the demand." },
     ],
     uses: [
       { use: "Fat loss, particularly visceral fat", inShort: "Components address fat loss through separate, non-competing mechanisms." },
-      { use: "Lean-mass preservation during a deficit", inShort: "CJC-1295 and Tesamorelin both support the GH axis, believed to help protect muscle during fat loss." },
+      { use: "Lean-mass preservation during a deficit", inShort: "Tesamorelin and Ipamorelin together support the GH axis, which is believed to help protect muscle during fat loss." },
     ],
     notFor: [
       "Pregnant or breastfeeding patients",
