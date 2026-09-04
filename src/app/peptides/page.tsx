@@ -36,31 +36,52 @@ export default function PeptidesIndex() {
           <Eyebrow>Education library</Eyebrow>
           <h1 className="max-w-3xl text-3xl sm:text-5xl">Peptides, explained plainly.</h1>
 
-          {/* 1 · Foundations — opens in its own tab so nobody loses their place. */}
-          <a
-            href="/education/foundations.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mt-5 block rounded-xl2 border border-accent/60 bg-accent-light p-4 transition hover:border-clinic sm:mt-7 sm:p-6"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted">
-              Start here
-            </p>
-            <h2 className="mt-1 text-xl sm:mt-2 sm:text-2xl">Peptide foundational knowledge</h2>
-            {/* Hidden below sm: this paragraph is what pushed the two buttons
-                past the fold on a 375px screen, and the requirement is that both
-                are visible without scrolling. */}
-            <p className="mt-2 hidden max-w-2xl text-ink-soft sm:block">
-              What a peptide actually is, why it is injected, who makes it, what “FDA approved”
-              really means, how to read a health claim, and what happens at your first visit.
-            </p>
-            <p className="mt-1 text-sm text-ink-soft sm:hidden">
-              Start here before anything else.
-            </p>
-            <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2 sm:mt-4">
-              Read the foundations <span aria-hidden="true">↗</span>
-            </span>
-          </a>
+          {/* 1 · The two education entry points. "Start here" is the ten-minute
+              on-ramp (Todd, 2026-09-02); foundations is now the deeper second
+              step, so it reduces beside it rather than leading. Both open in
+              their own tab — they are static pages outside the app, and nobody
+              should lose their place in the library. */}
+          <div className="mt-5 grid gap-3 sm:mt-7 sm:grid-cols-[1.55fr_1fr] sm:gap-4">
+            <a
+              href="/education/start-here.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-xl2 border border-ink/15 border-l-4 border-l-clinic bg-white p-4 transition hover:border-clinic sm:p-6"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-clinic">
+                Start here
+              </p>
+              <h2 className="mt-1 text-lg sm:mt-2 sm:text-2xl">How peptides actually work</h2>
+              <p className="mt-2 hidden max-w-xl text-ink-soft sm:block">
+                Why the same peptide works for one person and not another — and how to get from a
+                goal to the right group of compounds.
+              </p>
+              <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2 sm:mt-4">
+                Read it <span aria-hidden="true">↗</span>
+                <span className="font-normal text-ink-muted">· 10 min</span>
+              </span>
+            </a>
+
+            <a
+              href="/education/foundations.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-xl2 border border-accent/60 bg-accent-light p-4 transition hover:border-clinic sm:p-6"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted">
+                Go deeper
+              </p>
+              <h2 className="mt-1 text-base sm:mt-2 sm:text-xl">Peptide foundational knowledge</h2>
+              <p className="mt-2 hidden text-sm text-ink-soft sm:block">
+                Ten short pieces on how this field is regulated, who makes your medication, and
+                what treatment actually involves.
+              </p>
+              <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2 sm:mt-4">
+                Read the foundations <span aria-hidden="true">↗</span>
+                <span className="font-normal text-ink-muted">· 20 min</span>
+              </span>
+            </a>
+          </div>
 
           {/* 2 · The two libraries, side by side. */}
           <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6 sm:gap-4">
@@ -105,7 +126,7 @@ export default function PeptidesIndex() {
           <div key={g.category} className="mt-12">
             <h3
               id={CATEGORY_ANCHORS[g.category]}
-              className="scroll-mt-24 text-xl text-clinic"
+              className="scroll-mt-32 text-xl text-clinic"
             >
               {g.category}
             </h3>

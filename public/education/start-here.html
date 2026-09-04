@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitClinicMD — How Peptides Actually Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1B2D; --ink-soft:#5A6472; --paper:#F7F8F6; --mist:#E7EEEE;
+    --teal:#0E7C86; --teal-deep:#0A5D65; --coral:#C1524B;
+    --line:#DBE2E1; --lightblue:#F5FAFB;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;}
+  .page{max-width:760px; margin:0 auto; padding:56px 28px 110px;}
+
+  header{margin-bottom:40px;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--teal-deep); font-weight:600; margin-bottom:14px;}
+  h1{font-family:'Fraunces',serif; font-optical-sizing:auto; font-weight:500;
+    font-size:clamp(32px,5.5vw,50px); line-height:1.08; letter-spacing:-.01em; margin:0 0 18px; max-width:640px;}
+  .sub{font-size:16.5px; line-height:1.6; color:var(--ink-soft); max-width:600px; margin:0;}
+  .timing{font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--teal-deep); font-weight:600;
+    margin:32px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+
+  .piece{padding-top:56px; border-top:1px solid var(--line); margin-top:56px; scroll-margin-top:24px;}
+  .piece:first-of-type{border-top:none; margin-top:44px; padding-top:0;}
+  .piece-kicker{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:13px;
+    letter-spacing:.06em; color:var(--teal-deep); margin-bottom:10px;}
+  .piece h2{font-family:'Fraunces',serif; font-optical-sizing:auto; font-weight:500;
+    font-size:clamp(26px,3.6vw,34px); line-height:1.12; letter-spacing:-.01em; margin:0 0 16px; color:var(--ink);}
+  .dek{font-style:italic; color:var(--ink-soft); font-size:16px; line-height:1.55;
+    border-left:3px solid var(--line); padding-left:16px; margin:0 0 22px;}
+  .piece h3{font-family:'Fraunces',serif; font-weight:600; font-size:20px;
+    letter-spacing:-.005em; color:var(--ink); margin:30px 0 10px;}
+  .piece p{font-size:16px; line-height:1.65; color:var(--ink); margin:0 0 14px;}
+  .piece p strong{font-weight:600;}
+  .piece ul{margin:0 0 14px; padding:0; list-style:none;}
+  .piece ul li{position:relative; padding-left:20px; margin-bottom:9px; font-size:16px; line-height:1.6;}
+  .piece ul li::before{content:'•'; position:absolute; left:2px; color:var(--ink-soft);}
+  .piece a{color:var(--teal-deep);}
+
+  .callout{background:var(--lightblue); border-left:3px solid var(--teal); border-radius:3px;
+    padding:20px 24px; margin:24px 0;}
+  .callout-head{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px;
+    letter-spacing:.08em; color:var(--teal-deep); margin-bottom:10px;}
+  .callout p{font-size:15px; line-height:1.6; margin:0 0 10px;}
+  .callout p:last-child{margin-bottom:0;}
+
+  .flow{display:flex; flex-direction:column; gap:14px; margin:20px 0 22px;}
+  .flow-item{border:1px solid var(--line); border-radius:4px; padding:18px 22px; background:#fff;}
+  .flow-tag{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
+    letter-spacing:.06em; color:var(--coral); margin-bottom:6px;}
+  .flow-title{font-family:'Fraunces',serif; font-weight:600; font-size:18px; margin-bottom:8px;}
+  .flow-item p{margin-bottom:8px; font-size:15px;}
+  .flow-item p:last-child{margin-bottom:0;}
+
+  .rule{background:#fff; border:1px solid var(--line); border-left:3px solid var(--coral);
+    border-radius:4px; padding:24px 28px; margin:26px 0;}
+  .rule-text{font-family:'Fraunces',serif; font-weight:600; font-size:clamp(19px,2.6vw,23px);
+    line-height:1.3; margin:0;}
+
+  .tablewrap{overflow-x:auto; margin:24px 0 10px; border:1px solid var(--line); border-radius:4px; background:#fff;}
+  table.map{border-collapse:collapse; width:100%; min-width:560px; font-size:14.5px;}
+  table.map th{background:var(--teal-deep); color:#fff; text-align:left; padding:13px 16px;
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
+    letter-spacing:.07em; text-transform:uppercase;}
+  table.map td{padding:15px 16px; border-top:1px solid var(--line); vertical-align:top; line-height:1.5;}
+  table.map tr:nth-child(even) td{background:var(--lightblue);}
+  table.map td.goal{font-weight:600; white-space:nowrap;}
+  table.map td.goal a{color:var(--teal-deep); text-decoration:none;}
+  table.map td.goal a:hover{color:var(--coral);}
+  table.map td.compounds{font-family:'IBM Plex Mono',monospace; font-size:12.5px; line-height:1.65;}
+  .tablenote{font-size:13.5px; color:var(--ink-soft); line-height:1.6; margin:0 0 8px;}
+
+  .dive{background:#fff; border:1px solid var(--line); border-radius:5px; padding:30px 32px; margin:26px 0;}
+  .dive-tag{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:10px;}
+  .dive h3{font-family:'Fraunces',serif; font-weight:600; font-size:26px; margin:0 0 4px;}
+  .dive .latin{font-style:italic; color:var(--ink-soft); font-size:14.5px; margin:0 0 18px;}
+  .dive p{font-size:15.5px; line-height:1.65; margin:0 0 14px;}
+  .dive h4{font-family:'Fraunces',serif; font-weight:600; font-size:17px; margin:24px 0 8px; color:var(--ink);}
+  .evidence{background:var(--lightblue); border-left:3px solid var(--teal); border-radius:3px;
+    padding:18px 22px; margin:20px 0 0;}
+  .evidence p{font-size:14.5px; line-height:1.6; margin:0;}
+  .evidence strong{color:var(--teal-deep);}
+
+  .next{display:block; background:var(--mist); border-radius:4px; padding:24px 28px;
+    margin:30px 0 0; text-decoration:none; color:inherit;}
+  .next:hover .next-title{color:var(--coral);}
+  .next-tag{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:7px;}
+  .next-title{font-family:'Fraunces',serif; font-weight:600; font-size:21px; margin-bottom:7px; transition:color .15s ease;}
+  .next p{font-size:15px; line-height:1.6; color:var(--ink-soft); margin:0;}
+
+  .doors{display:flex; flex-direction:column; gap:16px; margin:24px 0 0;}
+  .door{display:block; background:#fff; border:1px solid var(--line); border-left:3px solid var(--teal);
+    border-radius:4px; padding:22px 26px; text-decoration:none; color:inherit;}
+  .door:hover{border-left-color:var(--coral);}
+  .door:hover .door-title{color:var(--coral);}
+  .door-tag{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:7px;}
+  .door-title{font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin-bottom:6px; transition:color .15s ease;}
+  .door p{font-size:14.5px; line-height:1.55; color:var(--ink-soft); margin:0;}
+
+  .disclosure{background:var(--mist); border-radius:4px; padding:28px 30px; margin-top:64px;}
+  .disclosure h2{font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin:0 0 14px;}
+  .disclosure p{font-size:14px; line-height:1.6; color:var(--ink-soft); margin:0 0 12px;}
+  .disclosure p:last-child{margin-bottom:0;}
+
+  footer{margin-top:48px; font-size:12.5px; color:var(--ink-soft);
+    font-family:'IBM Plex Mono',monospace; letter-spacing:.02em;}
+
+  @media (min-width:620px){ .flow{flex-direction:row;} .flow-item{flex:1;} }
+  @media (max-width:560px){ .dive{padding:24px 20px;} }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div class="eyebrow">Start here</div>
+  <h1>How peptides actually work</h1>
+  <p class="sub">Start here. What a peptide does, why the same compound produces different results in different people, and how to get from a goal to the right group of compounds — before you commit to the longer read.</p>
+  <div class="timing">Read straight through · about ten minutes</div>
+</header>
+
+<!-- INTRO -->
+<section class="piece" id="s0">
+  <div class="piece-kicker">Before anything else</div>
+  <h2>The wrong question to start with</h2>
+  <p class="dek">Almost everyone opens with "what peptide should I take?" It's the wrong first move, and it isn't your fault for asking it.</p>
+
+  <p>Nearly everything written about peptides is either buried in research nobody reads, or posted by someone who makes money the second you click buy. Neither is really trying to help you understand this.</p>
+
+  <p>So the field gets organized by compound — a list of molecules with claims attached — when what a person actually has is a problem they want solved. Picking a compound before you know what you're aiming for is like buying a tool before you know whether you're hanging a picture or building a deck.</p>
+
+  <p>This page runs the other way around. Four short steps: what a peptide is, what determines whether it works, how to name your goal, and which group of compounds that goal points at.</p>
+</section>
+
+<!-- 01 -->
+<section class="piece" id="s1">
+  <div class="piece-kicker">Step one</div>
+  <h2>A peptide is a signal</h2>
+  <p class="dek">The single most useful idea here, and it takes a minute.</p>
+
+  <p>A peptide is a short chain of amino acids — the same building blocks proteins are made of, just far fewer of them. Most of the ones used in therapy are fragments of things your body already makes.</p>
+
+  <p>What they have in common is a job: they carry an instruction. A peptide reaches a cell and delivers a message — build collagen here, release this hormone, calm this inflammation. It is a message, not an effect.</p>
+
+  <p>Which leads to the idea everything downstream depends on: <strong>a signal does not guarantee an outcome.</strong></p>
+
+  <p>Think of your organs and tissues as hardware, and peptides as software. A peptide can tell a cell to build collagen or burn fat or calm inflammation — but whether the cell does it depends on the state of the cell. Send the same signal to two people and you can get two different results.</p>
+
+  <div class="callout">
+    <div class="callout-head">Good to know</div>
+    <p>Some peptides are among the most studied medicines in the world. Insulin is a peptide. So are the GLP-1 medications now used in weight management — semaglutide and tirzepatide among them, both with very large human trials behind them. The chemistry isn't exotic. What varies enormously from one compound to the next is how much is known about it, which is what the individual compound pages are for.</p>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="piece" id="s2">
+  <div class="piece-kicker">Step two</div>
+  <h2>Work out which level you're starting at</h2>
+  <p class="dek">Peptides work at three different levels, and knowing which one applies to you is most of the decision.</p>
+
+  <p>If a signal only lands when the cell can act on it, the obvious question is what determines that. Two things, mostly.</p>
+
+  <p><strong>Energy.</strong> Every repair process your body runs — building tissue, clearing damage, making new proteins — costs energy, and that energy is produced by your mitochondria. When that production is low, instructions arrive with nothing available to carry them out.</p>
+
+  <p><strong>Inflammation.</strong> Cells receive signals through receptors on their surface, and sustained inflammation degrades how well those receptors work. The message gets delivered to an address where nobody answers.</p>
+
+  <p>This is why two people can take the same compound at the same dose and get results that look like they came from different drugs. So it's worth knowing which of three levels your goal actually sits at.</p>
+
+  <div class="rule">
+    <p class="rule-text">Energy first. Signal second. Optimization third.</p>
+  </div>
+
+  <div class="flow">
+    <div class="flow-item">
+      <div class="flow-tag">First</div>
+      <div class="flow-title">Energy</div>
+      <p>Restoring the cell's capacity to act. This is where the mitochondrial compounds work — SS-31, MOTS-c, NAD+.</p>
+    </div>
+    <div class="flow-item">
+      <div class="flow-tag">Second</div>
+      <div class="flow-title">Signal</div>
+      <p>Directing that capacity at something specific — repair, appetite, sleep, focus.</p>
+    </div>
+    <div class="flow-item">
+      <div class="flow-tag">Third</div>
+      <div class="flow-title">Optimization</div>
+      <p>Fine-tuning, once the first two are producing what you want.</p>
+    </div>
+  </div>
+
+  <p>The point of the order is that each level is a real starting place with its own compounds behind it. Someone whose main complaint is that they're running on empty has an entire group of peptides that work at exactly that level — that's the first box, and it's a legitimate place to begin, not a waiting room.</p>
+
+  <p>Someone with a specific injury or a specific metabolic goal is starting at the second box, and that's equally valid. What tends not to work is jumping to fine-tuning when the underlying capacity isn't there — and that's usually the story behind "I tried peptides and nothing happened."</p>
+</section>
+
+<!-- 03 -->
+<section class="piece" id="s3">
+  <div class="piece-kicker">Step three</div>
+  <h2>Name your goal</h2>
+  <p class="dek">Not a compound. A goal. The field gets small and simple fast once you have one.</p>
+
+  <p>Find the one that sounds like you:</p>
+
+  <ul>
+    <li><strong>Injury or inflammation that won't quit</strong></li>
+    <li><strong>Energy and recovery that are shot</strong></li>
+    <li><strong>Repair, resilience, feeling like yourself again</strong></li>
+    <li><strong>Fat loss without wrecking your metabolism</strong></li>
+    <li><strong>Focus, calm, or sleep</strong></li>
+  </ul>
+
+  <p>Once you know what you're actually aiming for, the next step stops being a search and becomes a short list.</p>
+</section>
+
+<!-- 04 -->
+<section class="piece" id="s4">
+  <div class="piece-kicker">Step four</div>
+  <h2>Match the goal to the group</h2>
+  <p class="dek">Where to look, and roughly how it works.</p>
+
+  <div class="tablewrap">
+  <table class="map">
+    <thead>
+      <tr><th>Your goal</th><th>Where to look</th><th>How it works, roughly</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="goal"><a href="/peptides#repair">Injury &amp;<br>inflammation</a></td>
+        <td class="compounds">BPC-157<br>TB-500<br>KPV<br>GHK-Cu</td>
+        <td>Peptide fragments that support tissue repair and anti-inflammatory signaling — improving blood flow into damaged tissue, organizing collagen, and calming the inflammatory alarm.</td>
+      </tr>
+      <tr>
+        <td class="goal"><a href="/peptides#energy">Energy &amp;<br>fatigue repair</a></td>
+        <td class="compounds">SS-31<br>MOTS-c<br>NAD+</td>
+        <td>Act on the mitochondria themselves — supporting the cell's own energy production, and the repair and renewal of the machinery that produces it.</td>
+      </tr>
+      <tr>
+        <td class="goal"><a href="/peptides#growth">Recovery</a></td>
+        <td class="compounds">Sermorelin<br>Ipamorelin<br>CJC-1295<br>Tesamorelin<br>IGF-1 LR3</td>
+        <td>Work along the growth hormone axis — most by prompting your own pituitary to release more of what it already makes, on your body's own rhythm.</td>
+      </tr>
+      <tr>
+        <td class="goal"><a href="/peptides#metabolic">Fat loss</a></td>
+        <td class="compounds">Semaglutide<br>Tirzepatide<br>Tesamorelin<br>AOD-9604<br>5-Amino-1MQ<br>MOTS-c</td>
+        <td>Reduce appetite, improve insulin sensitivity, and support metabolic rate — largely by changing hunger signaling in the brain rather than working on the gut alone.</td>
+      </tr>
+      <tr>
+        <td class="goal"><a href="/peptides#sleep">Sleep</a></td>
+        <td class="compounds">DSIP<br>Epitalon<br>Sermorelin</td>
+        <td>Support circadian rhythm and deep sleep by acting on the pineal gland and pituitary.</td>
+      </tr>
+      <tr>
+        <td class="goal"><a href="/peptides#cognitive">Focus &amp; calm</a></td>
+        <td class="compounds">Semax<br>Selank</td>
+        <td>Act on the brain's response to cortisol and stress, sometimes balancing the two systems to support clarity or resilience.</td>
+      </tr>
+      <tr>
+        <td class="goal"><a href="/peptides#immune">Immune<br>defense</a></td>
+        <td class="compounds">Thymosin Alpha-1<br>KPV<br>LL-37</td>
+        <td>Help the immune system respond more precisely rather than more aggressively.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tablenote">Each goal links to that group of compounds. Every individual compound page goes further — what the research actually shows, and who it isn't for.</p>
+</section>
+
+<!-- 05 -->
+<section class="piece" id="s5">
+  <div class="piece-kicker">In more detail</div>
+  <h2>What each direction actually means</h2>
+
+  <h3>Injury and inflammation</h3>
+  <p>These peptides highlight and support the body's own tissue repair signals. They work inside the damaged tissue itself — improving blood flow, organizing collagen as it lays down, and calming the inflammatory alarms. Healing isn't one pathway; it's coordinated signaling across the vascular, immune and connective tissue systems at once.</p>
+
+  <h3>Energy and fatigue</h3>
+  <p>This group works upstream of everything else. These signal mitochondria to work better and to make more of themselves. If cells can't produce power, no other signal in this library has much to act on. Research suggests sustained physical and psychological stress can measurably affect mitochondria, which makes this a sensible place to start rather than a consolation prize.</p>
+
+  <h3>Recovery</h3>
+  <p>Most of this group works by prompting your own pituitary to release more of what it already makes, on your body's natural rhythm, rather than delivering growth hormone directly. That distinction matters more than most people realize — both for how it feels and for what it does to your own signaling over time. Not appropriate in the setting of active or recent cancer.</p>
+
+  <h3>Fat loss</h3>
+  <p>The incretins quiet what's often called food noise — the constant intrusive thoughts about eating — by acting on the brain rather than just the gut. Appetite turns out to be a signaling problem more than a willpower problem. The catch worth knowing is muscle: losing weight quickly on the more potent compounds strips lean mass along with fat unless it's actively defended with protein and resistance training. This is also the best-studied group in the library, with large human trials behind the approved compounds.</p>
+
+  <h3>Sleep</h3>
+  <p>These act on the pineal gland and pituitary to affect sleep architecture itself. Worth knowing: poor sleep undercuts the energy level in step two, so this group often quietly fixes problems people were trying to solve somewhere else entirely.</p>
+
+  <h3>Focus and calm</h3>
+  <p>These act on the brain's response to cortisol and stress, sometimes balancing the two systems to help with focus, or with learning and resilience under pressure.</p>
+</section>
+
+<!-- 06 -->
+<section class="piece" id="s6">
+  <div class="piece-kicker">Going deeper</div>
+  <h2>Two of them, up close</h2>
+  <p class="dek">A map can stay abstract. Here are the two people ask about most.</p>
+
+  <div class="dive" id="bpc157">
+    <div class="dive-tag">The one everybody asks about</div>
+    <h3>BPC-157</h3>
+    <p class="latin">Body Protection Compound, fragment 157</p>
+
+    <p>The stomach does something remarkable. It sits in acid strong enough to strip paint and repairs itself constantly, turning over its own lining to survive. Research suggests BPC-157 is a piece of the signal behind that repair — a 15 amino acid fragment of a compound found in human gastric juice.</p>
+
+    <p>What makes it interesting is how stable that fragment is compared with the full protein it came from, which is part of why it has drawn so much research attention.</p>
+
+    <h4>What it appears to do</h4>
+    <p>It helps form new blood vessels into damaged tissue, so nutrients and repair cells can reach the area. It helps organize collagen as it lays down. And it makes an injured area more responsive to the body's own repair signals. Think of it less as the repair itself and more as flagging an SOS so the body sends help to that exact spot.</p>
+
+    <h4>Two myths worth killing</h4>
+    <p>It is not a steroid. It's a chain of amino acids, and it doesn't touch testosterone or shut down your own hormone production.</p>
+    <p>And it isn't a magic bullet. It only works where the body is actively trying to heal — which means if you keep training on an injury, no amount of BPC-157 is going to fix it.</p>
+
+    <h4>One real caution</h4>
+    <p>There's no evidence it causes cancer, but it does promote blood vessel growth, and in theory that could feed a tumor that's already present. Known malignancy means this isn't for you.</p>
+
+    <div class="evidence">
+      <p><strong>Where the evidence actually stands:</strong> most of what is known comes from laboratory research rather than human trials. People use it for tendon, ligament and gut repair, but it has not been tested in people at any scale. That distinction is worth stating plainly rather than letting anyone assume otherwise.</p>
+    </div>
+  </div>
+
+  <div class="dive" id="ghkcu">
+    <div class="dive-tag">The one that surprises people</div>
+    <h3>GHK-Cu</h3>
+    <p class="latin">The copper peptide</p>
+
+    <p>GHK-Cu is GHK attached to copper. Your body makes GHK on its own — three amino acids found mainly in collagen, released into the bloodstream as collagen breaks down and remodels. Once in circulation, GHK finds and binds copper.</p>
+
+    <p>Now the part that isn't fair. By age 60 there is roughly 60% less GHK in circulation, and that isn't only a symptom of aging — it's part of what drives it. Aging collagen stiffens and glues together, trapping GHK where it can't be used for remodeling. What's left is a reduced ability to deliver copper to tissue that needs repair.</p>
+
+    <h4>Delivers copper where it's needed</h4>
+    <p>The catch-22 is that copper is required for the very enzymes that break down old collagen, for antioxidant defense, and for the cross-linking that builds strong, organized collagen instead of the weak, disorganized kind behind problems like chronic tendon pain.</p>
+
+    <h4>Builds new blood vessels</h4>
+    <p>Angiogenesis — building new blood supply — sounds alarming, but it's a necessary step in getting nutrients to tissue that's trying to heal.</p>
+
+    <h4>Pushes cells toward repair</h4>
+    <p>In cellular research, GHK-Cu signaled cells to repair themselves rather than becoming senescent — zombie-like cells that should die but don't. It also dials down pro-inflammatory signaling and supports antioxidant defense. One curiosity: its half-life in blood is under an hour, yet the processes it sets in motion carry on well after the molecule itself is gone.</p>
+
+    <h4>One real caution</h4>
+    <p>The same question that follows BPC-157 applies here. It builds new blood vessels, which in theory could feed a tumor that already needs them. Whether that concern is valid isn't yet known.</p>
+
+    <h4>What to watch</h4>
+    <p>Injectable GHK-Cu has a reputation for stinging, for two reasons. It sits at a fairly acidic pH to stay stable in the vial, so it irritates nerve endings when it meets neutral-pH tissue. And the local influx of copper can trigger a brief inflammatory response.</p>
+
+    <div class="evidence">
+      <p><strong>Where this is headed:</strong> injectable GHK-Cu is currently being re-evaluated by the FDA, specifically for regenerative wound healing, dermal atrophy in elderly and steroid-dependent patients, and hair follicle restoration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="piece" id="s7">
+  <div class="piece-kicker">Next</div>
+  <h2>Where to go from here</h2>
+
+  <a class="next" href="/education/foundations.html">
+    <div class="next-tag">Read this next</div>
+    <div class="next-title">Peptide foundational knowledge →</div>
+    <p>Ten short pieces, about twenty minutes. Different ground from this page — how this field is regulated, who prepares your medication, how to read a health claim, what happens at a first visit, and what treatment involves day to day.</p>
+  </a>
+
+  <div class="doors">
+    <a class="door" href="/peptides#single-peptides">
+      <div class="door-tag">If you have a name</div>
+      <div class="door-title">Single peptides</div>
+      <p>One page per compound — what it is, what people use it for, what the evidence actually shows, and who it isn't for.</p>
+    </a>
+    <a class="door" href="/peptides/blends">
+      <div class="door-tag">If you're looking at combinations</div>
+      <div class="door-title">Peptide blends</div>
+      <p>Purpose-built combinations, grouped by what they're for — what each compound contributes, and why they're paired the way they are.</p>
+    </a>
+  </div>
+</section>
+
+<div class="disclosure">
+  <h2>Important safety information</h2>
+  <p>Compounded medications offered through FitClinicMD are prescribed only after an individual clinical evaluation by a licensed provider, and are prepared by state-licensed compounding pharmacies. Compounded medications have not been evaluated or approved by the U.S. Food and Drug Administration as safe or effective for the treatment of any condition.</p>
+  <p>Information on this site is for general educational purposes and is not medical advice. Descriptions of what a compound is used for reflect how it is commonly used and discussed; they are not claims that it is effective for any purpose. You must be 18 or older. Individual results vary. A prescription is issued only if a licensed provider determines it is appropriate for you.</p>
+</div>
+
+<footer>FitClinicMD — Peptide Library</footer>
+
+</div>
+</body>
+</html>

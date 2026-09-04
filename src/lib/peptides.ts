@@ -227,7 +227,7 @@ export const PEPTIDES: Peptide[] = [
     ],
     notFor: [
       "Anyone with an active cancer, a history of cancer, or an undiagnosed lump or symptom.",
-      "Anyone who cannot reliably recognise and treat low blood sugar.",
+      "Anyone who cannot reliably recognize and treat low blood sugar.",
       "Anyone taking insulin or any glucose-lowering medication, or who trains fasted or drinks alcohol.",
       "Anyone pregnant, trying to conceive, or breastfeeding, and any child or adolescent.",
     ],

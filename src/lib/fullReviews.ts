@@ -104,7 +104,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -170,7 +170,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -236,7 +236,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -304,7 +304,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -370,7 +370,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -437,7 +437,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -503,7 +503,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -569,7 +569,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -636,7 +636,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -704,7 +704,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -782,7 +782,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -823,7 +823,7 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What people use it for",
         blocks: [
           { type: "table", columns: ["USED FOR", "WHAT THAT MEANS"], rows: [
-            ["Fat loss and weight loss", "Taken through a full 24-week randomised trial in several hundred people — the result is in the full review."],
+            ["Fat loss and weight loss", "Taken through a full 24-week randomized trial in several hundred people — the result is in the full review."],
             ["Fat loss without growth hormone's other effects", "Laboratory findings suggest the selectivity: it does not raise blood sugar or IGF-1 the way growth hormone does."],
             ["Joint and cartilage support", "Some have used it for this. Not tested in people."],
           ] },
@@ -872,7 +872,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -970,7 +970,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1074,7 +1074,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1163,7 +1163,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1253,7 +1253,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1344,7 +1344,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1435,7 +1435,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1513,7 +1513,7 @@ export const FULL_REVIEWS: FullReview[] = [
         blocks: [
           { type: "list", items: [
             "Anyone with an active cancer, a history of cancer, or an undiagnosed lump or symptom.",
-            "Anyone who cannot reliably recognise and treat low blood sugar.",
+            "Anyone who cannot reliably recognize and treat low blood sugar.",
             "Anyone taking insulin or any glucose-lowering medication, or who trains fasted or drinks alcohol.",
             "Anyone pregnant, trying to conceive, or breastfeeding, and any child or adolescent.",
           ] },
@@ -1526,7 +1526,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1537,7 +1537,7 @@ export const FULL_REVIEWS: FullReview[] = [
       {
         heading: "Where this stands",
         blocks: [
-          { type: "para", text: "Never approved, and not a peptide most clinics will prescribe. Not tested in people. What is known about the risks — low blood sugar, organ enlargement, accelerating existing cancer — comes from the biology of IGF-1 itself rather than studies of this compound in people. This is among the more potent things in the catalogue and among the least studied. Both facts matter." },
+          { type: "para", text: "Never approved, and not a peptide most clinics will prescribe. Not tested in people. What is known about the risks — low blood sugar, organ enlargement, accelerating existing cancer — comes from the biology of IGF-1 itself rather than studies of this compound in people. This is among the more potent things in the catalog and among the least studied. Both facts matter." },
         ],
       },
       {
@@ -1617,7 +1617,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1706,7 +1706,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1796,7 +1796,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1889,7 +1889,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -1984,7 +1984,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2084,7 +2084,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2182,7 +2182,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2278,7 +2278,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
             "Filled at a licensed pharmacy. Dispensed from your prescription like any other approved medicine. If a compounded preparation is clinically appropriate instead, it is prepared by a licensed 503A compounding pharmacy:",
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
           ] },
@@ -2378,7 +2378,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2477,7 +2477,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
             "Filled at a licensed pharmacy. Dispensed from your prescription like any other approved medicine. If a compounded preparation is clinically appropriate instead, it is prepared by a licensed 503A compounding pharmacy:",
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
           ] },
@@ -2575,7 +2575,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2670,7 +2670,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2766,7 +2766,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2865,7 +2865,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -2961,7 +2961,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -3003,7 +3003,7 @@ export const FULL_REVIEWS: FullReview[] = [
         heading: "What people use it for",
         blocks: [
           { type: "table", columns: ["USED FOR", "WHAT THAT MEANS"], rows: [
-            ["Chronic hepatitis B", "Randomised trials support this use; it is approved for it in several countries outside the US."],
+            ["Chronic hepatitis B", "Randomized trials support this use; it is approved for it in several countries outside the US."],
             ["Vaccine response in people who respond poorly", "Trials in dialysis and immunocompromised patients measured antibody response."],
             ["Sepsis and severe infection", "Studied in hospital trials as an add-on to standard care."],
           ] },
@@ -3053,7 +3053,7 @@ export const FULL_REVIEWS: FullReview[] = [
           { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
           { type: "list", items: [
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "Sterile preparation to a published standard. USP standards.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
@@ -3150,7 +3150,7 @@ export const FULL_REVIEWS: FullReview[] = [
             "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
             "Filled at a licensed pharmacy. Dispensed from your prescription like any other approved medicine. If a compounded preparation is clinically appropriate instead, it is prepared by a licensed 503A compounding pharmacy:",
             "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
-            "Licensed and inspected. A state licence, subject to inspection by the state board of pharmacy.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
             "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
             "A paper trail. A lot number and beyond-use date on every preparation.",
           ] },

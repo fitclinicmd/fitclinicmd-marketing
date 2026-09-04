@@ -33,7 +33,7 @@ export default function Header() {
     <header data-site-header className="sticky top-0 z-40 border-b border-ink/10 bg-sand/85 backdrop-blur-sm">
       <Container className="flex h-16 items-center justify-between gap-6">
         {/* The real wordmark. This was previously set as text in Fraunces — a
-            serif, where the logo is a geometric sans — with the colours
+            serif, where the logo is a geometric sans — with the colors
             inverted (FitClinic in ink, MD in teal). It did not look like the
             logo. Intrinsic size is 2097x373; rendered at 132px wide, so it has
             plenty of pixels on a retina display. */}
