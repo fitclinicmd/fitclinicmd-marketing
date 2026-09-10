@@ -19,7 +19,17 @@ export const APP_LIVE = process.env.NEXT_PUBLIC_APP_LIVE === "true";
 
 export const signupUrl = APP_LIVE ? `${SITE.appUrl}/signup` : "/contact";
 export const loginUrl = `${SITE.appUrl}/login`;
-export const showSignIn = APP_LIVE;
+
+// "Sign in" and "Get started" are separate decisions, so they get separate
+// switches. Sign in is a door for people who already have an account — staff,
+// providers, a partner's referred patient. Get started opens self-signup on a
+// HIPAA telehealth app to anyone who finds the page, which is a launch
+// decision: it needs payments switched on and a provider licensed in the
+// visitor's state, or the person signs up and nobody can treat them.
+//
+// NEXT_PUBLIC_SHOW_SIGN_IN=true shows the sign-in links on their own.
+// NEXT_PUBLIC_APP_LIVE=true does that AND opens signup.
+export const showSignIn = APP_LIVE || process.env.NEXT_PUBLIC_SHOW_SIGN_IN === "true";
 
 // The peptide library is the largest body of content on the site — 14 peptide
 // pages, 19 blend pages, and two section pages. Until 2026-08-25 it was reachable
