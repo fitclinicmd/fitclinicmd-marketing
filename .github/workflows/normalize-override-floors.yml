@@ -52,9 +52,13 @@ jobs:
           node -e '
             const fs = require("fs");
             const p = JSON.parse(fs.readFileSync("package.json", "utf8"));
-            p.dependencies.next = "15.5.24";
-            p.overrides = { postcss: ">=8.5.16", sharp: ">=0.35.4" };
-            fs.writeFileSync("package.json", JSON.stringify(p, null, 2) + "\n");
+                        p.dependencies.next = "15.5.24";
+            // postcss is a DIRECT devDependency here. npm rejects an override that
+            // conflicts with a direct dependency (EOVERRIDE), so the floor belongs on
+            // the dependency itself and the override is dropped as redundant.
+            p.devDependencies.postcss = "^8.5.28";
+            p.overrides = { sharp: ">=0.35.4" };
+fs.writeFileSync("package.json", JSON.stringify(p, null, 2) + "\n");
           '
           echo "--- package.json after rewrite ---"
           node -e 'const p=require("./package.json");console.log("next:",p.dependencies.next);console.log("overrides:",JSON.stringify(p.overrides))'
