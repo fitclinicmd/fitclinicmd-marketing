@@ -128,7 +128,7 @@ export default function PeptidesIndex() {
               </span>
             </Link>
             <Link
-              href="/peptides/glp-1"
+              href="/glp-1"
               className="group flex items-baseline gap-2 rounded-xl2 border border-ink/10 bg-white/60 px-4 py-3 transition hover:border-clinic"
             >
               <span className="text-sm font-semibold text-ink">GLP-1 medicines</span>

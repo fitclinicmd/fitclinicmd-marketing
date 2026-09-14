@@ -54,6 +54,12 @@ export default function Header() {
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <Link
+            href="/glp-1"
+            className="inline-flex shrink-0 items-center rounded-full border border-clinic/50 bg-clinic-light px-3 py-2 text-sm font-semibold text-clinic-deep transition hover:border-clinic hover:text-clinic sm:px-4"
+          >
+            GLP-1s
+          </Link>
+          <Link
             href="/peptides"
             className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-accent/60 bg-accent-light px-3 py-2 text-sm font-semibold text-ink transition hover:border-clinic hover:text-clinic sm:px-4"
           >
