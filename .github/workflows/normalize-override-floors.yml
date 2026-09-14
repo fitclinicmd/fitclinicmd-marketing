@@ -1,0 +1,98 @@
+name: Normalize override floors and refresh lockfile
+
+# ONE-SHOT REMEDIATION for fitclinicmd-marketing (npm).
+#
+# THE PROBLEM
+# package.json pinned `next` to an exact "15.5.21" and pinned its overrides to exact
+# versions ("postcss": "8.5.25", "sharp": "0.35.3"). Two consequences:
+#   1. next 15.5.21 is affected by two Critical RCE advisories (CVSS 9.5), patched in
+#      15.5.24 - the AVIF image-optimization one and the windows-hosted-server one.
+#   2. next 15.5.21 *requires* sharp@0.35.3, and sharp is fixed in 0.35.4, so Dependabot
+#      reports "cannot update sharp to a non-vulnerable version". The sharp pin then
+#      guarantees it stays vulnerable even if next moves.
+# Empirically confirmed on roth-law: moving next to 15.5.24 pulled sharp 0.35.4 and
+# closed its sharp alert.
+#
+# WHY NOT JUST MERGE DEPENDABOT #88
+# That PR jumps next 15.5.21 -> 16.3.4, a major upgrade on a live marketing site, and
+# the "sharp": "0.35.3" override would force sharp back down to the vulnerable version
+# afterwards. This takes the minimum patched version instead and converts the pins to
+# floors so they stop blocking.
+#
+# CI runs `npm ci`, so package.json and package-lock.json must change together - that
+# is why this regenerates the lockfile rather than editing package.json alone.
+#
+# Commits go through the GitHub contents API so GitHub signs them and they satisfy
+# "require signed commits". Delete this workflow once the PR it creates has merged.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 20
+
+      - name: Rewrite pins as floors, bump next, refresh lockfile, push branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          BR: fix/override-floors
+        run: |
+          set -euo pipefail
+
+          node -e '
+            const fs = require("fs");
+            const p = JSON.parse(fs.readFileSync("package.json", "utf8"));
+            p.dependencies.next = "15.5.24";
+            p.overrides = { postcss: ">=8.5.16", sharp: ">=0.35.4" };
+            fs.writeFileSync("package.json", JSON.stringify(p, null, 2) + "\n");
+          '
+          echo "--- package.json after rewrite ---"
+          node -e 'const p=require("./package.json");console.log("next:",p.dependencies.next);console.log("overrides:",JSON.stringify(p.overrides))'
+
+          npm install --package-lock-only
+
+          echo "--- resolved versions ---"
+          node -e '
+            const l = require("./package-lock.json");
+            for (const k of Object.keys(l.packages)) {
+              if (/node_modules\/(next|sharp|postcss)$/.test(k)) console.log(k, l.packages[k].version);
+            }
+          '
+
+          # Prove CI will pass: npm ci requires package.json and the lockfile to agree.
+          rm -rf node_modules
+          npm ci --ignore-scripts
+          echo "npm ci OK"
+
+          git rev-parse HEAD > /tmp/base.sha
+          gh api -X POST "repos/$REPO/git/refs" \
+            -f ref="refs/heads/$BR" -f sha="$(cat /tmp/base.sha)" >/dev/null 2>&1 \
+            || echo "branch already exists, updating files on it"
+
+          push_file () {
+            local path="$1"
+            local sha
+            sha=$(gh api "repos/$REPO/contents/$path?ref=$BR" --jq .sha)
+            base64 -w0 "$path" > /tmp/f.b64
+            jq -n --arg m "fix(deps): next 15.5.24 + override floors (closes 2 Critical RCEs and the sharp pin)" \
+                  --rawfile c /tmp/f.b64 \
+                  --arg s "$sha" --arg b "$BR" --arg p "$path" \
+                  '{message:$m, content:($c|rtrimstr("\n")), sha:$s, branch:$b}' > /tmp/body.json
+            gh api -X PUT "repos/$REPO/contents/$path" --input /tmp/body.json >/dev/null
+            echo "pushed $path"
+          }
+
+          push_file package.json
+          push_file package-lock.json
+
+          echo "Branch $BR ready - open a PR from it."
