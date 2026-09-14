@@ -24,6 +24,10 @@ name: Normalize override floors and refresh lockfile
 #
 # Commits go through the GitHub contents API so GitHub signs them and they satisfy
 # "require signed commits". Delete this workflow once the PR it creates has merged.
+#
+# NOTE ON QUOTING: every node -e script below is a single-quoted shell argument, so
+# it must contain no apostrophes - one in a comment silently ends the quote and the
+# shell then chokes on the next parenthesis. Syntax-check with bash -n before pushing.
 
 on:
   workflow_dispatch:
@@ -57,9 +61,9 @@ jobs:
             // pins postcss 8.4.31). Two constraints collide:
             //   - npm rejects an override that CONFLICTS with a direct dependency
             //     (EOVERRIDE), so ">=8.5.16" as a bare override is refused.
-            //   - dropping the override entirely lets next's transitive postcss 8.4.31
+            //   - dropping the override entirely lets the transitive postcss 8.4.31 from next
             //     back in, which carries 4 advisories (2 high, 2 moderate).
-            // "$postcss" is npm's reference syntax: it pins every transitive postcss to
+            // "$postcss" is the npm reference syntax: it pins every transitive postcss to
             // whatever the direct dependency resolves to, and by definition cannot
             // conflict with it.
             p.devDependencies.postcss = "^8.5.28";
@@ -81,7 +85,7 @@ jobs:
 
           # HARD GUARD: dependency review fails the PR if any postcss < 8.5.16 survives.
           # This is exactly the regression that broke the first attempt - dropping the
-          # postcss override let next's transitive postcss 8.4.31 back into the tree.
+          # postcss override let the transitive postcss 8.4.31 from next back into the tree.
           node -e '
             const l = require("./package-lock.json");
             const min = [8, 5, 16];
