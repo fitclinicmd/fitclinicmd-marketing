@@ -6,7 +6,7 @@ name: Normalize override floors and refresh lockfile
 # package.json pinned `next` to an exact "15.5.21" and pinned its overrides to exact
 # versions ("postcss": "8.5.25", "sharp": "0.35.3"). Two consequences:
 #   1. next 15.5.21 is affected by two Critical RCE advisories (CVSS 9.5), patched in
-#      15.5.24 - the AVIF image-optimization one and the windows-hosted-server one.
+#      15.5.24 - GHSA image-optimization/AVIF and the windows-hosted-server one.
 #   2. next 15.5.21 *requires* sharp@0.35.3, and sharp is fixed in 0.35.4, so Dependabot
 #      reports "cannot update sharp to a non-vulnerable version". The sharp pin then
 #      guarantees it stays vulnerable even if next moves.
@@ -53,11 +53,17 @@ jobs:
             const fs = require("fs");
             const p = JSON.parse(fs.readFileSync("package.json", "utf8"));
             p.dependencies.next = "15.5.24";
-            // postcss is a DIRECT devDependency here. npm rejects an override that
-            // conflicts with a direct dependency (EOVERRIDE), so the floor belongs on
-            // the dependency itself and the override is dropped as redundant.
+            // postcss is a DIRECT devDependency AND a transitive dep of next (next
+            // pins postcss 8.4.31). Two constraints collide:
+            //   - npm rejects an override that CONFLICTS with a direct dependency
+            //     (EOVERRIDE), so ">=8.5.16" as a bare override is refused.
+            //   - dropping the override entirely lets next's transitive postcss 8.4.31
+            //     back in, which carries 4 advisories (2 high, 2 moderate).
+            // "$postcss" is npm's reference syntax: it pins every transitive postcss to
+            // whatever the direct dependency resolves to, and by definition cannot
+            // conflict with it.
             p.devDependencies.postcss = "^8.5.28";
-            p.overrides = { sharp: ">=0.35.4" };
+            p.overrides = { postcss: "$postcss", sharp: ">=0.35.4" };
             fs.writeFileSync("package.json", JSON.stringify(p, null, 2) + "\n");
           '
           echo "--- package.json after rewrite ---"
@@ -71,6 +77,27 @@ jobs:
             for (const k of Object.keys(l.packages)) {
               if (/node_modules\/(next|sharp|postcss)$/.test(k)) console.log(k, l.packages[k].version);
             }
+          '
+
+          # HARD GUARD: dependency review fails the PR if any postcss < 8.5.16 survives.
+          # This is exactly the regression that broke the first attempt - dropping the
+          # postcss override let next's transitive postcss 8.4.31 back into the tree.
+          node -e '
+            const l = require("./package-lock.json");
+            const min = [8, 5, 16];
+            const bad = [];
+            for (const [k, v] of Object.entries(l.packages)) {
+              if (!/node_modules\/postcss$/.test(k) || !v.version) continue;
+              const c = v.version.split(".").map(Number);
+              if (c[0] < min[0] || (c[0] === min[0] && (c[1] < min[1] || (c[1] === min[1] && c[2] < min[2])))) {
+                bad.push(k + " -> " + v.version);
+              }
+            }
+            if (bad.length) {
+              console.error("FAIL: vulnerable postcss still in the tree:\n" + bad.join("\n"));
+              process.exit(1);
+            }
+            console.log("postcss guard OK - every copy is >= 8.5.16");
           '
 
           # Prove CI will pass: npm ci requires package.json and the lockfile to agree.
