@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit"
   },
   "overrides": {
+    "postcss": "$postcss",
     "sharp": ">=0.35.4"
   },
   "dependencies": {
