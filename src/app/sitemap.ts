@@ -17,7 +17,7 @@ const ROUTES = [
   { path: "/peptides/blends", priority: 0.8 },
   { path: "/education/start-here.html", priority: 0.9 },
   { path: "/education/foundations.html", priority: 0.8 },
-  { path: "/peptides/glp-1", priority: 0.8 },
+  { path: "/glp-1", priority: 0.9 },
   { path: "/peptides/fda-status", priority: 0.8 },
   { path: "/providers", priority: 0.7 },
   { path: "/faq", priority: 0.7 },
