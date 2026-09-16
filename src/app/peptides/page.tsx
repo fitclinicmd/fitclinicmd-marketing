@@ -111,28 +111,21 @@ export default function PeptidesIndex() {
             </Link>
           </div>
 
-          {/* 3 · Regulatory context. These two pages lost their cards in the
-              library rebuild (#62) and have been reachable only from the footer
-              since — roughly 4,600 words nobody could find. Restored BELOW the
-              library buttons on purpose: anything added above them breaks the
-              above-the-fold rule at 375px, which has only ~66px of slack. */}
-          <div className="mt-3 grid grid-cols-1 gap-3 sm:mt-4 sm:grid-cols-2 sm:gap-4">
+          {/* 3 · Regulatory context. This page lost its card in the library
+              rebuild (#62) and was reachable only from the footer since —
+              roughly 2,300 words nobody could find. Restored BELOW the library
+              buttons on purpose: anything added above them breaks the
+              above-the-fold rule at 375px, which has only ~66px of slack. The
+              GLP-1 link that used to sit beside it was removed 2026-09-16 (Todd)
+              now that GLP-1 has its own top-nav section; the FDA button is
+              centered on its own. */}
+          <div className="mt-3 flex justify-center sm:mt-4">
             <Link
               href="/peptides/fda-status"
-              className="group flex items-baseline gap-2 rounded-xl2 border border-ink/10 bg-white/60 px-4 py-3 transition hover:border-clinic"
+              className="group flex w-full items-baseline gap-2 rounded-xl2 border border-ink/10 bg-white/60 px-4 py-3 transition hover:border-clinic sm:max-w-md"
             >
               <span className="text-sm font-semibold text-ink">Peptides and the FDA</span>
               <span className="text-xs text-ink-muted">Where things actually stand</span>
-              <span className="ml-auto text-sm text-clinic transition group-hover:translate-x-0.5" aria-hidden="true">
-                →
-              </span>
-            </Link>
-            <Link
-              href="/glp-1"
-              className="group flex items-baseline gap-2 rounded-xl2 border border-ink/10 bg-white/60 px-4 py-3 transition hover:border-clinic"
-            >
-              <span className="text-sm font-semibold text-ink">GLP-1 medicines</span>
-              <span className="text-xs text-ink-muted">Approved vs compounded</span>
               <span className="ml-auto text-sm text-clinic transition group-hover:translate-x-0.5" aria-hidden="true">
                 →
               </span>
