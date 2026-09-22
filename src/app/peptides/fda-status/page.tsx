@@ -71,6 +71,12 @@ const SOURCES: Source[] = [
     title: "FDA intends to take action against non-FDA-approved GLP-1 drugs",
     publisher: "U.S. Food and Drug Administration",
   },
+  {
+    href: "https://doi.org/10.3390/biom14030264",
+    title: "Exploring FDA-Approved Frontiers: Natural and Engineered Peptide Analogues (2024)",
+    publisher: "Al Musaimi, Biomolecules — peer-reviewed, open access",
+    note: "Independent review of the FDA peptide record: roughly 100 peptides have been FDA-approved since insulin, across the GLP-1, GIP, GHRH, CCK, ACTH and α-MSH families.",
+  },
 ];
 
 export default function FdaStatus() {
