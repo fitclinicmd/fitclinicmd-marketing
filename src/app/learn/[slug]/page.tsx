@@ -122,6 +122,30 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <article className="mx-auto max-w-2xl">
           {a.body.map(renderBlock)}
 
+          {a.sources && a.sources.length > 0 && (
+            <div className="mt-10 rounded-xl2 border border-ink/10 bg-ink/[0.02] p-5">
+              <h2 className="text-base font-semibold text-ink">Sources</h2>
+              <p className="mt-1 text-sm text-ink-soft">
+                Peer-reviewed, open-access research behind this article — so you can read it yourself.
+              </p>
+              <ul className="mt-3 space-y-2">
+                {a.sources.map((s) => (
+                  <li key={s.href} className="text-sm">
+                    <a
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-clinic underline decoration-clinic/30 underline-offset-2 hover:decoration-clinic"
+                    >
+                      {s.title} <span aria-hidden="true">↗</span>
+                    </a>
+                    <span className="ml-1 text-ink-muted">— {s.publisher}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           <div className="mt-12 border-t border-ink/10 pt-6 text-sm text-ink-muted">
             This article is general education, not medical advice, and does not create a
             provider-patient relationship. Whether any treatment is appropriate for you is decided by

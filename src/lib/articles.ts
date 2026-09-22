@@ -30,6 +30,8 @@ export type Article = {
   readMinutes: number;
   status: "PUBLISHED" | "PLANNED";
   body?: Block[];
+  /** Primary sources this article draws on — peer-reviewed, open-access. */
+  sources?: { title: string; publisher: string; href: string }[];
 };
 
 export const ARTICLES: Article[] = [
@@ -388,6 +390,129 @@ export const ARTICLES: Article[] = [
       {
         type: "callout",
         text: "This article is general education, not medical advice. Which tests are appropriate, and what your results mean, are decided by a licensed provider based on your individual situation.",
+      },
+    ],
+  },
+  {
+    slug: "how-glp-1-medicines-work",
+    title: "How GLP-1 medicines actually work",
+    summary:
+      "GLP-1 is a hormone your body already makes after you eat. Here's what it does, why medicines that mimic it change how weight feels, and what the science does — and doesn't — say.",
+    topic: "Understanding your therapy",
+    updated: "2026-09-22",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "GLP-1 — glucagon-like peptide-1 — is a hormone your gut releases after a meal. It's one of a small group of signals called incretins, and it does a few quiet but important jobs: it tells the pancreas to release insulin when your blood sugar is up, it dials back a competing hormone (glucagon) that raises blood sugar, it slows how quickly the stomach empties, and it reaches areas of the brain involved in appetite. GLP-1 medicines work by making that natural signal stronger and longer-lasting.",
+      },
+      { type: "h2", text: "The clue that started it all" },
+      {
+        type: "p",
+        text: "Researchers noticed something odd decades ago: swallowing glucose triggers far more insulin than putting the same amount of glucose straight into a vein. The difference is the incretin effect — gut hormones released by eating that prime the pancreas. That observation is what eventually led to GLP-1-based treatments, and the biology has since been studied in depth.",
+      },
+      { type: "h2", text: "Why it can make weight feel different" },
+      {
+        type: "p",
+        text: "Because GLP-1 acts on appetite signaling and slows stomach emptying, people often feel satisfied with less food and notice fewer cravings. That's a change in some of the biological signals that make weight hard to control — not a change in willpower, and not a shortcut around the fundamentals. Nutrition, protein, movement, and sleep still do the heavy lifting; the medicine changes the terrain they work on.",
+      },
+      { type: "h2", text: "What the science does and doesn't say" },
+      {
+        type: "ul",
+        items: [
+          "It says: GLP-1 receptor signaling is a well-studied, legitimate target, and medicines that engage it affect insulin, appetite, and gastric emptying.",
+          "It doesn't say: that any particular product will produce a particular result for you. Individual responses vary, and the studied medicines are the FDA-approved brands — not a promise about any compounded preparation.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "This is general education, not medical advice, and doesn't describe any specific product's results. Compounded medications are not FDA-approved. Whether GLP-1 therapy is appropriate for you is a decision for a licensed provider after an evaluation.",
+      },
+    ],
+    sources: [
+      {
+        title: "GLP-1R Signaling and Functional Molecules in Incretin Therapy (2023)",
+        publisher: "Wan et al., Molecules — DOI 10.3390/molecules28020751 (open access)",
+        href: "https://doi.org/10.3390/molecules28020751",
+      },
+    ],
+  },
+  {
+    slug: "how-the-fda-sees-peptide-medicines",
+    title: "How the FDA sees peptide medicines",
+    summary:
+      "Peptides aren't fringe. Roughly 100 of them are FDA-approved medicines. Here's where they sit in the drug world — and the real line between an approved product and a compounded one.",
+    topic: "Peptides & the FDA",
+    updated: "2026-09-22",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "A peptide is a short chain of amino acids — the same building blocks as proteins, just smaller. In drug terms they sit in the middle: bigger and more specific than typical pills, smaller and simpler than the large biologic antibodies. That middle ground is exactly why they've become useful medicines.",
+      },
+      { type: "h2", text: "Not new, and not unregulated" },
+      {
+        type: "p",
+        text: "Peptide medicine effectively began with insulin in the 1920s. Since then the FDA has approved on the order of 100 peptide drugs across many conditions — including the GLP-1 and related hormone families — with many more in clinical development. Chemists have learned to modify these molecules to make them more stable and longer-acting, which is why some can be dosed weekly rather than daily.",
+      },
+      { type: "h2", text: "The distinction that actually matters" },
+      {
+        type: "p",
+        text: "Here's the part worth being precise about. An FDA-approved brand product has been reviewed by the FDA for safety, effectiveness, and quality. A compounded medication is prepared by a licensed pharmacy against an individual prescription; it is not FDA-approved, which means the FDA does not review that specific preparation before it's dispensed. Both are real, lawful paths — but they are not the same regulatory thing, and any honest program tells you which one you're getting.",
+      },
+      {
+        type: "callout",
+        text: "General education, not medical advice, and not a claim about any specific product. Compounded medications are not FDA-approved. Whether any peptide therapy is appropriate for you is decided by a licensed provider after an evaluation.",
+      },
+    ],
+    sources: [
+      {
+        title: "Exploring FDA-Approved Frontiers: Natural and Engineered Peptide Analogues (2024)",
+        publisher: "Al Musaimi, Biomolecules — DOI 10.3390/biom14030264 (open access)",
+        href: "https://doi.org/10.3390/biom14030264",
+      },
+    ],
+  },
+  {
+    slug: "why-peptides-are-given-by-injection",
+    title: "Why peptides are given by injection",
+    summary:
+      "Almost every peptide medicine — GLP-1s included — is an injection, not a pill. It's not about convenience. It's about chemistry, and it's a good sign, not a red flag.",
+    topic: "Understanding your therapy",
+    updated: "2026-09-22",
+    readMinutes: 4,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "The most common question about peptide therapy is a fair one: if it's a medicine, why can't I just take a pill? The answer is chemistry. Peptides are fragile molecules, and the digestive system is very good at taking them apart.",
+      },
+      { type: "h2", text: "What a pill would face" },
+      {
+        type: "ul",
+        items: [
+          "Stomach acid and digestive enzymes (peptidases) break peptides down — the body treats them like food protein, because chemically that's close to what they are.",
+          "Even the fraction that survives is poorly absorbed through the gut wall, so very little would reach the bloodstream intact.",
+          "Peptides also clear from the body quickly, which is why modern ones are chemically tuned to last longer.",
+        ],
+      },
+      { type: "h2", text: "Why an injection solves it" },
+      {
+        type: "p",
+        text: "A small subcutaneous injection — into the fat just under the skin — delivers the peptide intact, past the digestive system that would otherwise destroy it. That's why GLP-1 medicines and most peptides are injectables. The needles are short and fine, most people find it far easier than they expect, and your care team walks you through it. Research into oral peptide forms is active and real, but for now injection remains the standard because it's what the chemistry supports.",
+      },
+      {
+        type: "callout",
+        text: "General education, not medical advice. Your provider and pharmacy give you the specific instructions for your medication; if anything here differs from what they tell you, follow them.",
+      },
+    ],
+    sources: [
+      {
+        title: "Exploring FDA-Approved Frontiers: Natural and Engineered Peptide Analogues (2024)",
+        publisher: "Al Musaimi, Biomolecules — DOI 10.3390/biom14030264 (open access)",
+        href: "https://doi.org/10.3390/biom14030264",
       },
     ],
   },
