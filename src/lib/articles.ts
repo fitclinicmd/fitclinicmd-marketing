@@ -516,6 +516,319 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    slug: "glp-1-dosing-safety",
+    title: "How dosing errors happen with compounded GLP-1 medicines — and how to avoid them",
+    summary:
+      "mg, mL, and syringe “units” are not the same thing. Here's why compounded-vial dosing mistakes happen, and what to confirm with your pharmacy before your first injection.",
+    topic: "Using your medication",
+    updated: "2026-09-22",
+    readMinutes: 6,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "Compounded GLP-1 medicines are sometimes dispensed in multi-dose vials that you draw from with a syringe — a different process than a branded, pre-filled pen. When milligrams (mg), milliliters (mL), and syringe “units” get mixed up, people can accidentally take far more medicine than intended. The FDA has publicly warned patients, providers, and compounders about exactly these dosing errors. This page explains the label language; it does not replace a teach-back with your pharmacy.",
+      },
+      { type: "h2", text: "mg, mL, and “units” are three different things" },
+      {
+        type: "ul",
+        items: [
+          "mg (milligrams) is the amount of drug — usually how your prescription is written.",
+          "mL (milliliters) is the volume of liquid you draw. Two vials labeled the same can have very different mg per mL, so the same mL can mean very different amounts of drug.",
+          "“Units” on an insulin-style syringe are just hash marks — not a universal dose. They only mean something once your pharmacy tells you how many markings equal your prescribed mg for that specific vial concentration.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Never assume “10 units,” “0.5 mL,” and “2.5 mg” are interchangeable. They are related only through the concentration printed on your specific vial and the syringe your pharmacy told you to use. Copying a friend's dose, a social-media chart, or an old vial's instructions can be dangerous, because those may assume a different concentration.",
+      },
+      { type: "h2", text: "How people have drawn several times the intended dose" },
+      {
+        type: "ul",
+        items: [
+          "Confusing mg on the prescription with mL or syringe units.",
+          "Using a dosing chart that assumed a different concentration than the vial in hand.",
+          "Treating “units” on an insulin syringe as if they were milligrams of the drug.",
+          "Drawing to a convenient line (a full half-mL, or “10 units”) without checking the conversion for that vial.",
+          "Reusing old instructions after the pharmacy changed the concentration or syringe type.",
+        ],
+      },
+      { type: "h2", text: "What to confirm before your first injection" },
+      {
+        type: "ul",
+        items: [
+          "Read the pharmacy label and vial label together — drug, concentration (mg/mL), beyond-use date, storage, and prescribed dose.",
+          "Confirm the concentration with the pharmacy or your provider if anything is unclear or different from what you expected.",
+          "Ask for a teach-back: have someone walk through how your mg dose converts to the volume or markings you'll use.",
+          "Use only the syringe type your pharmacy specified — don't substitute a different scale.",
+          "Write the plan in plain words (“My dose is X mg. For this vial, that's Y mL / Z markings”) and keep it with the vial.",
+          "Don't “eyeball” the dose or round up “just to be sure.” If you can't explain your dose in your own words, don't inject — call the pharmacy first.",
+        ],
+      },
+      { type: "h2", text: "When to seek urgent care" },
+      {
+        type: "p",
+        text: "After a larger-than-intended dose, people may have severe or lasting nausea, vomiting, abdominal pain, dizziness, or signs of dehydration. Seek urgent or emergency care for persistent vomiting you can't keep fluids down against, severe abdominal pain, fainting, chest pain or trouble breathing, severe allergic symptoms, or confusion — and bring the vial, syringe, and label. In the U.S. you can also call Poison Control at 1-800-222-1222; call 911 for life-threatening emergencies.",
+      },
+      {
+        type: "callout",
+        text: "Education only — not medical advice, and not a dosing guide. Compounded medicines are not FDA-approved. Follow your own prescription, the concentration on your own vial, and your licensed pharmacist and clinician. FitClinicMD services are for adults 18+.",
+      },
+    ],
+    sources: [
+      { title: "FDA — Dosing errors associated with compounded semaglutide", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding/fda-alerts-health-care-providers-compounders-and-patients-dosing-errors-associated-compounded" },
+      { title: "FDA — Human drug compounding (overview)", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding" },
+      { title: "GLP-1 agonists — patient overview", publisher: "MedlinePlus", href: "https://medlineplus.gov/ency/article/007853.htm" },
+      { title: "Poison Control (U.S.) — 1-800-222-1222", publisher: "America's Poison Centers", href: "https://www.poison.org" },
+    ],
+  },
+  {
+    slug: "glp-1-shortage-and-compounding",
+    title: "GLP-1 shortages eased — what that means for compounded versions",
+    summary:
+      "As GLP-1 supply stabilized, the FDA narrowed when pharmacies can compound copies. A plain-English look at 503A/503B, salt-form concerns, and why we stay within the law.",
+    topic: "Peptides & the FDA",
+    updated: "2026-09-22",
+    readMinutes: 6,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "For several years, high demand strained the supply of certain GLP-1 medicines, and during official shortages compounding pharmacies sometimes prepared versions of them under specific federal rules. As the manufacturers' supply stabilized, the FDA updated its shortage determinations and clarified the limits on compounding “copies” of drugs that are commercially available again.",
+      },
+      { type: "h2", text: "The high-level timeline (injection products)" },
+      {
+        type: "ul",
+        items: [
+          "Tirzepatide injection: in late 2024 the FDA determined the national shortage was resolved and removed those products from the shortage list (around December 19, 2024).",
+          "Semaglutide injection: in early 2025 the FDA similarly determined the shortage was resolved (around February 21, 2025).",
+          "After a shortage ends, the legal room to compound essentially-copies of the approved drug generally narrows. The exact enforcement windows are time-limited and best read on FDA's own pages — this is not a compliance calendar.",
+        ],
+      },
+      { type: "h2", text: "What “compounding a copy” means" },
+      {
+        type: "p",
+        text: "Compounding is allowed in defined circumstances. Two pathways people hear about: Section 503A (state-licensed pharmacies compounding for an individual patient on a valid prescription) and Section 503B (FDA-registered outsourcing facilities under different requirements). In both, compounding a product that is essentially a copy of a commercially available FDA-approved drug is restricted unless a recognized legal exception applies. When supply of the approved product is adequate, the appropriate choice is generally the FDA-approved brand — not a compounded look-alike.",
+      },
+      { type: "h2", text: "Compounded is not the same as FDA-approved" },
+      {
+        type: "ul",
+        items: [
+          "The FDA has not reviewed a specific compounded preparation the way it reviews an approved drug for safety, effectiveness, and manufacturing quality.",
+          "Labels, concentrations, inactive ingredients, and beyond-use dates can differ from brand pens and vials.",
+          "The FDA has raised concerns about unapproved GLP-1 products — including certain salt forms and products of uncertain purity that were never intended for sterile human injection. “It looks similar on social media” is not a quality standard.",
+        ],
+      },
+      { type: "h2", text: "How FitClinicMD approaches it" },
+      {
+        type: "p",
+        text: "FitClinicMD is a physician-guided program that uses licensed providers and state-licensed pharmacies, and will not prescribe outside the law. We educate patients about FDA-approved options first; we do not promise compounded copies of commercially available GLP-1 drugs when shortage-based authority no longer applies. If a medicine you hoped for isn't legally available to compound, that's often the law catching up to improved brand supply — and your provider can discuss approved alternatives and lifestyle care.",
+      },
+      {
+        type: "callout",
+        text: "Education only — not legal or medical advice, and not a guarantee of product availability. Regulatory status changes; FDA primary sources and counsel control interpretation. Compounded medicines are not FDA-approved. Prescriptions are issued only if appropriate after a clinician evaluation. Adults 18+.",
+      },
+    ],
+    sources: [
+      { title: "FDA — Clarifies policies for compounders as national GLP-1 supply stabilizes", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize" },
+      { title: "FDA — Concerns with unapproved GLP-1 drugs used for weight loss", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss" },
+      { title: "FDA — Intends to take action against non-FDA-approved GLP-1 drugs", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs" },
+      { title: "FDA — Human drug compounding", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding" },
+    ],
+  },
+  {
+    slug: "peptides-vs-research-chemicals",
+    title: "Clinic-prescribed peptides vs. research vials and gray-market sellers",
+    summary:
+      "“Research use only” isn't a loophole. Here's why gray-market peptide vials are a different category from a medicine prescribed by a licensed clinician and filled by a licensed pharmacy.",
+    topic: "Peptides & the FDA",
+    updated: "2026-09-22",
+    readMinutes: 6,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "Peptides are short chains of amino acids. Some are FDA-approved medicines. Others appear in lab research or cosmetics. Still others are sold online with clinical-sounding language for products that were never made for human use under U.S. pharmacy standards. This page explains why “research chemicals” and unsupervised online sellers are a different category from clinic care.",
+      },
+      { type: "h2", text: "What “research use only” usually means" },
+      {
+        type: "ul",
+        items: [
+          "The seller is not presenting the product as a medicine for you to inject or ingest.",
+          "It was not prepared under the sterile compounding and quality systems expected for patient-use injectables.",
+          "There is usually no patient-specific prescription, pharmacist counseling, or clinical follow-up attached to the sale.",
+        ],
+      },
+      { type: "h2", text: "Why gray-market peptides are risky" },
+      {
+        type: "ul",
+        items: [
+          "No sterile-compounding standards you can verify.",
+          "Identity and purity unknowns — you may not know what's really in the vial, or how much.",
+          "No licensed-provider oversight, history review, or lab monitoring.",
+          "Storage, reconstitution, and dosing become guesswork with internet charts.",
+          "Extra risk for athletes: many experimental/non-approved substances are prohibited in sport (under the WADA framework, non-approved substances can fall under category S0). Check current WADA/USADA rules if you compete.",
+        ],
+      },
+      { type: "h2", text: "What clinic-prescribed care looks like instead" },
+      {
+        type: "p",
+        text: "A physician-guided pathway is different in structure. When appropriate, an FDA-approved brand medicine may be the clearest evidence-based choice. In some situations a licensed clinician may write a patient-specific prescription filled by a state-licensed 503A pharmacy when compounding is lawful for that product — with documented ingredients, pharmacy labeling, and a defined beyond-use date. Compounded drugs are still not FDA-approved products.",
+      },
+      { type: "h2", text: "Questions worth asking any source" },
+      {
+        type: "ul",
+        items: [
+          "Is a licensed clinician evaluating me, or is it just a checkout cart?",
+          "Is the product dispensed by a state-licensed U.S. pharmacy with a labeled prescription?",
+          "Is it an FDA-approved medicine, a lawful compounded preparation, or a research chemical?",
+          "If I'm an athlete, have I checked current anti-doping rules?",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Education only — not medical advice. This does not authorize or encourage self-administration of research chemicals. Compounded medicines are not FDA-approved. Prescriptions are available only if appropriate after a licensed-clinician evaluation. Adults 18+. Athletes should verify anti-doping rules independently.",
+      },
+    ],
+    sources: [
+      { title: "FDA — Human drug compounding", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding" },
+      { title: "FDA — Concerns with unapproved GLP-1 drugs used for weight loss", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss" },
+      { title: "USADA — BPC-157 is a prohibited peptide", publisher: "U.S. Anti-Doping Agency", href: "https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/" },
+      { title: "Hormones — overview", publisher: "MedlinePlus", href: "https://medlineplus.gov/hormones.html" },
+    ],
+  },
+  {
+    slug: "understanding-obesity",
+    title: "Understanding obesity as a chronic disease",
+    summary:
+      "Obesity is shaped by biology, environment, medications, sleep, and stress — not a willpower test. A plain-English, physician-guided overview and how care works.",
+    topic: "Weight & metabolic health",
+    updated: "2026-09-22",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "In clinical care, adult obesity is described using body mass index (BMI) together with a whole-person assessment — waist size, labs, medical history, medications that affect weight, and how you feel day to day. BMI is a screening tool, not a measure of health by itself. Public-health agencies treat obesity as a common, serious, chronic disease: the CDC estimates about 2 in 5 U.S. adults have obesity. Chronic diseases are managed over time, with layered tools.",
+      },
+      { type: "h2", text: "Why it matters" },
+      {
+        type: "p",
+        text: "Extra weight is linked with higher risk for type 2 diabetes and insulin resistance, high blood pressure and heart disease, sleep apnea, joint and mobility issues, some cancers, fatty liver disease, and effects on mood and energy. But risk is individual — two people with the same BMI can have very different labs. Accurate risk education helps; fear-based messaging doesn't.",
+      },
+      { type: "h2", text: "What chronic-disease care looks like" },
+      {
+        type: "ul",
+        items: [
+          "Understanding your story — prior diets, medications, injuries, hormones, mental health, and access to food and safe movement.",
+          "Clear goals — metabolic health, mobility, and sleep often matter as much as a single scale number.",
+          "Evidence-aligned tools — nutrition you can keep, activity you can tolerate, and medications when criteria and labeling support them.",
+          "Follow-up — monitoring, adjustments, and course corrections over time.",
+        ],
+      },
+      {
+        type: "p",
+        text: "GLP-1 and related medicines are one possible tool for some adults — not a moral requirement and not right for everyone. See our GLP-1 education pages for brand-vs-compounded context and safety topics. FitClinicMD explains obesity as a medical issue, not a character flaw, and when you're ready a licensed provider can review whether lifestyle coaching, FDA-approved therapies, or other lawful options fit your history.",
+      },
+      {
+        type: "callout",
+        text: "Education only — not medical advice or a diagnosis. BMI and risk lists don't replace a clinician's evaluation. Compounded medicines are not FDA-approved. Prescriptions are issued only if appropriate. Adults 18+.",
+      },
+    ],
+    sources: [
+      { title: "Adult obesity facts", publisher: "Centers for Disease Control and Prevention", href: "https://www.cdc.gov/obesity/adult-obesity-facts/index.html" },
+      { title: "Obesity", publisher: "MedlinePlus", href: "https://medlineplus.gov/obesity.html" },
+      { title: "Health risks of overweight & obesity", publisher: "NIDDK", href: "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks" },
+      { title: "GLP-1 agonists (medication class overview)", publisher: "MedlinePlus", href: "https://medlineplus.gov/ency/article/007853.htm" },
+    ],
+  },
+  {
+    slug: "type-2-diabetes-basics",
+    title: "Type 2 diabetes basics for patients considering GLP-1 care",
+    summary:
+      "A plain-English primer on type 2 diabetes for adults exploring GLP-1 care — what it is, why it matters, and where these medicines fit.",
+    topic: "Weight & metabolic health",
+    updated: "2026-09-22",
+    readMinutes: 5,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "Type 2 diabetes is a condition in which blood sugar stays too high because the body doesn't use insulin well (insulin resistance) and, over time, may not make enough. It's the most common form of diabetes in adults and develops gradually — some people learn about it from routine labs, others notice thirst, frequent urination, fatigue, or blurred vision. It's different from type 1 (autoimmune) and gestational diabetes; treatment plans differ, so don't reuse someone else's regimen.",
+      },
+      { type: "h2", text: "Why it matters" },
+      {
+        type: "p",
+        text: "Over years, uncontrolled high blood sugar can damage blood vessels and nerves and raise the risk of heart, kidney, vision, and foot problems. Modern care — lifestyle support plus medications when needed — can improve control and protect long-term health. Weight, sleep apnea, blood pressure, cholesterol, and family history often sit in the same metabolic neighborhood, so a clinician looks at the whole picture, not glucose alone.",
+      },
+      { type: "h2", text: "Where GLP-1 medicines fit" },
+      {
+        type: "ul",
+        items: [
+          "GLP-1 receptor agonists (and dual agonists like tirzepatide) act on gut-hormone pathways involved in insulin release, appetite, and gastric emptying.",
+          "Brand products have specific approved uses — a diabetes brand and a weight-management brand are not automatically interchangeable.",
+          "They carry class warnings (including thyroid C-cell / MTC and MEN2 contraindications) and can cause GI side effects — read the Medication Guide for your product.",
+          "Compounded look-alikes are not the same as FDA-approved pens, and these medicines are not a DIY project.",
+          "If you use insulin or sulfonylureas, your clinician may adjust other medicines to reduce low-blood-sugar risk.",
+        ],
+      },
+      {
+        type: "p",
+        text: "FitClinicMD explains metabolic care in plain English. A licensed provider can review your diagnosis, A1C/glucose history, and medications, discuss FDA-approved options that match your indication, and stay within the law on compounding and pharmacy partners. We don't replace your primary care clinician or endocrinologist when you already have a diabetes team.",
+      },
+      {
+        type: "callout",
+        text: "Education only — not medical advice, and it doesn't diagnose diabetes or recommend a specific drug. Compounded medicines are not FDA-approved. Prescriptions are issued only if appropriate. Adults 18+. Seek emergency care for severe low blood sugar, ketoacidosis concerns, chest pain, or trouble breathing.",
+      },
+    ],
+    sources: [
+      { title: "Diabetes — type 2", publisher: "MedlinePlus", href: "https://medlineplus.gov/diabetestype2.html" },
+      { title: "GLP-1 agonists", publisher: "MedlinePlus", href: "https://medlineplus.gov/ency/article/007853.htm" },
+      { title: "Health risks of overweight & obesity", publisher: "NIDDK", href: "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks" },
+      { title: "Drugs@FDA (official labels)", publisher: "U.S. Food and Drug Administration", href: "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm" },
+    ],
+  },
+  {
+    slug: "hormones-signals-peptides",
+    title: "Hormones, signals, and peptides — a plain primer",
+    summary:
+      "Hormones and peptides are easy to mystify online. A short, humble primer on what they are, where peptides fit, and how we keep education separate from hype.",
+    topic: "Understanding your therapy",
+    updated: "2026-09-22",
+    readMinutes: 4,
+    status: "PUBLISHED",
+    body: [
+      {
+        type: "p",
+        text: "Hormones are chemical messengers made by glands and tissues that travel through the bloodstream to help coordinate growth, metabolism, reproduction, stress, sleep, and more — the endocrine system keeping many processes in balance. Familiar examples: insulin (blood sugar), thyroid hormones (metabolic rate), cortisol (stress), estrogen and testosterone, and gut hormones involved in appetite. When these systems are out of range, people can feel exhausted, gain or lose weight unexpectedly, or develop clear diseases — and labs plus clinical context, not supplement ads, are how clinicians sort that out.",
+      },
+      { type: "h2", text: "Where peptides fit" },
+      {
+        type: "ul",
+        items: [
+          "An FDA-approved peptide medicine has a defined indication, manufacturing standard, and label.",
+          "A compounded peptide, when legal and clinically appropriate, is prepared for a specific patient under pharmacy rules — and is still not FDA-approved like a brand drug.",
+          "A research-use-only vial is not clinic care.",
+        ],
+      },
+      { type: "h2", text: "Signals vs. “optimize everything”" },
+      {
+        type: "p",
+        text: "Social media often frames hormones as a dashboard to constantly tweak. Real endocrine care is more careful — clinicians order tests for a reason, interpret them against symptoms, and avoid treating a number in isolation. Gut-hormone medicines (like certain GLP-1 therapies) show how powerful signal-based drugs can be when studied properly, and how much labeling, contraindications, and follow-up still matter. Experimental peptides with mostly animal data sit on a different evidence tier — our BPC-157 and GHK-Cu pages spell out those differences.",
+      },
+      {
+        type: "callout",
+        text: "Education only — not medical advice. It doesn't interpret your labs or authorize hormone or peptide therapy. Compounded medicines are not FDA-approved. Prescriptions are issued only if appropriate. Adults 18+.",
+      },
+    ],
+    sources: [
+      { title: "Hormones", publisher: "MedlinePlus", href: "https://medlineplus.gov/hormones.html" },
+      { title: "GLP-1 agonists", publisher: "MedlinePlus", href: "https://medlineplus.gov/ency/article/007853.htm" },
+      { title: "Human drug compounding", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding" },
+      { title: "Obesity (metabolic context)", publisher: "MedlinePlus", href: "https://medlineplus.gov/obesity.html" },
+    ],
+  },
   ];
 
 // MEDICAL REVIEW BYLINE — "Medically reviewed by …" is a factual claim that a
