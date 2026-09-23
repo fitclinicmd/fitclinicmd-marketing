@@ -20,6 +20,10 @@ export type PeptideUse = { use: string; inShort: string };
  *  does not. Rendered as a link that opens in a new tab. */
 export type PeptidePair = { name: string; reason: string; slug: string };
 
+/** A primary-source link, rendered as a lightweight "Sources" list on the
+ *  molecule page. Same shape as the regulatory-page Source. */
+export type PeptideSource = { title: string; publisher: string; href: string };
+
 export type Peptide = {
   slug: string;
   name: string;
@@ -35,6 +39,20 @@ export type Peptide = {
   wada: string;
   pairsWith: PeptidePair[];
   updated: string;
+  /** Optional prominent boxed-warning callout — for FDA-approved molecules that
+   *  carry one (e.g. the GLP-1 class thyroid C-cell tumor warning). Plain-language
+   *  summary; the full boxed warning lives on the product's Medication Guide. */
+  boxedWarning?: string;
+  /** Optional regulatory/availability caveat, rendered as a neutral callout
+   *  before the provenance block. Used where compounding availability is limited
+   *  or conditional, or to keep FDA-approved-brand vs compounded distinct. */
+  availabilityNote?: string;
+  /** When true, hide the blanket "Prepared by a 503A pharmacy" provenance block
+   *  for this molecule — used where a routine-compounding claim would not be
+   *  accurate under current federal rules (e.g. BPC-157 bulk-substance limits). */
+  suppress503A?: boolean;
+  /** Optional primary-source links, rendered as a lightweight sources list. */
+  sources?: PeptideSource[];
 };
 
 export const CATEGORY_ORDER: string[] = [
@@ -153,7 +171,15 @@ export const PEPTIDES: Peptide[] = [
       { name: "Tesamorelin", slug: "tesamorelin", reason: "adds targeted visceral-fat and lean-mass support through the growth-hormone axis." },
       { name: "AOD-9604", slug: "aod9604", reason: "works through a separate, fat-cell-specific metabolic pathway." },
     ],
-    updated: "2026-08-25",
+    updated: "2026-09-22",
+    boxedWarning:
+      "Boxed warning (class): semaglutide and other GLP-1 medicines carry an FDA boxed warning for the risk of thyroid C-cell tumors seen in rodent studies. Do not use if you or a family member has had medullary thyroid carcinoma (MTC) or Multiple Endocrine Neoplasia syndrome type 2 (MEN2). A compounded semaglutide preparation is not FDA-approved Ozempic, Wegovy, or Rybelsus, and is not an interchangeable generic of the brand product — confirm the concentration and draw volume before any injection. Always follow the Medication Guide for the exact product you are prescribed.",
+    sources: [
+      { title: "Drugs@FDA — official approved labels", publisher: "U.S. Food and Drug Administration", href: "https://www.accessdata.fda.gov/scripts/cder/daf/" },
+      { title: "Semaglutide injection — patient drug information", publisher: "MedlinePlus", href: "https://medlineplus.gov/druginfo/meds/a618008.html" },
+      { title: "GLP-1 agonists — medication class overview", publisher: "MedlinePlus", href: "https://medlineplus.gov/ency/article/007853.htm" },
+      { title: "Concerns with unapproved GLP-1 drugs used for weight loss", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss" },
+    ],
   },
   {
     slug: "tirzepatide",
@@ -181,7 +207,14 @@ export const PEPTIDES: Peptide[] = [
       { name: "Tesamorelin", slug: "tesamorelin", reason: "adds visceral-fat and lean-mass support through the growth-hormone axis." },
       { name: "AOD-9604", slug: "aod9604", reason: "targets fat metabolism through a separate, fat-cell-specific pathway." },
     ],
-    updated: "2026-08-25",
+    updated: "2026-09-22",
+    boxedWarning:
+      "Boxed warning (class): tirzepatide carries the same FDA boxed warning as other GLP-1/GIP medicines for the risk of thyroid C-cell tumors seen in rodent studies. Do not use if you or a family member has had medullary thyroid carcinoma (MTC) or Multiple Endocrine Neoplasia syndrome type 2 (MEN2). Tirzepatide is a distinct molecule, not “stronger Ozempic.” A compounded tirzepatide preparation is not FDA-approved Mounjaro or Zepbound and is not an interchangeable generic — confirm the concentration and measuring instructions before any injection. Always follow the Medication Guide for the exact product you are prescribed.",
+    sources: [
+      { title: "Drugs@FDA — official approved labels", publisher: "U.S. Food and Drug Administration", href: "https://www.accessdata.fda.gov/scripts/cder/daf/" },
+      { title: "GLP-1 agonists — medication class overview", publisher: "MedlinePlus", href: "https://medlineplus.gov/ency/article/007853.htm" },
+      { title: "FDA clarifies policies for compounders as national GLP-1 supply stabilizes", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize" },
+    ],
   },
   {
     slug: "cjc-1295",
@@ -458,7 +491,16 @@ export const PEPTIDES: Peptide[] = [
       { name: "GHK-Cu", slug: "ghk-cu", reason: "shares an interest in skin and tissue repair." },
       { name: "KPV", slug: "kpv", reason: "both relate to gut-lining and barrier support." },
     ],
-    updated: "2026-08-25",
+    updated: "2026-09-22",
+    suppress503A: true,
+    availabilityNote:
+      "BPC-157 is not an FDA-approved medicine, and it is not tested in people. The FDA has flagged concerns about certain bulk substances used in compounding, and current 503A rules govern what a pharmacy may prepare — so a compounded BPC-157 product may be limited or unavailable regardless of how often it is discussed online. A licensed provider decides whether any therapy is appropriate for you; this page is education, not a promise that a product is in stock.",
+    sources: [
+      { title: "BPC-157 is a prohibited peptide", publisher: "U.S. Anti-Doping Agency (USADA)", href: "https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/" },
+      { title: "The Prohibited List", publisher: "World Anti-Doping Agency (WADA)", href: "https://www.wada-ama.org/en/prohibited-list" },
+      { title: "Bulk drug substances used in compounding under section 503A", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-used-compounding-under-section-503a-fdc-act" },
+      { title: "Certain bulk drug substances that may present significant safety risks", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks" },
+    ],
   },
   {
     slug: "ghk-cu",
@@ -486,7 +528,14 @@ export const PEPTIDES: Peptide[] = [
       { name: "TB-500", slug: "tb-500", reason: "both relate to connective-tissue recovery." },
       { name: "Sermorelin", slug: "sermorelin", reason: "commonly considered alongside it for skin and collagen support." },
     ],
-    updated: "2026-08-25",
+    updated: "2026-09-22",
+    availabilityNote:
+      "The strongest interest in GHK-Cu comes from topical, skin-focused cosmetic use, which is regulated differently from a drug. An injectable, compounded preparation is a different category with a different risk profile, is not FDA-approved, and is not proven by the topical skin research. “It helps skin in a cream” does not establish “inject it.” A licensed provider decides which, if either, is appropriate for you.",
+    sources: [
+      { title: "GHK-Cu skin-biology review (Pickart & Margolina)", publisher: "PubMed Central (PMC6073405)", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/" },
+      { title: "Copper peptide research review (Pickart et al.)", publisher: "PubMed Central (PMC4508379)", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/" },
+      { title: "Human drug compounding", publisher: "U.S. Food and Drug Administration", href: "https://www.fda.gov/drugs/human-drug-compounding" },
+    ],
   },
   {
     slug: "tb-500",

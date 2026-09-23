@@ -49,6 +49,12 @@ const nextConfig = {
         destination: "/learn",
         permanent: true,
       },
+      // Short marketing vanity paths that appear in printed/hand-off material,
+      // pointed at the real hubs so they never dead-end.
+      { source: "/weight", destination: "/treatments/weight-management", permanent: true },
+      { source: "/recover", destination: "/peptides", permanent: true },
+      { source: "/library", destination: "/peptides", permanent: true },
+      { source: "/visit", destination: "/contact", permanent: false },
     ];
   },
 };
