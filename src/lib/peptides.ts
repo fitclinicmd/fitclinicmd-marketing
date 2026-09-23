@@ -3,6 +3,15 @@
 // 2026-08-25). Do not hand-edit entries: re-run the generator against the source
 // PDFs so the site and the approved copy cannot drift apart.
 //
+// SOURCE ADDENDUM (2026-09-22). Four optional fields below — boxedWarning,
+// availabilityNote, suppress503A, sources — are NOT in the 2026-08-25 SHORT/FULL
+// PDFs. They are approved additions recorded in the source set at
+// fitclinicmd-materials/site-content/peptide-library-2026-08-25/
+// ADDENDUM-2026-09-22-regulatory-fields.md (shipped in marketing PR #112). A
+// regeneration MUST fold that addendum in for bpc-157, ghk-cu, semaglutide, and
+// tirzepatide, or these caveats/sources will silently disappear. The addendum
+// also records the guardrail below in writing.
+//
 // STRUCTURE. Each peptide has a SHORT page (this data) and a long-form FULL
 // REVIEW (an approved PDF in /public/education/peptides/<slug>.pdf, opened in a
 // new tab). The short page is what opens first; the full review is one click
@@ -12,7 +21,9 @@
 // data", etc.) were removed at Michael's direction on 2026-08-25. The pages
 // still carry the substance that matters: what it is, what people use it for,
 // who it is NOT for, the WADA status, the 503A provenance, and the standing
-// "not an FDA-approved medicine" footer.
+// "not an FDA-approved medicine" footer. The 2026-09-22 addendum's regulatory
+// caveats were written to respect this rule and the no-animal-framing rule
+// (2026-08-31): keep them tier-free and usage-based on any regen.
 
 export type PeptideUse = { use: string; inShort: string };
 /** A related peptide. `slug` always resolves — every name in the source
