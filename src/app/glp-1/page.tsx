@@ -24,6 +24,7 @@ const SOURCES: Source[] = [
   { href: "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-adults-obesity-or", title: "FDA approves cardiovascular risk-reduction indication for Wegovy", publisher: "U.S. Food and Drug Administration" },
   { href: "https://www.fda.gov/news-events/press-announcements/fda-approves-first-medication-obstructive-sleep-apnea", title: "FDA approves Zepbound for obstructive sleep apnea", publisher: "U.S. Food and Drug Administration" },
   { href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize", title: "FDA clarifies policies for compounders as national GLP-1 supply begins to stabilize", publisher: "U.S. Food and Drug Administration" },
+  { href: "https://medlineplus.gov/ency/article/007853.htm", title: "GLP-1 agonists — patient explainer", publisher: "MedlinePlus" },
 ];
 
 function IntakePanel({ heading = "Find out which option may fit you" }: { heading?: string }) {
@@ -220,6 +221,16 @@ export default function Glp1() {
               <strong>not FDA-approved</strong> — the FDA does not review its safety, effectiveness, or quality
               before it is marketed. Whether one is appropriate for you is a decision for a licensed provider
               after an individual evaluation.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-ink-soft">
+              Read next:{" "}
+              <Link href="/learn/glp-1-dosing-safety" className="font-semibold text-clinic underline underline-offset-4 hover:text-clinic-deep">
+                Dosing safety with compounded vials
+              </Link>{" "}
+              ·{" "}
+              <Link href="/learn/glp-1-shortage-and-compounding" className="font-semibold text-clinic underline underline-offset-4 hover:text-clinic-deep">
+                Shortages eased — what compounding means now
+              </Link>
             </p>
           </div>
 

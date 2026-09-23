@@ -99,18 +99,48 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
             <p className="mt-5 text-sm text-ink-muted">{p.wada}</p>
           </section>
 
-          {/* Shared 503A provenance — identical on every page in the library. */}
-          <section className="mt-12">
-            <div className="rounded-xl2 border border-ink/10 bg-ink/[0.02] p-6">
-              <p className="text-xs font-semibold uppercase tracking-wide text-clinic">
-                Prepared for you by a licensed 503A compounding pharmacy
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                From a prescription in your name, using ingredients traceable to a named source,
-                under published sterile-compounding standards.
-              </p>
-            </div>
-          </section>
+          {/* Boxed warning — FDA-approved molecules that carry one. Rendered as a
+              prominent safety callout, distinct from the neutral provenance box. */}
+          {p.boxedWarning && (
+            <section className="mt-12">
+              <div className="rounded-xl2 border border-red-300 bg-red-50 p-6">
+                <p className="text-xs font-semibold uppercase tracking-wide text-red-800">
+                  Boxed warning
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-red-900">{p.boxedWarning}</p>
+              </div>
+            </section>
+          )}
+
+          {/* Availability / regulatory caveat — where compounding is limited or a
+              category distinction matters. */}
+          {p.availabilityNote && (
+            <section className="mt-12">
+              <div className="rounded-xl2 border border-amber-300 bg-amber-50 p-6">
+                <p className="text-xs font-semibold uppercase tracking-wide text-amber-800">
+                  Availability &amp; regulatory status
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-amber-900">{p.availabilityNote}</p>
+              </div>
+            </section>
+          )}
+
+          {/* Shared 503A provenance — identical on every page in the library,
+              except where a routine-compounding claim would not be accurate under
+              current federal rules (p.suppress503A). */}
+          {!p.suppress503A && (
+            <section className="mt-12">
+              <div className="rounded-xl2 border border-ink/10 bg-ink/[0.02] p-6">
+                <p className="text-xs font-semibold uppercase tracking-wide text-clinic">
+                  Prepared for you by a licensed 503A compounding pharmacy
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                  From a prescription in your name, using ingredients traceable to a named source,
+                  under published sterile-compounding standards.
+                </p>
+              </div>
+            </section>
+          )}
 
           {/* Pairs well with — every name links to that peptide's own page, in a
               new tab so the reader keeps their place. */}
@@ -161,6 +191,29 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
               Back to the library
             </CTA>
           </div>
+
+          {/* Primary sources — lightweight list, only where the molecule carries
+              cited references. */}
+          {p.sources && p.sources.length > 0 && (
+            <section className="mt-12 rounded-xl2 border border-ink/15 bg-white p-5 sm:p-6">
+              <h2 className="text-lg sm:text-xl">Sources</h2>
+              <ul className="mt-4 space-y-3">
+                {p.sources.map((s) => (
+                  <li key={s.href}>
+                    <a
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-clinic underline decoration-clinic/30 underline-offset-2 transition hover:decoration-clinic"
+                    >
+                      {s.title} <span aria-hidden="true">↗</span>
+                    </a>
+                    <span className="ml-1 text-sm text-ink-muted">— {s.publisher}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           <ImportantSafetyInfo className="mt-10" />
         </article>
