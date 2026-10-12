@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitContact, type ContactResult } from "./actions";
+import { SERVICE_OPTIONS } from "@/lib/site";
 
 const field =
   "w-full rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink placeholder:text-ink-muted/60 focus:border-clinic focus:outline-hidden";
@@ -33,6 +34,27 @@ export default function ContactForm() {
           autoComplete="email"
           className={field}
         />
+      </div>
+
+      <div>
+        <label htmlFor="service" className="mb-1 block text-sm font-medium">
+          Which service are you interested in? <span className="font-normal text-ink-muted">(optional)</span>
+        </label>
+        <select id="service" name="service" defaultValue="" className={field}>
+          <option value="">Select one…</option>
+          {SERVICE_OPTIONS.map((s) => (
+            <option key={s} value={s}>
+              {s}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div>
+        <label htmlFor="phone" className="mb-1 block text-sm font-medium">
+          Mobile number <span className="font-normal text-ink-muted">(optional)</span>
+        </label>
+        <input id="phone" name="phone" type="tel" autoComplete="tel" className={field} />
       </div>
 
       <div>
