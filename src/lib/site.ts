@@ -20,6 +20,25 @@ export const APP_LIVE = process.env.NEXT_PUBLIC_APP_LIVE === "true";
 export const signupUrl = APP_LIVE ? `${SITE.appUrl}/signup` : "/contact";
 export const loginUrl = `${SITE.appUrl}/login`;
 
+// External booking calendar (LocumTele) the "start your booking" capture step
+// (/start) hands off to. Set NEXT_PUBLIC_BOOKING_URL to the live LocumTele link.
+// Until it is set, /start still captures the lead and emits the notice — it just
+// shows a "we'll be in touch to schedule" confirmation instead of forwarding, so
+// no lead is lost pre-launch and nothing points at a dead calendar.
+export const bookingUrl = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";
+export const bookingConfigured = bookingUrl.length > 0;
+
+// The service options a visitor can express interest in, shared by the
+// pre-booking capture step and the request-information form so the labels the
+// conversion agent receives stay consistent. TRT is listed as "coming soon"
+// until it clears the LegitScript review and is on the site.
+export const SERVICE_OPTIONS = [
+  "GLP-1 weight management",
+  "Peptide therapy",
+  "TRT (coming soon)",
+  "Not sure yet",
+] as const;
+
 // "Sign in" and "Get started" are separate decisions, so they get separate
 // switches. Sign in is a door for people who already have an account — staff,
 // providers, a partner's referred patient. Get started opens self-signup on a
