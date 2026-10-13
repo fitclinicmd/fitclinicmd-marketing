@@ -19,7 +19,10 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  VERCEL_ORG_ID: team_u2w0DVwxREcndFoLJtySQCe5
+  # Moved to its own Vercel team (FitClinicMD, fit-clinic-md) 2026-10-13 so a
+  # vendor can be scoped to this project only. Needs a VERCEL_TOKEN scoped to
+  # THIS team.
+  VERCEL_ORG_ID: team_tc1f0DqYSRIA2EsrYPAs3rTX
   VERCEL_PROJECT_ID: prj_Z4fPpczDTF9uevnezooZtlwICkO1
 
 jobs:
