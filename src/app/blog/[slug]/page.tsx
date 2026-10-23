@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container, Eyebrow, Section } from "@/components/ui";
+import InlineMarkdown from "@/components/InlineMarkdown";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { getBlogPost, publishedBlogPosts, type BlogPost } from "@/lib/blog";
 import { SITE } from "@/lib/site";
@@ -27,18 +28,40 @@ function renderBlock(block: BlogPost["body"][number], index: number) {
     case "h2":
       return (
         <h2 key={index} className="mt-10 text-2xl">
-          {block.text}
+          <InlineMarkdown text={block.text} />
         </h2>
+      );
+    case "h3":
+      return (
+        <h3 key={index} className="mt-8 text-xl">
+          <InlineMarkdown text={block.text} />
+        </h3>
+      );
+    case "h4":
+      return (
+        <h4 key={index} className="mt-6 text-lg">
+          <InlineMarkdown text={block.text} />
+        </h4>
       );
     case "ul":
       return (
         <ul key={index} className="mt-4 space-y-2 pl-5">
           {block.items.map((item, itemIndex) => (
             <li key={itemIndex} className="list-disc text-ink-soft marker:text-clinic">
-              {item}
+              <InlineMarkdown text={item} />
             </li>
           ))}
         </ul>
+      );
+    case "ol":
+      return (
+        <ol key={index} start={block.start} className="mt-4 space-y-2 pl-5">
+          {block.items.map((item, itemIndex) => (
+            <li key={itemIndex} className="list-decimal text-ink-soft marker:text-clinic">
+              <InlineMarkdown text={item} />
+            </li>
+          ))}
+        </ol>
       );
     case "callout":
       return (
@@ -46,13 +69,53 @@ function renderBlock(block: BlogPost["body"][number], index: number) {
           key={index}
           className="mt-6 rounded-xl2 border border-accent/40 bg-accent-light/40 p-4 text-sm text-ink-soft"
         >
-          {block.text}
+          <InlineMarkdown text={block.text} />
         </p>
       );
+    case "table":
+      return (
+        <div key={index} className="mt-6 overflow-x-auto rounded-xl2 border border-ink/10">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-ink/5">
+              <tr>
+                {block.head.map((cell, cellIndex) => (
+                  <th key={cellIndex} className="px-4 py-2 font-semibold text-ink">
+                    <InlineMarkdown text={cell} />
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, rowIndex) => (
+                <tr key={rowIndex} className="border-t border-ink/10">
+                  {row.map((cell, cellIndex) => (
+                    <td key={cellIndex} className="px-4 py-2 align-top text-ink-soft">
+                      <InlineMarkdown text={cell} />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    case "image":
+      return (
+        // eslint-disable-next-line @next/next/no-img-element -- post images are remote, unknown-size files
+        <img key={index} src={block.src} alt={block.alt} loading="lazy" className="mt-6 w-full rounded-xl2" />
+      );
+    case "code":
+      return (
+        <pre key={index} className="mt-4 overflow-x-auto rounded-xl2 bg-ink/5 p-4 text-sm">
+          <code>{block.text}</code>
+        </pre>
+      );
+    case "hr":
+      return <hr key={index} className="my-10 border-ink/10" />;
     default:
       return (
         <p key={index} className="mt-4 text-ink-soft leading-relaxed">
-          {block.text}
+          <InlineMarkdown text={block.text} />
         </p>
       );
   }
