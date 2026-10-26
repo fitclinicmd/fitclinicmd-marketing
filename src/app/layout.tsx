@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import { PreLaunchBanner } from "@/components/ui";
 import { pendingClaims, siteIsIndexable } from "@/lib/claims";
 import { Analytics } from "@/lib/analytics";
+import { GoogleAnalytics } from "@/lib/google-analytics";
+import { MegaOptimizer } from "@/lib/mega-optimizer";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
 
@@ -51,6 +53,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
+      <head>
+        <MegaOptimizer />
+      </head>
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"
@@ -66,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );

@@ -52,11 +52,14 @@ jobs:
       - uses: actions/checkout@v4
       # This zone must never collect health information or load ad pixels.
       # Fail the build if forbidden integrations appear in source.
+      # Exception: src/lib/google-analytics.tsx is the single allowlisted GA4
+      # install (G-14QEDT1XCD, page views only); Google's tag anywhere else
+      # still fails.
       - name: Scan for forbidden trackers / PHI collection
         run: |
           set -e
           PATTERN='connect\.facebook\.net|fbevents\.js|googletagmanager\.com|google-analytics\.com|gtag\(|fbq\(|hotjar|clarity\.ms|tiktok.*pixel'
-          if grep -rInE "$PATTERN" src/ 2>/dev/null; then
+          if grep -rInE "$PATTERN" src/ --exclude=google-analytics.tsx 2>/dev/null; then
             echo "::error::Forbidden third-party tracker found in the PHI-free marketing zone."
             exit 1
           fi
