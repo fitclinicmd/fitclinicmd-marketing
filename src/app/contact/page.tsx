@@ -6,9 +6,9 @@ import { SITE, loginUrl, showSignIn } from "@/lib/site";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: { absolute: "Contact | Questions & Education — FitClinicMD" },
   description:
-    "General questions about FitClinicMD. For anything clinical, use secure messaging inside your patient portal.",
+    "Questions about FitClinicMD? Send an inquiry or explore education. This pre-launch site does not accept patients or collect health information.",
 };
 
 export default function Contact() {

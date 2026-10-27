@@ -13,7 +13,7 @@
 // here. Keep this content general and non-promissory.
 
 export type Block =
-  | { type: "p"; text: string }
+  | { type: "p"; text: string; links?: { text: string; href: string }[] }
   | { type: "h2"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "callout"; text: string };
@@ -351,6 +351,16 @@ export const ARTICLES: Article[] = [
         type: "callout",
         text: "Telehealth is not for emergencies. If you have a medical emergency, call 911 or go to your nearest emergency department. This article is general education, not medical advice, and does not create a provider-patient relationship.",
       },
+      { type: "h2", text: "Related reading" },
+      {
+        type: "p",
+        text: "If you're looking for education about where this evaluation fits, read our weight-management care and peptide therapy pages, or visit the Blog for practical answers.",
+        links: [
+          { text: "weight-management care", href: "/treatments/weight-management" },
+          { text: "peptide therapy", href: "/treatments/peptides" },
+          { text: "Blog", href: "/blog" },
+        ],
+      },
     ],
   },
   {
@@ -429,6 +439,23 @@ export const ARTICLES: Article[] = [
         type: "callout",
         text: "This is general education, not medical advice, and doesn't describe any specific product's results. Compounded medications are not FDA-approved. Whether GLP-1 therapy is appropriate for you is a decision for a licensed provider after an evaluation.",
       },
+      { type: "h2", text: "Related reading" },
+      {
+        type: "p",
+        text: "Connect the biology to practical questions with Best GLP-1 for Weight Loss: Compare 3 Medications and GLP-1 Agonists for Weight Loss: Benefits and Risks. For an overview of evaluation-first weight-management care, see the treatment page. Looking for education? Visit the Blog.",
+        links: [
+          {
+            text: "Best GLP-1 for Weight Loss: Compare 3 Medications",
+            href: "/blog/best-glp-1-for-weight-loss",
+          },
+          {
+            text: "GLP-1 Agonists for Weight Loss: Benefits and Risks",
+            href: "/blog/glp-1-agonists-for-weight-loss",
+          },
+          { text: "weight-management care", href: "/treatments/weight-management" },
+          { text: "Blog", href: "/blog" },
+        ],
+      },
     ],
     sources: [
       {
@@ -465,6 +492,23 @@ export const ARTICLES: Article[] = [
       {
         type: "callout",
         text: "General education, not medical advice, and not a claim about any specific product. Compounded medications are not FDA-approved. Whether any peptide therapy is appropriate for you is decided by a licensed provider after an evaluation.",
+      },
+      { type: "h2", text: "Related reading" },
+      {
+        type: "p",
+        text: "For practical context, read Semaglutide Weight Management Cost & Insurance Coverage and GLP-1 Agonists for Weight Loss: Benefits and Risks. You can also review our peptide therapy approach. Looking for education? Visit the Blog.",
+        links: [
+          {
+            text: "Semaglutide Weight Management Cost & Insurance Coverage",
+            href: "/blog/semaglutide-weight-management-cost",
+          },
+          {
+            text: "GLP-1 Agonists for Weight Loss: Benefits and Risks",
+            href: "/blog/glp-1-agonists-for-weight-loss",
+          },
+          { text: "peptide therapy", href: "/treatments/peptides" },
+          { text: "Blog", href: "/blog" },
+        ],
       },
     ],
     sources: [
@@ -729,7 +773,18 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "GLP-1 and related medicines are one possible tool for some adults — not a moral requirement and not right for everyone. See our GLP-1 education pages for brand-vs-compounded context and safety topics. FitClinicMD explains obesity as a medical issue, not a character flaw, and when you're ready a licensed provider can review whether lifestyle coaching, FDA-approved therapies, or other lawful options fit your history.",
+        text: "GLP-1 and related medicines are one possible tool for some adults — not a moral requirement and not right for everyone. For practical context, read Best GLP-1 for Weight Loss: Compare 3 Medications and Semaglutide Weight Management Cost & Insurance Coverage. You can also review our weight-management care approach. FitClinicMD explains obesity as a medical issue, not a character flaw, and a licensed provider can review whether lifestyle coaching, FDA-approved therapies, or other lawful options fit your history.",
+        links: [
+          {
+            text: "Best GLP-1 for Weight Loss: Compare 3 Medications",
+            href: "/blog/best-glp-1-for-weight-loss",
+          },
+          {
+            text: "Semaglutide Weight Management Cost & Insurance Coverage",
+            href: "/blog/semaglutide-weight-management-cost",
+          },
+          { text: "weight-management care", href: "/treatments/weight-management" },
+        ],
       },
       {
         type: "callout",

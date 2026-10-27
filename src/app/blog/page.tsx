@@ -5,8 +5,11 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { publishedBlogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Practical education and updates from FitClinicMD.",
+  alternates: { canonical: "/blog" },
+  openGraph: { url: "https://www.fitclinicmd.com/blog" },
+  title: { absolute: "Blog | Weight & Peptide Education — FitClinicMD" },
+  description:
+    "Read practical FitClinicMD education about weight management, GLP-1 medicines, peptides, telehealth, and what evaluation-first care involves.",
 };
 
 export default function BlogIndex() {
