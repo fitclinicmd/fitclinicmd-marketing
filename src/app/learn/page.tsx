@@ -13,11 +13,49 @@ export const metadata: Metadata = {
     "Straightforward education on telehealth, weight management, peptides, compounded medication, labs, and billing from FitClinicMD.",
 };
 
+type ArticleGroup = { heading: string; slugs: readonly string[] };
+
+const articleGroups: ArticleGroup[] = [
+  {
+    heading: "Start with weight and metabolic health",
+    slugs: [
+      "understanding-obesity",
+      "type-2-diabetes-basics",
+      "how-glp-1-medicines-work",
+      "why-results-vary",
+    ],
+  },
+  {
+    heading: "Understand peptide therapy and the evidence",
+    slugs: [
+      "compounded-medication-explained",
+      "peptides-and-hormone-therapy",
+      "mitochondrial-peptides-explained",
+      "how-the-fda-sees-peptide-medicines",
+      "why-peptides-are-given-by-injection",
+      "hormones-signals-peptides",
+    ],
+  },
+  {
+    heading: "Prepare for a clinician-guided conversation",
+    slugs: [
+      "what-a-telehealth-visit-involves",
+      "why-your-labs-matter",
+      "storing-your-peptide-medication",
+      "glp-1-dosing-safety",
+      "glp-1-shortage-and-compounding",
+      "peptides-vs-research-chemicals",
+    ],
+  },
+];
+
 // Content is sourced from lib/articles.ts. Anything describing what a medication
 // does or how well it works is a regulated claim and must clear review before
 // publication (see lib/claims.ts); articles here stay general and non-promissory.
 
 export default function Learn() {
+  const articles = publishedArticles();
+
   return (
     <>
       <div className="wash border-b border-ink/10">
@@ -34,18 +72,71 @@ export default function Learn() {
       </div>
 
       <Section>
-        <div className="grid gap-6 md:grid-cols-2">
-          {publishedArticles().map((a) => (
-            <Link key={a.slug} href={`/learn/${a.slug}`} className="group block">
-              <Card className="h-full transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
-                <p className="text-xs uppercase tracking-wide text-clinic">{a.topic}</p>
-                <h2 className="mt-2 text-xl">{a.title}</h2>
-                <p className="mt-2 text-ink-muted">{a.summary}</p>
-                <p className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
-                  Read <span aria-hidden="true">→</span>
+        <div className="space-y-12">
+          {articleGroups.map((group) => (
+            <section key={group.heading}>
+              <h2 className="text-2xl">{group.heading}</h2>
+              {group.heading === "Start with weight and metabolic health" && (
+                <p className="mt-4 max-w-3xl text-ink-muted">
+                  Start with the foundations of weight and metabolic health. Explore{" "}
+                  <Link href="/treatments/weight-management" className="text-clinic underline underline-offset-4">
+                    weight-management care
+                  </Link>
+                  , then read{" "}
+                  <Link href="/blog/glp-1-agonists-for-weight-loss" className="text-clinic underline underline-offset-4">
+                    GLP-1 agonists for weight loss
+                  </Link>{" "}
+                  for a practical overview.
                 </p>
-              </Card>
-            </Link>
+              )}
+              {group.heading === "Understand peptide therapy and the evidence" && (
+                <p className="mt-4 max-w-3xl text-ink-muted">
+                  Learn how peptides, hormones, compounded medication, and FDA oversight fit together. For a broader
+                  care overview, visit{" "}
+                  <Link href="/treatments/peptides" className="text-clinic underline underline-offset-4">
+                    peptide therapy
+                  </Link>{" "}
+                  and browse the{" "}
+                  <Link href="/blog" className="text-clinic underline underline-offset-4">
+                    Blog
+                  </Link>
+                  .
+                </p>
+              )}
+              {group.heading === "Prepare for a clinician-guided conversation" && (
+                <p className="mt-4 max-w-3xl text-ink-muted">
+                  Before any conversation with a clinician, learn what a telehealth visit and lab review can involve
+                  and how to handle medication safely. Review{" "}
+                  <Link href="/how-it-works" className="text-clinic underline underline-offset-4">
+                    how care works
+                  </Link>{" "}
+                  and find more practical reading on the{" "}
+                  <Link href="/blog" className="text-clinic underline underline-offset-4">
+                    Blog
+                  </Link>
+                  .
+                </p>
+              )}
+              <div className="mt-6 grid gap-6 md:grid-cols-2">
+                {group.slugs
+                  .flatMap((slug) => {
+                    const article = articles.find((a) => a.slug === slug);
+                    return article ? [article] : [];
+                  })
+                  .map((a) => (
+                    <Link key={a.slug} href={`/learn/${a.slug}`} className="group block">
+                      <Card className="h-full transition group-hover:border-clinic group-hover:shadow-[0_6px_20px_rgba(14,124,134,.10)]">
+                        <p className="text-xs uppercase tracking-wide text-clinic">{a.topic}</p>
+                        <h3 className="mt-2 text-xl">{a.title}</h3>
+                        <p className="mt-2 text-ink-muted">{a.summary}</p>
+                        <p className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
+                          Read <span aria-hidden="true">→</span>
+                        </p>
+                      </Card>
+                    </Link>
+                  ))}
+              </div>
+            </section>
           ))}
         </div>
 
