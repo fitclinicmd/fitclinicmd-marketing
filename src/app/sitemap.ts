@@ -15,7 +15,6 @@ const ROUTES = [
   { path: "/learn", priority: 0.7 },
   { path: "/blog", priority: 0.7 },
   { path: "/peptides", priority: 0.9 },
-  { path: "/peptides/blends", priority: 0.8 },
   { path: "/education/start-here.html", priority: 0.9 },
   { path: "/education/foundations.html", priority: 0.8 },
   { path: "/glp-1", priority: 0.9 },
@@ -57,11 +56,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Long-form reviews. These existed only as PDFs until 2026-08-31 and were
     // therefore absent from the sitemap entirely — roughly 43,000 words of the
     // deepest content on the site, invisible.
-    ...FULL_REVIEWS.map((r) => ({
-      url:
-        r.kind === "peptide"
-          ? `${SITE.url}/peptides/${r.slug}/full`
-          : `${SITE.url}/peptides/blends/${r.slug}/full`,
+    // Only full reviews for peptides still in the library (blends removed from
+    // FitClinicMD per the LegitScript scope, 2026-10).
+    ...FULL_REVIEWS.filter(
+      (r) => r.kind === "peptide" && PEPTIDES.some((p) => p.slug === r.slug),
+    ).map((r) => ({
+      url: `${SITE.url}/peptides/${r.slug}/full`,
       lastModified: now,
       priority: 0.6,
     })),

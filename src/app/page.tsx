@@ -156,26 +156,17 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl">Explore the peptide library.</h2>
           <p className="mt-4 text-ink-muted">
             Plain, sourced profiles of each compound — what it is, what people use it for, and what the
-            evidence actually shows. Browse one at a time, or by blend.
+            evidence actually shows. Browse them one at a time.
           </p>
         </div>
-        <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
+        <div className="mx-auto mt-8 max-w-3xl">
           <Link href="/peptides" className="group block">
             <Card className="h-full transition group-hover:border-clinic">
               <h3 className="text-xl">Individual peptides</h3>
               <p className="mt-2 text-sm text-ink-soft">
-                26 compounds across 8 categories, each explained on its own page.
+                Physician-guided peptides, each explained plainly on its own page.
               </p>
               <span className="mt-4 inline-block text-sm font-semibold text-clinic">Browse peptides →</span>
-            </Card>
-          </Link>
-          <Link href="/peptides/blends" className="group block">
-            <Card className="h-full transition group-hover:border-clinic">
-              <h3 className="text-xl">Blends</h3>
-              <p className="mt-2 text-sm text-ink-soft">
-                Purpose-built combinations that pair peptides for a shared goal.
-              </p>
-              <span className="mt-4 inline-block text-sm font-semibold text-clinic">Browse blends →</span>
             </Card>
           </Link>
         </div>
