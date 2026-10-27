@@ -4,9 +4,9 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "How it works",
+  title: { absolute: "How Evaluation Works | Telehealth — FitClinicMD" },
   description:
-    "From account to delivery: intake in our secure portal, labs if needed, a video visit with a licensed provider, and medication shipped if prescribed.",
+    "See how FitClinicMD's evaluation-first pathway may work: location check, intake, labs when indicated, video visit, and a prescription only if appropriate.",
 };
 
 const STEPS = [

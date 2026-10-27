@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container, Section, Eyebrow, CTA } from "@/components/ui";
@@ -21,8 +22,34 @@ export async function generateMetadata({
   return a ? { title: a.title, description: a.summary } : { title: "Learn" };
 }
 
+function renderLinkedText(text: string, links?: { text: string; href: string }[]) {
+  if (!links?.length) return text;
+
+  const parts: ReactNode[] = [];
+  let cursor = 0;
+  links.forEach((link, linkIndex) => {
+    const start = text.indexOf(link.text, cursor);
+    if (start === -1) return;
+    if (start > cursor) parts.push(text.slice(cursor, start));
+    parts.push(
+      <Link key={`${link.href}-${linkIndex}`} href={link.href} className="text-clinic underline underline-offset-4">
+        {link.text}
+      </Link>,
+    );
+    cursor = start + link.text.length;
+  });
+  if (cursor < text.length) parts.push(text.slice(cursor));
+  return parts;
+}
+
 function renderBlock(b: Block, i: number) {
   switch (b.type) {
+    case "p":
+      return (
+        <p key={i} className="mt-4 text-ink-soft leading-relaxed">
+          {renderLinkedText(b.text, b.links)}
+        </p>
+      );
     case "h2":
       return (
         <h2 key={i} className="mt-10 text-2xl">
@@ -45,12 +72,6 @@ function renderBlock(b: Block, i: number) {
           key={i}
           className="mt-6 rounded-xl2 border border-accent/40 bg-accent-light/40 p-4 text-sm text-ink-soft"
         >
-          {b.text}
-        </p>
-      );
-    default:
-      return (
-        <p key={i} className="mt-4 text-ink-soft leading-relaxed">
           {b.text}
         </p>
       );
