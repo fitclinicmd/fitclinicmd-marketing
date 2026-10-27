@@ -6,9 +6,9 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Peptide therapy",
+  title: { absolute: "Peptide Therapy Education — FitClinicMD" },
   description:
-    "Provider-guided peptide therapy options for recovery, performance support, and general wellness. Prescribed only when a licensed provider determines it is appropriate.",
+    "Learn about peptide evaluation, potential uses, and safety. Any treatment decision depends on location, labs, and a licensed provider's review.",
 };
 
 export default function Peptides() {

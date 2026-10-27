@@ -5,9 +5,9 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Weight management",
+  title: { absolute: "Weight Management Education — FitClinicMD" },
   description:
-    "A provider-supervised weight management program. Evaluation, labs where indicated, and medication delivered when clinically appropriate.",
+    "Explore FitClinicMD's evaluation-first approach to weight management, including labs when indicated and treatment only when clinically appropriate.",
 };
 
 export default function WeightManagement() {

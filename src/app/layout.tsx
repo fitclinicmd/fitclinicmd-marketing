@@ -24,11 +24,11 @@ const display = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.tagline}`,
+    default: "FitClinicMD | Weight Management & Peptide Education",
     template: `%s — ${SITE.name}`,
   },
   description:
-    "Physician-guided peptide therapy and weight management (GLP-1) by telehealth. Licensed providers, medication delivered.",
+    "FitClinicMD is a pre-launch, clinician-guided telehealth clinic for weight management and peptide education. Learn how evaluation-first care may work.",
   // Never index while any marketing claim is unapproved (see lib/claims.ts).
   robots: siteIsIndexable()
     ? { index: true, follow: true }

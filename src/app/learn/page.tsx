@@ -6,9 +6,9 @@ import { signupUrl } from "@/lib/site";
 import { publishedArticles, plannedArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Learn",
+  title: { absolute: "Weight & Peptide Care Education — FitClinicMD" },
   description:
-    "Straightforward explanations of how telehealth care, compounded medication, labs and billing actually work.",
+    "Straightforward education on telehealth, weight management, peptides, compounded medication, labs, and billing from FitClinicMD.",
 };
 
 // Content is sourced from lib/articles.ts. Anything describing what a medication
