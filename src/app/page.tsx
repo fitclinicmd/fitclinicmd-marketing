@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, CTA, Card, Claim, Photo } from "@/components/ui";
 import { CATEGORY_ORDER } from "@/lib/peptides";
 import GoalCards from "@/components/GoalCards";
 import { signupUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://www.fitclinicmd.com/" },
+  openGraph: { url: "https://www.fitclinicmd.com/" },
+};
 
 const STEPS = [
   {

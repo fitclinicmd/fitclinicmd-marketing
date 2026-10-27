@@ -6,6 +6,8 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/treatments/peptides" },
+  openGraph: { url: "https://www.fitclinicmd.com/treatments/peptides" },
   title: { absolute: "Peptide Therapy Education — FitClinicMD" },
   description:
     "Learn about peptide evaluation, potential uses, and safety. Any treatment decision depends on location, labs, and a licensed provider's review.",
