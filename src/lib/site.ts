@@ -10,6 +10,12 @@ export const SITE = {
   email: "hello@fitclinicmd.com",
 } as const;
 
+// Medical reviewer shown as a byline on education pages (an E-E-A-T / AI-citation
+// signal). Set this to the medical director's name + credentials once named —
+// e.g. "Jane Smith, MD — Medical Director". Until then the pages show only the
+// "Last updated" date and NEVER a fabricated reviewer. One-line change to turn on.
+export const MEDICAL_REVIEWER = "";
+
 // Is the patient app deployed and accepting signups? Until it is, the app host
 // (app.fitclinicmd.com) does not resolve, so pointing CTAs at it produces dead
 // links. Pre-launch we route "Get started" to the contact page as a
