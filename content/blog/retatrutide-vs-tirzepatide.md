@@ -12,7 +12,7 @@ description: "Retatrutide vs tirzepatide explained: one is investigational, one 
 
 People comparing retatrutide vs tirzepatide are usually trying to tell a headline apart from a medicine a clinician can prescribe. FitClinicMD is still in pre-launch and is not accepting patients, so this page is education, not an offer of care. Tirzepatide is an FDA-approved medicine used for specific conditions. Retatrutide is still investigational. Eli Lilly, the company developing it, says it is not approved and is not for sale. Trial averages describe groups of study volunteers. They are not a promise about your weight, your health, or any future prescription.
 
-[**Get started today**](https://www.fitclinicmd.com/contact)
+[**See how GLP-1 medicines work**](https://www.fitclinicmd.com/glp-1)
 
 ## Key Takeaways
 
