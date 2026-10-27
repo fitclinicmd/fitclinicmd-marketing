@@ -49,6 +49,42 @@ export default function Learn() {
           ))}
         </div>
 
+        <div className="mt-12 rounded-xl2 border border-ink/10 bg-white p-6">
+          <h2 className="text-2xl">Explore care and education</h2>
+          <p className="mt-4 text-ink-muted">
+            Looking for education? Explore{" "}
+            <Link href="/treatments/weight-management" className="text-clinic underline underline-offset-4">
+              weight-management care
+            </Link>{" "}
+            and{" "}
+            <Link href="/treatments/peptides" className="text-clinic underline underline-offset-4">
+              peptide therapy
+            </Link>
+            , then visit the{" "}
+            <Link href="/blog" className="text-clinic underline underline-offset-4">
+              Blog
+            </Link>{" "}
+            for practical answers.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/blog/best-glp-1-for-weight-loss" className="text-clinic underline underline-offset-4">
+                Best GLP-1 for Weight Loss: Compare 3 Medications
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/semaglutide-weight-management-cost" className="text-clinic underline underline-offset-4">
+                Semaglutide Weight Management Cost &amp; Insurance Coverage
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/glp-1-agonists-for-weight-loss" className="text-clinic underline underline-offset-4">
+                GLP-1 Agonists for Weight Loss: Benefits and Risks
+              </Link>
+            </li>
+          </ul>
+        </div>
+
         {plannedArticles().length > 0 && (
           <div className="mt-12">
             <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
