@@ -3,12 +3,18 @@
 export const SITE = {
   name: "FitClinicMD",
   tagline: "Physician-guided peptide and weight-management care, delivered.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://fitclinicmd.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.fitclinicmd.com",
   // The PHI application — a separate zone, separate host. CTAs hand off here
   // and never carry health context in the URL.
   appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://app.fitclinicmd.com",
   email: "hello@fitclinicmd.com",
 } as const;
+
+// Medical reviewer shown as a byline on education pages (an E-E-A-T / AI-citation
+// signal). Set this to the medical director's name + credentials once named —
+// e.g. "Jane Smith, MD — Medical Director". Until then the pages show only the
+// "Last updated" date and NEVER a fabricated reviewer. One-line change to turn on.
+export const MEDICAL_REVIEWER = "";
 
 // Is the patient app deployed and accepting signups? Until it is, the app host
 // (app.fitclinicmd.com) does not resolve, so pointing CTAs at it produces dead
@@ -86,6 +92,7 @@ export const FOOTER_NAV = [
       { href: "/providers", label: "Our providers" },
       { href: "/learn", label: "Learn" },
       { href: "/blog", label: "Blog" },
+      { href: "/verify", label: "Verify an order" },
       { href: "/contact", label: "Contact" },
     ],
   },

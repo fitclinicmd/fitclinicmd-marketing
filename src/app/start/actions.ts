@@ -2,6 +2,8 @@
 
 import { SITE, bookingUrl } from "@/lib/site";
 import { sendEmail } from "@/lib/email";
+import { readAttribution } from "@/lib/attribution-server";
+import { handoffLeadToGenHealth, withAttribution } from "@/lib/genhealth";
 
 export type StartResult = {
   ok: boolean;
@@ -50,6 +52,14 @@ export async function submitBookingStart(
     };
   }
 
+  // First-touch referrer attribution (set by ReferralCapture, first-party
+  // cookie, no PHI). Recorded with the lead so the referral is credited even if
+  // the person booked days after arriving from a referrer link.
+  const attribution = await readAttribution();
+  const campaign = [attribution?.source, attribution?.medium, attribution?.campaign]
+    .filter(Boolean)
+    .join(" / ");
+
   const lines = [
     `Name: ${name}`,
     `Email: ${email}`,
@@ -58,6 +68,8 @@ export async function submitBookingStart(
     `SMS consent: ${smsConsent ? "yes" : "no"}`,
     `Stage: booking started`,
     `Source: fitclinicmd.com/start`,
+    `Referrer code: ${attribution?.code || "(none / direct)"}`,
+    `Campaign: ${campaign || "(none)"}`,
   ];
 
   const result = await sendEmail({
@@ -78,10 +90,26 @@ export async function submitBookingStart(
     };
   }
 
-  // Lead captured. If the booking calendar is configured, forward to it;
-  // otherwise confirm and promise a follow-up so no lead is lost pre-launch.
+  // Lead captured. Resolve the forward in priority order, carrying attribution:
+  //   1) GEN Health hosted assessment/checkout (the funnel's real destination)
+  //   2) the LocumTele booking calendar (also attributed)
+  //   3) a confirmation, so no lead is lost pre-launch.
+  // The lead + attribution are already recorded above, so nothing is lost if
+  // neither handoff link is configured.
+  const handoff = await handoffLeadToGenHealth({ name, email, phone, service, attribution });
+  if (handoff.delivered && handoff.handoffUrl) {
+    return {
+      ok: true,
+      message: "Thanks — taking you to continue your assessment…",
+      next: handoff.handoffUrl,
+    };
+  }
   if (bookingUrl) {
-    return { ok: true, message: "Thanks — taking you to the scheduler…", next: bookingUrl };
+    return {
+      ok: true,
+      message: "Thanks — taking you to the scheduler…",
+      next: withAttribution(bookingUrl, attribution),
+    };
   }
   return {
     ok: true,

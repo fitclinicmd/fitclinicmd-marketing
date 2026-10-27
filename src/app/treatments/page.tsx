@@ -5,6 +5,8 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/treatments" },
+  openGraph: { url: "https://www.fitclinicmd.com/treatments" },
   title: "Treatments",
   description:
     "Physician-guided peptide therapy and weight management (GLP-1) — prescribed only when a licensed provider determines it is clinically appropriate.",

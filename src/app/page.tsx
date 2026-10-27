@@ -55,6 +55,10 @@ const PILLARS = [
 export default function Home() {
   return (
     <>
+      <head>
+        <link rel="canonical" href="https://www.fitclinicmd.com/" />
+        <meta property="og:url" content="https://www.fitclinicmd.com/" />
+      </head>
       {/* Hero */}
       <div className="wash">
         <Container className="py-20 sm:py-28">
