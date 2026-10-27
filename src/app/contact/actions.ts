@@ -29,6 +29,9 @@ export async function submitContact(
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
   const message = String(formData.get("message") ?? "").trim();
+  // Optional lead fields — the conversion agent uses these to route follow-up.
+  const service = String(formData.get("service") ?? "").trim();
+  const phone = String(formData.get("phone") ?? "").trim();
 
   if (!name) return { ok: false, message: "Please enter your name." };
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email))
@@ -48,14 +51,22 @@ export async function submitContact(
   // Deliver via Paubox. Payload is PHI-free by design: name, email, and the
   // free-text message only (the form warns against including medical details).
   // Reply-to is the submitter so a reply goes straight back to them.
+  const meta = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Mobile: ${phone || "(not provided)"}`,
+    `Service interested in: ${service || "(not specified)"}`,
+    `Stage: request for information`,
+    `Source: fitclinicmd.com/contact`,
+  ];
+
   const result = await sendEmail({
     to: inbox,
     replyTo: email,
-    subject: `New ${SITE.name} contact from ${name}`,
-    text: `Name: ${name}\nEmail: ${email}\n\n${message}\n`,
+    subject: `New ${SITE.name} contact from ${name}${service ? ` — ${service}` : ""}`,
+    text: meta.join("\n") + `\n\n${message}\n`,
     html:
-      `<p><strong>Name:</strong> ${escapeHtml(name)}<br>` +
-      `<strong>Email:</strong> ${escapeHtml(email)}</p>` +
+      `<p>${meta.map((l) => escapeHtml(l)).join("<br>")}</p>` +
       `<p style="white-space:pre-wrap">${escapeHtml(message)}</p>`,
   });
 

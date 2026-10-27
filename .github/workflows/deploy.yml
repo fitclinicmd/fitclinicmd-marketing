@@ -1,0 +1,75 @@
+name: Deploy (production)
+
+# Restores automatic production deploys after the Vercel GitHub integration
+# stopped creating them (~2026-09-22). Builds and deploys to Vercel production
+# on every push to main, so a merged PR actually goes live.
+#
+# Requires ONE repo secret: VERCEL_TOKEN (Vercel → Account Settings → Tokens,
+# scoped to the team). The org/project IDs below are not secret — they are the
+# same values Vercel writes to .vercel/project.json. Until VERCEL_TOKEN is set,
+# this job SKIPS (stays green) rather than failing every commit.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+env:
+  # Moved to its own Vercel team (FitClinicMD, fit-clinic-md) 2026-10-13 so a
+  # vendor can be scoped to this project only. Needs a VERCEL_TOKEN scoped to
+  # THIS team.
+  VERCEL_ORG_ID: team_tc1f0DqYSRIA2EsrYPAs3rTX
+  VERCEL_PROJECT_ID: prj_Z4fPpczDTF9uevnezooZtlwICkO1
+
+jobs:
+  deploy:
+    name: Build & deploy to Vercel
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for VERCEL_TOKEN
+        id: check
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::VERCEL_TOKEN secret is not set — skipping deploy. Add it in Settings → Secrets and variables → Actions to enable automatic production deploys."
+          else
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.check.outputs.has_token == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        if: steps.check.outputs.has_token == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Vercel CLI
+        if: steps.check.outputs.has_token == 'true'
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel environment (production)
+        if: steps.check.outputs.has_token == 'true'
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build
+        if: steps.check.outputs.has_token == 'true'
+        run: vercel build --prod --token="$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to production
+        if: steps.check.outputs.has_token == 'true'
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}

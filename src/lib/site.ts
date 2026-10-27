@@ -3,12 +3,18 @@
 export const SITE = {
   name: "FitClinicMD",
   tagline: "Physician-guided peptide and weight-management care, delivered.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://fitclinicmd.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.fitclinicmd.com",
   // The PHI application — a separate zone, separate host. CTAs hand off here
   // and never carry health context in the URL.
   appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://app.fitclinicmd.com",
   email: "hello@fitclinicmd.com",
 } as const;
+
+// Medical reviewer shown as a byline on education pages (an E-E-A-T / AI-citation
+// signal). Set this to the medical director's name + credentials once named —
+// e.g. "Jane Smith, MD — Medical Director". Until then the pages show only the
+// "Last updated" date and NEVER a fabricated reviewer. One-line change to turn on.
+export const MEDICAL_REVIEWER = "";
 
 // Is the patient app deployed and accepting signups? Until it is, the app host
 // (app.fitclinicmd.com) does not resolve, so pointing CTAs at it produces dead
@@ -19,6 +25,25 @@ export const APP_LIVE = process.env.NEXT_PUBLIC_APP_LIVE === "true";
 
 export const signupUrl = APP_LIVE ? `${SITE.appUrl}/signup` : "/contact";
 export const loginUrl = `${SITE.appUrl}/login`;
+
+// External booking calendar (LocumTele) the "start your booking" capture step
+// (/start) hands off to. Set NEXT_PUBLIC_BOOKING_URL to the live LocumTele link.
+// Until it is set, /start still captures the lead and emits the notice — it just
+// shows a "we'll be in touch to schedule" confirmation instead of forwarding, so
+// no lead is lost pre-launch and nothing points at a dead calendar.
+export const bookingUrl = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";
+export const bookingConfigured = bookingUrl.length > 0;
+
+// The service options a visitor can express interest in, shared by the
+// pre-booking capture step and the request-information form so the labels the
+// conversion agent receives stay consistent. TRT is listed as "coming soon"
+// until it clears the LegitScript review and is on the site.
+export const SERVICE_OPTIONS = [
+  "GLP-1 weight management",
+  "Peptide therapy",
+  "TRT (coming soon)",
+  "Not sure yet",
+] as const;
 
 // "Sign in" and "Get started" are separate decisions, so they get separate
 // switches. Sign in is a door for people who already have an account — staff,
@@ -66,6 +91,8 @@ export const FOOTER_NAV = [
       { href: "/about", label: "About" },
       { href: "/providers", label: "Our providers" },
       { href: "/learn", label: "Learn" },
+      { href: "/blog", label: "Blog" },
+      { href: "/verify", label: "Verify an order" },
       { href: "/contact", label: "Contact" },
     ],
   },
