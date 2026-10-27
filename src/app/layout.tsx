@@ -36,7 +36,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE.name,
-    url: `${SITE.url}/`,
     title: `${SITE.name} — ${SITE.tagline}`,
     description: "Physician-guided peptide therapy and weight management (GLP-1) by telehealth.",
   },
