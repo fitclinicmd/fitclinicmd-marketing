@@ -3,7 +3,7 @@
 export const SITE = {
   name: "FitClinicMD",
   tagline: "Physician-guided peptide and weight-management care, delivered.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://fitclinicmd.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.fitclinicmd.com",
   // The PHI application — a separate zone, separate host. CTAs hand off here
   // and never carry health context in the URL.
   appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://app.fitclinicmd.com",
