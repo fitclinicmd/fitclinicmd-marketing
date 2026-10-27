@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, Claim, CTA, EmergencyNotice, Photo, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/treatments/weight-management" },
   openGraph: { url: "https://www.fitclinicmd.com/treatments/weight-management" },
-  title: { absolute: "Weight Management Education — FitClinicMD" },
+  title: { absolute: "Medical Weight Management Education | FitClinicMD" },
   description:
-    "Explore FitClinicMD's evaluation-first approach to weight management, including labs when indicated and treatment only when clinically appropriate.",
+    "Learn how FitClinicMD approaches provider-guided weight management: evaluation first, labs when indicated, and prescriptions when clinically appropriate.",
 };
 
 export default function WeightManagement() {
@@ -29,9 +28,15 @@ export default function WeightManagement() {
             <span className="text-ink">Weight management</span>
           </nav>
           <Eyebrow>Treatment</Eyebrow>
-          <h1 className="max-w-3xl text-4xl sm:text-5xl">Weight management.</h1>
+          <h1 className="max-w-3xl text-4xl sm:text-5xl">Medical weight management.</h1>
           <div className="mt-5 max-w-2xl text-lg text-ink-soft">
-            <Claim id="glp1-what-it-is" />
+            <p>
+              FitClinicMD is pre-launch and is not accepting patients. This page explains how
+              provider-guided weight management may work when care is available. A licensed provider
+              would evaluate your health history, order labs when clinically indicated, and consider
+              a prescription only if it is clinically appropriate. Compounded medications are not
+              FDA-approved.
+            </p>
           </div>
         </Container>
       </div>
@@ -40,7 +45,7 @@ export default function WeightManagement() {
         <div className="overflow-hidden rounded-xl2 border border-ink/10 aspect-21/8">
           <Photo
             src="/images/weight-active.jpg"
-            alt="Two people running together outdoors"
+            alt="Person running on a gravel path outdoors"
             priority
           />
         </div>
@@ -50,25 +55,27 @@ export default function WeightManagement() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl">What to expect</h2>
+              <h2 className="text-2xl">How provider-guided care works</h2>
               <p className="mt-3 text-ink-muted">
-                Care begins with an evaluation, not a product. You complete a medical intake in your
-                portal, your provider reviews it along with any labs they need, and you meet by
-                video. Together you decide whether treatment makes sense, and what the plan looks
-                like.
+                Care is designed to begin with an evaluation, not a product. When the service is
+                available, a licensed provider would review your health information, meet with you by
+                phone or video, and order labs when clinically indicated. A prescription would be
+                considered only if the provider determines it is appropriate.
               </p>
               <p className="mt-3 text-ink-muted">
-                If medication is prescribed, it&apos;s prepared by a partner compounding pharmacy
-                and shipped to you. Your provider stays involved: you can message your care team,
-                review labs, and adjust the plan over time.
+                If a prescription is issued, a licensed pharmacy may prepare and dispense the
+                medication under applicable law. The provider would explain the plan, monitoring, and
+                follow-up that apply to your individual situation.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl">Results</h2>
-              <div className="mt-3">
-                <Claim id="glp1-outcomes" />
-              </div>
+              <h2 className="text-2xl">What to know about results</h2>
+              <p className="mt-3 text-ink-muted">
+                Individual results vary and no result is guaranteed. A licensed provider can discuss
+                what may be reasonable for you only after reviewing your health history and clinical
+                needs.
+              </p>
             </div>
 
             <div>
@@ -84,12 +91,11 @@ export default function WeightManagement() {
 
             <div>
               <h2 className="text-2xl">Who may be a candidate</h2>
-              <div className="mt-3">
-                <Claim id="eligibility-summary" />
-              </div>
-              <p className="mt-3 text-sm text-ink-muted">
-                Eligibility is determined by a licensed provider during your visit — not by this
-                website. We deliberately do not ask health questions here.
+              <p className="mt-3 text-ink-muted">
+                This page provides general education, not a medical evaluation. A licensed provider
+                would decide whether weight-management care is appropriate after reviewing your health
+                history and clinical needs. Do not share health details on this page; the website does
+                not determine eligibility.
               </p>
             </div>
           </div>
@@ -108,7 +114,10 @@ export default function WeightManagement() {
                 </div>
                 <div>
                   <dt className="text-ink-muted">Fulfillment</dt>
-                  <dd className="font-medium">Partner compounding pharmacy, shipped</dd>
+                  <dd className="font-medium">
+                    Medication, if prescribed: A licensed pharmacy may dispense medication only if a
+                    licensed provider prescribes it; availability varies by therapy and state.
+                  </dd>
                 </div>
                 <div>
                   <dt className="text-ink-muted">Availability</dt>
@@ -116,8 +125,8 @@ export default function WeightManagement() {
                 </div>
               </dl>
               <div className="mt-6">
-                <CTA href={signupUrl} className="w-full">
-                  Get started
+                <CTA href="/learn" className="w-full">
+                  Looking for education
                 </CTA>
               </div>
             </Card>
