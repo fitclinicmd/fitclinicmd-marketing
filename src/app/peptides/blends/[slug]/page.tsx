@@ -3,8 +3,16 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container, CTA, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
-import { signupUrl } from "@/lib/site";
+import { signupUrl, MEDICAL_REVIEWER } from "@/lib/site";
 import { BLENDS, getBlend } from "@/lib/blends";
+
+/** "2026-08-25" → "August 25, 2026" (UTC, so the day never shifts). */
+function formatDate(iso: string): string {
+  const d = new Date(`${iso}T00:00:00Z`);
+  return Number.isNaN(d.getTime())
+    ? iso
+    : d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+}
 
 export function generateStaticParams() {
   return BLENDS.map((b) => ({ slug: b.slug }));
@@ -63,6 +71,15 @@ export default async function BlendPage({ params }: { params: Promise<{ slug: st
           </p>
           <h1 className="mt-2 text-4xl sm:text-5xl">{b.name}</h1>
           <p className="mt-2 text-lg text-ink-soft">{b.oneLiner}</p>
+          <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-muted">
+            {MEDICAL_REVIEWER ? (
+              <>
+                <span>Medically reviewed by {MEDICAL_REVIEWER}</span>
+                <span aria-hidden="true">·</span>
+              </>
+            ) : null}
+            <span>Last updated {formatDate(b.updated)}</span>
+          </p>
         </Container>
       </div>
 
@@ -80,6 +97,37 @@ export default async function BlendPage({ params }: { params: Promise<{ slug: st
               {para}
             </p>
           ))}
+
+          {/* At a glance — scannable summary from fields we already carry. */}
+          <section className="mt-8">
+            <div className="rounded-xl2 border border-ink/10 bg-white p-5 sm:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-clinic">
+                At a glance
+              </p>
+              <dl className="mt-4 grid gap-x-6 gap-y-3 text-sm sm:grid-cols-[180px_1fr]">
+                <dt className="font-semibold text-ink">Composition</dt>
+                <dd className="text-ink-soft">{b.composition.map((c) => c.peptide).join(" + ")}</dd>
+                <dt className="font-semibold text-ink">What it&apos;s used for</dt>
+                <dd className="text-ink-soft">{b.uses.map((u) => u.use).join(" · ")}</dd>
+                {b.wada ? (
+                  <>
+                    <dt className="font-semibold text-ink">Sport (WADA)</dt>
+                    <dd className="text-ink-soft">{b.wada}</dd>
+                  </>
+                ) : null}
+                <dt className="font-semibold text-ink">Provenance</dt>
+                <dd className="text-ink-soft">
+                  Compounded by a licensed U.S. pharmacy;{" "}
+                  <Link href="/verify" className="font-semibold text-clinic hover:underline">
+                    verify the exact pharmacy, batch and COA
+                  </Link>
+                  .
+                </dd>
+                <dt className="font-semibold text-ink">Last updated</dt>
+                <dd className="text-ink-soft">{formatDate(b.updated)}</dd>
+              </dl>
+            </div>
+          </section>
 
           <section className="mt-12">
             <h2 className="text-2xl">What&apos;s in it</h2>
@@ -138,6 +186,17 @@ export default async function BlendPage({ params }: { params: Promise<{ slug: st
                 From a prescription in your name, using ingredients traceable to a named source,
                 under published sterile-compounding standards.
               </p>
+              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                Most sites can&apos;t tell you where your blend actually came from. We can: after your
+                order ships, see the exact licensed U.S. pharmacy that compounded it, its batch and
+                Certificate of Analysis — on a tamper-evident record you can check yourself.
+              </p>
+              <Link
+                href="/verify"
+                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic hover:underline"
+              >
+                Verify your order <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </section>
 

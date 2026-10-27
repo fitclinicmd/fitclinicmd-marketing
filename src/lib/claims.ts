@@ -141,15 +141,17 @@ export const CLAIMS: Record<string, Claim> = {
     id: "pricing-headline",
     intent:
       "What the patient pays, itemized. NOT a flat membership: first visit is consultation + labs (if ordered) + medication + shipping; the recurring charge drops the consultation unless the patient asks for another. Must carry the automatic-renewal disclosures required by ROSCA and state law (packet 2.3(3)).",
-    status: "DRAFT",
-    text: "Your first visit is itemized, and you see the total before you pay: $[APPOINTMENT] for the provider consultation, $[LABS] for lab work if your provider orders it, the cost of your prescribed medication, and $[SHIPPING] shipping. After that you are charged only for medication and shipping — a further consultation is billed only if you ask for one.",
+    status: "APPROVED",
+    approval: "Michael Roth (counsel) — 2026-10-26; figures from Todd's v16 pricing sheet ($100 consult, $40 shipping, labs pass-through)",
+    text: "Your first visit is itemized, and you see the total before you pay: $100 for the provider consultation, the cost of lab work if your provider orders it, the cost of your prescribed medication, and $40 shipping. After that you are charged only for medication and shipping — a further consultation is billed only if you ask for one.",
   },
   "pricing-autorenewal": {
     id: "pricing-autorenewal",
     intent:
       "The automatic-renewal disclosure shown before purchase. NOTE the recurring amount is VARIABLE — it depends on what was prescribed — so a fixed '$X per month' sentence cannot be truthful here. The disclosure must therefore state how the amount is determined, show the actual figure before each charge, and give advance notice. Amount, interval, automatic charging, and cancellation must all appear before purchase.",
-    status: "DRAFT",
-    text: "Your medication ships every [interval] and your card on file is charged automatically until you cancel. Because the amount depends on what you are prescribed, we show your exact charge before each shipment and email you [NOTICE_DAYS] days beforehand. Cancel anytime from your account — cancelling stops all future charges.",
+    status: "APPROVED",
+    approval: "Michael Roth (counsel) — 2026-10-26; monthly interval, 3-day pre-charge notice, billing via Authorize.net (we collect)",
+    text: "Your medication ships every month and your card on file is charged automatically until you cancel. Because the amount depends on what you are prescribed, we show your exact charge before each shipment and email you 3 days beforehand. Cancel anytime from your account — cancelling stops all future charges.",
   },
   "provider-credentials": {
     id: "provider-credentials",

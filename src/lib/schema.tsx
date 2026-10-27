@@ -8,17 +8,14 @@ import { SITE } from "./site";
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    // FitClinicMD is pre-launch and is not accepting patients. Keep this as a
+    // neutral Organization until the operating entity, provider roster, and
+    // launched services are counsel-approved facts.
+    "@type": "Organization",
     "@id": `${SITE.url}/#organization`,
     name: SITE.name,
     url: SITE.url,
-    description:
-      "Telehealth clinic offering physician-guided peptide therapy and weight management (GLP-1), with medication fulfilled by a partner compounding pharmacy.",
-    medicalSpecialty: ["Endocrine", "PrimaryCare"],
-    availableService: [
-      { "@type": "MedicalTherapy", name: "Peptide therapy" },
-      { "@type": "MedicalTherapy", name: "Weight management program" },
-    ],
+    description: "FitClinicMD is pre-launch and is not accepting patients.",
   };
 }
 
