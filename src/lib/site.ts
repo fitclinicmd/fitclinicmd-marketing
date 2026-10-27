@@ -80,7 +80,6 @@ export const FOOTER_NAV = [
       { href: "/treatments/peptides", label: "Peptide therapy" },
       { href: "/treatments/weight-management", label: "Weight management" },
       { href: "/peptides", label: "Peptide library" },
-      { href: "/peptides/blends", label: "Peptide blends" },
       { href: "/glp-1", label: "GLP-1s" },
       { href: "/peptides/fda-status", label: "Peptides and the FDA" },
     ],

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Container, Section, Eyebrow, Card, ImportantSafetyInfo } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import { PEPTIDES, peptidesByCategory, CATEGORY_ANCHORS } from "@/lib/peptides";
-import { BLENDS } from "@/lib/blends";
 
 export const metadata: Metadata = {
   title: "Peptide education library",
@@ -83,27 +82,17 @@ export default function PeptidesIndex() {
             </a>
           </div>
 
-          {/* 2 · The two libraries, side by side. */}
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6 sm:gap-4">
+          {/* 2 · The single-peptide library. Blends were removed from
+              FitClinicMD per the LegitScript product scope (Todd, 2026-10);
+              they remain on New Start, which carries the full line. */}
+          <div className="mt-4 sm:mt-6">
             <Link
               href="#single-peptides"
-              className="group rounded-xl2 border border-ink/15 bg-white p-4 transition hover:border-clinic sm:p-6"
+              className="group block rounded-xl2 border border-ink/15 bg-white p-4 transition hover:border-clinic sm:p-6"
             >
               <h2 className="text-lg sm:text-xl">Single Peptides</h2>
               <p className="mt-1 text-xs text-ink-muted sm:text-sm">
                 {PEPTIDES.length} compounds, one page each.
-              </p>
-              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
-                Browse <span aria-hidden="true">→</span>
-              </span>
-            </Link>
-            <Link
-              href="/peptides/blends"
-              className="group rounded-xl2 border border-ink/15 bg-white p-4 transition hover:border-clinic sm:p-6"
-            >
-              <h2 className="text-lg sm:text-xl">Peptide Blends</h2>
-              <p className="mt-1 text-xs text-ink-muted sm:text-sm">
-                {BLENDS.length} combinations, grouped by purpose.
               </p>
               <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic transition group-hover:gap-2">
                 Browse <span aria-hidden="true">→</span>

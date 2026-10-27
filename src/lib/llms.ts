@@ -20,7 +20,6 @@ import { siteIsIndexable } from "./claims";
 import { publishedArticles } from "./articles";
 import { PUBLIC_LEGAL_DOCS } from "./legal";
 import { PEPTIDES } from "./peptides";
-import { BLENDS, blendsByCategory } from "./blends";
 import { FULL_REVIEWS } from "./fullReviews";
 
 const PRELAUNCH_NOTICE = `# ${SITE.name}
@@ -56,7 +55,6 @@ const CORE_PAGES: [string, string][] = [
   ["/peptides", "peptide education library index — one page per compound"],
   ["/education/start-here.html", "start here: what a peptide is, why the same compound produces different results in different people, and how to get from a goal to the right group of compounds"],
   ["/education/foundations.html", "foundational knowledge: what peptides are, what \"FDA approved\" means, how to read a health claim, what happens at a first visit"],
-  ["/peptides/blends", "peptide blend index — all combinations, grouped by purpose"],
   ["/glp-1", "GLP-1 medicines: approved brands vs compounded preparations"],
   ["/peptides/fda-status", "where peptides actually stand with the FDA"],
   ["/providers", "how clinicians are licensed and credentialed"],
@@ -80,22 +78,6 @@ function peptideLines() {
   ).join("\n");
 }
 
-function blendLines() {
-  return blendsByCategory()
-    .map(
-      (g) =>
-        `### ${g.category}\n` +
-        g.blends
-          .map(
-            (b) =>
-              `- /peptides/blends/${b.slug}: ${b.name} — ${b.oneLiner} Components: ${b.composition
-                .map((c) => c.peptide)
-                .join(", ")}. Long-form review: /peptides/blends/${b.slug}/full`,
-          )
-          .join("\n"),
-    )
-    .join("\n\n");
-}
 
 function articleLines() {
   return publishedArticles().map((a) => `- /learn/${a.slug}: ${a.title}`).join("\n");
@@ -125,10 +107,6 @@ ${pageLines()}
 ## Peptide education library (${PEPTIDES.length} compounds)
 
 ${peptideLines()}
-
-## Peptide blends (${BLENDS.length} combinations)
-
-${blendLines()}
 
 ## Education (Learn)
 
@@ -189,10 +167,6 @@ ${pageLines()}
 ## Peptide education library (${PEPTIDES.length} compounds)
 
 ${peptideLines()}
-
-## Peptide blends (${BLENDS.length} combinations)
-
-${blendLines()}
 
 ## Education (Learn)
 
