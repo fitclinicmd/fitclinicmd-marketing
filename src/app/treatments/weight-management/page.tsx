@@ -5,6 +5,8 @@ import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/treatments/weight-management" },
+  openGraph: { url: "https://www.fitclinicmd.com/treatments/weight-management" },
   title: { absolute: "Weight Management Education — FitClinicMD" },
   description:
     "Explore FitClinicMD's evaluation-first approach to weight management, including labs when indicated and treatment only when clinically appropriate.",
