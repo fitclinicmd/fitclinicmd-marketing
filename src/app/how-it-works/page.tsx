@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Container, Section, Eyebrow, CTA, Card, EmergencyNotice } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: "How Evaluation Works | Telehealth — FitClinicMD" },
@@ -12,39 +11,39 @@ export const metadata: Metadata = {
 const STEPS = [
   {
     n: "01",
-    title: "Create your account",
-    body: "You sign up in our secure patient portal — a separate, protected system from this website. We ask for your name, contact details and the state you live in, because your state determines which providers can treat you.",
-    detail: "Takes a few minutes",
+    title: "Confirm your location and ask about the pathway",
+    body: "Start with an inquiry or request for education. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in your state. This public website does not collect health information.",
+    detail: "Inquiry first",
   },
   {
     n: "02",
-    title: "Complete your medical intake",
-    body: "Inside the portal you answer questions about your health history, medications, allergies and goals. This is the only place we ever collect health information — never on this public website.",
-    detail: "About 10 minutes",
+    title: "Share your goals and health questions",
+    body: "If you continue, an independent licensed clinician can discuss your goals, health history, medications, allergies, and questions by phone or video. The evaluation comes before any treatment decision.",
+    detail: "Education or inquiry",
   },
   {
     n: "03",
-    title: "Labs, if your provider needs them",
-    body: "Some treatments require bloodwork before they can be prescribed safely. If yours does, we'll arrange it and your results are attached to your chart for your provider to review.",
+    title: "Complete labs when indicated",
+    body: "Labs may be requested when clinically indicated. An independent licensed clinician reviews the results as part of deciding whether a treatment is appropriate for you.",
     detail: "Only when clinically indicated",
   },
   {
     n: "04",
-    title: "Meet your provider by video",
-    body: "A provider licensed in your state reviews your intake and labs and meets you by video. They'll discuss your goals, answer questions, and decide whether treatment is appropriate for you.",
-    detail: "Scheduled at your convenience",
+    title: "Meet with an independent licensed clinician",
+    body: "An independent licensed clinician reviews the information relevant to your evaluation, answers your questions, and makes the clinical decision. FitClinicMD does not promise a prescription, diagnosis, or outcome.",
+    detail: "By phone or video",
   },
   {
     n: "05",
-    title: "Your prescription is filled and shipped",
-    body: "If your provider prescribes treatment, a partner compounding pharmacy prepares it and ships it to your door. You can follow the status in your portal.",
-    detail: "Tracked to delivery",
+    title: "Receive a treatment decision",
+    body: "If a clinician decides treatment is appropriate and prescribes it, a partner 503A compounding pharmacy may dispense the medication. Compounded medicines, including compounded semaglutide and tirzepatide, are not FDA-approved.",
+    detail: "Only if appropriate",
   },
   {
     n: "06",
-    title: "Ongoing care and check-ins",
-    body: "Message your care team from the portal, review labs, and adjust your plan with your provider over time. Everything is managed from your account, and you can pause or stop at any point there.",
-    detail: "For as long as you're with us",
+    title: "Continue care if appropriate",
+    body: "If care is appropriate, your clinician can explain follow-up, monitoring, and any next steps. Availability depends on clinician licensure and your location, and care is not available in every state.",
+    detail: "If care is appropriate",
   },
 ];
 
@@ -55,11 +54,13 @@ export default function HowItWorks() {
         <Container className="py-16 sm:py-20">
           <Eyebrow>How it works</Eyebrow>
           <h1 className="max-w-3xl text-4xl sm:text-5xl">
-            From first question to front door.
+            How an evaluation-first care pathway works
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            No waiting rooms, no insurance paperwork. Here is exactly what happens, in order, and
-            what we ask of you at each step.
+            FitClinicMD is preparing an evaluation-first telehealth pathway. Start with an inquiry
+            or education request, then learn what a licensed clinician may review before deciding
+            whether care is appropriate for you. Availability depends on your location and clinician
+            licensure.
           </p>
         </Container>
       </div>
@@ -89,28 +90,27 @@ export default function HowItWorks() {
         <div className="grid gap-8 lg:grid-cols-2">
           <div>
             <Eyebrow>Good to know</Eyebrow>
-            <h2 className="text-3xl">A prescription is never guaranteed.</h2>
+            <h2 className="text-3xl">An evaluation comes before any treatment decision.</h2>
             <p className="mt-3 text-ink-muted">
-              Our providers prescribe only when they judge treatment to be clinically appropriate
-              for you. If it isn&apos;t, they&apos;ll tell you why and talk through alternatives.
-              That&apos;s the point of seeing a clinician rather than filling out a form.
+              A phone or video inquiry does not guarantee a prescription, diagnosis, or result. An
+              independent licensed clinician decides whether treatment is appropriate based on your
+              situation and may discuss alternatives.
             </p>
           </div>
           <div className="space-y-4">
             <Card>
-              <h3 className="text-lg">Your state matters</h3>
+              <h3 className="text-lg">Availability depends on your location</h3>
               <p className="mt-2 text-sm text-ink-muted">
-                Providers may only treat patients in states where they hold an active license. Our
-                system enforces this — if we can&apos;t serve your state yet, we&apos;ll say so
-                up front rather than after you&apos;ve paid.
+                Care is available only where a FitClinicMD-affiliated clinician is licensed. We will
+                explain whether the pathway is available in your state before any clinical step.
               </p>
             </Card>
             <Card>
-              <h3 className="text-lg">Compounded medication</h3>
+              <h3 className="text-lg">Compounded medication is not FDA-approved</h3>
               <p className="mt-2 text-sm text-ink-muted">
-                Medications are prepared by a licensed compounding pharmacy. Compounded
-                preparations are not FDA-approved products. Your provider will explain what this
-                means for your treatment.
+                If a clinician prescribes a compounded medication, a partner 503A compounding
+                pharmacy may dispense it. Compounded medications are not FDA-approved products. Your
+                clinician can explain what this means for your treatment.
               </p>
             </Card>
             <Card>
@@ -122,14 +122,15 @@ export default function HowItWorks() {
 
       <Section>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl">Start when you&apos;re ready.</h2>
+          <h2 className="text-3xl">Have questions? Start with an inquiry.</h2>
           <p className="mt-3 text-ink-muted">
-            You can create an account and complete your intake before committing to anything.
+            Use the inquiry form to ask about the evaluation-first pathway or request education. This
+            does not book a visit, guarantee treatment, or create a provider-patient relationship.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
-            <CTA href={signupUrl}>Get started</CTA>
-            <CTA href="/faq" variant="secondary">
-              Read the FAQ
+            <CTA href="/contact">Get started today</CTA>
+            <CTA href="/learn" variant="secondary">
+              Looking for education
             </CTA>
           </div>
         </div>
