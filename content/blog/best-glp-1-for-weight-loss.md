@@ -28,7 +28,7 @@ These medications work in related but distinct ways, and people can respond diff
 
 GLP-1 receptor agonists act like glucagon-like peptide-1, a hormone released in the gut. They can affect appetite and fullness, help the pancreas release insulin when blood sugar is elevated, and slow how quickly food leaves the stomach. These effects may support weight management, but individual responses vary.
 
-Slower stomach emptying can also contribute to digestive side effects, including nausea, constipation, or diarrhea. How a medication works is only one part of deciding whether it may be appropriate. A clinician can review your health history, discuss possible risks, and explain what symptoms to report. FitClinicMD’s [GLP-1 overview](https://www.fitclinicmd.com/glp-1) describes the clinic’s planned approach to care.
+Slower stomach emptying can also contribute to digestive side effects, including nausea, constipation, or diarrhea. How a medication works is only one part of deciding whether it may be appropriate. A clinician can review your health history, discuss possible risks, and explain what symptoms to report. For a plain-language explanation of how these medicines work, read [How GLP-1 medicines work](https://www.fitclinicmd.com/learn/how-glp-1-medicines-work). FitClinicMD’s [GLP-1 overview](https://www.fitclinicmd.com/glp-1) describes the clinic’s planned approach to care.
 
 ### How Tirzepatide Targets GIP and GLP-1
 
@@ -100,7 +100,7 @@ The dosing schedule alone doesn’t determine which medication is right for you.
 
 These medications generally start at a lower dose that is gradually increased according to the product’s schedule. This process, called titration, helps your prescriber assess how you’re responding and tolerating treatment before making changes. If side effects occur, your clinician can advise whether to continue as planned or consider another approach.
 
-Follow the directions for your specific medication, including instructions for a missed dose. Don’t change your dose, switch products, or combine GLP-1 medicines without medical guidance. Weight changes usually develop over months, not days, and regular follow-up gives your care team a chance to review progress, side effects, and whether your maintenance plan remains appropriate.
+Follow the directions for your specific medication, including instructions for a missed dose. Don’t change your dose, switch products, or combine GLP-1 medicines without medical guidance. Weight changes usually develop over months, not days, and regular follow-up gives your care team a chance to review progress, side effects, and whether your maintenance plan remains appropriate. Read [GLP-1 dosing safety](https://www.fitclinicmd.com/learn/glp-1-dosing-safety) for more education about following product-specific instructions.
 
 ### Why You Shouldn’t Compare or Adjust Doses on Your Own
 

@@ -40,15 +40,15 @@ Compounded semaglutide is made by a compounding pharmacy. It is not an FDA-appro
 
 Your total cost depends on the medication prescribed, your insurance benefits, and the services included in your care. A pharmacy price is only one part of the budget. Before comparing options, check whether the estimate includes appointments, labs, dispensing, delivery, and follow-up care.
 
-### Wegovy’s list price and current self-pay options
+### How branded semaglutide prices and self-pay options can change
 
-Wegovy is an FDA-approved semaglutide medication for chronic weight management. It is available as a once-daily pill and a once-weekly injection. NovoCare lists self-pay monthly prices for the pill at $149 for the 1.5 mg dose, $199 for 4 mg, and $299 for the 9 mg or 25 mg dose. These prices are for the listed pill doses, not necessarily for Wegovy injections or other semaglutide products.
+Wegovy is an FDA-approved semaglutide medication for chronic weight management. The amount a person pays can depend on the prescribed form and dose, insurance benefits, pharmacy, and eligibility for a manufacturer program. A self-pay offer may have terms and limits that change over time, so it should not be treated as a universal price for every semaglutide product.
 
-Offers, prices, and eligibility rules can change. Check [NovoCare’s Wegovy cost and savings information](https://www.novocare.com/patient/medicines/wegovy.html) before making a budget. Ask the pharmacy to confirm the amount for your prescribed form and dose, and whether the quote includes dispensing or delivery fees.
+Check [NovoCare’s Wegovy cost and savings information](https://www.novocare.com/patient/medicines/wegovy.html) before making a budget. Ask the pharmacy to confirm the amount for your prescribed form and dose, and whether the quote includes dispensing or delivery fees.
 
 ### How insurance changes your pharmacy price
 
-With insurance, semaglutide may cost $0 to several hundred dollars per month out of pocket. Your share depends on your deductible, copay or coinsurance, and whether your plan covers the specific medication for weight management. Coverage can differ between plans, even when the plans come from the same insurer, so another person’s price may not apply to you.
+With insurance, your out-of-pocket amount depends on your deductible, copay or coinsurance, and whether your plan covers the specific medication for weight management. Coverage can differ between plans, even when the plans come from the same insurer, so another person’s price may not apply to you.
 
 Contact your insurer before filling a prescription. Ask whether your plan covers Wegovy or another semaglutide product for your intended use, whether prior authorization is required, and which pharmacies are in network. [Ro’s semaglutide cost guidance](https://ro.co/weight-loss/how-much-does-semaglutide-cost/) explains how plan benefits and coverage rules can affect the price. If you are eligible for a special savings program, check its terms and dates directly with the program provider.
 
@@ -60,7 +60,7 @@ FitClinicMD is pre-launch, is not yet accepting patients, and has not published 
 
 ### Why compounded semaglutide may have different costs and coverage
 
-Compounded semaglutide may be advertised at a lower price than an FDA-approved medication. Ro cites prices as low as $200 per month, but the amount can vary by provider, dose, and what the fee includes. Compounded medicines are not FDA-approved and do not go through the same FDA review for safety, effectiveness, and manufacturing quality as approved drugs.
+Compounded semaglutide may be advertised at a lower price than an FDA-approved medication, but amounts vary by provider, dose, and what the fee includes. Compounded medicines are not FDA-approved and do not go through the same FDA review for safety, effectiveness, and manufacturing quality as approved drugs. Read [Compounded medication explained](https://www.fitclinicmd.com/learn/compounded-medication-explained) for more information about how compounded medicines differ.
 
 A lower advertised price does not mean a compounded product is interchangeable with an approved medication or covered by insurance. Compounding is subject to specific requirements, and availability can change. Ask who prepares the medication, what the quote includes, and whether the prescriber and pharmacy are properly licensed. Review the risks and alternatives with a qualified clinician before deciding. [Ro’s cost information](https://ro.co/weight-loss/how-much-does-semaglutide-cost/) offers further context on compounded semaglutide pricing and approval.
 
@@ -72,7 +72,7 @@ Your semaglutide cost depends on more than the medication’s listed price. Your
 
 Your deductible is the amount you pay for covered services before your plan begins sharing costs. If you have not met your prescription drug deductible, you may pay more at the pharmacy early in the plan year. Afterward, your share may be a copay, a fixed fee, or coinsurance, a percentage of the plan’s allowed cost.
 
-Coverage rules also affect your bill. A plan may cover semaglutide only for certain uses, require prior authorization, or limit how much it will pay. With insurance, the cost may range from $0 to several hundred dollars per month, depending on your plan, medication, deductible, and copay, according to [Ro’s semaglutide cost overview](https://ro.co/weight-loss/how-much-does-semaglutide-cost/). Check your plan documents for the rules that apply to your prescription.
+Coverage rules also affect your bill. A plan may cover semaglutide only for certain uses, require prior authorization, or limit how much it will pay. Your out-of-pocket amount depends on your plan, medication, deductible, and copay. Check your plan documents for the rules that apply to your prescription.
 
 ### How formulary tiers, pharmacy networks, and prescription details affect costs
 
