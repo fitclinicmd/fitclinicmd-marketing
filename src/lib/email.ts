@@ -9,7 +9,12 @@
 // { ok: false, configured: false } so callers can fall back to a direct-email
 // instruction rather than silently dropping the message.
 //
-// Docs: https://docs.paubox.com/docs/paubox_email_api/messages
+// Uses Paubox's CURRENT Email API: a single account-scoped key (Bearer auth),
+// no username in the path, HTML sent inline — the same form proven working in
+// the fitclinicmd-com app. The legacy api.paubox.net/v1/{username} + base64 form
+// is retired here so this zone needs only PAUBOX_API_KEY (+ PAUBOX_FROM), which
+// the existing FitClinicMD Paubox account already provides — no separate account
+// or API user required. Docs: https://docs.paubox.com/email-api/quickstart
 
 export type SendEmailInput = {
   to: string | string[];
@@ -22,38 +27,38 @@ export type SendEmailInput = {
 
 export type SendEmailResult = { ok: boolean; configured: boolean; error?: string };
 
-const PAUBOX_BASE = "https://api.paubox.net/v1";
+const PAUBOX_URL = "https://api.paubox.com/v1/email/messages";
 
-/** True when the Paubox API user + key are both present in the environment. */
+/** True when the Paubox API key is present in the environment. */
 export function emailConfigured(): boolean {
-  return Boolean(process.env.PAUBOX_API_USER && process.env.PAUBOX_API_KEY);
+  return Boolean(process.env.PAUBOX_API_KEY);
 }
 
 export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult> {
-  const user = process.env.PAUBOX_API_USER;
   const key = process.env.PAUBOX_API_KEY;
-  if (!user || !key) return { ok: false, configured: false };
+  if (!key) return { ok: false, configured: false };
 
-  // Must be an address on a Paubox-verified sending domain (SPF/DKIM set up in
-  // the Paubox dashboard for fitclinicmd.com).
+  // Must be an address on a Paubox-verified sending domain (SPF set up in the
+  // Paubox dashboard for fitclinicmd.com).
   const from = process.env.PAUBOX_FROM ?? "FitClinicMD <no-reply@fitclinicmd.com>";
   const recipients = Array.isArray(input.to) ? input.to : [input.to];
 
   const headers: Record<string, string> = { subject: input.subject, from };
   if (input.replyTo) headers["reply-to"] = input.replyTo;
 
-  // Paubox requires the HTML part base64-encoded; plain text is sent as-is.
+  // Current API takes HTML inline (the legacy API required base64 — this one
+  // does not; sending base64 here would deliver garbled markup).
   const content: Record<string, string> = { "text/plain": input.text };
-  if (input.html) content["text/html"] = Buffer.from(input.html, "utf8").toString("base64");
+  if (input.html) content["text/html"] = input.html;
 
   const payload = { data: { message: { recipients, headers, content } } };
 
   try {
-    const res = await fetch(`${PAUBOX_BASE}/${encodeURIComponent(user)}/messages`, {
+    const res = await fetch(PAUBOX_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Token token=${key}`,
+        Authorization: `Bearer ${key}`,
       },
       body: JSON.stringify(payload),
       cache: "no-store",
