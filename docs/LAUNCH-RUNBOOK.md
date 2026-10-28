@@ -30,20 +30,32 @@ This is Michael's lane as counsel. Claude cannot send the email.
 
 ---
 
-## ② Lead capture — so no lead is lost (Michael provides, Claude sets)
+## ② Lead capture — so no lead is lost
 
-`/contact` and `/start` deliver through Paubox. Until these are set, both fall
+`/contact` and `/start` deliver through Paubox. Until the key is set, both fall
 back to "we'll be in touch" and nothing is delivered.
 
-**Values needed from Michael:**
-- Paubox: `PAUBOX_API_USER`, `PAUBOX_API_KEY`, `PAUBOX_FROM` (verified sender)
+**No new Paubox account is needed.** As of PR #164, `src/lib/email.ts` uses
+Paubox's current Bearer API (single account-scoped key, no API user) — the same
+form the fitclinicmd-com app already sends through. So this zone **reuses the
+existing "FitClinicMD App v4" key** (sender `no-reply@fitclinicmd.com` is already
+SPF-verified): no separate account, no new BAA, no 24-hour new-account hold.
+
+**Michael provides (secret — Claude does not type it):**
+- `PAUBOX_API_KEY` — the *same value* already in the `fitclinicmd-com` Vercel
+  project. Copy it in the Vercel dashboard (`fitclinicmd-com` → copy →
+  `fitclinicmd-marketing`), or `vercel env add PAUBOX_API_KEY production`.
+
+**Michael provides, Claude sets:**
 - Lead inbox(es): `CONTACT_INBOX`, `BOOKING_INBOX` (one address is fine for both)
 - LocumTele booking link: `NEXT_PUBLIC_BOOKING_URL`
 
+**Claude sets (not secret):**
+- `PAUBOX_FROM` = `FitClinicMD <no-reply@fitclinicmd.com>`
+
 **Commands (run from `fitclinicmd-marketing/`, Vercel team `fit-clinic-md`):**
 ```bash
-vercel env add PAUBOX_API_USER production
-vercel env add PAUBOX_API_KEY production
+vercel env add PAUBOX_API_KEY production        # Michael — reuse the existing key value
 vercel env add PAUBOX_FROM production
 vercel env add CONTACT_INBOX production
 vercel env add BOOKING_INBOX production
@@ -92,7 +104,9 @@ FitClinicMD is live.
 
 Two inputs from Michael start everything:
 1. **Send the GEN BAA email** (unblocks ①).
-2. **Send the Paubox creds + lead inbox + LocumTele URL** (unblocks ②).
+2. **Copy the existing `PAUBOX_API_KEY` into the marketing project + send the
+   lead inbox + LocumTele URL** (unblocks ②). No new Paubox account — reuse the
+   app's key.
 
 With those, ②③④ can be done within the hour, and the flip happens the moment
 the BAA clears. New Start MD is already fully public; FitClinicMD is the only
