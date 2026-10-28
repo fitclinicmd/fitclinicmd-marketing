@@ -35,8 +35,8 @@ const PILLARS = [
   {
     title: "Licensed providers, in your state",
     body: "Every visit is with a provider licensed where you live. Our system will not let a provider treat you otherwise.",
-    href: "/providers",
-    cta: "Meet the providers",
+    href: "/how-it-works",
+    cta: "How care works",
   },
   {
     title: "Focused on peptides & GLP-1",

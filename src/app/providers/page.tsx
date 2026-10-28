@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Container, Section, Eyebrow, Card, Claim, CTA } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
 
+// TEMPORARY HOLD (Todd, 2026-10-28): the provider section is hidden until
+// GenHealth confirms how physician information (names, credentials, photos,
+// bios) will be handled. This is a hold, not a deletion — the page content is
+// kept below so it can be restored by flipping PROVIDERS_HIDDEN to false and
+// re-adding the nav / footer / sitemap / llms links. Do not publish placeholder
+// provider profiles in the meantime.
+const PROVIDERS_HIDDEN = true;
+
 export const metadata: Metadata = {
   title: "Our providers",
+  robots: { index: false, follow: false },
   description:
     "Care is delivered by licensed clinicians — nurse practitioners, physician assistants and physicians — licensed in the state where you live.",
 };
@@ -29,6 +39,7 @@ const STANDARDS = [
 ];
 
 export default function Providers() {
+  if (PROVIDERS_HIDDEN) notFound();
   return (
     <>
       <div className="wash border-b border-ink/10">

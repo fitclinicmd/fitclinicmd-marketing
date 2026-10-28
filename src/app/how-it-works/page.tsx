@@ -8,12 +8,21 @@ export const metadata: Metadata = {
     "See how FitClinicMD's evaluation-first pathway may work: location check, intake, labs when indicated, video visit, and a prescription only if appropriate.",
 };
 
-const STEPS = [
+const STEPS: {
+  n: string;
+  title: string;
+  body: string;
+  detail: string;
+  href?: string;
+  linkText?: string;
+}[] = [
   {
     n: "01",
-    title: "Confirm your location and ask about the pathway",
-    body: "Start with an inquiry or request for education. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in your state. This public website does not collect health information.",
-    detail: "Inquiry first",
+    title: "Start with education",
+    body: "Begin in the education library — plain-English explainers on how peptide and GLP-1 care works, what a telehealth visit involves, and what to expect. Review what applies to you first; when you're ready, the next step is a medical evaluation with a licensed clinician. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in your state. This public website does not collect health information.",
+    detail: "Education first",
+    href: "/learn",
+    linkText: "Browse the education library",
   },
   {
     n: "02",
@@ -57,8 +66,8 @@ export default function HowItWorks() {
             How an evaluation-first care pathway works
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            FitClinicMD is preparing an evaluation-first telehealth pathway. Start with an inquiry
-            or education request, then learn what a licensed clinician may review before deciding
+            FitClinicMD is preparing an evaluation-first telehealth pathway. Start with the
+            education library, then learn what a licensed clinician may review before deciding
             whether care is appropriate for you. Availability depends on your location and clinician
             licensure.
           </p>
@@ -79,6 +88,14 @@ export default function HowItWorks() {
                 <div>
                   <h2 className="text-xl">{s.title}</h2>
                   <p className="mt-2 text-ink-muted">{s.body}</p>
+                  {s.href && (
+                    <a
+                      href={s.href}
+                      className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-clinic hover:underline"
+                    >
+                      {s.linkText} <span aria-hidden="true">→</span>
+                    </a>
+                  )}
                 </div>
               </Card>
             </li>
