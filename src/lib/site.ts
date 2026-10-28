@@ -64,11 +64,15 @@ export const showSignIn = APP_LIVE || process.env.NEXT_PUBLIC_SHOW_SIGN_IN === "
 // Peptides leads the nav AND has a pill in the header (see Header.tsx). That is
 // deliberate duplication, not an oversight: peptides are the current focus, and
 // the library is what people arrive looking for. Two routes to it beats one.
+// "Our providers" is temporarily hidden (Todd, 2026-10-28) until GenHealth
+// confirms how physician info will be handled; the /providers page itself is
+// gated too. "Learn" is promoted into the primary nav — education is central to
+// the positioning, so it must be easy to reach, not buried in the footer.
 export const NAV = [
   { href: "/peptides", label: "Peptides" },
   { href: "/how-it-works", label: "How it works" },
+  { href: "/learn", label: "Learn" },
   { href: "/treatments", label: "Treatments" },
-  { href: "/providers", label: "Our providers" },
   { href: "/faq", label: "FAQ" },
 ] as const;
 
@@ -88,10 +92,8 @@ export const FOOTER_NAV = [
     heading: "Company",
     links: [
       { href: "/about", label: "About" },
-      { href: "/providers", label: "Our providers" },
       { href: "/learn", label: "Learn" },
       { href: "/blog", label: "Blog" },
-      { href: "/verify", label: "Verify an order" },
       { href: "/contact", label: "Contact" },
     ],
   },

@@ -198,23 +198,11 @@ FitClinicMD’s website states that the clinic is still in pre-launch and is not
 
 The total cost depends on the medication, the care plan, and what your provider includes in the price. Before starting treatment, ask for an itemized estimate that covers medication, evaluation, labs, and follow-up care. A low monthly price may not include all of these expenses.
 
-### Ask about medication, evaluation, lab, and follow-up costs
-
-Request a written breakdown of the expected costs before you commit. Ask whether the price includes the initial evaluation, medication, lab work when clinically indicated, follow-up visits, shipping, and supplies. Find out whether care is billed as a monthly fee or charged separately, and whether costs may change if your dose or plan changes.
-
-One third-party overview estimates peptide protocols at $100 to $1,349 per month, with initial evaluations often costing $200 to $500 and follow-up visits $100 to $300. These are broad estimates, not a quote or guarantee. Meto’s cost overview provides more detail, but your actual costs will depend on the treatment and provider.
-
 ### Insurance coverage, manufacturer programs, and out-of-pocket expenses
 
 Coverage depends on the medication, your health plan, and its requirements. Some plans exclude peptide therapy, while coverage for FDA-approved weight-management medicines varies. A prescription does not guarantee insurance coverage. Contact your insurer to ask about prior authorization, eligibility criteria, preferred medications, copays, and deductibles.
 
 Ask the clinic whether it can provide documentation for a coverage request. You can also check whether a medicine’s manufacturer offers a savings or patient-assistance program, and confirm whether you qualify. If you’ll pay out of pocket, find out whether the quote includes medication, shipping, supplies, and clinical care. The ICN’s overview of peptide therapy coverage offers general information, but your insurer is the best source for details about your benefits.
-
-### Recurring fees, discounts, and HSA or FSA eligibility
-
-Weight management may involve ongoing care, so compare the expected cost over several months rather than focusing only on the first payment. Ask whether follow-up visits are included, whether the clinic charges a recurring membership fee, and what happens if you pause or change treatment. Some providers offer discounts for upfront payment or membership plans. Review cancellation rules and calculate the full cost before signing up. Provider pricing models can differ, so compare what each price includes.
-
-HSA or FSA funds may cover eligible medical expenses, but eligibility depends on the expense and your plan’s rules. Check with your benefits administrator before using those funds, and keep receipts and any required documentation. The [IRS guidance on medical expenses](https://www.irs.gov/publications/p502) explains general rules, but it does not determine whether a specific treatment qualifies under your plan.
 
 ### Compare total costs without treating compounded products as equivalent to approved medicines
 
@@ -235,6 +223,3 @@ These medicines should be used with clinician guidance. Follow-up allows your ca
 
 **How much does peptide therapy for weight loss cost?**\
 Costs vary depending on medication, evaluations, lab work, follow-up visits, and other fees. Ask for an itemized estimate and check with your insurer about coverage. FitClinicMD is in pre-launch and does not currently have active patient pricing.
-
-**Can I enroll with FitClinicMD now?**\
-No. FitClinicMD’s website says the clinic is not yet open to patients. Its planned care includes clinician evaluations and ongoing monitoring, and an evaluation would not guarantee a prescription.

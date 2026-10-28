@@ -57,7 +57,6 @@ const CORE_PAGES: [string, string][] = [
   ["/education/foundations.html", "foundational knowledge: what peptides are, what \"FDA approved\" means, how to read a health claim, what happens at a first visit"],
   ["/glp-1", "GLP-1 medicines: approved brands vs compounded preparations"],
   ["/peptides/fda-status", "where peptides actually stand with the FDA"],
-  ["/providers", "how clinicians are licensed and credentialed"],
   ["/learn", "education hub index"],
   ["/faq", "common questions"],
   ["/about", "about the clinic"],

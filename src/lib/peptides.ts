@@ -298,50 +298,6 @@ export const PEPTIDES: Peptide[] = [
     "updated": "2026-08-25"
   },
   {
-    "slug": "glutathione",
-    "name": "Glutathione",
-    "subtitle": "Endogenous tripeptide antioxidant",
-    "category": "Mitochondrial & Cellular Energy",
-    "oneLiner": "A go-to antioxidant for skin brightening and overall wellness.",
-    "intro": [
-      "Glutathione is a tiny protein every cell manufactures for itself, the body’s main internal antioxidant. Swallowed glutathione is broken down before it can be absorbed intact, so it is given by injection, IV, or nebulizer instead. It is used by people interested in skin tone, oxidative stress, and general recovery."
-    ],
-    "uses": [
-      {
-        "use": "General antioxidant and oxidative stress",
-        "inShort": "The underlying use tied to its natural role in the body."
-      },
-      {
-        "use": "Skin tone and brightening",
-        "inShort": "The most-marketed use."
-      },
-      {
-        "use": "Chemotherapy side effects and neuropathy",
-        "inShort": "Studied as an add-on in oncology, alongside an oncologist’s input."
-      }
-    ],
-    "notFor": [
-      "Anyone with asthma or reactive airways, where an inhaled or nebulised form is proposed.",
-      "Anyone with a history of anaphylaxis or severe drug allergy.",
-      "Anyone with liver disease or abnormal liver tests.",
-      "Pregnant or breastfeeding patients, and anyone on chemotherapy without involving their oncologist."
-    ],
-    "wada": "Competitive athletes: Glutathione itself is not prohibited by WADA; large-volume IV infusions fall",
-    "pairsWith": [
-      {
-        "name": "NAD+",
-        "slug": "nad",
-        "reason": "shares a focus on cellular energy and antioxidant balance."
-      },
-      {
-        "name": "SS-31",
-        "slug": "ss-31",
-        "reason": "both relate to protecting mitochondrial function."
-      }
-    ],
-    "updated": "2026-08-25"
-  },
-  {
     "slug": "nad",
     "name": "NAD+",
     "subtitle": "Cellular energy coenzyme",
@@ -372,78 +328,6 @@ export const PEPTIDES: Peptide[] = [
     "pairsWith": [],
     "updated": "2026-08-25"
   },
-  {
-    "slug": "ss-31",
-    "name": "SS-31",
-    "subtitle": "Cardiolipin-targeting tetrapeptide (elamipretide)",
-    "category": "Mitochondrial & Cellular Energy",
-    "oneLiner": "Known for supporting the cell's own energy centers.",
-    "intro": [
-      "SS-31, known as elamipretide, is a small peptide engineered to target cardiolipin, a molecule inside mitochondria central to how cells produce energy. It is used by people interested in mitochondrial health and cellular energy support."
-    ],
-    "uses": [
-      {
-        "use": "Muscle strength support",
-        "inShort": "The one narrow FDA-approved use, in a rare genetic condition."
-      },
-      {
-        "use": "Age-related vision support",
-        "inShort": "An area of active research interest."
-      },
-      {
-        "use": "General mitochondrial health",
-        "inShort": "The use most associated with its wellness marketing."
-      }
-    ],
-    "notFor": [
-      "Pregnant or breastfeeding patients, or anyone trying to conceive.",
-      "Anyone with a known hypersensitivity.",
-      "Anyone extrapolating a narrow approval to general wellness or longevity use without discussing it first.",
-      "Anyone sourcing product from an unverified compounder or vendor."
-    ],
-    "wada": "Competitive athletes: SS-31’s status is recent and still settling; confirm current status before use.",
-    "pairsWith": [
-      {
-        "name": "NAD+",
-        "slug": "nad",
-        "reason": "shares a focus on cellular energy production."
-      }
-    ],
-    "updated": "2026-08-25"
-  },
-  {
-    "slug": "pt-141",
-    "name": "PT-141",
-    "subtitle": "Melanocortin receptor agonist (bremelanotide)",
-    "category": "Sexual & Reproductive Health",
-    "oneLiner": "Popular for reigniting desire from the inside out.",
-    "intro": [
-      "PT-141, also known as bremelanotide, is a lab-made peptide built to mimic a natural hormone involved in the brain’s desire and arousal pathway. As Vyleesi, it is FDA-approved for one specific population. It is used by people addressing low sexual desire and interest."
-    ],
-    "uses": [
-      {
-        "use": "Low sexual desire in premenopausal women",
-        "inShort": "The approved use — a modest, statistically significant benefit."
-      },
-      {
-        "use": "Male erectile dysfunction, off-label",
-        "inShort": "Based on an older development program."
-      },
-      {
-        "use": "Male low libido without diagnosed ED",
-        "inShort": "Extrapolated from related research."
-      }
-    ],
-    "notFor": [
-      "Uncontrolled hypertension or known cardiovascular disease.",
-      "Pregnancy, or trying to conceive without reliable contraception.",
-      "Low desire caused by another medical condition, psychiatric condition, relationship problem, or medication.",
-      "Postmenopausal women."
-    ],
-    "wada": "Competitive athletes: Not currently named on the WADA Prohibited List; confirm current status before",
-    "pairsWith": [],
-    "updated": "2026-08-25"
-  }
 ];
 
 export function getPeptide(slug: string) {

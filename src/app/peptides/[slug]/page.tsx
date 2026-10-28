@@ -106,13 +106,9 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
                 <dd className="text-ink-soft">{p.uses.map((u) => u.use).join(" · ")}</dd>
                 <dt className="font-semibold text-ink">Sport (WADA)</dt>
                 <dd className="text-ink-soft">{p.wada}</dd>
-                <dt className="font-semibold text-ink">Provenance</dt>
+                <dt className="font-semibold text-ink">Source</dt>
                 <dd className="text-ink-soft">
-                  Compounded by a licensed U.S. pharmacy;{" "}
-                  <Link href="/verify" className="font-semibold text-clinic hover:underline">
-                    verify the exact pharmacy, batch and COA
-                  </Link>
-                  .
+                  Compounded by a licensed U.S. pharmacy from a prescription in your name.
                 </dd>
                 <dt className="font-semibold text-ink">Last updated</dt>
                 <dd className="text-ink-soft">{formatDate(p.updated)}</dd>
@@ -171,8 +167,8 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
             </section>
           )}
 
-          {/* Shared 503A provenance — identical on every page in the library,
-              except where a routine-compounding claim would not be accurate under
+          {/* Shared 503A note — identical on every page in the library, except
+              where a routine-compounding claim would not be accurate under
               current federal rules (p.suppress503A). */}
           {!p.suppress503A && (
             <section className="mt-12">
@@ -181,21 +177,9 @@ export default async function PeptidePage({ params }: { params: Promise<{ slug: 
                   Prepared for you by a licensed 503A compounding pharmacy
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                  From a prescription in your name, using ingredients traceable to a named source,
-                  under published sterile-compounding standards.
+                  From a prescription in your name, prepared by a licensed U.S. pharmacy under
+                  published sterile-compounding standards.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                  Most sites can&apos;t tell you where your peptide actually came from. We can: after
-                  your order ships, see the exact licensed U.S. pharmacy that compounded it, its
-                  batch and Certificate of Analysis — on a tamper-evident record you can check
-                  yourself.
-                </p>
-                <Link
-                  href="/verify"
-                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-clinic hover:underline"
-                >
-                  Verify your order <span aria-hidden="true">→</span>
-                </Link>
               </div>
             </section>
           )}
