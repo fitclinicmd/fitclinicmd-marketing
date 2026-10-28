@@ -45,7 +45,7 @@ const STEPS: {
   {
     n: "05",
     title: "Receive a treatment decision",
-    body: "If a clinician decides treatment is appropriate and prescribes it, a partner 503A compounding pharmacy may dispense the medication. Compounded medicines, including compounded semaglutide and tirzepatide, are not FDA-approved.",
+    body: "If a clinician decides treatment is appropriate and prescribes it, a partner 503A compounding pharmacy may dispense the medication.",
     detail: "Only if appropriate",
   },
   {
@@ -120,14 +120,6 @@ export default function HowItWorks() {
               <p className="mt-2 text-sm text-ink-muted">
                 Care is available only where a FitClinicMD-affiliated clinician is licensed. We will
                 explain whether the pathway is available in your state before any clinical step.
-              </p>
-            </Card>
-            <Card>
-              <h3 className="text-lg">Compounded medication is not FDA-approved</h3>
-              <p className="mt-2 text-sm text-ink-muted">
-                If a clinician prescribes a compounded medication, a partner 503A compounding
-                pharmacy may dispense it. Compounded medications are not FDA-approved products. Your
-                clinician can explain what this means for your treatment.
               </p>
             </Card>
             <Card>
