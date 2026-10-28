@@ -10,7 +10,7 @@ metaTitle: "GLP-1 Agonists for Weight Loss: Benefits, Risks & Results"
 description: "Get the facts on GLP-1 agonists for weight loss, including how they work, benefits, risks, side effects, and what to discuss with your healthcare provider."
 ---
 
-Searching for glp-1 agonists for weight loss can bring up confusing claims about medications, eligibility, and expected results. The facts are more useful: these prescriptions can support weight management for some people, but they don’t work the same way for everyone, and they carry potential risks. A clinician can help determine whether a medicine is appropriate, explain realistic expectations, and plan follow-up to review progress and side effects. This article breaks down how GLP-1 medicines affect hunger and fullness, how approved options differ, and what to ask before treatment. FitClinicMD describes a physician-guided model with ongoing monitoring, but it is still preparing to launch and is not yet seeing patients.
+Searching for glp-1 agonists for weight loss can bring up confusing claims about medications, eligibility, and expected results. The facts are more useful: these prescriptions can support weight management for some people, but they don’t work the same way for everyone, and they carry potential risks. A clinician can help determine whether a medicine is appropriate, explain realistic expectations, and plan follow-up to review progress and side effects. This article breaks down how GLP-1 medicines affect hunger and fullness, how approved options differ, and what to ask before treatment. FitClinicMD describes a clinician-guided model with ongoing monitoring, but it is still preparing to launch and is not yet seeing patients. Its planned [weight-management care](https://www.fitclinicmd.com/treatments/weight-management) explains the evaluation-first approach.
 
 ## Key Takeaways
 
@@ -24,7 +24,7 @@ GLP-1 agonists are prescription medicines that mimic glucagon-like peptide-1, a 
 
 ### How GLP-1 affects hunger, fullness, blood sugar, and digestion
 
-After a meal, natural GLP-1 helps regulate blood sugar and sends signals related to fullness. GLP-1 medicines act on some of these same pathways. They can prompt the pancreas to release insulin when blood sugar is high, reduce glucagon (a hormone that raises blood sugar), and slow how quickly food moves out of the stomach. They can also affect appetite signals, which may help you feel full sooner or stay full longer. The [Southwoods Health overview of GLP-1 medicines](https://www.southwoodshealth.com/blog/debunking-glp-1-myths) explains these effects. How strongly they occur can vary by medicine and person.
+After a meal, natural GLP-1 helps regulate blood sugar and sends signals related to fullness. GLP-1 medicines act on some of these same pathways. They can prompt the pancreas to release insulin when blood sugar is high, reduce glucagon (a hormone that raises blood sugar), and slow how quickly food moves out of the stomach. They can also affect appetite signals, which may help you feel full sooner or stay full longer. How strongly they occur can vary by medicine and person. For a first-party explanation, read [How GLP-1 medicines work](https://www.fitclinicmd.com/learn/how-glp-1-medicines-work).
 
 ### How appetite changes can support weight loss
 
@@ -60,13 +60,13 @@ Products with the same active ingredient may have different doses, formulations,
 
 These medicines generally start at a lower dose, followed by gradual increases according to the product’s prescribing information. Wegovy and Zepbound are weekly injections with stepwise dose increases. Saxenda is taken daily, with its own schedule for increasing the dose. The timing and target dose vary by medicine.
 
-A gradual increase gives the prescriber a chance to assess how you tolerate treatment and may help manage side effects, especially digestive symptoms. Your schedule may depend on your response and the medicine’s instructions. Follow the plan provided for your prescription, rather than copying dosing advice from another person or an online post. If side effects make treatment difficult, contact your prescriber before changing your dose or stopping. The [official Wegovy label](https://www.novo-pi.com/wegovy.pdf) is one example of a product-specific dosing schedule.
+A gradual increase gives the prescriber a chance to assess how you tolerate treatment and may help manage side effects, especially digestive symptoms. Your schedule may depend on your response and the medicine’s instructions. Follow the plan provided for your prescription, rather than copying dosing advice from another person or an online post. If side effects make treatment difficult, contact your prescriber before changing your dose or stopping. The official Wegovy label is one example of a product-specific dosing schedule. Read [GLP-1 dosing safety](https://www.fitclinicmd.com/learn/glp-1-dosing-safety) for additional education.
 
 ### What to know about compounded medicines and prescription safeguards
 
 Compounded semaglutide and tirzepatide are not FDA-approved products. The FDA does not review compounded medicines for safety, effectiveness, or quality before they are marketed. Compounding may be appropriate when a patient’s medical needs cannot be met by an FDA-approved drug, but it is not simply another name for a generic version. The [FDA’s guidance on compounded drugs](https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers) explains how these products differ.
 
-Before starting treatment, ask who will prescribe the medicine, which pharmacy will prepare or dispense it, and how dosing instructions and follow-up care will work. The FDA has reported dosing errors involving compounded semaglutide, including errors when patients measure doses from multi-dose vials. FitClinicMD’s [About page](https://www.fitclinicmd.com/about) states that the clinic is in pre-launch and is not yet accepting patients.
+Before starting treatment, ask who will prescribe the medicine, which pharmacy will prepare or dispense it, and how dosing instructions and follow-up care will work. The FDA has reported dosing errors involving compounded semaglutide, including errors when patients measure doses from multi-dose vials. Read [Compounded medication explained](https://www.fitclinicmd.com/learn/compounded-medication-explained), and remember that FitClinicMD’s [About page](https://www.fitclinicmd.com/about) states that the clinic is in pre-launch and is not yet accepting patients.
 
 ## How Much Weight Loss Can GLP-1 Medicines Support?
 
