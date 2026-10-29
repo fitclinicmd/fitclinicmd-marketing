@@ -12,8 +12,8 @@ import { Container, CTA } from "./ui";
 // the deepest content on the site and the thing people arrive looking for, and a
 // fifth grey link would not have found it. The pill is styled in the warm accent
 // rather than clinic blue on purpose: it has to read as prominent without
-// competing with "Get started", which is the conversion action. It stays visible
-// at every breakpoint, shedding only its count on the smallest screens.
+// competing with "Get started", which is the conversion action. On the smallest
+// screens the pills move into the scrollable navigation row so the header fits.
 export default function Header() {
   const libraryCount = PEPTIDES.length + BLENDS.length;
 
@@ -55,13 +55,13 @@ export default function Header() {
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <Link
             href="/glp-1"
-            className="inline-flex shrink-0 items-center rounded-full border border-clinic/50 bg-clinic-light px-3 py-2 text-sm font-semibold text-clinic-deep transition hover:border-clinic hover:text-clinic sm:px-4"
+            className="inline-flex shrink-0 items-center rounded-full border border-clinic/50 bg-clinic-light px-3 py-2 text-sm font-semibold text-clinic-deep transition hover:border-clinic hover:text-clinic sm:px-4 max-sm:hidden"
           >
             GLP-1s
           </Link>
           <Link
             href="/peptides"
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-accent/60 bg-accent-light px-3 py-2 text-sm font-semibold text-ink transition hover:border-clinic hover:text-clinic sm:px-4"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-accent/60 bg-accent-light px-3 py-2 text-sm font-semibold text-ink transition hover:border-clinic hover:text-clinic sm:px-4 max-sm:hidden"
           >
             Peptides
             <span
@@ -88,7 +88,20 @@ export default function Header() {
         className="border-t border-ink/10 lg:hidden"
       >
         <Container className="overflow-x-auto py-2 scrollbar-none [&::-webkit-scrollbar]:hidden">
-          {navLinks}
+          <ul className="flex items-center gap-5 text-sm text-ink-muted">
+            <li className="shrink-0">
+              <Link href="/glp-1" className="whitespace-nowrap hover:text-clinic">
+                GLP-1s
+              </Link>
+            </li>
+            {NAV.map((n) => (
+              <li key={n.href} className="shrink-0">
+                <Link href={n.href} className="whitespace-nowrap hover:text-clinic">
+                  {n.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </Container>
       </nav>
     </header>
