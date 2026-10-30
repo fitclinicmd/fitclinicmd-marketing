@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container, Section, Eyebrow, CTA, EmergencyNotice } from "@/components/ui";
 import { JsonLd, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { signupUrl } from "@/lib/site";
+import { siteIsIndexable } from "@/lib/claims";
 
 export const metadata: Metadata = {
   title: "Frequently asked questions",
@@ -77,6 +78,25 @@ const FAQ = [
   },
 ];
 
+const FAQ_STRUCTURED_DATA = [
+  {
+    q: "What happens during the visit?",
+    a: "You meet your provider by video. They review the intake you completed in your portal and any lab results, discuss your history and goals, answer your questions, and decide with you whether treatment is appropriate.",
+  },
+  {
+    q: "Will I need bloodwork?",
+    a: "Sometimes. Some treatments require labs before they can be prescribed safely, and hormone therapy always does. If labs are needed we arrange them, and the results are attached to your chart for your provider.",
+  },
+  {
+    q: "Where does my medication come from?",
+    a: "If you are prescribed treatment, a licensed partner compounding pharmacy prepares it and ships it to you. Compounded preparations are not FDA-approved products; your provider will explain what that means for your treatment.",
+  },
+  {
+    q: "Is this suitable for an emergency?",
+    a: "No. FitClinicMD is not for emergencies. If you have a medical emergency, call 911 or go to your nearest emergency department.",
+  },
+];
+
 export default function FAQPage() {
   return (
     <>
@@ -127,7 +147,7 @@ export default function FAQPage() {
 
       <JsonLd
         data={[
-          faqSchema(FAQ.map((f) => ({ q: f.q, a: f.a }))),
+          ...(siteIsIndexable() ? [faqSchema(FAQ_STRUCTURED_DATA)] : []),
           breadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "FAQ", path: "/faq" },
