@@ -4,9 +4,19 @@ import { JsonLd, breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 import PrimarySources, { type Source } from "@/components/PrimarySources";
 
 export const metadata: Metadata = {
-  title: "Peptides and the FDA — where things actually stand",
+  title: { absolute: "Are Peptides FDA Approved? | FDA Status — FitClinicMD" },
   description:
-    "A plain, sourced briefing on the July 2026 FDA advisory vote: what it did, what it did not do, and why ‘an FDA panel recommended it’ and ‘the FDA approved it’ are not the same thing.",
+    "Learn what FDA approval means for peptide medicines and why compounded semaglutide and tirzepatide are not FDA-approved. Read the sourced status update.",
+  openGraph: {
+    title: "Are Peptides FDA Approved? | FDA Status — FitClinicMD",
+    description:
+      "Learn what FDA approval means for peptide medicines and why compounded semaglutide and tirzepatide are not FDA-approved. Read the sourced status update.",
+  },
+  twitter: {
+    title: "Are Peptides FDA Approved? | FDA Status — FitClinicMD",
+    description:
+      "Learn what FDA approval means for peptide medicines and why compounded semaglutide and tirzepatide are not FDA-approved. Read the sourced status update.",
+  },
 };
 
 const TIMELINE: [string, string][] = [
