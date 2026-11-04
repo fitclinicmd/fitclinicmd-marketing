@@ -19,7 +19,7 @@ const STEPS: {
   {
     n: "01",
     title: "Start with education",
-    body: "Begin in the education library — plain-English explainers on how peptide and GLP-1 care works, what a telehealth visit involves, and what to expect. Review what applies to you first; when you're ready, the next step is a medical evaluation with a licensed clinician. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in your state. This public website does not collect health information.",
+    body: "Begin in the education library — plain-English explainers on how peptide and GLP-1 care works, what a telehealth visit involves, and what to expect. Review what applies to you first; when you're ready, the next step is a medical evaluation with a licensed clinician. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in the state where you are located. Care is not available in every state. This public website does not collect health information.",
     detail: "Education first",
     href: "/learn",
     linkText: "Browse the education library",
@@ -51,7 +51,7 @@ const STEPS: {
   {
     n: "06",
     title: "Continue care if appropriate",
-    body: "If care is appropriate, your clinician can explain follow-up, monitoring, and any next steps. Availability depends on clinician licensure and your location, and care is not available in every state.",
+    body: "If care is appropriate, your clinician can explain follow-up, monitoring, and any next steps. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in the state where you are located. Care is not available in every state.",
     detail: "If care is appropriate",
   },
 ];
@@ -68,8 +68,7 @@ export default function HowItWorks() {
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
             FitClinicMD is preparing an evaluation-first telehealth pathway. Start with the
             education library, then learn what a licensed clinician may review before deciding
-            whether care is appropriate for you. Availability depends on your location and clinician
-            licensure.
+            whether care is appropriate for you. Availability depends on where you are located and whether a FitClinicMD-affiliated clinician is licensed in the state where you are located. Care is not available in every state.
           </p>
         </Container>
       </div>
@@ -119,7 +118,7 @@ export default function HowItWorks() {
               <h3 className="text-lg">Availability depends on your location</h3>
               <p className="mt-2 text-sm text-ink-muted">
                 Care is available only where a FitClinicMD-affiliated clinician is licensed. We will
-                explain whether the pathway is available in your state before any clinical step.
+                explain whether the pathway is available in the state where you are located before any clinical step. Care is not available in every state.
               </p>
             </Card>
             <Card>
