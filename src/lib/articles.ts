@@ -564,15 +564,15 @@ export const ARTICLES: Article[] = [
     slug: "glp-1-dosing-safety",
     title: "How dosing errors happen with compounded GLP-1 medicines — and how to avoid them",
     summary:
-      "mg, mL, and syringe “units” are not the same thing. Here's why compounded-vial dosing mistakes happen, and what to confirm with your pharmacy before your first injection.",
+      "Compounded GLP-1 dosing depends on vial concentration and syringe markings. Learn why mg, mL, and units differ, and when to ask a clinician or pharmacist.",
     topic: "Using your medication",
-    updated: "2026-09-22",
+    updated: "2026-11-04",
     readMinutes: 6,
     status: "PUBLISHED",
     body: [
       {
         type: "p",
-        text: "Compounded GLP-1 medicines are sometimes dispensed in multi-dose vials that you draw from with a syringe — a different process than a branded, pre-filled pen. When milligrams (mg), milliliters (mL), and syringe “units” get mixed up, people can accidentally take far more medicine than intended. The FDA has publicly warned patients, providers, and compounders about exactly these dosing errors. This page explains the label language; it does not replace a teach-back with your pharmacy.",
+        text: "Compounded GLP-1 medicines may be dispensed in multi-dose vials that you draw with a syringe, unlike many approved-brand products supplied in prefilled pens. The amount on a prescription, the liquid volume, and the syringe markings are different measurements. The concentration on the specific vial determines how they relate. The FDA has warned about dosing errors involving compounded semaglutide. This article explains the labels and safety questions to raise with a pharmacist or licensed clinician; it is not a dosing guide.",
       },
       { type: "h2", text: "mg, mL, and “units” are three different things" },
       {
@@ -586,6 +586,17 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         text: "Never assume “10 units,” “0.5 mL,” and “2.5 mg” are interchangeable. They are related only through the concentration printed on your specific vial and the syringe your pharmacy told you to use. Copying a friend's dose, a social-media chart, or an old vial's instructions can be dangerous, because those may assume a different concentration.",
+      },
+      {
+        type: "h2",
+        text: "Approved-brand evidence is not compounded-drug evidence",
+      },
+      {
+        type: "p",
+        text: "Clinical studies of an FDA-approved GLP-1 product evaluate that specific product, dose, formulation, and study population under the conditions of the trial. Those findings should not be presented as proof that a compounded preparation has the same safety, effectiveness, quality, or consistency. Compounded medicines are not FDA-approved, and the FDA does not review an individual compounded preparation for safety or effectiveness before it is dispensed. Read Peptides and the FDA — where things actually stand for a plain-language overview.",
+        links: [
+          { text: "Peptides and the FDA — where things actually stand", href: "/peptides/fda-status" },
+        ],
       },
       { type: "h2", text: "How people have drawn several times the intended dose" },
       {
@@ -603,7 +614,7 @@ export const ARTICLES: Article[] = [
         type: "ul",
         items: [
           "Read the pharmacy label and vial label together — drug, concentration (mg/mL), beyond-use date, storage, and prescribed dose.",
-          "Confirm the concentration with the pharmacy or your provider if anything is unclear or different from what you expected.",
+          "Confirm the concentration with the dispensing pharmacy, and ask the licensed clinician who evaluated you to explain the prescribed plan if anything is unclear or different from what you expected.",
           "Ask for a teach-back: have someone walk through how your mg dose converts to the volume or markings you'll use.",
           "Use only the syringe type your pharmacy specified — don't substitute a different scale.",
           "Write the plan in plain words (“My dose is X mg. For this vial, that's Y mL / Z markings”) and keep it with the vial.",
@@ -615,9 +626,14 @@ export const ARTICLES: Article[] = [
         type: "p",
         text: "After a larger-than-intended dose, people may have severe or lasting nausea, vomiting, abdominal pain, dizziness, or signs of dehydration. Seek urgent or emergency care for persistent vomiting you can't keep fluids down against, severe abdominal pain, fainting, chest pain or trouble breathing, severe allergic symptoms, or confusion — and bring the vial, syringe, and label. In the U.S. you can also call Poison Control at 1-800-222-1222; call 911 for life-threatening emergencies.",
       },
+      { type: "h2", text: "How a clinician determines whether a medication is appropriate" },
+      {
+        type: "p",
+        text: "A licensed clinician determines whether any medication is appropriate after an evaluation that considers your health history, current medicines, relevant risks, and, when indicated, labs. That evaluation also determines whether a prescription is appropriate and what instructions apply. A chart, questionnaire, social-media post, or another person's vial cannot determine your dose. FitClinicMD is pre-launch and is not accepting patients; this article does not promise a prescription, medication, or result.",
+      },
       {
         type: "callout",
-        text: "Education only — not medical advice, and not a dosing guide. Compounded medicines are not FDA-approved. Follow your own prescription, the concentration on your own vial, and your licensed pharmacist and clinician. FitClinicMD services are for adults 18+.",
+        text: "Education only — not medical advice and not a dosing guide. Compounded medicines are not FDA-approved, and approved-brand clinical evidence should not be treated as evidence for a compounded preparation. Follow the prescription and vial instructions provided for you by your licensed clinician and dispensing pharmacy. FitClinicMD is pre-launch and is not accepting patients.",
       },
     ],
     sources: [
