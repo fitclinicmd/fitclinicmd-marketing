@@ -26,6 +26,33 @@ export default function Contact() {
       </div>
 
       <Section>
+        <Card className="mb-10">
+          <h2 className="text-2xl">Before you send a message</h2>
+          <p className="mt-4 text-ink-soft">
+            This page is for general questions and education. Sending a message is an inquiry only; it
+            does not book a visit, start a patient intake, or purchase medication. FitClinicMD is not
+            open to patients yet.
+          </p>
+          <p className="mt-4 text-ink-soft">
+            If care becomes available, it will be cash pay. Charges may include a consultation, labs
+            when ordered, medication only if a licensed provider decides it is appropriate, and
+            shipping. If medication and shipping continue, the amount may vary; you will see the amount
+            before each charge. We do not publish dollar prices here, and a prescription is never
+            guaranteed.
+          </p>
+          <p className="mt-4 text-ink-soft">
+            Read our{" "}
+            <Link href="/faq" className="text-clinic underline underline-offset-4">
+              billing and care FAQs
+            </Link>{" "}
+            or{" "}
+            <Link href="/learn" className="text-clinic underline underline-offset-4">
+              explore education
+            </Link>
+            .
+          </p>
+        </Card>
+
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <h2 className="text-2xl">Send us a message</h2>
