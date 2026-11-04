@@ -83,6 +83,7 @@ export const FOOTER_NAV = [
       { href: "/how-it-works", label: "How it works" },
       { href: "/treatments/peptides", label: "Peptide therapy" },
       { href: "/treatments/weight-management", label: "Weight management" },
+      { href: "/treatments/hormone-therapy", label: "Testosterone therapy" },
       { href: "/peptides", label: "Peptide library" },
       { href: "/glp-1", label: "GLP-1s" },
       { href: "/peptides/fda-status", label: "Peptides and the FDA" },

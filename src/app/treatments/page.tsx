@@ -25,6 +25,12 @@ const TREATMENTS = [
     claim: "glp1-what-it-is",
     points: ["Provider-supervised program", "Labs where clinically indicated", "Delivered to your door"],
   },
+  {
+    href: "/treatments/hormone-therapy",
+    title: "Testosterone therapy",
+    claim: "hormone-what-it-is",
+    points: ["Provider evaluation and labs first", "Prescription-only, monitored with follow-up labs", "Availability varies by state"],
+  },
 ];
 
 export default function Treatments() {
