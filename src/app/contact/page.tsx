@@ -19,8 +19,8 @@ export default function Contact() {
           <Eyebrow>Contact</Eyebrow>
           <h1 className="max-w-3xl text-4xl sm:text-5xl">Get in touch.</h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            Questions about how the service works, billing, or availability in your state — we&apos;re
-            happy to help.
+            Questions about how the service works, billing, or whether the evaluation-first pathway may be
+            available where you live? We&apos;re happy to help.
           </p>
         </Container>
       </div>
@@ -32,6 +32,10 @@ export default function Contact() {
             This page is for general questions and education. Sending a message is an inquiry only; it
             does not book a visit, start a patient intake, or purchase medication. FitClinicMD is not
             open to patients yet.
+          </p>
+          <p className="mt-4 text-ink-soft">
+            Availability depends on where you are located and whether a FitClinicMD-affiliated clinician
+            is licensed in the state where you are located. Care is not available in every state.
           </p>
           <p className="mt-4 text-ink-soft">
             If care becomes available, it will be cash pay. Charges may include a consultation, labs
