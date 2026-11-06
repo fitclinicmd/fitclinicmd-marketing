@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: "What does it cost?",
-    // No figure here on purpose — see the note in app/about/page.tsx.
-    a: "Get in touch and we'll go through pricing with you before anything is decided.",
+    // Itemized visit + medication retail live on /pricing (Todd FitClinicMD tab 11.05.2026).
+    a: "Visits are itemized: a $100 provider consultation, labs only if ordered, your prescribed medication at the listed retail price, and applicable shipping. Peptides and GLP-1 orders from Believe Rx include a $40 flat shipping charge; Vios TRT kit monthly prices already include shipping. See the pricing page for the current FitClinicMD medication list. You see the total before you pay, and nothing is charged for medication that is not prescribed.",
   },
   {
     q: "Do I need insurance?",

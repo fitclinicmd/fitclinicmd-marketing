@@ -136,7 +136,20 @@ export default function Peptides() {
 
       <PeptideMenu />
 
-      <Container className="pb-16 sm:pb-20 pt-16">
+      <Container className="pb-8 sm:pb-10 pt-16">
+        <Card>
+          <h2 className="text-lg">Peptide product pricing</h2>
+          <p className="mt-2 text-sm text-ink-muted">
+            Current FitClinicMD peptide retail prices and Believe Rx shipping are listed on the
+            pricing page. This education page is not a formulary.
+          </p>
+          <div className="mt-4">
+            <CTA href="/pricing">View pricing</CTA>
+          </div>
+        </Card>
+      </Container>
+
+      <Container className="pb-16 sm:pb-20">
         <ImportantSafetyInfo />
       </Container>
 

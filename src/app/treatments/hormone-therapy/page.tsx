@@ -125,6 +125,19 @@ export default function HormoneTherapy() {
         </div>
       </Section>
 
+      <Container className="pb-8 sm:pb-10">
+        <Card>
+          <h2 className="text-lg">TRT kit pricing</h2>
+          <p className="mt-2 text-sm text-ink-muted">
+            FitClinicMD lists Vios TRT Core and TRT Complete monthly kit retail prices on the pricing
+            page. Kit monthly prices include shipping. Enclomiphene-only is not on this storefront.
+          </p>
+          <div className="mt-4">
+            <CTA href="/pricing">View pricing</CTA>
+          </div>
+        </Card>
+      </Container>
+
       <Container className="pb-16 sm:pb-20">
         <ImportantSafetyInfo />
       </Container>

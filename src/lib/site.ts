@@ -73,6 +73,7 @@ export const NAV = [
   { href: "/how-it-works", label: "How it works" },
   { href: "/learn", label: "Learn" },
   { href: "/treatments", label: "Treatments" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
 ] as const;
 
@@ -83,6 +84,7 @@ export const FOOTER_NAV = [
       { href: "/how-it-works", label: "How it works" },
       { href: "/treatments/peptides", label: "Peptide therapy" },
       { href: "/treatments/weight-management", label: "Weight management" },
+      { href: "/pricing", label: "Pricing" },
       { href: "/peptides", label: "Peptide library" },
       { href: "/glp-1", label: "GLP-1s" },
       { href: "/peptides/fda-status", label: "Peptides and the FDA" },
