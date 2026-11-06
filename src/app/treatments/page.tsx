@@ -70,6 +70,18 @@ export default function Treatments() {
         </div>
 
         <div className="mt-10 rounded-xl2 border border-ink/10 bg-white p-6">
+          <h2 className="text-lg">Current product pricing</h2>
+          <p className="mt-2 text-ink-muted">
+            Customer retail prices for FitClinicMD peptides, GLP-1 lines, and TRT kits — plus
+            Believe Rx and Vios shipping facts — are listed on the pricing page. Medication is
+            prescribed only when clinically appropriate.
+          </p>
+          <div className="mt-5">
+            <CTA href="/pricing">View pricing</CTA>
+          </div>
+        </div>
+
+        <div className="mt-10 rounded-xl2 border border-ink/10 bg-white p-6">
           <h2 className="text-lg">Not sure which is right for you?</h2>
           <p className="mt-2 text-ink-muted">
             That&apos;s what the visit is for. Create an account, complete your intake, and your

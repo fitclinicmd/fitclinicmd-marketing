@@ -1,7 +1,7 @@
 // llms.txt / llms-full.txt — GENERATED, not hand-maintained.
 //
 // These files were static in public/ until 2026-08-25 and had drifted badly:
-// they advertised /pricing (a 404), described the offering as "weight management
+// they once advertised /pricing before the page existed, described the offering as "weight management
 // and hormone therapy" when hormone therapy is deferred, and omitted the entire
 // peptide library — 14 peptide pages, 19 blend pages and two section pages, the
 // deepest content on the site. A hand-maintained index of a generated site goes
@@ -58,6 +58,7 @@ const CORE_PAGES: [string, string][] = [
   ["/glp-1", "GLP-1 medicines: approved brands vs compounded preparations"],
   ["/peptides/fda-status", "where peptides actually stand with the FDA"],
   ["/learn", "education hub index"],
+  ["/pricing", "customer retail prices for peptides, GLP-1 lines, and TRT kits"],
   ["/faq", "common questions"],
   ["/about", "about the clinic"],
   ["/contact", "how to get in touch"],

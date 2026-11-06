@@ -1,10 +1,13 @@
 // PRODUCT MENU — peptides & compounded blends.
 //
-// NOT CURRENTLY RENDERED. Nothing imports this file. /treatments/peptides moved
-// to the consultation-led PeptideMenu presentation, which carries no prices; the
-// header here previously described this as the source of truth for that page,
-// which stopped being true and misled a later reader. If this is ever wired up
-// again, read the two rules below first.
+// OBSOLETE / NOT RENDERED. FitClinicMD customer retail for the live storefront
+// is lib/catalogPricing.ts (Todd FitClinicMD tab 11.05.2026: Believe Rx + Vios).
+// This file still holds the old Active Pharm provider×2 table for historical
+// reference only. Do not import it for new UI. /treatments/peptides uses the
+// consultation-led PeptideMenu (no prices).
+//
+// If this file is ever wired up again, read the two rules below first — and
+// still prefer catalogPricing.ts for FitClinicMD retail figures.
 //
 // RULE 1 · NAMES. Use our own plain-English names only (RENEW, BURN, REST...).
 // The 503A partner's archetype names are that company's property and are marked
