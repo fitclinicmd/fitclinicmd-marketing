@@ -2766,6 +2766,192 @@ export const FULL_REVIEWS: FullReview[] = [
       },
     ],
   },
+  {
+    kind: "peptide",
+    slug: "glutathione",
+    category: "MITOCHONDRIAL & CELLULAR ENERGY",
+    title: "Glutathione — the full review",
+    subtitle: "ENDOGENOUS TRIPEPTIDE ANTIOXIDANT",
+    standfirst: "This is the deeper look behind the short version — what glutathione does in the body, why the oral form is a poor route, what the skin-lightening and Parkinson's studies actually measured, the safety record in detail, who it is not for in full, and what your consultation covers.",
+    sections: [
+      {
+        heading: "What it is",
+        blocks: [
+          { type: "para", text: "Glutathione is a tiny protein of three amino acids that every cell in the body manufactures for itself. It is the body's main internal antioxidant and its principal tool for neutralizing reactive by-products of metabolism, including in the liver. Levels fall with illness and with age, which is part of why it is used for skin tone, oxidative stress, and general recovery. Swallowed glutathione is broken down before it can be absorbed intact, which is the reason it is given by injection, IV, or nebulizer instead of as an oral supplement." },
+        ],
+      },
+      {
+        heading: "What people use it for",
+        blocks: [
+          { type: "table", columns: ["USED FOR", "WHAT THAT MEANS"], rows: [
+            ["General antioxidant and oxidative stress", "Small human studies measured blood markers rather than outcomes."],
+            ["Skin tone and brightening", "The most-marketed use; the trials behind it are small and mixed."],
+            ["Chemotherapy side effects and neuropathy", "Studied as an add-on in oncology, with results that need an oncologist's input."],
+          ] },
+        ],
+      },
+      {
+        heading: "How it works",
+        blocks: [
+          { type: "para", text: "As the body's primary intracellular antioxidant, glutathione works by donating electrons to neutralize reactive oxygen species and other reactive by-products of normal metabolism, and it plays a central role in liver detoxification pathways. Because oral glutathione is largely broken down by digestion before it can be absorbed intact, routes that bypass the digestive system — injection, intravenous infusion, or nebulized inhalation — are used instead." },
+          { type: "para", text: "The proposed skin-brightening effect is thought to work through glutathione's influence on melanin production, shifting pigment production toward a lighter form of melanin, though the underlying biochemistry is better established in laboratory settings than confirmed in controlled human skin studies." },
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        blocks: [
+          { type: "para", text: "Small human studies of glutathione have generally measured blood markers of oxidative stress rather than direct clinical outcomes. Skin tone and brightening is the most heavily marketed use, but the trials behind it are small and their results are mixed." },
+          { type: "para", text: "Glutathione has also been studied as an add-on therapy for chemotherapy side effects and chemotherapy-induced neuropathy in oncology settings, where results require interpretation" },
+          { type: "para", text: "alongside a patient's oncologist. Across all these uses, the human evidence base is limited in size and consistency relative to how widely the compound is marketed." },
+        ],
+      },
+      {
+        heading: "Common misunderstandings",
+        blocks: [
+          { type: "list", items: [
+            "“Oral glutathione supplements raise your levels the way an infusion does.” Swallowed glutathione is largely broken down during digestion before it can be absorbed intact, which is why injectable, IV, and nebulized forms are used instead.",
+            "“It's a proven skin-lightening treatment.” The trials behind the skin-brightening use are small and their results are mixed, not a settled, consistent finding.",
+            "“It's approved for detoxification or wellness use.” No form of glutathione is FDA-approved for skin brightening, detoxification, or general wellness use.",
+            "“It's risk-free because it's a substance the body already makes.” Naturally occurring does not mean risk-free by injection; reactions, and contamination in compounded product, are real considerations.",
+          ] },
+        ],
+      },
+      {
+        heading: "Who it is not for",
+        blocks: [
+          { type: "list", items: [
+            "Anyone with asthma or reactive airways, where an inhaled or nebulised form is proposed.",
+            "Anyone with a history of anaphylaxis or severe drug allergy.",
+            "Anyone with liver disease or abnormal liver tests.",
+            "Pregnant or breastfeeding patients, and anyone on chemotherapy without involving their oncologist.",
+          ] },
+          { type: "para", text: "Competitive athletes: Glutathione itself is not prohibited by WADA. Athletes in tested sport should be aware that WADA's M2 category restricts large-volume intravenous infusions (generally above 100 mL within a 12-hour period) except under specific permitted circumstances, which can affect how an infusion is administered rather than whether glutathione itself is allowed." },
+        ],
+      },
+      {
+        heading: "Who makes this, and under what rules",
+        blocks: [
+          { type: "para", text: "Everything dispensed here is prepared by a licensed 503A compounding pharmacy — not bought from a supplier and repackaged, and not sourced from an online seller. That designation carries specific, enforceable obligations:" },
+          { type: "list", items: [
+            "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
+            "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
+            "Sterile preparation to a published standard. USP standards.",
+            "A paper trail. A lot number and beyond-use date on every preparation.",
+          ] },
+          { type: "para", text: "A compounded preparation is not an FDA-approved medicine — but it is the difference between a licensed pharmacy working to a standard and an unregulated website." },
+        ],
+      },
+      {
+        heading: "Where this stands",
+        blocks: [
+          { type: "para", text: "Not approved for the uses it is marketed for. Injectable and IV glutathione is widely offered for skin brightening, detoxification and wellness. None is an FDA-approved use. Human outcome evidence is limited. Regulators in several countries have warned about injectable skin-lightening products specifically. Well tolerated is not the same as effective. Both need to be true." },
+        ],
+      },
+      {
+        heading: "Clinical detail",
+        blocks: [
+          { type: "para", text: "A tripeptide (glutamate-cysteine-glycine) synthesized endogenously in every human cell; the body's principal intracellular antioxidant. Levels decline with illness and age. Oral bioavailability is poor; clinical and wellness use relies on injection, IV infusion, or nebulization. Studied as an oncology add-on for chemotherapy-induced neuropathy and other side effects. Contamination and sterility issues have been a recurring problem in compounded glutathione products." },
+          { type: "para", text: "The information on this page is general education. It is not medical advice and it is not a recommendation for any treatment. Glutathione is not an FDA-approved medicine for the uses described here. A compounded preparation is not an FDA-approved product and has not been reviewed by the FDA for safety, effectiveness or quality. Descriptions of what this is used for reflect how it is commonly used and discussed. They are not claims that it is effective for any purpose. Any prescription follows an individual evaluation by a licensed provider and is issued only where that provider judges it clinically appropriate. A prescription is never guaranteed." },
+        ],
+      },
+    ],
+  },
+  {
+    kind: "peptide",
+    slug: "pt-141",
+    category: "SEXUAL & REPRODUCTIVE HEALTH",
+    title: "PT-141 — the full review",
+    subtitle: "MELANOCORTIN RECEPTOR AGONIST (BREMELANOTIDE)",
+    standfirst: "This is the deeper look behind the short version — the real numbers behind the approved trials, how the approved product and a compounded preparation differ, and what your consultation covers.",
+    sections: [
+      {
+        heading: "What it is",
+        blocks: [
+          { type: "para", text: "PT-141, also known by its chemical name bremelanotide, is a lab-made, seven-amino-acid cyclic peptide built to mimic a natural hormone called alpha-melanocyte-stimulating hormone (α-MSH). As Vyleesi, it is FDA-approved for one specific population: premenopausal women with hypoactive sexual desire disorder (HSDD), where low desire causes marked distress and isn't better explained by another medical or psychiatric condition, a relationship problem, or a medication. Separately from Vyleesi, the same molecule is available as a compounded preparation, sold under its research name PT-141, used off-label for other patients — notably men, for whom no FDA-approved option currently exists for this purpose." },
+          { type: "para", text: "It is most often described alongside PDE5 inhibitors like sildenafil, but the two work in essentially different places in the body. PDE5 inhibitors act locally, relaxing blood vessels in the penis, and only amplify arousal that is already present. Bremelanotide acts further upstream, on receptors in the brain and central nervous system involved in the desire and arousal pathway itself, independent of local blood flow — which is why it is taken as a single as-needed injection well before activity rather than \"on demand,\" and why its side-effect pattern looks nothing like a PDE5 inhibitor's." },
+          { type: "para", text: "The approved product and the compounded product are not interchangeable. Vyleesi is a single, standardized 1.75 mg subcutaneous auto-injector dose with FDA-reviewed manufacturing controls. Compounded or gray-market \"PT-141\" — including nasal sprays and higher-dose vials — is not reviewed by FDA for identity, purity, potency, or sterility, and the nasal route it commonly uses is the same route an earlier FDA safety review flagged strongly enough to end that entire development program in 2007." },
+        ],
+      },
+      {
+        heading: "What people use it for",
+        blocks: [
+          { type: "table", columns: ["USED FOR", "WHAT THAT MEANS"], rows: [
+            ["Low sexual desire in premenopausal women (the approved use)", "Two large trials showed a real, statistically significant but modest benefit on desire and distress scores; no significant improvement was seen in satisfying sexual events. Nausea and flushing are common side effects."],
+            ["Male erectile dysfunction, off-label", "Based on an older, FDA safety-halted program; its largest supporting trial (342 men) carries an unresolved 2023 journal integrity notice."],
+            ["Male low libido without diagnosed ED", "The male trials that exist measured erectile response, not a validated low-desire outcome; any libido-specific benefit is extrapolated rather than directly demonstrated."],
+            ["Female use outside the approved population", "The label explicitly excludes postmenopausal women; the pivotal trials enrolled premenopausal women only, and no dedicated trial for other populations was identified."],
+            ["Higher-dose or intranasal protocols sold online", "This is the specific route an earlier FDA review flagged for a blood-pressure signal strong enough to end the intranasal development program; no modern trial of these doses exists."],
+            ["General desire or performance enhancement", "Not tested in any population without a diagnosed condition; extrapolated from the drug's proposed brain mechanism, not a demonstrated human effect."],
+          ] },
+        ],
+      },
+      {
+        heading: "How it works",
+        blocks: [
+          { type: "para", text: "Bremelanotide is a melanocortin receptor (MCR) agonist — it nonselectively activates several receptor subtypes, most consequentially MC4R, found on central-nervous-system neurons implicated in laboratory research of sexual desire and arousal circuits, and MC1R, found on melanocytes, activation of which is the mechanistic explanation for the drug's hyperpigmentation side effect. The FDA label is direct that the underlying story stops there: \"The mechanism of action of bremelanotide for the treatment of hypoactive sexual desire disorder is unknown.\" What is documented is receptor pharmacology and the downstream effects — blood pressure and heart rate changes, nausea, pigmentation — that follow from activating multiple melanocortin receptor subtypes at once, not a validated causal chain explaining exactly how that translates into increased desire in a given patient." },
+        ],
+      },
+      {
+        heading: "What the research actually looked at",
+        blocks: [
+          { type: "para", text: "The approved indication rests on two identical Phase 3, randomized, placebo-controlled trials (the RECONNECT program) enrolling 1,247 premenopausal women over 24 weeks. Both co-primary endpoints — a validated desire-domain score and a distress score — showed statistically significant improvement over placebo, though the effect sizes were modest by conventional standards (roughly 0.27 to 0.39 on the standard scale). On the secondary endpoint that arguably matters most to a patient — the number of satisfying sexual events — there was no statistically significant difference from placebo. Nausea occurred in 40% of participants (versus 1.3% on placebo) and flushing in 20% (versus 0.3%); 18% of the treatment group discontinued the trial, 8% specifically for nausea. The off-label male-use literature is considerably thinner and older, tracing almost entirely to the original 1990s–2000s intranasal PT-141 program that FDA safety concerns ended in 2007– 2008, before it reached approval. The most-cited controlled study — 342 men who had not responded to sildenafil — reported a \"positive clinical response\" in 33.5% of the bremelanotide group versus 8.5% on placebo, but this specific paper carries a formal, unresolved 2023 journal Expression of Concern. No trial has tested the doses or routes sold today, and no dedicated trial exists for postmenopausal women or for general enhancement use in people without a diagnosed condition." },
+        ],
+      },
+      {
+        heading: "Common misunderstandings",
+        blocks: [
+          { type: "list", items: [
+            "“It's basically like Viagra.” Mechanistically these work in close to opposite places. PDE5 inhibitors act peripherally on blood vessels and only amplify arousal already present; bremelanotide acts centrally, in brain pathways linked to desire, independent of local blood flow — which is also why the side-effect profiles look nothing alike.",
+          ] },
+          { type: "list", items: [
+            "“It's approved for everyone — women, men, general enhancement.” The label is narrow and explicit: approved only for premenopausal women with a specific diagnosed form of low desire. It states outright that it is not indicated for postmenopausal women, not indicated for men, and not indicated for sexual performance enhancement.",
+            "“Nausea and flushing are rare side effects.” They are the opposite of rare. Nausea occurred in 40% of trial participants (versus 1.3% on placebo) and flushing in 20% (versus 0.3%) — common enough that 18% of the treatment group left the trial early.",
+            "“The PT-141 sold online or through a compounding pharmacy is the same product, at the same dose, as Vyleesi.” It generally is not. Vyleesi is a single, standardized, FDA-reviewed dose; compounded or gray-market \"PT-141\" — including nasal sprays and higher-dose vials — is unregulated for identity, purity, potency, and sterility.",
+          ] },
+        ],
+      },
+      {
+        heading: "Who it is not for",
+        blocks: [
+          { type: "list", items: [
+            "Uncontrolled hypertension or known cardiovascular disease — an explicit label contraindication, since bremelanotide causes transient blood pressure and heart rate changes after each dose.",
+            "Pregnancy, or trying to conceive without reliable contraception — animal studies showed fetal harm at exposures well above the maximum recommended human dose. Animal findings are the earliest stage of research and no human study has confirmed them; where the possible harm is to a pregnancy, that signal is reason enough to exclude rather than wait.",
+            "Low desire caused by another medical condition, psychiatric condition, relationship problem, or medication — the approved trials specifically excluded these causes.",
+            "Postmenopausal women — excluded from the pivotal trials and explicitly outside the label's indication.",
+            "Repeated or frequent dosing beyond label guidance, particularly for anyone at higher risk of visible pigmentation change.",
+            "Anyone sourcing \"PT-141\" from an unregulated online vendor.",
+            "More than one dose in 24 hours, or more than about 8 doses a month — both exceed the tested and labeled regimen.",
+          ] },
+          { type: "para", text: "Competitive athletes: The terms \"melanocortin,\" \"bremelanotide,\" \"PT-141,\" and \"melanotan\" do not appear on the current WADA Prohibited List, and no anti-doping sanction case involving it was identified — likely reflecting that bremelanotide's FDA approval (Vyleesi) keeps it out of WADA's catch-all category for substances with no approval anywhere. This should be read as \"not found,\" not as a guaranteed clearance; a competing athlete should independently confirm current status through Global DRO or their national anti-doping agency, and should know that an unregulated compounded or gray-market vial carries its own contamination risk that could trigger a positive test for an unrelated substance." },
+          { type: "para", text: "Approved product, or a compounded preparation — and the difference matters" },
+          { type: "para", text: "This is an FDA-approved medicine. It is available as the manufacturer's own approved product, and — separately — as a compounded preparation. Which one is being offered is always stated plainly. If the approved product is right, that is what gets prescribed:" },
+          { type: "list", items: [
+            "The manufacturer's pen or vial. Reviewed by the FDA for safety, effectiveness and quality, exactly as labeled.",
+            "Filled at a licensed pharmacy. Dispensed from your prescription like any other approved medicine. If a compounded preparation is clinically appropriate instead, it is prepared by a licensed 503A compounding pharmacy:",
+            "A prescription in your name. Compounded from a prescription for one identified patient, after an evaluation.",
+            "Licensed and inspected. A state license, subject to inspection by the state board of pharmacy.",
+            "Ingredients that can be traced. A certificate of analysis from an FDA-registered facility, back to a named source and lot.",
+            "A paper trail. A lot number and beyond-use date on every preparation.",
+          ] },
+          { type: "para", text: "A compounded preparation is not itself an FDA-approved product — but it is still made under a licensed pharmacy's enforceable standards, not an unregulated website." },
+        ],
+      },
+      {
+        heading: "Where this stands",
+        blocks: [
+          { type: "para", text: "There is an approved product, for one specific use. Bremelanotide approved as VYLEESI for acquired generalised hypoactive sexual desire disorder in premenopausal women — a real, statistically significant but modest benefit, with nausea (40%) and flushing (20%) common. Use outside that group is off-label. That includes men, postmenopausal women, and general enhancement — all resting on an older program FDA safety-halted in 2007, whose largest supporting trial carries an unresolved 2023 journal integrity notice. An approval for one population, on one outcome measure, is not evidence for another population or a different claim." },
+        ],
+      },
+      {
+        heading: "Clinical detail",
+        blocks: [
+          { type: "para", text: "Bremelanotide descends from melanotan II, a 1980s University of Arizona sunless-tanning candidate; an unplanned erection during self-experimentation redirected research toward sexual-dysfunction use. FDA halted the original intranasal PT-141 development program in 2007 over blood-pressure increases; the subsequently reformulated subcutaneous version, focused on premenopausal HSDD, became Vyleesi, approved June 21, 2019 (NDA 210557). Vyleesi was only the second female-libido medication FDA has ever approved, after flibanserin (Addyi) in 2015. Neither \"bremelanotide\" nor \"PT-141\" currently appears on FDA's active 503A Bulks List, the nominated-but-withdrawn table, or the Category 2 significant-safety-risk table. A 2020 FDA warning letter to a compounding pharmacy named \"Bremelanotide (PT-141)\" directly among substances used outside the exemptions available to 503A compounders." },
+          { type: "para", text: "The information on this page is general education. It is not medical advice and it is not a recommendation for any treatment. PT-141 is FDA-approved for the uses described as approved above. Off-label uses discussed here are not FDA-approved uses. A compounded preparation, where used instead of the approved product, is not itself an FDA-approved product and has not been reviewed by the FDA for safety, effectiveness or quality. Descriptions of what this is used for reflect how it is commonly used and discussed. They are not claims that it is effective for any unapproved purpose. Any prescription follows an individual evaluation by a licensed provider and is issued only where that provider judges it clinically appropriate. A prescription is never guaranteed." },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getFullReview(kind: "peptide" | "blend", slug: string) {
