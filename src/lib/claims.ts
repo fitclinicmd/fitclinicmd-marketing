@@ -53,9 +53,9 @@
 //   $[SHIPPING]     shipping
 //   [interval] and [NOTICE_DAYS] for the renewal cycle
 //
-// Medication is ALREADY determined and does not need a number here: retail is
-// providerPrice x 2 (lib/products.ts, RETAIL_MULTIPLIER), which today spans
-// $103.98-$317.98 for single peptides and $179.98-$379.98 for blends.
+// Medication retail for the FitClinicMD storefront lives in lib/catalogPricing.ts
+// (Todd FitClinicMD tab 11.05.2026). Do not use the obsolete Active Pharm
+// provider×2 table in lib/products.ts — that file is unused by any page.
 //
 // ⚠️ THE VARIABLE-AMOUNT PROBLEM. Because the recurring charge depends on what
 // was prescribed, it is not a fixed figure, and a "renews at $X per month"
@@ -142,8 +142,8 @@ export const CLAIMS: Record<string, Claim> = {
     intent:
       "What the patient pays, itemized. NOT a flat membership: first visit is consultation + labs (if ordered) + medication + shipping; the recurring charge drops the consultation unless the patient asks for another. Must carry the automatic-renewal disclosures required by ROSCA and state law (packet 2.3(3)).",
     status: "APPROVED",
-    approval: "Michael Roth (counsel) — 2026-10-26; figures from Todd's v16 pricing sheet ($100 consult, $40 shipping, labs pass-through)",
-    text: "Your first visit is itemized, and you see the total before you pay: $100 for the provider consultation, the cost of lab work if your provider orders it, the cost of your prescribed medication, and $40 shipping. After that you are charged only for medication and shipping — a further consultation is billed only if you ask for one.",
+    approval: "Michael Roth (counsel) — 2026-10-26 visit itemization; shipping nuance confirmed 2026-11-06 (Believe Rx $40 flat; Vios TRT kit monthly price includes shipping). Retail medication menu from Todd FitClinicMD tab 11.05.2026.",
+    text: "Your first visit is itemized, and you see the total before you pay: $100 for the provider consultation, the cost of lab work if your provider orders it, the cost of your prescribed medication, and applicable shipping. Peptides and GLP-1 medications ship from Believe Rx with a $40 flat shipping charge per order. TRT kit monthly prices from Vios already include shipping. After that you are charged only for medication and applicable shipping — a further consultation is billed only if you ask for one.",
   },
   "pricing-autorenewal": {
     id: "pricing-autorenewal",

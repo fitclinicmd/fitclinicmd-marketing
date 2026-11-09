@@ -137,6 +137,23 @@ export default function WeightManagement() {
         </div>
       </Section>
 
+      <Container className="pb-8 sm:pb-10">
+        <Card>
+          <h2 className="text-lg">GLP-1 product pricing</h2>
+          <p className="mt-2 text-sm text-ink-muted">
+            Semaglutide and tirzepatide retail ladders (Glycine or B12) and Believe Rx shipping are
+            listed on the pricing page. Education about how GLP-1 medications work remains on{" "}
+            <Link href="/glp-1" className="font-semibold text-clinic hover:text-clinic-deep">
+              /glp-1
+            </Link>
+            .
+          </p>
+          <div className="mt-4">
+            <CTA href="/pricing">View pricing</CTA>
+          </div>
+        </Card>
+      </Container>
+
       <Container className="pb-16 sm:pb-20">
         <ImportantSafetyInfo />
       </Container>
