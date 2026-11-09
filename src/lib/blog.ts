@@ -21,6 +21,8 @@ export type BlogPost = {
   slug: string;
   title: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
   topic: string;
   date: string;
   updated: string;
@@ -221,6 +223,8 @@ function readPost(filename: string): BlogPost | null {
     slug: fields.slug,
     title: fields.title,
     description: typeof fields.description === "string" ? fields.description : "",
+    image: typeof fields.image === "string" ? fields.image : undefined,
+    imageAlt: typeof fields.imageAlt === "string" ? fields.imageAlt : undefined,
     topic: typeof fields.topic === "string" ? fields.topic : "Blog",
     date,
     updated,
