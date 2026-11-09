@@ -19,7 +19,22 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogPost(slug);
   return post
-    ? { title: post.title, description: post.description }
+    ? {
+        title: post.title,
+        description: post.description,
+        openGraph: {
+          title: post.title,
+          description: post.description,
+          type: "article",
+          url: `${SITE.url}/blog/${post.slug}`,
+          ...(post.image
+            ? { images: [{ url: post.image, alt: post.imageAlt ?? post.title }] }
+            : {}),
+        },
+        ...(post.image
+          ? { twitter: { card: "summary_large_image", images: [post.image] } }
+          : {}),
+      }
     : { title: "Blog" };
 }
 
@@ -131,6 +146,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    ...(post.image ? { image: [post.image] } : {}),
     datePublished: post.date,
     dateModified: post.updated,
     author: { "@type": "Organization", name: SITE.name },
@@ -165,6 +181,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <Section>
         <article className="mx-auto max-w-2xl">
+          {post.image ? (
+            <figure className="mb-8">
+              {/* eslint-disable-next-line @next/next/no-img-element -- post images are remote, unknown-size files */}
+              <img
+                src={post.image}
+                alt={post.imageAlt ?? post.title}
+                className="w-full rounded-xl2"
+              />
+            </figure>
+          ) : null}
           {post.body.map(renderBlock)}
           <div className="mt-12 border-t border-ink/10 pt-6 text-sm text-ink-muted">
             This article is general education, not medical advice, and does not create a
