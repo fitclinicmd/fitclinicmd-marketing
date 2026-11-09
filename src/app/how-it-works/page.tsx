@@ -3,9 +3,9 @@ import { Container, Section, Eyebrow, CTA, Card, EmergencyNotice } from "@/compo
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "How Evaluation Works | Telehealth — FitClinicMD" },
+  title: { absolute: "How FitClinicMD's Evaluation Works | Clinician-Guided Pathway" },
   description:
-    "See how FitClinicMD's evaluation-first pathway may work: location check, intake, labs when indicated, video visit, and a prescription only if appropriate.",
+    "Learn how FitClinicMD's clinician-guided, evaluation-first pathway may work, including location checks, intake, labs when indicated, and a video visit.",
 };
 
 const STEPS: {
