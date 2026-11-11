@@ -156,43 +156,53 @@ export const ARTICLES: Article[] = [
     slug: "compounded-medication-explained",
     title: "Compounded medication, explained",
     summary:
-      "What it means when a medication is \"compounded,\" how that differs from a product off a pharmacy shelf, why it isn't FDA-approved, and the questions worth asking.",
+      "What compounded medication means, how compounded semaglutide and tirzepatide differ from FDA-approved products, and questions to ask before an evaluation.",
     topic: "How this works",
-    updated: "2026-08-01",
+    updated: "2026-11-11",
     readMinutes: 5,
     status: "PUBLISHED",
     body: [
       {
         type: "p",
-        text: "A lot of the medication offered through telehealth wellness programs — including peptides — is \"compounded.\" It's a word people see and skip past. It's worth understanding, because it changes what you're getting and what questions to ask.",
+        text: "Compounded medication is not the same as an FDA-approved commercial product. That distinction matters when you see semaglutide or tirzepatide discussed online: an FDA-approved brand product and a compounded preparation are not interchangeable labels, and evidence for one should not be presented as evidence for the other. Here is what \"compounded\" means and what to ask before an evaluation.",
       },
       { type: "h2", text: "What \"compounded\" means" },
       {
         type: "p",
-        text: "A compounded medication is prepared by a licensed pharmacy for an individual patient, based on a prescription from a licensed provider, rather than mass-manufactured in fixed doses. Compounding pharmacies in the U.S. generally operate under what are known as 503A and 503B frameworks. It's an established part of medicine — it's how a patient can get a specific formulation or strength that isn't available as a standard commercial product.",
+        text: "A compounded medication is prepared by a licensed pharmacy for a specific prescription or under an applicable compounding framework, rather than mass-manufactured as an FDA-approved commercial product. In the U.S., compounding pharmacies may operate under 503A or 503B rules. Whether a prescription is appropriate is a clinician's decision after an evaluation; this article does not promise a prescription or treatment availability.",
       },
-      { type: "h2", text: "How it differs from a product off the shelf" },
+      { type: "h2", text: "How compounded medications differ from FDA-approved products" },
       {
         type: "ul",
         items: [
-          "A commercially manufactured drug is made in large batches and reviewed and approved by the FDA for a specific use.",
-          "A compounded preparation is made for you. Because each preparation is individualized, compounded medications are not FDA-approved — the FDA does not review individual compounded formulations for safety or effectiveness.",
-          "That is not the same as \"unregulated.\" The pharmacy is state-licensed and the medication is dispensed only on a valid prescription from a provider licensed in your state.",
+          "An FDA-approved commercial drug has been reviewed by the FDA for the specific product, formulation, and uses described in its approval.",
+          "Compounded semaglutide and compounded tirzepatide are compounded preparations, not the FDA-approved branded products that contain semaglutide or tirzepatide. They are not FDA-approved, and the FDA does not review each compounded formulation for safety or effectiveness.",
+          "Evidence from studies of an FDA-approved brand product describes that approved product. It should not be presented as evidence of results for a compounded preparation.",
+          "Compounding is not the same as saying every pharmacy or preparation is identical. Pharmacy licensing, formulation, quality controls, and clinical appropriateness are separate questions to ask.",
         ],
       },
       {
         type: "callout",
-        text: "Compounded medications are prepared by a state-licensed pharmacy for an individual patient. They have not been evaluated or approved by the FDA as safe or effective for the treatment of any condition.",
+        text: "Compounded semaglutide and compounded tirzepatide are not FDA-approved products. Do not confuse an FDA-approved brand's labeling or study results with evidence for a compounded preparation.",
+      },
+      { type: "h2", text: "A quick FDA-status check" },
+      {
+        type: "p",
+        text: "The FDA status of a peptide can change, and a panel discussion or recommendation is not the same as FDA approval. For a sourced overview of how to read those distinctions, see Peptides and the FDA — where things actually stand.",
+        links: [
+          { text: "Peptides and the FDA — where things actually stand", href: "/peptides/fda-status" },
+        ],
       },
       { type: "h2", text: "Questions worth asking any clinic" },
       {
         type: "p",
-        text: "Whether you're considering us or anyone else, these are reasonable things to ask before you start:",
+        text: "Whether you're considering a clinic or simply comparing information, these are reasonable questions to ask before any treatment decision:",
       },
       {
         type: "ul",
         items: [
-          "Who evaluates me, and are they licensed in my state? A prescription should follow an actual evaluation, not a checkout page.",
+          "What evaluation would come first, and is the clinician licensed where I am? A prescription, if one is considered, should follow an evaluation, not a checkout page.",
+          "Can the clinician explain whether any evidence cited applies to an FDA-approved product or a compounded preparation?",
           "Is the pharmacy licensed, and where is my medication made?",
           "What are the realistic expectations, and what are the risks and side effects for someone like me?",
           "How does billing work, and how do I cancel if I want to stop?",
@@ -201,7 +211,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "This article is general information, not medical advice. Whether a compounded therapy is appropriate for you is decided by a licensed provider after an evaluation.",
+        text: "This article is general education, not medical advice. It does not promise a prescription, medication, treatment availability, or a result. Whether any treatment is appropriate is decided by a licensed provider after an evaluation.",
       },
     ],
   },
