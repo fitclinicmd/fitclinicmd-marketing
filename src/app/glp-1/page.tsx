@@ -35,6 +35,17 @@ function IntakePanel({ heading = "Find out which option may fit you" }: { headin
         Complete a confidential medical intake and meet with a licensed provider to determine whether treatment
         is appropriate — and, if it is, which medication and starting plan make sense for you.
       </p>
+      <p className="mt-3 max-w-2xl leading-relaxed text-ink-soft">
+        Before taking any next step, read {" "}
+        <Link href="https://www.fitclinicmd.com/how-it-works" className="font-semibold text-clinic underline underline-offset-4 hover:text-clinic-deep">
+          how the evaluation-first pathway works
+        </Link>{" "}
+        or {" "}
+        <Link href="https://www.fitclinicmd.com/contact" className="font-semibold text-clinic underline underline-offset-4 hover:text-clinic-deep">
+          send an inquiry
+        </Link>{" "}
+        with general questions.
+      </p>
       <div className="mt-5">
         <CTA href={signupUrl}>Begin your medical intake</CTA>
       </div>
