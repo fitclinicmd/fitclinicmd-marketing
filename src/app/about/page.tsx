@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, Section, Eyebrow, Card, CTA } from "@/components/ui";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { signupUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -26,7 +25,7 @@ const PRINCIPLES = [
     // the contact channel instead of stating a price. Swap in a phone number
     // here and on /faq once one exists — there is none on the site today, so
     // "call us" would point at nothing.
-    body: "Ask us and we'll go through it with you. FitClinicMD is cash-pay and does not bill insurance, so there are no claims or deductibles to decode.",
+    body: "If care becomes available, FitClinicMD will be cash pay and will not bill insurance. Charges may include a consultation, labs when ordered, medication only if a licensed provider decides it is appropriate, and shipping. We will explain applicable charges before each payment.",
   },
   // EARLIER PRICING PRINCIPLE — REMOVED FROM THE PAGE 2026-08-25, KEPT FOR LATER.
   //
@@ -46,7 +45,7 @@ const PRINCIPLES = [
   // },
   {
     title: "Boundaries we don't cross",
-    body: "We only offer treatments we can stand behind, in states where our providers are licensed. Where the law or the evidence isn't settled, we wait rather than launch and apologize later.",
+    body: "We will only offer care where an affiliated clinician is licensed and where the law and evidence support it. Availability will depend on where you are located, and care will not be available in every state.",
   },
 ];
 
@@ -60,8 +59,10 @@ export default function About() {
             Built to practice medicine properly, at a distance.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            Telehealth should mean better access to a real clinician — not a vending machine with a
-            questionnaire in front of it. FitClinicMD is built around that difference.
+            FitClinicMD is preparing an evaluation-first telehealth experience. We are not open to
+            patients yet. If care becomes available, an independent licensed clinician will evaluate
+            each person and decide whether treatment is appropriate, based on applicable requirements
+            and the person&apos;s location.
           </p>
         </Container>
       </div>
@@ -82,39 +83,46 @@ export default function About() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <Eyebrow>How we work</Eyebrow>
-            <h2 className="text-3xl">Care, then medication — in that order.</h2>
+            <h2 className="text-3xl">Evaluation first, then a decision.</h2>
             <p className="mt-4 text-ink-muted">
-              Every patient is evaluated by a provider licensed in their state. Where a treatment
-              needs bloodwork to be prescribed safely, we get the bloodwork. Where a treatment
-              carries additional legal requirements, we meet them before we offer it — not after.
+              FitClinicMD is not open to patients yet. If care becomes available, an independent
+              licensed clinician will evaluate you by phone or video, order labs when indicated, and
+              decide whether any treatment is appropriate. A prescription is never guaranteed.
             </p>
             <p className="mt-4 text-ink-muted">
-              Our clinical protocols are owned by our medical director, and our systems enforce the
-              rules rather than trusting anyone to remember them: a provider cannot treat outside
-              their licensed states, and controlled medications stay locked until every requirement
-              is satisfied.
+              Availability depends on where you are located and whether a FitClinicMD-affiliated
+              clinician is licensed in the state where you are located. Care is not available in
+              every state.
+            </p>
+            <p className="mt-4 text-ink-muted">
+              FitClinicMD is the technology and administrative platform for this planned experience.
+              Independent licensed clinicians make clinical decisions. A licensed pharmacy may
+              dispense medication only if a clinician prescribes it.
             </p>
           </div>
           <div className="space-y-4">
             <Card>
               <h3 className="text-lg">What we are</h3>
               <p className="mt-2 text-sm text-ink-muted">
-                A telehealth clinic. Licensed providers evaluate and treat patients; a partner
-                compounding pharmacy fills prescriptions and ships them.
+                A pre-launch telehealth platform preparing an evaluation-first care experience. The
+                service is not open to patients yet. If care becomes available, independent licensed
+                clinicians will make clinical decisions, and a licensed pharmacy may dispense
+                medication only when a clinician prescribes it.
               </p>
             </Card>
             <Card>
               <h3 className="text-lg">What we are not</h3>
               <p className="mt-2 text-sm text-ink-muted">
-                A pharmacy, a supplement company, or a substitute for emergency or in-person care.
-                Information on this site is general and is not medical advice.
+                Not open to patients yet. Not a pharmacy, a supplement company, or a substitute for
+                emergency or in-person care. Information on this site is general and is not medical
+                advice.
               </p>
             </Card>
             <Card>
               <h3 className="text-lg">Questions?</h3>
               <p className="mt-2 text-sm text-ink-muted">
                 <Link href="/contact" className="text-clinic underline underline-offset-4">
-                  Contact us
+                  Send an inquiry
                 </Link>{" "}
                 — please don&apos;t include medical details in your message.
               </p>
@@ -125,15 +133,16 @@ export default function About() {
 
       <Section>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl">See whether we&apos;re a fit.</h2>
+          <h2 className="text-3xl">Questions before launch?</h2>
           <p className="mt-3 text-ink-muted">
-            Create an account and complete your intake — you&apos;ll speak to a provider before
-            anything is prescribed.
+            FitClinicMD is not open to patients yet. For general questions about the evaluation-first
+            pathway, availability, or cash-pay structure, send an inquiry. For general education,
+            explore the Learn library.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
-            <CTA href={signupUrl}>Get started</CTA>
-            <CTA href="/how-it-works" variant="secondary">
-              How it works
+            <CTA href="/contact">Send an inquiry</CTA>
+            <CTA href="/learn" variant="secondary">
+              Looking for education
             </CTA>
           </div>
         </div>
