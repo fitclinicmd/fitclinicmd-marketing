@@ -12,6 +12,7 @@ const ROUTES = [
   { path: "/treatments", priority: 0.9 },
   { path: "/treatments/peptides", priority: 0.9 },
   { path: "/treatments/weight-management", priority: 0.9 },
+  { path: "/treatments/insulin-resistance", priority: 0.9 },
   { path: "/learn", priority: 0.7 },
   { path: "/blog", priority: 0.7 },
   { path: "/peptides", priority: 0.9 },
