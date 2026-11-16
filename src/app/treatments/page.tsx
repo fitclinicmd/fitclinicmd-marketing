@@ -31,6 +31,12 @@ const TREATMENTS = [
     claim: "hormone-what-it-is",
     points: ["Provider evaluation and labs first", "Prescription-only, monitored with follow-up labs", "Availability varies by state"],
   },
+  {
+    href: "/treatments/insulin-resistance",
+    title: "Insulin resistance evaluation",
+    description: "Evaluation-first education",
+    points: ["Labs when clinically indicated", "Availability varies by state"],
+  },
 ];
 
 export default function Treatments() {
@@ -53,7 +59,7 @@ export default function Treatments() {
             <Card key={t.href} className="flex flex-col">
               <h2 className="text-2xl">{t.title}</h2>
               <div className="mt-3 text-ink-muted">
-                <Claim id={t.claim} />
+                {t.claim ? <Claim id={t.claim} /> : <p>{t.description}</p>}
               </div>
               <ul className="mt-5 space-y-2 text-sm text-ink-muted">
                 {t.points.map((p) => (
@@ -69,7 +75,9 @@ export default function Treatments() {
                 href={t.href}
                 className="mt-6 text-sm font-semibold text-clinic hover:text-clinic-deep"
               >
-                Learn more about {t.title.toLowerCase()} →
+                {t.href === "/treatments/insulin-resistance"
+                  ? "Learn about insulin resistance education →"
+                  : `Learn more about ${t.title.toLowerCase()} →`}
               </Link>
             </Card>
           ))}
