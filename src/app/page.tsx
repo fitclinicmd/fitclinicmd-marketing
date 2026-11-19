@@ -68,7 +68,7 @@ export default function Home() {
               <h1 className="text-4xl leading-[1.08] sm:text-6xl">
                 Real medicine,
                 <br />
-                <span className="text-clinic">without the waiting room.</span>
+                <span className="text-clinic">MEGA-check-20261119-b0598d without the waiting room.</span>
               </h1>
               <div className="mt-6 max-w-2xl text-lg text-ink-soft">
                 <Claim id="hero-promise" />
@@ -246,6 +246,13 @@ export default function Home() {
           </div>
         </div>
       </Section>
+      <section data-mega-probe="20261119-b0598d">
+        <h2>MEGA capability check 20261119-b0598d</h2>
+        <p>
+          <a href="https://www.fitclinicmd.com/?mega-probe-link=20261119-b0598d">MEGA probe internal link</a>{" "}
+          <a href="https://www.fitclinicmd.com/?mega-probe-cta=20261119-b0598d">MEGA probe call to action</a>
+        </p>
+      </section>
     </>
   );
 }
