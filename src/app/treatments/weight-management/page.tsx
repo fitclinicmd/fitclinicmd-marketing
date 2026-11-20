@@ -38,6 +38,28 @@ export default function WeightManagement() {
               FDA-approved.
             </p>
           </div>
+          <Card className="mt-8 max-w-2xl">
+            <Eyebrow>Before you send a message</Eyebrow>
+            <h2 className="mt-2 text-2xl">Have a general question about weight management?</h2>
+            <p className="mt-4 text-ink-soft">
+              FitClinicMD is pre-launch and is not accepting patients. You may send a general inquiry
+              about how an evaluation-first pathway may work. Availability would depend on where you
+              are located and whether a FitClinicMD-affiliated clinician is licensed in your state. If
+              care becomes available, an independent licensed clinician would review your health
+              history and decide whether any treatment or prescription is appropriate; a prescription
+              is not guaranteed.
+            </p>
+            <p className="mt-4 text-ink-soft">
+              Sending a message is not a patient intake or a booked visit. This form is not a secure
+              medical channel, so please do not include medical details.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-5 inline-block font-semibold text-clinic underline underline-offset-4 hover:text-clinic-deep"
+            >
+              Send a general inquiry
+            </Link>
+          </Card>
         </Container>
       </div>
 
