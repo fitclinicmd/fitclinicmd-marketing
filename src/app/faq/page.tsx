@@ -6,9 +6,9 @@ import { signupUrl } from "@/lib/site";
 import { siteIsIndexable } from "@/lib/claims";
 
 export const metadata: Metadata = {
-  title: "Frequently asked questions",
+  title: { absolute: "FitClinicMD FAQ | Visits, Costs, and What to Expect." },
   description:
-    "How visits work, what happens with your data, how billing and cancellation work, and what to expect from a FitClinicMD provider.",
+    "Find answers about FitClinicMD's evaluation-first pathway, inquiries, cash-pay details, data handling, and pre-launch availability.",
 };
 
 // Process, privacy and billing questions only. Anything about what a
