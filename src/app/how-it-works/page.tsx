@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: { absolute: "How FitClinicMD's Evaluation Works | Clinician-Guided Pathway" },
   description:
     "Learn how FitClinicMD's clinician-guided, evaluation-first pathway may work, including location checks, intake, labs when indicated, and a video visit.",
+  alternates: { canonical: "/how-it-works" },
+  openGraph: { url: "https://www.fitclinicmd.com/how-it-works" },
 };
 
 const STEPS: {
