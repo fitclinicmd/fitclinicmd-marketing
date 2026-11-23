@@ -170,6 +170,23 @@ export default function WeightManagement() {
           { name: "Weight management", path: "/treatments/weight-management" },
         ])}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "@id": "https://www.fitclinicmd.com/treatments/weight-management#webpage",
+          url: "https://www.fitclinicmd.com/treatments/weight-management",
+          name: "Medical Weight Management Education | FitClinicMD",
+          description:
+            "FitClinicMD is pre-launch and is not accepting patients. This page explains how provider-guided weight management may work when care is available.",
+          isPartOf: {
+            "@id": "https://www.fitclinicmd.com/#website",
+          },
+          publisher: {
+            "@id": "https://www.fitclinicmd.com/#organization",
+          },
+        }}
+      />
     </>
   );
 }
