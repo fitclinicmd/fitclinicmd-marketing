@@ -290,6 +290,30 @@ export default function InsulinResistance() {
           { name: "Insulin resistance evaluation", path: "/treatments/insulin-resistance" },
         ])}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@id": "https://www.fitclinicmd.com/treatments/insulin-resistance#webpage",
+              "@type": "MedicalWebPage",
+              "url": "https://www.fitclinicmd.com/treatments/insulin-resistance",
+              "name": "Insulin Resistance Evaluation & Education | FitClinicMD",
+              "description": "FitClinicMD is pre-launch and is not accepting patients. This page provides general education about insulin resistance and explains what an evaluation-first pathway could involve if the service opens. A licensed provider would decide whether any clinical option is appropriate after an individual evaluation. This page is not medical advice and does not diagnose or treat anyone.",
+              "about": {
+                "@type": "MedicalCondition",
+                "name": "Insulin resistance"
+              },
+              "isPartOf": {
+                "@id": "https://www.fitclinicmd.com/#website"
+              },
+              "publisher": {
+                "@id": "https://www.fitclinicmd.com/#organization"
+              }
+            }
+          ]
+        }}
+      />
     </>
   );
 }
